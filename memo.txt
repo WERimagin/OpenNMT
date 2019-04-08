@@ -3,7 +3,8 @@ python3 preprocess.py \
 -train_tgt data/tgt-train.txt \
 -valid_src data/src-val.txt \
 -valid_tgt data/tgt-val.txt \
--save_data data/demo
+-save_data data/demo \
+-lower
 
 python embeddings_to_torch.py \
 -emb_file_both "../data/glove.840B.300d.txt" \
@@ -12,7 +13,12 @@ python embeddings_to_torch.py \
 
 python3 train.py \
 -data data/demo \
--save_model demo-model
+-save_model demo-model \
+-batch_size 16 -valid_batch_size 16 \
+-encoder_type brnn -decoder_type rnn -layer 2 \
+-optim adam -learning_rate 1 -learning_rate_decay 10000000 \
+-gpu_ranks 3 -world_size 1
+
 
 python translate.py \
 -model demo-model_acc_XX.XX_ppl_XXX.XX_eX.pt \
@@ -46,3 +52,11 @@ train
 --batch_size
 #optimizer
 --optim
+#学習率
+-learning_rate
+#学習率減衰,adamなら不要
+-learning_rate_decay
+--gpu_ranks
+--world_size
+#隠れ状態のサイズ
+--rnn_size 600

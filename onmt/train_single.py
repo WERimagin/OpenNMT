@@ -32,10 +32,12 @@ def _tally_parameters(model):
             dec += param.nelement()
     return enc + dec, enc, dec
 
-
+#cudaの番号指定
+#常に0になっている？要検証
 def configure_process(opt, device_id):
     if device_id >= 0:
-        torch.cuda.set_device(device_id)
+        torch.cuda.set_device(opt.gpu_ranks[device_id])
+        #torch.cuda.set_device(device_id)
     set_random_seed(opt.seed, device_id >= 0)
 
 

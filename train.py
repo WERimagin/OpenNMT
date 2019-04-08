@@ -33,6 +33,7 @@ def main(opt):
 
     nb_gpu = len(opt.gpu_ranks)
 
+    #gpuを複数指定した場合
     if opt.world_size > 1:
         mp = torch.multiprocessing.get_context('spawn')
         # Create a thread to listen for errors in the child processes.
@@ -49,6 +50,7 @@ def main(opt):
         for p in procs:
             p.join()
 
+    #gpu一つの場合
     elif nb_gpu == 1:  # case 1 GPU only
         single_main(opt, 0)
     else:   # case only CPU
