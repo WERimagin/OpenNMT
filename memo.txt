@@ -1,0 +1,48 @@
+python3 preprocess.py \
+-train_src data/src-train.txt \
+-train_tgt data/tgt-train.txt \
+-valid_src data/src-val.txt \
+-valid_tgt data/tgt-val.txt \
+-save_data data/demo
+
+python embeddings_to_torch.py \
+-emb_file_both "../data/glove.840B.300d.txt" \
+-dict_file "data/demo.vocab.pt" \
+-output_file "data/embeddings"
+
+python3 train.py \
+-data data/demo \
+-save_model demo-model
+
+python translate.py \
+-model demo-model_acc_XX.XX_ppl_XXX.XX_eX.pt \
+-src data/src-test.txt \
+-output pred.txt \
+-replace_unk -verbose
+
+
+preprocess
+#小文字化
+--lower True
+#文の長さ、要指定
+--src_seq_length 50
+--tgt_seq_length 50
+
+train
+#エンコーダーのタイプ。デフォルトはrnnだが双方向にするべき
+--encoder_type brnn
+#層の数。デフォルトは2
+--layer
+#RNNのタイプ。デフォルトはLSTM、要検討
+--rnn_type GRU
+#gpuの番号
+--gpu_ranks
+#学習済み単語ベクトルの更新
+--pre_word_vecs_enc
+--pre_word_vecs_dec
+#学習ずみ単語ベクトルの更新
+--fix_word_vecs_enc
+#バッチサイズ
+--batch_size
+#optimizer
+--optim
