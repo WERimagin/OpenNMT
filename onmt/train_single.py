@@ -34,7 +34,7 @@ def _tally_parameters(model):
 
 #cudaの番号指定
 #常に0になっている？要検証
-#opt.gpu_ranks[device_id]に変更したら直った。時間は1.5倍程になった
+#opt.gpu_ranks[device_id]に変更したら直った。
 def configure_process(opt, device_id):
     if device_id >= 0:
         torch.cuda.set_device(opt.gpu_ranks[device_id])
