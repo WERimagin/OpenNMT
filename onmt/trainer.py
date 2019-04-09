@@ -249,6 +249,7 @@ class Trainer(object):
                 self._report_step(self.optim.learning_rate(),step, valid_stats=valid_stats)
 
             print(step)
+            print(self.model_saver)
             #モデルのセーブ
             if (self.model_saver is not None
                 and (save_checkpoint_steps != 0
@@ -330,6 +331,7 @@ class Trainer(object):
             tgt_outer = batch.tgt
 
             bptt = False
+            print(target_size)
             for j in range(0, target_size-1, trunc_size):
                 # 1. Create truncated target.
                 tgt = tgt_outer[j: j + trunc_size]
