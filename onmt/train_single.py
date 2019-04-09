@@ -97,6 +97,7 @@ def main(opt, device_id):
 
     # Build model saver
     model_saver = build_model_saver(model_opt, opt, model, fields, optim)
+    print(model_saver)
 
     #trainerを作る
     trainer = build_trainer(

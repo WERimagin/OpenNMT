@@ -248,8 +248,6 @@ class Trainer(object):
                     logger.info('GpuRank %d: report stat step %d' % (self.gpu_rank, step))
                 self._report_step(self.optim.learning_rate(),step, valid_stats=valid_stats)
 
-            print(step)
-            print(self.model_saver)#none
             #モデルのセーブ
             if (self.model_saver is not None
                 and (save_checkpoint_steps != 0
@@ -315,8 +313,8 @@ class Trainer(object):
             self.optim.zero_grad()
 
         #真のバッチの中のバッチ
+        #現在の設定では、真のバッチ一回につき、内部バッチ一回
         for batch in true_batches:
-            print("go")
             target_size = batch.tgt.size(0)
             # Truncated BPTT: reminder not compatible with accum > 1
             if self.trunc_size:
@@ -332,6 +330,7 @@ class Trainer(object):
             tgt_outer = batch.tgt
 
             bptt = False
+            #trunc_size=targetsizeなので、１ループのみ
             for j in range(0, target_size-1, trunc_size):
                 # 1. Create truncated target.
                 tgt = tgt_outer[j: j + trunc_size]
