@@ -16,8 +16,12 @@ python3 train.py \
 -save_model demo-model \
 -batch_size 16 -valid_batch_size 16 \
 -encoder_type brnn -decoder_type rnn -layer 2 \
--optim adam -learning_rate 1 -learning_rate_decay 10000000 \
--gpu_ranks 3 -world_size 1
+-rnn_size 600 \
+-optim adam -learning_rate 0.001 -learning_rate_decay 1.0 -start_decay_steps 10000000 \
+-save_checkpoint_steps 200 \
+-gpu_ranks 3 -world_size 1 \
+-log_file log.txt
+
 
 
 python translate.py \
@@ -49,7 +53,7 @@ train
 #学習ずみ単語ベクトルの更新
 --fix_word_vecs_enc
 #バッチサイズ
---batch_size
+--batch_size 64 -> 32
 #optimizer
 --optim
 #学習率
@@ -59,4 +63,14 @@ train
 --gpu_ranks
 --world_size
 #隠れ状態のサイズ
---rnn_size 600
+--rnn_size 500
+#ログファイルのパス
+-log_file
+#評価のステップ
+-valid_steps 10000
+#保存のステップ
+-checkpoint_steps 5000
+#計算結果のレポートの間隔
+-report_every 50
+#テストの間隔
+-valid_steps 10000 -> 2000

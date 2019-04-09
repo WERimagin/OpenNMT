@@ -324,8 +324,12 @@ def preprocess_opts(parser):
               help="Random seed")
 
     group = parser.add_argument_group('Logging')
+
+    #何文ごとにreportするか
     group.add('--report_every', '-report_every', type=int, default=100000,
               help="Report status every this many sentences")
+
+    #ログファイルのパス
     group.add('--log_file', '-log_file', type=str, default="",
               help="Output logs to a file under this path.")
     group.add('--log_file_level', '-log_file_level', type=str,
@@ -368,6 +372,7 @@ def train_opts(parser):
                    "<save_model>_N.pt where N is the number "
                    "of steps")
 
+    #saveを行う感覚
     group.add('--save_checkpoint_steps', '-save_checkpoint_steps',
               type=int, default=5000,
               help="""Save a checkpoint every X steps""")
@@ -386,7 +391,7 @@ def train_opts(parser):
     #gpuの数(=gpu_ranksで指定した数)
     group.add('--world_size', '-world_size', default=1, type=int,
               help="total number of distributed processes.")
-              
+
     group.add('--gpu_backend', '-gpu_backend',
               default="nccl", type=str,
               help="Type of torch distributed backend")
@@ -543,19 +548,27 @@ def train_opts(parser):
     # learning rate
     #学習率
     group = parser.add_argument_group('Optimization- Rate')
+
+    #学習率
     group.add('--learning_rate', '-learning_rate', type=float, default=1.0,
               help="Starting learning rate. "
                    "Recommended settings: sgd = 1, adagrad = 0.1, "
                    "adadelta = 1, adam = 0.001")
+
+    #学習率の減衰率
     group.add('--learning_rate_decay', '-learning_rate_decay',
               type=float, default=0.5,
               help="If update_learning_rate, decay learning rate by "
                    "this much if steps have gone past "
                    "start_decay_steps")
+
+    #減衰の始め
     group.add('--start_decay_steps', '-start_decay_steps',
               type=int, default=50000,
               help="Start decaying every decay_steps after "
                    "start_decay_steps")
+
+    #減衰の間隔
     group.add('--decay_steps', '-decay_steps', type=int, default=10000,
               help="Decay every decay_steps")
 
@@ -566,10 +579,15 @@ def train_opts(parser):
               help="Number of warmup steps for custom decay.")
 
     group = parser.add_argument_group('Logging')
+
+    #計算結果のレポート間隔
     group.add('--report_every', '-report_every', type=int, default=50,
               help="Print stats at this interval.")
+
+    #logファイルのパス
     group.add('--log_file', '-log_file', type=str, default="",
               help="Output logs to a file under this path.")
+
     group.add('--log_file_level', '-log_file_level', type=str,
               action=StoreLoggingLevelAction,
               choices=StoreLoggingLevelAction.CHOICES,

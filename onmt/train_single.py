@@ -34,6 +34,7 @@ def _tally_parameters(model):
 
 #cudaの番号指定
 #常に0になっている？要検証
+#opt.gpu_ranks[device_id]に変更したら直った。時間は1.5倍程になった
 def configure_process(opt, device_id):
     if device_id >= 0:
         torch.cuda.set_device(opt.gpu_ranks[device_id])
@@ -97,6 +98,7 @@ def main(opt, device_id):
     # Build model saver
     model_saver = build_model_saver(model_opt, opt, model, fields, optim)
 
+    #trainerを作る
     trainer = build_trainer(
         opt, device_id, model, fields, optim, model_saver=model_saver)
 
@@ -112,6 +114,8 @@ def main(opt, device_id):
     if opt.single_pass and train_steps > 0:
         logger.warning("Option single_pass is enabled, ignoring train_steps.")
         train_steps = 0
+
+    #trainを行う
     trainer.train(
         train_iter,
         train_steps,

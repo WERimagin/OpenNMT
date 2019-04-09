@@ -169,6 +169,7 @@ class Trainer(object):
                     (1 - average_decay) * avg + \
                     cpt.detach().float() * average_decay
 
+    #学習
     def train(self,
               train_iter,
               train_steps,
@@ -204,6 +205,7 @@ class Trainer(object):
             train_iter = itertools.islice(
                 train_iter, self.gpu_rank, None, self.n_gpu)
 
+        #真のbatch
         for i, (batches, normalization) in enumerate(
                 self._accum_batches(train_iter)):
             step = self.optim.training_step
@@ -220,6 +222,7 @@ class Trainer(object):
                                     .all_gather_list
                                     (normalization))
 
+            #batchの計算、中では内部batch毎に更新を行う
             self._gradient_accumulation(
                 batches, normalization, total_stats,
                 report_stats)
@@ -227,35 +230,35 @@ class Trainer(object):
             if self.average_decay > 0 and i % self.average_every == 0:
                 self._update_average(step)
 
+            #計算結果のレポート
             report_stats = self._maybe_report_training(
                 step, train_steps,
                 self.optim.learning_rate(),
                 report_stats)
 
+            #validデータでテスト
             if valid_iter is not None and step % valid_steps == 0:
                 if self.gpu_verbose_level > 0:
-                    logger.info('GpuRank %d: validate step %d'
-                                % (self.gpu_rank, step))
-                valid_stats = self.validate(
-                    valid_iter, moving_average=self.moving_average)
+                    logger.info('GpuRank %d: validate step %d' % (self.gpu_rank, step))
+                valid_stats = self.validate(valid_iter, moving_average=self.moving_average)
                 if self.gpu_verbose_level > 0:
-                    logger.info('GpuRank %d: gather valid stat \
-                                step %d' % (self.gpu_rank, step))
+                    logger.info('GpuRank %d: gather valid stat step %d' % (self.gpu_rank, step))
                 valid_stats = self._maybe_gather_stats(valid_stats)
                 if self.gpu_verbose_level > 0:
-                    logger.info('GpuRank %d: report stat step %d'
-                                % (self.gpu_rank, step))
-                self._report_step(self.optim.learning_rate(),
-                                  step, valid_stats=valid_stats)
+                    logger.info('GpuRank %d: report stat step %d' % (self.gpu_rank, step))
+                self._report_step(self.optim.learning_rate(),step, valid_stats=valid_stats)
 
+            #モデルのセーブ
             if (self.model_saver is not None
                 and (save_checkpoint_steps != 0
                      and step % save_checkpoint_steps == 0)):
                 self.model_saver.save(step, moving_average=self.moving_average)
 
+            #学習終了
             if train_steps > 0 and step >= train_steps:
                 break
 
+        #最終状態をセーブ
         if self.model_saver is not None:
             self.model_saver.save(step, moving_average=self.moving_average)
         return total_stats
@@ -303,11 +306,13 @@ class Trainer(object):
 
         return stats
 
+    #batchの計算部分
     def _gradient_accumulation(self, true_batches, normalization, total_stats,
                                report_stats):
         if self.accum_count > 1:
             self.optim.zero_grad()
 
+        #真のバッチの中のバッチ
         for batch in true_batches:
             target_size = batch.tgt.size(0)
             # Truncated BPTT: reminder not compatible with accum > 1
@@ -331,10 +336,13 @@ class Trainer(object):
                 # 2. F-prop all but generator.
                 if self.accum_count == 1:
                     self.optim.zero_grad()
+
+                #modelに投げる部分
                 outputs, attns = self.model(src, tgt, src_lengths, bptt=bptt)
                 bptt = True
 
                 # 3. Compute loss.
+                #損失の計算
                 loss, batch_stats = self.train_loss(
                     batch,
                     outputs,
@@ -344,21 +352,27 @@ class Trainer(object):
                     trunc_start=j,
                     trunc_size=trunc_size)
 
+                #勾配の計算
                 if loss is not None:
                     self.optim.backward(loss)
 
+                #batch_statでtotalとreportを更新
                 total_stats.update(batch_stats)
                 report_stats.update(batch_stats)
 
                 # 4. Update the parameters and statistics.
+                #更新
                 if self.accum_count == 1:
                     # Multi GPU gradient gather
+                    #multi-GPU用
                     if self.n_gpu > 1:
                         grads = [p.grad.data for p in self.model.parameters()
                                  if p.requires_grad
                                  and p.grad is not None]
                         onmt.utils.distributed.all_reduce_and_rescale_tensors(
                             grads, float(1))
+
+                    #更新
                     self.optim.step()
 
                 # If truncated, don't backprop fully.
