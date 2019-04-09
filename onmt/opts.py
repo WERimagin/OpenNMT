@@ -79,7 +79,7 @@ def model_opts(parser):
               help='Data type of the model.')
 
     #encoder,decoderのタイプ。デフォルトはrnn
-    group.add('--encoder_type', '-encoder_type', type=str, default='rnn',
+    group.add('--encoder_type', '-encoder_type', type=str, default='brnn',
               choices=['rnn', 'brnn', 'mean', 'transformer', 'cnn'],
               help="Type of encoder layer to use. Non-RNN layers "
                    "are experimental. Options are "
@@ -102,11 +102,11 @@ def model_opts(parser):
     group.add('--rnn_size', '-rnn_size', type=int, default=-1,
               help="Size of rnn hidden states. Overwrites "
                    "enc_rnn_size and dec_rnn_size")
-    group.add('--enc_rnn_size', '-enc_rnn_size', type=int, default=500,
+    group.add('--enc_rnn_size', '-enc_rnn_size', type=int, default=600,
               help="Size of encoder rnn hidden states. "
                    "Must be equal to dec_rnn_size except for "
                    "speech-to-text.")
-    group.add('--dec_rnn_size', '-dec_rnn_size', type=int, default=500,
+    group.add('--dec_rnn_size', '-dec_rnn_size', type=int, default=600,
               help="Size of decoder rnn hidden states. "
                    "Must be equal to enc_rnn_size except for "
                    "speech-to-text.")
@@ -330,7 +330,7 @@ def preprocess_opts(parser):
               help="Report status every this many sentences")
 
     #ログファイルのパス
-    group.add('--log_file', '-log_file', type=str, default="",
+    group.add('--log_file', '-log_file', type=str, default="log.txt",
               help="Output logs to a file under this path.")
     group.add('--log_file_level', '-log_file_level', type=str,
               action=StoreLoggingLevelAction,
@@ -450,7 +450,7 @@ def train_opts(parser):
     group = parser.add_argument_group('Optimization- Type')
 
     #trainのbatch_size
-    group.add('--batch_size', '-batch_size', type=int, default=64,
+    group.add('--batch_size', '-batch_size', type=int, default=32,
               help='Maximum batch size for training')
     group.add('--batch_type', '-batch_type', default='sents',
               choices=["sents", "tokens"],
@@ -488,7 +488,7 @@ def train_opts(parser):
               help='Deprecated epochs see train_steps')
 
     #optimizer
-    group.add('--optim', '-optim', default='sgd',
+    group.add('--optim', '-optim', default='adam',
               choices=['sgd', 'adagrad', 'adadelta', 'adam',
                        'sparseadam', 'adafactor', 'fusedadam'],
               help="Optimization method.")
@@ -550,21 +550,21 @@ def train_opts(parser):
     group = parser.add_argument_group('Optimization- Rate')
 
     #学習率
-    group.add('--learning_rate', '-learning_rate', type=float, default=1.0,
+    group.add('--learning_rate', '-learning_rate', type=float, default=0.001,
               help="Starting learning rate. "
                    "Recommended settings: sgd = 1, adagrad = 0.1, "
                    "adadelta = 1, adam = 0.001")
 
     #学習率の減衰率
     group.add('--learning_rate_decay', '-learning_rate_decay',
-              type=float, default=0.5,
+              type=float, default=1.0,
               help="If update_learning_rate, decay learning rate by "
                    "this much if steps have gone past "
                    "start_decay_steps")
 
     #減衰の始め
     group.add('--start_decay_steps', '-start_decay_steps',
-              type=int, default=50000,
+              type=int, default=1000000,
               help="Start decaying every decay_steps after "
                    "start_decay_steps")
 

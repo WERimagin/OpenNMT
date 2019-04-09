@@ -6,6 +6,14 @@ python3 preprocess.py \
 -save_data data/demo \
 -lower
 
+python3 preprocess.py \
+-train_src data/src-val.txt \
+-train_tgt data/tgt-val.txt \
+-valid_src data/src-train.txt \
+-valid_tgt data/tgt-train.txt \
+-save_data data/demo \
+-lower
+
 python embeddings_to_torch.py \
 -emb_file_both "../data/glove.840B.300d.txt" \
 -dict_file "data/demo.vocab.pt" \
@@ -13,15 +21,13 @@ python embeddings_to_torch.py \
 
 python3 train.py \
 -data data/demo \
--save_model demo-model \
--batch_size 16 -valid_batch_size 16 \
--encoder_type brnn -decoder_type rnn -layer 2 \
--rnn_size 600 \
--optim adam -learning_rate 0.001 -learning_rate_decay 1.0 -start_decay_steps 10000000 \
--save_checkpoint_steps 200 \
--gpu_ranks 3 -world_size 1 \
--log_file log.txt
+-save_model model_data/demo-model \
+-gpu_ranks 3 -world_size 1
 
+python3 train.py \
+-data data/demo \
+-save_model demo-model
+-save_checkpoint_steps 200
 
 
 python translate.py \

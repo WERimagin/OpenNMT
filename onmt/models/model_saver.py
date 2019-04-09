@@ -97,7 +97,6 @@ class ModelSaver(ModelSaverBase):
     """Simple model saver to filesystem"""
 
     def _save(self, step, model):
-        print("save")
         real_model = (model.module
                       if isinstance(model, nn.DataParallel)
                       else model)
