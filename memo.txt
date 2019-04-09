@@ -6,19 +6,20 @@ python3 preprocess.py \
 -save_data data/demo \
 -lower
 
-python3 preprocess.py \
--train_src data/src-train.txt \
--train_tgt data/tgt-train.txt \
--valid_src data/src-train.txt \
--valid_tgt data/tgt-train.txt \
--save_data data/demo \
--lower
 
 python3 preprocess.py \
 -train_src data/fra_train.txt \
 -train_tgt data/eng_train.txt \
 -valid_src data/fra_val.txt \
 -valid_tgt data/eng_val.txt \
+-save_data data/demo \
+-lower
+
+python3 preprocess.py \
+-train_src data/squad-src-train.txt \
+-train_tgt data/squad-tgt-train.txt \
+-valid_src data/squad-src-val.txt \
+-valid_tgt data/squad-tgt-val.txt \
 -save_data data/demo \
 -lower
 
@@ -30,6 +31,14 @@ python embeddings_to_torch.py \
 python3 train.py \
 -data data/demo \
 -save_model model_data/demo-model \
+-gpu_ranks 3 -world_size 1 \
+-valid_steps 500 \
+-save_checkpoint_steps 500
+
+python3 train.py \
+-data data/demo \
+-save_model model_data/demo-model \
+-pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -gpu_ranks 3 -world_size 1 \
 -valid_steps 500 \
 -save_checkpoint_steps 500
@@ -58,7 +67,9 @@ train
 --rnn_type GRU
 #gpuの番号
 --gpu_ranks
-#学習済み単語ベクトルの更新
+#単語埋め込みサイズ
+-word_vec_size 500
+#学習済み単語ベクトルのパス
 --pre_word_vecs_enc
 --pre_word_vecs_dec
 #学習ずみ単語ベクトルの更新

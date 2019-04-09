@@ -24,10 +24,10 @@ def model_opts(parser):
 
     #src,tgtの単語の埋め込みサイズ
     group.add('--src_word_vec_size', '-src_word_vec_size',
-              type=int, default=500,
+              type=int, default=300,
               help='Word embedding size for src.')
     group.add('--tgt_word_vec_size', '-tgt_word_vec_size',
-              type=int, default=500,
+              type=int, default=300,
               help='Word embedding size for tgt.')
     group.add('--word_vec_size', '-word_vec_size', type=int, default=-1,
               help='Word embedding size for src and tgt.')
@@ -374,7 +374,7 @@ def train_opts(parser):
 
     #saveを行う感覚
     group.add('--save_checkpoint_steps', '-save_checkpoint_steps',
-              type=int, default=5000,
+              type=int, default=500,
               help="""Save a checkpoint every X steps""")
     group.add('--keep_checkpoint', '-keep_checkpoint', type=int, default=-1,
               help="Keep X checkpoints (negative: keep all)")
@@ -469,7 +469,7 @@ def train_opts(parser):
               default=[0], help="Steps at which accum_count values change")
 
     #何回ごとにテストを行うか
-    group.add('--valid_steps', '-valid_steps', type=int, default=10000,
+    group.add('--valid_steps', '-valid_steps', type=int, default=500,
               help='Perfom validation every X steps')
 
     #validの時のbatchsize
