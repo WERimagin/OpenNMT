@@ -7,8 +7,8 @@ python3 preprocess.py \
 -lower
 
 python3 preprocess.py \
--train_src data/src-val.txt \
--train_tgt data/tgt-val.txt \
+-train_src data/src-train.txt \
+-train_tgt data/tgt-train.txt \
 -valid_src data/src-train.txt \
 -valid_tgt data/tgt-train.txt \
 -save_data data/demo \
@@ -22,12 +22,9 @@ python embeddings_to_torch.py \
 python3 train.py \
 -data data/demo \
 -save_model model_data/demo-model \
--gpu_ranks 3 -world_size 1
-
-python3 train.py \
--data data/demo \
--save_model demo-model
--save_checkpoint_steps 200
+-gpu_ranks 3 -world_size 1 \
+-valid_steps 500 \
+-save_checkpoint_steps 500
 
 
 python translate.py \

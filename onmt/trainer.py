@@ -264,6 +264,7 @@ class Trainer(object):
             self.model_saver.save(step, moving_average=self.moving_average)
         return total_stats
 
+    #評価データでテスト
     def validate(self, valid_iter, moving_average=None):
         """ Validate model.
             valid_iter: validate data iterator
