@@ -14,6 +14,14 @@ python3 preprocess.py \
 -save_data data/demo \
 -lower
 
+python3 preprocess.py \
+-train_src data/fra_train.txt \
+-train_tgt data/eng_train.txt \
+-valid_src data/fra_val.txt \
+-valid_tgt data/eng_val.txt \
+-save_data data/demo \
+-lower
+
 python embeddings_to_torch.py \
 -emb_file_both "../data/glove.840B.300d.txt" \
 -dict_file "data/demo.vocab.pt" \
@@ -28,8 +36,8 @@ python3 train.py \
 
 
 python translate.py \
--model demo-model_acc_XX.XX_ppl_XXX.XX_eX.pt \
--src data/src-test.txt \
+-model model_data/demo-model_step_5500.pt \
+-src data/src-val.txt \
 -output pred.txt \
 -replace_unk -verbose
 

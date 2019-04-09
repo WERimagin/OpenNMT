@@ -95,27 +95,27 @@ def data_process(input_path,train=False):
 
 
     if train==True:
-        with open("data/squad_src_train.txt","w"):
+        with open("data/squad-src-train.txt","w")as f:
             for line in sentences:
                 f.write(line+"\n")
-        with open("data/squad_tgt_train.txt","w"):
+        with open("data/squad-tgt-train.txt","w")as f:
             for line in questions:
                 f.write(line+"\n")
 
     if train==False:
         random_list=list(range(len(questions)))
-        random_list.shuffle(random_list)
+        random.shuffle(random_list)
         val_num=int(len(random_list)*0.5)
-        with open("data/squad_src_val.txt","w"):
+        with open("data/squad-src-val.txt","w")as f:
             for line in sentences[0:val_num]:
                 f.write(line+"\n")
-        with open("data/squad_tgt_val.txt","w"):
-            for line in questions[0:val_Num]:
+        with open("data/squad-tgt-val.txt","w")as f:
+            for line in questions[0:val_num]:
                 f.write(line+"\n")
-        with open("data/squad_src_test.txt","w"):
+        with open("data/squad-src-test.txt","w")as f:
             for line in sentences[val_num:]:
                 f.write(line+"\n")
-        with open("data/squad_tgt_test.txt","w"):
+        with open("data/squad-tgt-test.txt","w")as f:
             for line in questions[val_num:]:
                 f.write(line+"\n")
 
