@@ -27,7 +27,7 @@ python translate.py \
 
 
 python translate.py \
--model model_data/demo-model_step_7000.pt \
+-model model_data/demo-model_step_6000.pt \
 -src data/squad-src-val.txt \
 -output pred.txt \
 -replace_unk -verbose

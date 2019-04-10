@@ -59,7 +59,7 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=False
-    
+
     questions=[]
     answers=[]
     sentences=[]
@@ -97,9 +97,11 @@ def data_process(input_path,interro_path,train=False):
                 #ゴミデータ(10個程度)は削除
                 if len(question_text)<=5:
                     continue
-                #テキストとノンストップワードが一つも重複してないものは除去
-                if check_overlap(sentence_text,question_text,stop_words)==False:
-                    continue
+
+                if False:
+                    #テキストとノンストップワードが一つも重複してないものは除去
+                    if check_overlap(sentence_text,question_text,stop_words)==False:
+                        continue
                 #疑問詞がないものは削除
                 if interro=="":
                     continue
@@ -114,13 +116,14 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
+    setting="-overlap"
 
     if use_interro==False:
         if train==True:
-            with open("data/squad-src-train.txt","w")as f:
+            with open("data/squad-src-train{}.txt".format(setting),"w")as f:
                 for i in range(len(sentences)):
                     f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-train.txt","w")as f:
+            with open("data/squad-tgt-train{}.txt".format(setting),"w")as f:
                 for i in range(len(sentences)):
                     f.write(questions[i]+"\n")
 
@@ -128,16 +131,16 @@ def data_process(input_path,interro_path,train=False):
             random_list=list(range(len(questions)))
             random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
-            with open("data/squad-src-val.txt","w")as f:
+            with open("data/squad-src-val{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
                     f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-val.txt","w")as f:
+            with open("data/squad-tgt-val{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
                     f.write(questions[i]+"\n")
-            with open("data/squad-src-test.txt","w")as f:
+            with open("data/squad-src-test{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-test.txt","w")as f:
+            with open("data/squad-tgt-test{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(questions[i]+"\n")
     else:
