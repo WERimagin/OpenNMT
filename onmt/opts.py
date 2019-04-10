@@ -585,7 +585,7 @@ def train_opts(parser):
               help="Print stats at this interval.")
 
     #logファイルのパス
-    group.add('--log_file', '-log_file', type=str, default="",
+    group.add('--log_file', '-log_file', type=str, default="log.txt",
               help="Output logs to a file under this path.")
 
     group.add('--log_file_level', '-log_file_level', type=str,
