@@ -58,8 +58,10 @@ python translate.py \
 -output pred.txt \
 -replace_unk -verbose
 
-python bleu \
--src data/
+python bleu.py \
+-src data/squad-src-val.txt \
+-tgt data/squad-tgt-val.txt \
+-pred pred.txt
 
 preprocess
 #小文字化

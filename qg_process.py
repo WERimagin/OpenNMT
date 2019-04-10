@@ -15,8 +15,17 @@ from nltk.tokenize import word_tokenize,sent_tokenize
 import pickle
 import collections
 import random
+from nltk.corpus import stopwords
+from nltk.corpus import stopwords
 
-#from func.corenlp import CoreNLP
+
+#sentenceとquestionで共通するノンストップワードが一つもない場合False
+def check_overlap(sentence,question,stop_words):
+
+    for w in question.split():
+        if sentence.find(w)!=-1 and w not in stop_words:
+            return True
+    return False
 
 def answer_find(context_text,answer_start,answer_end):
     context=sent_tokenize(context_text)
@@ -43,20 +52,19 @@ def answer_find(context_text,answer_start,answer_end):
 def tokenize(sent):
     return [token.replace('``','"').replace("''",'"') for token in word_tokenize(sent)]
 
-def data_process(input_path,train=False):
+def data_process(input_path,interro_path,train=False):
     with open(input_path,"r") as f:
         data=json.load(f)
+    with open(interro_path,"r") as f:
+        interro_data=json.load(f)
 
-    #corenlp=CoreNLP()
+    use_interro=True
 
     questions=[]
     answers=[]
     sentences=[]
-    question_interros=[]
-    neg_interros=[]
 
-    pairs=[]
-    word_count=collections.defaultdict(int)
+    stop_words = stopwords.words('english')
 
     all_count=0
 
@@ -69,18 +77,15 @@ def data_process(input_path,train=False):
         for paragraph in topic:
             context_text=paragraph["context"].lower()
             for qas in paragraph["qas"]:
-                all_count+=1
+
                 question_text=qas["question"].lower()
-                if len(qas["answers"])==0:
-                    print("answer=0")
-                    continue
                 a=qas["answers"][0]
                 answer_text=a["text"].lower()
                 answer_start=a["answer_start"]
                 answer_end=a["answer_start"]+len(a["text"])
-
-                if len(question_text)<=5:#ゴミデータ(10個程度)は削除
-                    continue
+                interro=interro_data[all_count]["interro"]
+                non_interro=interro_data[all_count]["non_interro"]
+                all_count+=1
 
                 #contextの中からanswerが含まれる文を見つけ出す
                 sentence_text=answer_find(context_text,answer_start,answer_end)
@@ -89,45 +94,79 @@ def data_process(input_path,train=False):
                 sentence_text=" ".join(tokenize(sentence_text))
                 answer_text=" ".join(tokenize(answer_text))
 
-                questions.append(question_text)
+                #ゴミデータ(10個程度)は削除
+                if len(question_text)<=5:
+                    continue
+                #テキストとノンストップワードが一つも重複してないものは除去
+                if check_overlap(sentence_text,question_text,stop_words)==False:
+                    continue
+                #疑問詞がないものは削除
+                if interro=="":
+                    continue
+
+                if use_interro:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro])
+
                 sentences.append(sentence_text)
+                questions.append(question_text)
                 answers.append(answer_text)
 
+    print(all_count)
+    print(len(sentences))
 
-    if train==True:
-        with open("data/squad-src-train.txt","w")as f:
-            for line in sentences:
-                f.write(line+"\n")
-        with open("data/squad-tgt-train.txt","w")as f:
-            for line in questions:
-                f.write(line+"\n")
 
-    if train==False:
-        random_list=list(range(len(questions)))
-        random.shuffle(random_list)
-        val_num=int(len(random_list)*0.5)
-        with open("data/squad-src-val.txt","w")as f:
-            for line in sentences[0:val_num]:
-                f.write(line+"\n")
-        with open("data/squad-tgt-val.txt","w")as f:
-            for line in questions[0:val_num]:
-                f.write(line+"\n")
-        with open("data/squad-src-test.txt","w")as f:
-            for line in sentences[val_num:]:
-                f.write(line+"\n")
-        with open("data/squad-tgt-test.txt","w")as f:
-            for line in questions[val_num:]:
-                f.write(line+"\n")
+    if use_interro==False:
+        if train==True:
+            with open("data/squad-src-train.txt","w")as f:
+                for i in range(len(sentences)):
+                    f.write(sentences[i]+"\n")
+            with open("data/squad-tgt-train.txt","w")as f:
+                for i in range(len(sentences)):
+                    f.write(questions[i]+"\n")
+
+        if train==False:
+            random_list=list(range(len(questions)))
+            random.shuffle(random_list)
+            val_num=int(len(random_list)*0.5)
+            with open("data/squad-src-val.txt","w")as f:
+                for i in random_list[0:val_num]:
+                    f.write(sentences[i]+"\n")
+            with open("data/squad-tgt-val.txt","w")as f:
+                for i in random_list[0:val_num]:
+                    f.write(sentences[i]+"\n")
+            with open("data/squad-src-test.txt","w")as f:
+                for i in random_list[val_num:]:
+                    f.write(sentences[i]+"\n")
+            with open("data/squad-tgt-test.txt","w")as f:
+                for i in random_list[val_num:]:
+                    f.write(questions[i]+"\n")
+    else:
+        if train==True:
+            with open("data/squad-src-train-interro.txt","w")as f:
+                for i in range(len(sentences)):
+                    f.write(sentences[i]+"\n")
+
+        if train==False:
+            random_list=list(range(len(questions)))
+            random.shuffle(random_list)
+            val_num=int(len(random_list)*0.5)
+            with open("data/squad-src-val-interro.txt","w")as f:
+                for i in random_list[0:val_num]:
+                    f.write(sentences[i]+"\n")
+            with open("data/squad-src-test-interro.txt","w")as f:
+                for i in random_list[val_num:]:
+                    f.write(sentences[i]+"\n")
 
 
 if __name__ == "__main__":
-    #main
     random.seed(0)
 
     data_process(input_path="data/squad-dev-v1.1.json",
+                interro_path="data/squad-interro-dev.json",
                 train=False
                 )
 
     data_process(input_path="data/squad-train-v1.1.json",
+                interro_path="data/squad-interro-train.json",
                 train=True
                 )

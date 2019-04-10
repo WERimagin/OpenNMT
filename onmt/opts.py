@@ -180,7 +180,7 @@ def model_opts(parser):
 
     # Generator and loss options.
 
-    #copy-attention
+    #copy-attention(pointer-Generator Network)を使用するか
     group.add('--copy_attn', '-copy_attn', action="store_true",
               help='Train copy attention layer.')
     group.add('--copy_attn_type', '-copy_attn_type',
@@ -438,7 +438,7 @@ def train_opts(parser):
                    "See README for specific formatting instructions.")
 
     # Fixed word vectors
-    #単語ベクトルを更新するか否か
+    #単語ベクトルを更新するか否か(fixを修正するととるか、固定するととるか)
     group.add('--fix_word_vecs_enc', '-fix_word_vecs_enc',
               action='store_true',
               help="Fix word embeddings on the encoder side.")

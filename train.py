@@ -12,6 +12,10 @@ opennmt.trainer.trainer.train
     models.model
         rnn_encoder
         rnn_decoder
+
+モデルのセーブ
+opennmt.trainer.Trainer model.saver
+
 """
 
 import os
