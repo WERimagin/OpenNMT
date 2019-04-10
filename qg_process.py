@@ -58,8 +58,8 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=True
-
+    use_interro=False
+    
     questions=[]
     answers=[]
     sentences=[]
@@ -133,7 +133,7 @@ def data_process(input_path,interro_path,train=False):
                     f.write(sentences[i]+"\n")
             with open("data/squad-tgt-val.txt","w")as f:
                 for i in random_list[0:val_num]:
-                    f.write(sentences[i]+"\n")
+                    f.write(questions[i]+"\n")
             with open("data/squad-src-test.txt","w")as f:
                 for i in random_list[val_num:]:
                     f.write(sentences[i]+"\n")
