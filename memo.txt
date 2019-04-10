@@ -41,15 +41,25 @@ python3 train.py \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -gpu_ranks 3 -world_size 1 \
 -valid_steps 500 \
--save_checkpoint_steps 500
+-save_checkpoint_steps 500 \
+-log_file "log.txt"
 
 
 python translate.py \
--model model_data/demo-model_step_5500.pt \
--src data/src-val.txt \
+-model model_data/demo-model_step_10500.pt \
+-src data/short_fra_val.txt \
 -output pred.txt \
 -replace_unk -verbose
 
+
+python translate.py \
+-model model_data/demo-model_step_7000.pt \
+-src data/squad-src-val.txt \
+-output pred.txt \
+-replace_unk -verbose
+
+python bleu \
+-src data/
 
 preprocess
 #小文字化
@@ -96,3 +106,7 @@ train
 -report_every 50
 #テストの間隔
 -valid_steps 10000 -> 2000
+#テスト時に、UNKを最もスコアの高いもので置換
+-replace_unk
+#テスト時に、それぞれの文につきスコアを表示
+-verbose
