@@ -4,7 +4,7 @@ python3 preprocess.py \
 -valid_src data/squad-src-val.txt \
 -valid_tgt data/squad-tgt-val.txt \
 -save_data data/demo \
--lower
+-lower -dynamic_dict -share_vocab
 
 python3 preprocess.py \
 -train_src data/squad-src-train-noninterro.txt \
@@ -23,10 +23,11 @@ python3 train.py \
 -data data/demo \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+-share_embeddings -share_decoder_embeddings \
 -gpu_ranks 3 -world_size 1 \
--share_embeddings -fix_word_vecs_enc -fix_word_vecs_dec \
 -copy_attn -copy_attn_type general \
 -coverage_attn -lambda_coverage 1
+
 
 
 #transformer
@@ -42,18 +43,13 @@ python train.py \
 -world_size 1 -gpu_ranks 3
 
 
-python translate.py \
--model model_data/demo-model_step_10500.pt \
--src data/short_fra_val.txt \
--output pred.txt \
--replace_unk -verbose
 
 
 python translate.py \
--model model_data/demo-model_step_6500.pt \
--src data/squad-src-val-overlap.txt \
+-src data/squad-src-val-noninterro.txt \
 -output pred.txt \
--replace_unk -verbose
+-replace_unk -verbose \
+-model model_data/demo-model_step_9500.pt
 
 python bleu.py \
 -src data/squad-src-val-overlap.txt \
@@ -61,43 +57,55 @@ python bleu.py \
 -pred squad-pred-val-overlap.txt
 
 python bleu.py \
--src data/squad-src-val-overlap.txt \
--tgt data/squad-tgt-val-overlap.txt \
+-src data/squad-src-val-noninterro.txt \
+-tgt data/squad-tgt-val-noninterro.txt \
 -pred pred.txt
 
 preprocess
-#小文字化
---lower True
-#文の長さ、要指定
---src_seq_length 50
---tgt_seq_length 50
+  #小文字化
+  --lower True
+  #文の長さ、要指定
+  --src_seq_length 50
+  --tgt_seq_length 50
+  #単語辞書の共有
+  -share_vocab
 
-train
+
 #エンコーダーのタイプ。デフォルトはrnnだが双方向にするべき
 --encoder_type brnn
 #層の数。デフォルトは2
 --layer
 #RNNのタイプ。デフォルトはLSTM、要検討
 --rnn_type GRU
-#gpuの番号
---gpu_ranks
-#単語埋め込みサイズ
--word_vec_size 500
-#学習済み単語ベクトルのパス
---pre_word_vecs_enc
---pre_word_vecs_dec
-#学習ずみ単語ベクトルの更新
---fix_word_vecs_enc
+#gpu
+  #gpuの番号
+  --gpu_ranks
+  #gpuの数
+  -world_size
+
+単語ベクトル
+  #単語埋め込みサイズ
+  -word_vec_size 500
+  #学習済み単語ベクトルのパス
+  --pre_word_vecs_enc
+  --pre_word_vecs_dec
+  #学習ずみ単語ベクトルの固定
+  --fix_word_vecs_enc
+  #エンコーダーとデコーダーで単語ベクトルの共有
+  -share_embeddings
+  #デコーダーのinputとoutputの共有
+  -share_decoder_embeddings
 #バッチサイズ
 --batch_size 64 -> 32
-#optimizer
---optim
-#学習率
--learning_rate
-#学習率減衰,adamなら不要
--learning_rate_decay
---gpu_ranks
---world_size
+#最適化機
+  #optimizer
+  --optim
+  #学習率
+  -learning_rate
+  #学習率減衰,adamなら不要
+  -learning_rate_decay
+  --gpu_ranks
+  --world_size
 #隠れ状態のサイズ
 --rnn_size 500
 #ログファイルのパス
@@ -110,21 +118,26 @@ train
 -report_every 50
 #テストの間隔
 -valid_steps 10000 -> 2000
-#テスト時に、UNKを最もスコアの高いもので置換
--replace_unk
-#テスト時に、それぞれの文につきスコアを表示
--verbose
-#beam
---beam_size 5
+
+#テスト
+  #テスト時に、UNKを最もスコアの高いもので置換
+  -replace_unk
+  #テスト時に、それぞれの文につきスコアを表示
+  -verbose
+  #beam
+  --beam_size 5
 #最初のウォームアップのステップ
 -warmup_steps
 #gradの値がこの値を超えたら正規化する
 -max_grad_norm
-#単語ベクトルの共有
--share_embeddings
-#copy-attnを使用するかとその種類
--copy_attn
--copy_attn_type None
-#coverageとラムダの値
--coverage_attn
--lambda_coverage 1(論文の値)
+
+コピー機構
+  #copy-attnを使用するかとその種類
+  -copy_attn
+  -copy_attn_type None
+  #sentenceについて辞書の作成。コピー機構に必要
+  -dynamic_dict
+カバレッジ
+  #coverageとラムダの値
+  -coverage_attn
+  -lambda_coverage 1(論文の値)
