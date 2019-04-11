@@ -98,13 +98,15 @@ def data_process(input_path,interro_path,train=False):
                 if len(question_text)<=5:
                     continue
 
-                if False:
+                if True:
                     #テキストとノンストップワードが一つも重複してないものは除去
                     if check_overlap(sentence_text,question_text,stop_words)==False:
                         continue
-                #疑問詞がないものは削除
-                if interro=="":
-                    continue
+
+                if False:
+                    #疑問詞がないものは削除
+                    if interro=="":
+                        continue
 
                 if use_interro:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
@@ -116,7 +118,7 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
-    setting="-overlap"
+    setting="-noninterro"
 
     if use_interro==False:
         if train==True:
