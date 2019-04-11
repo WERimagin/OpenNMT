@@ -38,8 +38,8 @@ class ModelSaverBase(object):
         if keep_checkpoint > 0:
             self.checkpoint_queue = deque([], maxlen=keep_checkpoint)
 
-    def save(self, step, moving_average=None):
-    #def save(self, step, moving_average=None,valid_stats=None):
+    #def save(self, step, moving_average=None):
+    def save(self, step, moving_average=None,valid_stats=None):
         """Main entry point for model saver
 
         It wraps the `_save` method with checks and apply `keep_checkpoint`
@@ -56,8 +56,8 @@ class ModelSaverBase(object):
         else:
             save_model = self.model
 
-        chkpt, chkpt_name = self._save(step, save_model)
-        #chkpt, chkpt_name = self._save(step, save_model,valid_stats)
+        #chkpt, chkpt_name = self._save(step, save_model)
+        chkpt, chkpt_name = self._save(step, save_model,valid_stats)
         self.last_saved_step = step
 
         if moving_average:
@@ -98,8 +98,8 @@ class ModelSaverBase(object):
 class ModelSaver(ModelSaverBase):
     """Simple model saver to filesystem"""
 
-    def _save(self, step, model):
-    #def _save(self, step, model,valid_stats=None):
+    #def _save(self, step, model):
+    def _save(self, step, model,valid_stats=None):
         real_model = (model.module
                       if isinstance(model, nn.DataParallel)
                       else model)
@@ -122,8 +122,8 @@ class ModelSaver(ModelSaverBase):
         #self.log('Validation perplexity: %g' % valid_stats.ppl())
         #self.log('Validation accuracy: %g' % valid_stats.accuracy())
 
-        logger.info("Saving checkpoint %s_step_%d_ppl_%g.pt" % (self.base_path, step))
-        #logger.info("Saving checkpoint %s_step_%d_ppl_%g.pt" % (self.base_path, step, valid_stats.ppl()))
+        #logger.info("Saving checkpoint %s_step_%d_ppl_%g.pt" % (self.base_path, step))
+        logger.info("Saving checkpoint %s_step_%d_ppl_%g.pt" % (self.base_path, step, valid_stats.ppl()))
         checkpoint_path = '%s_step_%d.pt' % (self.base_path, step)
         torch.save(checkpoint, checkpoint_path)
         return checkpoint, checkpoint_path

@@ -30,3 +30,97 @@
 [2019-04-09 16:49:02,262 INFO]  * reloading data/demo.train.0.pt.
 [2019-04-09 16:49:03,566 INFO]  * tgt vocab size: 36176.
 [2019-04-09 16:49:03,717 INFO]  * src vocab size: 50002.
+[2019-04-11 14:03:31,289 INFO]  * src vocab size = 50002
+[2019-04-11 14:03:31,290 INFO]  * tgt vocab size = 36176
+[2019-04-11 14:03:31,290 INFO] Building model...
+[2019-04-11 14:03:32,309 INFO] NMTModel(
+  (encoder): RNNEncoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(50002, 300, padding_idx=1)
+        )
+      )
+    )
+    (rnn): LSTM(300, 300, num_layers=2, dropout=0.3, bidirectional=True)
+  )
+  (decoder): InputFeedRNNDecoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(36176, 300, padding_idx=1)
+        )
+      )
+    )
+    (dropout): Dropout(p=0.3)
+    (rnn): StackedLSTM(
+      (dropout): Dropout(p=0.3)
+      (layers): ModuleList(
+        (0): LSTMCell(900, 600)
+        (1): LSTMCell(600, 600)
+      )
+    )
+    (attn): GlobalAttention(
+      (linear_in): Linear(in_features=600, out_features=600, bias=False)
+      (linear_out): Linear(in_features=1200, out_features=600, bias=False)
+    )
+  )
+  (generator): Sequential(
+    (0): Linear(in_features=600, out_features=36176, bias=True)
+    (1): Cast()
+    (2): LogSoftmax()
+  )
+)
+[2019-04-11 14:03:32,310 INFO] encoder: 18610200
+[2019-04-11 14:03:32,310 INFO] decoder: 40164176
+[2019-04-11 14:03:32,310 INFO] * number of parameters: 58774376
+[2019-04-11 14:03:32,317 INFO] Starting training on CPU, could be very slow
+[2019-04-11 14:03:32,317 INFO] Start training loop and validate every 500 steps...
+[2019-04-11 14:03:33,691 INFO] Loading dataset from data/demo.train.0.pt, number of examples: 74622
+[2019-04-11 14:04:25,204 INFO]  * src vocab size = 50002
+[2019-04-11 14:04:25,204 INFO]  * tgt vocab size = 36176
+[2019-04-11 14:04:25,204 INFO] Building model...
+[2019-04-11 14:04:26,251 INFO] NMTModel(
+  (encoder): RNNEncoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(50002, 300, padding_idx=1)
+        )
+      )
+    )
+    (rnn): LSTM(300, 300, num_layers=2, dropout=0.3, bidirectional=True)
+  )
+  (decoder): InputFeedRNNDecoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(36176, 300, padding_idx=1)
+        )
+      )
+    )
+    (dropout): Dropout(p=0.3)
+    (rnn): StackedLSTM(
+      (dropout): Dropout(p=0.3)
+      (layers): ModuleList(
+        (0): LSTMCell(900, 600)
+        (1): LSTMCell(600, 600)
+      )
+    )
+    (attn): GlobalAttention(
+      (linear_in): Linear(in_features=600, out_features=600, bias=False)
+      (linear_out): Linear(in_features=1200, out_features=600, bias=False)
+    )
+  )
+  (generator): Sequential(
+    (0): Linear(in_features=600, out_features=36176, bias=True)
+    (1): Cast()
+    (2): LogSoftmax()
+  )
+)
+[2019-04-11 14:04:26,252 INFO] encoder: 18610200
+[2019-04-11 14:04:26,252 INFO] decoder: 40164176
+[2019-04-11 14:04:26,252 INFO] * number of parameters: 58774376
+[2019-04-11 14:04:26,257 INFO] Starting training on CPU, could be very slow
+[2019-04-11 14:04:26,257 INFO] Start training loop and validate every 500 steps...
+[2019-04-11 14:04:27,410 INFO] Loading dataset from data/demo.train.0.pt, number of examples: 74622

@@ -252,13 +252,13 @@ class Trainer(object):
                 #報告
                 self._report_step(self.optim.learning_rate(),step, valid_stats=valid_stats)
 
-            #モデルのセーブ
-            #validの中に入れ、valid_statsを渡す
-            if (self.model_saver is not None
-                and (save_checkpoint_steps != 0
-                     and step % save_checkpoint_steps == 0)):
-                self.model_saver.save(step, moving_average=self.moving_average)
-                #self.model_saver.save(step, moving_average=self.moving_average, valid_stats=valid_stats)
+                #モデルのセーブ
+                #validの中に入れ、valid_statsを渡す
+                if (self.model_saver is not None
+                    and (save_checkpoint_steps != 0
+                         and step % save_checkpoint_steps == 0)):
+                    #self.model_saver.save(step, moving_average=self.moving_average)
+                    self.model_saver.save(step, moving_average=self.moving_average, valid_stats=valid_stats)
 
             #学習終了
             if train_steps > 0 and step >= train_steps:
