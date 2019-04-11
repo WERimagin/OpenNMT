@@ -123,8 +123,8 @@ class ModelSaver(ModelSaverBase):
         #self.log('Validation accuracy: %g' % valid_stats.accuracy())
 
         #logger.info("Saving checkpoint %s_step_%d_ppl_%g.pt" % (self.base_path, step))
-        logger.info("Saving checkpoint %s_step_%d_ppl_%g.pt" % (self.base_path, step, valid_stats.ppl()))
-        checkpoint_path = '%s_step_%d_ppl_%g.pt' % (self.base_path, step, valid_stats.ppl())
+        logger.info("Saving checkpoint %s_step_%d_ppl_%g_acc_%g.pt" % (self.base_path, step, valid_stats.ppl(),valid_stats.accuracy()))
+        checkpoint_path = '%s_step_%d_ppl_%g_acc_%g.pt' % (self.base_path, step, valid_stats.ppl(),valid_stats.accuracy())
         torch.save(checkpoint, checkpoint_path)
         return checkpoint, checkpoint_path
 

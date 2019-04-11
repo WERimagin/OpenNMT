@@ -25,6 +25,7 @@ python3 train.py \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -gpu_ranks 3 -world_size 1
 
+#transformer
 python train.py \
 -data data/demo -save_model model_data/demo-model \
 -layers 6 -rnn_size 512 -word_vec_size 512 -transformer_ff 2048 -heads 8  \
