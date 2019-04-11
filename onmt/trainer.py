@@ -241,19 +241,24 @@ class Trainer(object):
             if valid_iter is not None and step % valid_steps == 0:
                 if self.gpu_verbose_level > 0:
                     logger.info('GpuRank %d: validate step %d' % (self.gpu_rank, step))
+                #テスト
                 valid_stats = self.validate(valid_iter, moving_average=self.moving_average)
                 if self.gpu_verbose_level > 0:
                     logger.info('GpuRank %d: gather valid stat step %d' % (self.gpu_rank, step))
+                #ロスの計算？
                 valid_stats = self._maybe_gather_stats(valid_stats)
                 if self.gpu_verbose_level > 0:
                     logger.info('GpuRank %d: report stat step %d' % (self.gpu_rank, step))
+                #報告
                 self._report_step(self.optim.learning_rate(),step, valid_stats=valid_stats)
 
             #モデルのセーブ
+            #validの中に入れ、valid_statsを渡す
             if (self.model_saver is not None
                 and (save_checkpoint_steps != 0
                      and step % save_checkpoint_steps == 0)):
                 self.model_saver.save(step, moving_average=self.moving_average)
+                #self.model_saver.save(step, moving_average=self.moving_average, valid_stats=valid_stats)
 
             #学習終了
             if train_steps > 0 and step >= train_steps:

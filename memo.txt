@@ -6,6 +6,14 @@ python3 preprocess.py \
 -save_data data/demo \
 -lower
 
+python3 preprocess.py \
+-train_src data/squad-src-train-overlap.txt \
+-train_tgt data/squad-tgt-train-overlap.txt \
+-valid_src data/squad-src-val-overlap.txt \
+-valid_tgt data/squad-tgt-val-overlap.txt \
+-save_data data/demo \
+-lower
+
 python embeddings_to_torch.py \
 -emb_file_both "../data/glove.840B.300d.txt" \
 -dict_file "data/demo.vocab.pt" \
@@ -15,8 +23,18 @@ python3 train.py \
 -data data/demo \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
--gpu_ranks 3 -world_size 1 \
--log_file "log.txt"
+-gpu_ranks 3 -world_size 1
+
+python train.py \
+-data data/demo -save_model model_data/demo-model \
+-layers 6 -rnn_size 512 -word_vec_size 512 -transformer_ff 2048 -heads 8  \
+-encoder_type transformer -decoder_type transformer -position_encoding \
+-train_steps 200000  -max_generator_batches 2 -dropout 0.1 \
+-batch_size 4096 -batch_type tokens -normalization tokens  -accum_count 2 \
+-optim adam -learning_rate 2 -adam_beta2 0.998 -decay_method noam  \
+-max_grad_norm 0 -param_init 0  -param_init_glorot \
+-label_smoothing 0.1 -valid_steps 5000 -save_checkpoint_steps 5000 -warmup_steps 8000 \
+-world_size 1 -gpu_ranks 3
 
 
 python translate.py \
@@ -27,14 +45,19 @@ python translate.py \
 
 
 python translate.py \
--model model_data/demo-model_step_6000.pt \
--src data/squad-src-val.txt \
+-model model_data/demo-model_step_6500.pt \
+-src data/squad-src-val-overlap.txt \
 -output pred.txt \
 -replace_unk -verbose
 
 python bleu.py \
--src data/squad-src-val.txt \
--tgt data/squad-tgt-val.txt \
+-src data/squad-src-val-overlap.txt \
+-tgt data/squad-tgt-val-overlap.txt \
+-pred squad-pred-val-overlap.txt
+
+python bleu.py \
+-src data/squad-src-val-overlap.txt \
+-tgt data/squad-tgt-val-overlap.txt \
 -pred pred.txt
 
 preprocess
@@ -86,3 +109,9 @@ train
 -replace_unk
 #テスト時に、それぞれの文につきスコアを表示
 -verbose
+#beam
+--beam_size 5
+#最初のウォームアップのステップ
+-warmup_steps
+#gradの値がこの値を超えたら正規化する
+-max_grad_norm

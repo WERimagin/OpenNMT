@@ -99,7 +99,7 @@ class ReportMgrBase(object):
     def _report_step(self, *args, **kwargs):
         raise NotImplementedError()
 
-
+#数値の記録を行う
 class ReportMgr(ReportMgrBase):
     def __init__(self, report_every, start_time=-1., tensorboard_writer=None):
         """
@@ -136,6 +136,7 @@ class ReportMgr(ReportMgrBase):
 
         return report_stats
 
+    #実際に数値の記録を行う関数
     def _report_step(self, lr, step, train_stats=None, valid_stats=None):
         """
         See base class method `ReportMgrBase.report_step`.
