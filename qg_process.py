@@ -103,7 +103,7 @@ def data_process(input_path,interro_path,train=False):
                     if check_overlap(sentence_text,question_text,stop_words)==False:
                         continue
 
-                if False:
+                if True:
                     #疑問詞がないものは削除
                     if interro=="":
                         continue
@@ -118,7 +118,7 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
-    setting="-noninterro"
+    setting=""
 
     if use_interro==False:
         if train==True:

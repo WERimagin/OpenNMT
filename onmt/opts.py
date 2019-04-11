@@ -120,6 +120,7 @@ def model_opts(parser):
               help="Size of windows in the cnn, the kernel_size is "
                    "(cnn_kernel_width, 1) in conv layer")
 
+    #coverageと関係ありそう？
     group.add('--input_feed', '-input_feed', type=int, default=1,
               help="Feed the context vector at each time step as "
                    "additional input (via concatenation with the word "
@@ -183,6 +184,8 @@ def model_opts(parser):
     #copy-attention(pointer-Generator Network)を使用するか
     group.add('--copy_attn', '-copy_attn', action="store_true",
               help='Train copy attention layer.')
+
+    #copy-attnの種類。Noneだと使用しない
     group.add('--copy_attn_type', '-copy_attn_type',
               type=str, default=None,
               choices=['dot', 'general', 'mlp', 'none'],
@@ -480,7 +483,7 @@ def train_opts(parser):
               help="Maximum batches of words in a sequence to run "
                    "the generator on in parallel. Higher is faster, but "
                    "uses more memory. Set to 0 to disable.")
-    group.add('--train_steps', '-train_steps', type=int, default=20000,
+    group.add('--train_steps', '-train_steps', type=int, default=15000,
               help='Number of training steps')
     group.add('--single_pass', '-single_pass', action='store_true',
               help="Make a single pass over the training dataset.")
