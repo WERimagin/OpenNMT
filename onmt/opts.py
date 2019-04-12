@@ -292,6 +292,8 @@ def preprocess_opts(parser):
     group.add('--tgt_words_min_frequency',
               '-tgt_words_min_frequency', type=int, default=0)
 
+    #
+    #コピー機構の時に重要
     group.add('--dynamic_dict', '-dynamic_dict', action='store_true',
               help="Create dynamic dictionaries")
 
@@ -633,6 +635,8 @@ def translate_opts(parser):
     group.add('--fp32', '-fp32', action='store_true',
               help="Force the model to be in FP32 "
                    "because FP16 is very slow on GTX1080(ti).")
+
+    #ensamble
     group.add('--avg_raw_probs', '-avg_raw_probs', action='store_true',
               help="If this is set, during ensembling scores from "
                    "different models will be combined by averaging their "
@@ -642,6 +646,8 @@ def translate_opts(parser):
                    "zero probability.")
 
     group = parser.add_argument_group('Data')
+
+    #データの種類。デフォはテキスト
     group.add('--data_type', '-data_type', default="text",
               help="Type of the source input. Options: [text|img].")
 
@@ -663,18 +669,26 @@ def translate_opts(parser):
     group.add('--output', '-output', default='pred.txt',
               help="Path to output the predictions (each line will "
                    "be the decoded sequence")
+
+    #bleuスコアの報告
     group.add('--report_bleu', '-report_bleu', action='store_true',
               help="Report bleu score after translation, "
                    "call tools/multi-bleu.perl on command line")
+
+    #rougeの報告
     group.add('--report_rouge', '-report_rouge', action='store_true',
               help="Report rouge 1/2/3/L/SU4 score after translation "
                    "call tools/test_rouge.py on command line")
+
+    #translateにかかった時間の報告
     group.add('--report_time', '-report_time', action='store_true',
               help="Report some translation time metrics")
 
     # Options most relevant to summarization.
+    #dynamic-dictを作る（copy用？）
     group.add('--dynamic_dict', '-dynamic_dict', action='store_true',
               help="Create dynamic dictionaries")
+    #srcとtgtの辞書を共有
     group.add('--share_vocab', '-share_vocab', action='store_true',
               help="Share source and target vocabulary")
 
@@ -694,12 +708,16 @@ def translate_opts(parser):
               help="Random seed")
 
     group = parser.add_argument_group('Beam')
+    #beamサイズ
     group.add('--beam_size', '-beam_size', type=int, default=5,
               help='Beam size')
+    #翻訳の最低の長さと最高の長さ
     group.add('--min_length', '-min_length', type=int, default=0,
               help='Minimum prediction length')
     group.add('--max_length', '-max_length', type=int, default=100,
               help='Maximum prediction length.')
+
+    #非推奨
     group.add('--max_sent_length', '-max_sent_length', action=DeprecateAction,
               help="Deprecated, use `-max_length` instead")
 
@@ -755,6 +773,8 @@ def translate_opts(parser):
               help='Print best attn for each word')
     group.add('--dump_beam', '-dump_beam', type=str, default="",
               help='File to dump beam information to.')
+
+    #n-bestの生成
     group.add('--n_best', '-n_best', type=int, default=1,
               help="If verbose is set, will output the n_best "
                    "decoded sentences")
