@@ -40,8 +40,8 @@ with open(args.pred,"r")as f:
         predicts.append(line.strip())
 
 #srcs=[s.split() for s in targets]
-targets=[t.split() for t in target]
-predicts=[p.split() for p in predict]
+targets=[t.split() for t in targets]
+predicts=[p.split() for p in predicts]
 
 target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
