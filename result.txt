@@ -169,6 +169,26 @@ src_seq_sizeを100に変更し、データ数を増やした
   0.10071842183474895
 }
 
+全てのデータ
+{
+  overlap+noninterro
+  sgdを使用
+  python preprocess.py \
+  -train_src data/squad-src-train-overlap-noninterro.txt \
+  -train_tgt data/squad-tgt-train-overlap-noninterro.txt \
+  -valid_src data/squad-src-val-overlap-noninterro.txt \
+  -valid_tgt data/squad-tgt-val-overlap-noninterro.txt \
+  -save_data data/demo \
+  -lower \
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -gpu_ranks 3 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 10000 -decay_steps 2000
+}
+
 transformerで実験
 ベースを12ポイントになるように調整
 コピーとカバレッジそれぞれで実験

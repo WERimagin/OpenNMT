@@ -1,10 +1,10 @@
 python preprocess.py \
--train_src data/squad-src-train.txt \
--train_tgt data/squad-tgt-train.txt \
--valid_src data/squad-src-val.txt \
--valid_tgt data/squad-tgt-val.txt \
+-train_src data/squad-src-train-overlap-noninterro.txt \
+-train_tgt data/squad-tgt-train-overlap-noninterro.txt \
+-valid_src data/squad-src-val-overlap-noninterro.txt \
+-valid_tgt data/squad-tgt-val-overlap-noninterro.txt \
 -save_data data/demo \
--lower -dynamic_dict -share_vocab
+-lower \
 
 python preprocess.py \
 -train_src data/squad-src-train-du.txt \
@@ -42,7 +42,8 @@ python3 train.py \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -fix_word_vecs_enc -fix_word_vecs_dec \
--gpu_ranks 3 -world_size 1
+-gpu_ranks 3 -world_size 1 \
+-optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 10000 -decay_steps 2000 -train_steps 30000
 
 
 
