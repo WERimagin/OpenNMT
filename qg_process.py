@@ -58,7 +58,7 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=True
+    use_interro=False
 
     questions=[]
     answers=[]
@@ -98,12 +98,12 @@ def data_process(input_path,interro_path,train=False):
                 if len(question_text)<=5:
                     continue
 
-                if True:
+                if False:
                     #テキストとノンストップワードが一つも重複してないものは除去
                     if check_overlap(sentence_text,question_text,stop_words)==False:
                         continue
 
-                if True:
+                if False:
                     #疑問詞がないものは削除
                     if interro=="":
                         continue
@@ -118,7 +118,7 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
-    setting=""
+    setting="-overlap-noninterro"
 
     if use_interro==False:
         if train==True:

@@ -67,17 +67,17 @@ python translate.py \
 python bleu.py \
 -src data/squad-src-val-du.txt \
 -tgt data/squad-tgt-val-du.txt \
--pred pred.txt
+-pred squad-pred-val-du.txt
 
 python bleu.py \
 -src data/squad-src-val-interro.txt \
 -tgt data/squad-tgt-val.txt \
 -pred squad-pred-val-interro.txt
 
-python qgevalcap/eval.py
+python2 qgevalcap/eval.py \
 -src data/squad-src-val-du.txt \
 -tgt data/squad-tgt-val-du.txt \
--out pred.txt
+-out squad-pred-val-du.txt
 
 preprocess
   #小文字化

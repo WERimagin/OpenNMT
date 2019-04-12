@@ -12,6 +12,24 @@ import random
 import json
 import argparse
 
+def compute_score(t,p):
+    t_dict=collections.Counter(t)
+    p_dict=collections.Counter(p)
+    common=sum((t_dict & p_dict).values())
+    return common
+
+def compute_score_refs(ts,p):
+    sum_dict=collections.Counter()
+    p_dict=collections.Counter(p)
+    for t in ts:
+        t_dict=collections.Counter(t)
+        sum_dict=(t_dict & p_dict) | sum_dict
+    common=sum(sum_dict.values())
+    return common
+
+def ngram(words, n):
+    return [tuple(words[i:i+n]) for i in range(len(words)-n+1)]]
+    
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-src", type=str, default="src.txt", help="input model epoch")
