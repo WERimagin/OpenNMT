@@ -50,6 +50,7 @@ def main(opt, device_id):
     assert len(opt.accum_count) == len(opt.accum_steps), \
         'Number of accum_count values must match number of accum_steps'
     # Load checkpoint if we resume from a previous training.
+    #checkpointがある場合そこから再開
     if opt.train_from:
         logger.info('Loading checkpoint from %s' % opt.train_from)
         checkpoint = torch.load(opt.train_from,
@@ -103,8 +104,7 @@ def main(opt, device_id):
         opt, device_id, model, fields, optim, model_saver=model_saver)
 
     train_iter = build_dataset_iter("train", fields, opt)
-    valid_iter = build_dataset_iter(
-        "valid", fields, opt, is_train=False)
+    valid_iter = build_dataset_iter("valid", fields, opt, is_train=False)
 
     if len(opt.gpu_ranks):
         logger.info('Starting training on GPU: %s' % opt.gpu_ranks)

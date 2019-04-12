@@ -6,22 +6,6 @@ python preprocess.py \
 -save_data data/demo \
 -lower \
 
-python preprocess.py \
--train_src data/squad-src-train-du.txt \
--train_tgt data/squad-tgt-train-du.txt \
--valid_src data/squad-src-val-du.txt \
--valid_tgt data/squad-tgt-val-du.txt \
--save_data data/demo \
--lower
-
-python preprocess.py \
--train_src data/squad-src-train-interro.txt \
--train_tgt data/squad-tgt-train.txt \
--valid_src data/squad-src-val-interro.txt \
--valid_tgt data/squad-tgt-val.txt \
--save_data data/demo \
--lower -src_vocab_size 45000 -tgt_vocab_size 28000
-
 python embeddings_to_torch.py \
 -emb_file_both "../data/glove.840B.300d.txt" \
 -dict_file "data/demo.vocab.pt" \
@@ -60,9 +44,9 @@ python train.py \
 -world_size 1 -gpu_ranks 3
 
 python translate.py \
--src data/squad-src-val-du.txt \
+-src data/squad-src-val-overlap-noninterro.txt \
 -output pred.txt \
--replace_unk -verbose \
+-replace_unk -verbose -beam_size 5 \
 -model model_data/demo-model_step_9000_ppl_31.2368_acc_44.1975.pt
 
 python bleu.py \
@@ -71,9 +55,14 @@ python bleu.py \
 -pred squad-pred-val-du.txt
 
 python bleu.py \
--src data/squad-src-val-interro.txt \
--tgt data/squad-tgt-val.txt \
--pred squad-pred-val-interro.txt
+-src data/squad-src-val-overlap-noninterro.txt \
+-tgt data/squad-tgt-val-overlap-noninterro.txt \
+-pred pred.txt
+
+python2 qgevalcap/eval.py \
+-src data/squad-src-val-overlap-noninterro.txt \
+-tgt data/squad-tgt-val-overlap-noninterro.txt \
+-out squad-pred-val-overlap-noninterro.txt
 
 python2 qgevalcap/eval.py \
 -src data/squad-src-val-du.txt \

@@ -122,11 +122,13 @@ def data_process(input_path,interro_path,train=False):
 
     if use_interro==False:
         if train==True:
+            random_list=list(range(len(questions)))
+            random.shuffle(random_list)
             with open("data/squad-src-train{}.txt".format(setting),"w")as f:
-                for i in range(len(sentences)):
+                for i in random_list:
                     f.write(sentences[i]+"\n")
             with open("data/squad-tgt-train{}.txt".format(setting),"w")as f:
-                for i in range(len(sentences)):
+                for i in random_list:
                     f.write(questions[i]+"\n")
 
         if train==False:
