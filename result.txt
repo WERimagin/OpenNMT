@@ -135,7 +135,38 @@ duらのデータを使用
   0.30249012971662864
   0.22645192962571192
   0.17202424167198602
+}
 
+src_seq_sizeを100に変更し、データ数を増やした
+{
+  duらのデータを使用
+  ここから、src_seq_size 100,tgt_seq_size 50、enc_voc_size 45000,dec_vocab_size 28000に固定
+  データサイズ:62000->70000
+  python preprocess.py \
+  -train_src data/squad-src-train-du.txt \
+  -train_tgt data/squad-tgt-train-du.txt \
+  -valid_src data/squad-src-val-du.txt \
+  -valid_tgt data/squad-tgt-val-du.txt \
+  -save_data data/demo \
+  -lower
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -gpu_ranks 3 -world_size 1
+
+  12000
+  0.3818032773669874
+  0.22207359215281677
+  0.14836247284785528
+  0.1038565408658504
+  10000
+  0.3797911121140998
+  0.21980389442712892
+  0.1454957579114939
+  0.10071842183474895
 }
 
 transformerで実験

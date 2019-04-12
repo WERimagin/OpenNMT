@@ -12,7 +12,7 @@ python preprocess.py \
 -valid_src data/squad-src-val-du.txt \
 -valid_tgt data/squad-tgt-val-du.txt \
 -save_data data/demo \
--lower -src_vocab_size 45000 -tgt_vocab_size 28000 \
+-lower
 
 python preprocess.py \
 -train_src data/squad-src-train-interro.txt \
@@ -59,7 +59,7 @@ python train.py \
 -world_size 1 -gpu_ranks 3
 
 python translate.py \
--src data/squad-src-val-interro.txt \
+-src data/squad-src-val-du.txt \
 -output pred.txt \
 -replace_unk -verbose \
 -model model_data/demo-model_step_9000_ppl_31.2368_acc_44.1975.pt
@@ -67,12 +67,17 @@ python translate.py \
 python bleu.py \
 -src data/squad-src-val-du.txt \
 -tgt data/squad-tgt-val-du.txt \
--pred squad-pred-val-du.txt
+-pred pred.txt
 
 python bleu.py \
 -src data/squad-src-val-interro.txt \
 -tgt data/squad-tgt-val.txt \
 -pred squad-pred-val-interro.txt
+
+python qgevalcap/eval.py
+-src data/squad-src-val-du.txt \
+-tgt data/squad-tgt-val-du.txt \
+-pred pred.txt
 
 preprocess
   #小文字化
