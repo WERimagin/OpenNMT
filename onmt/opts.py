@@ -325,7 +325,8 @@ def preprocess_opts(parser):
     group = parser.add_argument_group('Random')
 
     #データをシャッフルする,torchでは1
-    group.add('--shuffle', '-shuffle', type=int, default=1,
+    #実装されていないらしい...
+    group.add('--shuffle', '-shuffle', type=int, default=0,
               help="Shuffle data")
     group.add('--seed', '-seed', type=int, default=3435,
               help="Random seed")
