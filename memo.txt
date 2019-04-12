@@ -77,7 +77,7 @@ python bleu.py \
 python qgevalcap/eval.py
 -src data/squad-src-val-du.txt \
 -tgt data/squad-tgt-val-du.txt \
--pred pred.txt
+-out pred.txt
 
 preprocess
   #小文字化
