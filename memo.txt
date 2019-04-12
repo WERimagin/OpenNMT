@@ -12,6 +12,14 @@ python preprocess.py \
 -valid_src data/squad-src-val-du.txt \
 -valid_tgt data/squad-tgt-val-du.txt \
 -save_data data/demo \
+-lower -src_vocab_size 45000 -tgt_vocab_size 28000 \
+
+python preprocess.py \
+-train_src data/squad-src-train-interro.txt \
+-train_tgt data/squad-tgt-train.txt \
+-valid_src data/squad-src-val-interro.txt \
+-valid_tgt data/squad-tgt-val.txt \
+-save_data data/demo \
 -lower -src_vocab_size 45000 -tgt_vocab_size 28000
 
 python embeddings_to_torch.py \
@@ -51,7 +59,7 @@ python train.py \
 -world_size 1 -gpu_ranks 3
 
 python translate.py \
--src data/squad-src-val-du.txt \
+-src data/squad-src-val-interro.txt \
 -output pred.txt \
 -replace_unk -verbose \
 -model model_data/demo-model_step_9000_ppl_31.2368_acc_44.1975.pt
@@ -62,9 +70,9 @@ python bleu.py \
 -pred squad-pred-val-du.txt
 
 python bleu.py \
--src data/squad-src-val.txt \
+-src data/squad-src-val-interro.txt \
 -tgt data/squad-tgt-val.txt \
--pred pred.txt
+-pred squad-pred-val-interro.txt
 
 preprocess
   #小文字化
@@ -75,54 +83,67 @@ preprocess
   #単語辞書の共有
   -share_vocab
 
-
-#エンコーダーのタイプ。デフォルトはrnnだが双方向にするべき
---encoder_type brnn
-#層の数。デフォルトは2
---layer
-#RNNのタイプ。デフォルトはLSTM、要検討
---rnn_type GRU
-#gpu
-  #gpuの番号
-  --gpu_ranks
-  #gpuの数
-  -world_size
-
-単語ベクトル
-  #単語埋め込みサイズ
-  -word_vec_size 500
-  #学習済み単語ベクトルのパス
-  --pre_word_vecs_enc
-  --pre_word_vecs_dec
-  #学習ずみ単語ベクトルの固定
-  --fix_word_vecs_enc
-  #エンコーダーとデコーダーで単語ベクトルの共有
-  -share_embeddings
-  #デコーダーのinputとoutputの共有。これには単語ベクトルサイズと隠れ状態サイズが同じである必要がある
-  -share_decoder_embeddings
-#バッチサイズ
---batch_size 64 -> 32
-#最適化機
-  #optimizer
-  --optim
-  #学習率
-  -learning_rate
-  #学習率減衰,adamなら不要
-  -learning_rate_decay
-  --gpu_ranks
-  --world_size
-#隠れ状態のサイズ
---rnn_size 500
-#ログファイルのパス
--log_file
-#評価のステップ
--valid_steps 10000
-#保存のステップ
--checkpoint_steps 5000
-#計算結果のレポートの間隔
--report_every 50
-#テストの間隔
--valid_steps 10000 -> 2000
+train
+  #単語ベクトル
+    #単語埋め込みサイズ
+    -word_vec_size 500
+    #学習済み単語ベクトルのパス
+    --pre_word_vecs_enc
+    --pre_word_vecs_dec
+    #学習ずみ単語ベクトルの固定
+    --fix_word_vecs_enc
+    #エンコーダーとデコーダーで単語ベクトルの共有
+    -share_embeddings
+    #デコーダーのinputとoutputの共有。これには単語ベクトルサイズと隠れ状態サイズが同じである必要がある
+    -share_decoder_embeddings
+  #モデルの設定
+    #エンコーダーのタイプ。デフォルトはrnnだが双方向にするべき
+    --encoder_type brnn
+    #層の数。デフォルトは2
+    --layer
+    #隠れ状態のサイズ
+    --rnn_size 500
+    #RNNのタイプ。デフォルトはLSTM、要検討
+    --rnn_type GRU
+  #データの設定
+    #バッチサイズ
+    --batch_size 64 -> 32
+  #gpu
+    #gpuの番号
+    --gpu_ranks
+    #gpuの数
+    -world_size
+  #最適化機
+    #optimizer
+    --optim
+    #学習率
+    -learning_rate
+    #学習率減衰,adamなら不要
+    -learning_rate_decay
+    --gpu_ranks
+    --world_size
+  コピー機構
+    #copy-attnを使用するかとその種類
+    -copy_attn
+    -copy_attn_type None
+    #sentenceについて辞書の作成。コピー機構に必要
+    -dynamic_dict
+  カバレッジ
+    #coverageとラムダの値
+    -coverage_attn
+    -lambda_coverage 1(論文の値)
+  #ログファイルのパス
+  -log_file
+  #評価のステップ
+  -valid_steps 10000
+  #保存のステップ
+  -checkpoint_steps 5000
+  #計算結果のレポートの間隔
+  -report_every 50
+  #テストの間隔
+  -valid_steps 10000 -> 2000
+  #データのシャッフル
+  -shuffle 0->1
 
 #テスト
   #テスト時に、UNKを最もスコアの高いもので置換
@@ -139,15 +160,3 @@ preprocess
 -warmup_steps
 #gradの値がこの値を超えたら正規化する
 -max_grad_norm
-
-
-コピー機構
-  #copy-attnを使用するかとその種類
-  -copy_attn
-  -copy_attn_type None
-  #sentenceについて辞書の作成。コピー機構に必要
-  -dynamic_dict
-カバレッジ
-  #coverageとラムダの値
-  -coverage_attn
-  -lambda_coverage 1(論文の値)

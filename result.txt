@@ -104,3 +104,41 @@ duらのデータを使用
   0.1360045702569303
   0.09183197851379975
 }
+
+疑問詞付きで実験
+{
+  <SEP> + 疑問詞で実験
+  inputの辞書サイズは45000,outputは28000
+  単語ベクトルは固定
+  コピー、カバレッジはなし
+  python preprocess.py \
+  -train_src data/squad-src-train-interro.txt \
+  -train_tgt data/squad-tgt-train.txt \
+  -valid_src data/squad-src-val-interro.txt \
+  -valid_tgt data/squad-tgt-val.txt \
+  -save_data data/demo \
+  -lower -src_vocab_size 45000 -tgt_vocab_size 28000
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -gpu_ranks 3 -world_size 1
+  12000
+  0.42352199549253094
+  0.29244977053327637
+  0.21881937859302225
+  0.16631600370337762
+  9000
+  0.4365445602660493
+  0.30249012971662864
+  0.22645192962571192
+  0.17202424167198602
+
+}
+
+transformerで実験
+ベースを12ポイントになるように調整
+コピーとカバレッジそれぞれで実験
+answerを付け加えて実験

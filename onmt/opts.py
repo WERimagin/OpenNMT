@@ -49,6 +49,8 @@ def model_opts(parser):
                    "Necessary for non-RNN style models.")
 
     group = parser.add_argument_group('Model-Embedding Features')
+
+    #特徴量の結合の仕方（特徴量とは）
     group.add('--feat_merge', '-feat_merge', type=str, default='concat',
               choices=['concat', 'sum', 'mlp'],
               help="Merge action for incorporating features embeddings. "
@@ -279,9 +281,9 @@ def preprocess_opts(parser):
               help="Path prefix to existing features vocabularies")
 
     #src,tgt_vocabのサイズ。デフォルトで50000
-    group.add('--src_vocab_size', '-src_vocab_size', type=int, default=50000,
+    group.add('--src_vocab_size', '-src_vocab_size', type=int, default=45000,
               help="Size of the source vocabulary")
-    group.add('--tgt_vocab_size', '-tgt_vocab_size', type=int, default=50000,
+    group.add('--tgt_vocab_size', '-tgt_vocab_size', type=int, default=28000,
               help="Size of the target vocabulary")
     group.add('--vocab_size_multiple', '-vocab_size_multiple',
               type=int, default=1,
@@ -303,7 +305,7 @@ def preprocess_opts(parser):
 
     # Truncation options, for text corpus
     group = parser.add_argument_group('Pruning')
-    group.add('--src_seq_length', '-src_seq_length', type=int, default=50,
+    group.add('--src_seq_length', '-src_seq_length', type=int, default=100,
               help="Maximum source sequence length")
     group.add('--src_seq_length_trunc', '-src_seq_length_trunc',
               type=int, default=None,
@@ -322,8 +324,8 @@ def preprocess_opts(parser):
     # Data processing options
     group = parser.add_argument_group('Random')
 
-    #データをシャッフルする
-    group.add('--shuffle', '-shuffle', type=int, default=0,
+    #データをシャッフルする,torchでは1
+    group.add('--shuffle', '-shuffle', type=int, default=1,
               help="Shuffle data")
     group.add('--seed', '-seed', type=int, default=3435,
               help="Random seed")
