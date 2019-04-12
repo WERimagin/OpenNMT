@@ -46,7 +46,7 @@ predicts=[p.split() for p in predict]
 target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
 src_set=set(srcs)
-for s,t,p in zip(src,targets,predicts):
+for s,t,p in zip(srcs,targets,predicts):
     target_dict[s].append(t)
     predict_dict[s]=p
 
