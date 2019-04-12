@@ -29,15 +29,15 @@ predicts=[]
 
 with open(args.src,"r")as f:
     for line in f:
-        src.append(line.strip())
+        srcs.append(line.strip())
 
 with open(args.tgt,"r")as f:
     for line in f:
-        target.append(line.strip())
+        targets.append(line.strip())
 
 with open(args.pred,"r")as f:
     for line in f:
-        predict.append(line.strip())
+        predicts.append(line.strip())
 
 #srcs=[s.split() for s in targets]
 targets=[t.split() for t in target]
