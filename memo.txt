@@ -4,7 +4,15 @@ python preprocess.py \
 -valid_src data/squad-src-val-overlap-noninterro.txt \
 -valid_tgt data/squad-tgt-val-overlap-noninterro.txt \
 -save_data data/demo \
--lower \
+-lower
+
+python preprocess.py \
+-train_src data/squad-src-train-du.txt \
+-train_tgt data/squad-tgt-train-du.txt \
+-valid_src data/squad-src-val-du.txt \
+-valid_tgt data/squad-tgt-val-du.txt \
+-save_data data/demo \
+-lower
 
 python embeddings_to_torch.py \
 -emb_file_both "../data/glove.840B.300d.txt" \
@@ -26,7 +34,10 @@ python3 train.py \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -fix_word_vecs_enc -fix_word_vecs_dec \
--gpu_ranks 3 -world_size 1 \
+-gpu_ranks 3 -world_size 1
+
+
+\
 -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 10000 -decay_steps 2000 -train_steps 30000
 
 
@@ -100,6 +111,8 @@ train
     --rnn_size 500
     #RNNのタイプ。デフォルトはLSTM、要検討
     --rnn_type GRU
+    #encoderの最終隠れ状態をdecoderに渡す前の層を入れるかどうか
+    -bridge
   #データの設定
     #バッチサイズ
     --batch_size 64 -> 32

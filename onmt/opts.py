@@ -382,7 +382,7 @@ def train_opts(parser):
 
     #saveを行う感覚
     group.add('--save_checkpoint_steps', '-save_checkpoint_steps',
-              type=int, default=500,
+              type=int, default=1000,
               help="""Save a checkpoint every X steps""")
     group.add('--keep_checkpoint', '-keep_checkpoint', type=int, default=-1,
               help="Keep X checkpoints (negative: keep all)")
@@ -477,7 +477,7 @@ def train_opts(parser):
               default=[0], help="Steps at which accum_count values change")
 
     #何回ごとにテストを行うか
-    group.add('--valid_steps', '-valid_steps', type=int, default=500,
+    group.add('--valid_steps', '-valid_steps', type=int, default=1000,
               help='Perfom validation every X steps')
 
     #validの時のbatchsize
@@ -488,7 +488,7 @@ def train_opts(parser):
               help="Maximum batches of words in a sequence to run "
                    "the generator on in parallel. Higher is faster, but "
                    "uses more memory. Set to 0 to disable.")
-    group.add('--train_steps', '-train_steps', type=int, default=15000,
+    group.add('--train_steps', '-train_steps', type=int, default=25000,
               help='Number of training steps')
     group.add('--single_pass', '-single_pass', action='store_true',
               help="Make a single pass over the training dataset.")
