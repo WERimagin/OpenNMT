@@ -58,7 +58,7 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=False
+    use_interro=True
 
     questions=[]
     answers=[]
@@ -149,18 +149,20 @@ def data_process(input_path,interro_path,train=False):
                     f.write(questions[i]+"\n")
     else:
         if train==True:
-            with open("data/squad-src-train-interro.txt","w")as f:
-                for i in range(len(sentences)):
+            random_list=list(range(len(questions)))
+            random.shuffle(random_list)
+            with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
+                for i in random_list:
                     f.write(sentences[i]+"\n")
 
         if train==False:
             random_list=list(range(len(questions)))
             random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
-            with open("data/squad-src-val-interro.txt","w")as f:
+            with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
                     f.write(sentences[i]+"\n")
-            with open("data/squad-src-test-interro.txt","w")as f:
+            with open("data/squad-src-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(sentences[i]+"\n")
 

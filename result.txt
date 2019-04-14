@@ -204,6 +204,7 @@ src_seq_sizeを100に変更し、データ数を増やした
   0.13000550458808965
   0.08987226052408974
 }
+
 shuffle
 {
   データをpreprocessでシャッフル
@@ -213,9 +214,110 @@ shuffle
   0.19930672435560826
   0.13064106789167962
   0.09046163460412371
+
+  duら
+  stepsを25000に
+  18000
+  0.36857942154151785
+  0.21345661038425523
+  0.14225483513420595
+  0.09894156819452919
+  15000
+  0.3830418887721869
+  0.2242326172442351
+  0.15009308209802488
+  0.10519081126455221
+  13000
+  0.38603452563406127
+  0.2231796731017263
+  0.14824092517212442
+  0.10281374896930358
+
+  -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+  28000
+  0.3988480580669166
+  0.23560276332121058
+  0.1585135752728077
+  0.1114058235070068
+  37000
+  0.39658456174426027
+  0.2358171198938562
+  0.16000026399319953
+  0.11342067478486642
+  38000
+  0.39549555475888737
+  0.2352811643317181
+  0.15972696221112345
+  0.11339629816619744
+
+  -start_decay_steps 20000 -decay_steps 3000 -train_steps 60000
+  30000
+  0.400140624537702
+  0.23731986280714962
+  0.1601483527090614
+  0.1127673503484243
+  41000
+  0.40016893254925556
+  0.23866364072141835
+  0.16182145550580126
+  0.11443930570133387
+  qgevalcap/eval.py
+  Bleu_1: 0.41161
+  Bleu_2: 0.24549
+  Bleu_3: 0.16618
+  Bleu_4: 0.11771
+
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2000 -train_steps 60000
+  27000
+  0.3935429317536642
+  0.23440159835834948
+  0.1591811646641791
+  0.11273642282453042
+  30000
+  0.3967899897331695
+  0.2362346318980176
+  0.1599417471152941
+  0.11286157890117823
 }
 
+gru
+{
+  gruを使用、sgdは相性が悪いため、adamを使用
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -rnn_type GRU \
+  -gpu_ranks 3 -world_size 1 \
+  -train_steps 30000
+  スコアはとても低い
+}
+
+bridge
+{
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -gpu_ranks 3 -world_size 1 \
+  -bridge \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 3000 -train_steps 50000
+  26000
+  0.38182877287214717
+  0.22205685359382502
+  0.14773142620211194
+  0.10315436253715742
+  44000
+  0.3953961968128539
+  0.2313639103813019
+  0.15466326394909802
+  0.1078724355523195
+}
+
+
 transformerで実験
-ベースを12ポイントになるように調整
 コピーとカバレッジそれぞれで実験
 answerを付け加えて実験
+interroを,,

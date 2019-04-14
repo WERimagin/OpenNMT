@@ -34,11 +34,17 @@ python3 train.py \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -fix_word_vecs_enc -fix_word_vecs_dec \
--gpu_ranks 3 -world_size 1
+-gpu_ranks 3 -world_size 1 \
+-optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 5000 -train_steps 80000
 
-
-\
--optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 10000 -decay_steps 2000 -train_steps 30000
+python3 train.py \
+-data data/demo \
+-save_model model_data/demo-model \
+-pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+-fix_word_vecs_enc -fix_word_vecs_dec \
+-gpu_ranks 3 -world_size 1 \
+-bridge \
+-optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 3000 -train_steps 50000
 
 
 
@@ -55,15 +61,15 @@ python train.py \
 -world_size 1 -gpu_ranks 3
 
 python translate.py \
--src data/squad-src-val-overlap-noninterro.txt \
+-src data/squad-src-val-du.txt \
 -output pred.txt \
 -replace_unk -verbose -beam_size 5 \
--model model_data/demo-model_step_9000_ppl_31.2368_acc_44.1975.pt
+-model model_data/
 
 python bleu.py \
 -src data/squad-src-val-du.txt \
 -tgt data/squad-tgt-val-du.txt \
--pred squad-pred-val-du.txt
+-pred pred.txt
 
 python bleu.py \
 -src data/squad-src-val-overlap-noninterro.txt \
