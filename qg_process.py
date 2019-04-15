@@ -58,7 +58,7 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=True
+    use_interro=False
 
     questions=[]
     answers=[]
@@ -98,12 +98,12 @@ def data_process(input_path,interro_path,train=False):
                 if len(question_text)<=5:
                     continue
 
-                if False:
+                if True:
                     #テキストとノンストップワードが一つも重複してないものは除去
                     if check_overlap(sentence_text,question_text,stop_words)==False:
                         continue
 
-                if False:
+                if True:
                     #疑問詞がないものは削除
                     if interro=="":
                         continue
@@ -118,12 +118,12 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
-    setting="-overlap-noninterro"
+    setting="-nonshuffle"
 
     if use_interro==False:
         if train==True:
             random_list=list(range(len(questions)))
-            random.shuffle(random_list)
+            #random.shuffle(random_list)
             with open("data/squad-src-train{}.txt".format(setting),"w")as f:
                 for i in random_list:
                     f.write(sentences[i]+"\n")
@@ -133,7 +133,7 @@ def data_process(input_path,interro_path,train=False):
 
         if train==False:
             random_list=list(range(len(questions)))
-            random.shuffle(random_list)
+            #random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
             with open("data/squad-src-val{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
