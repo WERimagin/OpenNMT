@@ -154,6 +154,9 @@ def data_process(input_path,interro_path,train=False):
             with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
                 for i in random_list:
                     f.write(sentences[i]+"\n")
+            with open("data/squad-tgt-train-interro{}.txt".format(setting),"w")as f:
+                for i in random_list:
+                    f.write(questions[i]+"\n")
 
         if train==False:
             random_list=list(range(len(questions)))
@@ -162,9 +165,15 @@ def data_process(input_path,interro_path,train=False):
             with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
                     f.write(sentences[i]+"\n")
+            with open("data/squad-tgt-val-interro{}.txt".format(setting),"w")as f:
+                for i in random_list[0:val_num]:
+                    f.write(questions[i]+"\n")
             with open("data/squad-src-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(sentences[i]+"\n")
+            with open("data/squad-tgt-test-interro{}.txt".format(setting),"w")as f:
+                for i in random_list[val_num:]:
+                    f.write(questions[i]+"\n")
 
 
 if __name__ == "__main__":
