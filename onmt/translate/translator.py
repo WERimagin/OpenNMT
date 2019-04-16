@@ -325,10 +325,12 @@ class Translator(object):
 
         start_time = time.time()
 
+        #batch
         for batch in data_iter:
             batch_data = self.translate_batch(
                 batch, data.src_vocabs, attn_debug
             )
+            #ここでエラー
             translations = xlation_builder.from_batch(batch_data)
 
             for trans in translations:
@@ -345,6 +347,7 @@ class Translator(object):
                 self.out_file.write('\n'.join(n_best_preds) + '\n')
                 self.out_file.flush()
 
+                #スコアと文を書き出し
                 if self.verbose:
                     sent_number = next(counter)
                     output = trans.log(sent_number)
@@ -502,6 +505,7 @@ class Translator(object):
         results["attention"] = random_sampler.attention
         return results
 
+    #モデルに投げて翻訳を行うところ
     def translate_batch(self, batch, src_vocabs, attn_debug):
         """Translate a batch of sentences."""
         with torch.no_grad():
@@ -514,6 +518,7 @@ class Translator(object):
                     sampling_temp=self.random_sampling_temp,
                     keep_topk=self.sample_from_topk,
                     return_attention=attn_debug or self.replace_unk)
+            #beam_sizeが2以上ならばビーム用の翻訳
             else:
                 return self._translate_batch(
                     batch,
@@ -614,6 +619,7 @@ class Translator(object):
         batch_size = batch.batch_size
 
         # (1) Run the encoder on the src.
+        #エンコーダー
         src, enc_states, memory_bank, src_lengths = self._run_encoder(batch)
         self.model.decoder.init_state(src, memory_bank, enc_states)
 
@@ -660,9 +666,11 @@ class Translator(object):
             exclusion_tokens=self._exclusion_idxs,
             memory_lengths=memory_lengths)
 
+        #ビームサーチを行う。
         for step in range(max_length):
             decoder_input = beam.current_predictions.view(1, -1, 1)
 
+            #デコードを行う
             log_probs, attn = self._decode_and_generate(
                 decoder_input,
                 memory_bank,
@@ -673,6 +681,7 @@ class Translator(object):
                 step=step,
                 batch_offset=beam._batch_offset)
 
+            #デコードの結果に対してビームサーチを行う。
             beam.advance(log_probs, attn)
             any_beam_is_finished = beam.is_finished.any()
             if any_beam_is_finished:

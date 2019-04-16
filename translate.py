@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+translate.py.main
+    onmt.translate.translator.build_translator(翻訳、beamは全てここの中)
+        onmt.translate.translation.TranslationBuilder
+
+"""
+
 from __future__ import unicode_literals
 from itertools import repeat
 

@@ -32,22 +32,36 @@ class TranslationBuilder(object):
         self.phrase_table = phrase_table
         self.has_tgt = has_tgt
 
+    #idから単語に変換
+    #src_vocab:src側の辞書
+    #src_raw:srcの単語分割したテキスト
+    #pred:予測したid列
+    #attn:予測の際に生成されたアテンション
     def _build_target_tokens(self, src, src_vocab, src_raw, pred, attn):
         tgt_field = dict(self.fields)["tgt"].base_field
         vocab = tgt_field.vocab
         tokens = []
+        #単語ごとにidから変換
         for tok in pred:
+            #vocabの単語ならばvocabを参照して単語に変換
             if tok < len(vocab):
                 tokens.append(vocab.itos[tok])
+            #コピー機構の単語ならばソースのdynamic_dictを参照
             else:
                 tokens.append(src_vocab.itos[tok - len(vocab)])
             if tokens[-1] == tgt_field.eos_token:
                 tokens = tokens[:-1]
                 break
+        #unkの置換
         if self.replace_unk and attn is not None and src is not None:
             for i in range(len(tokens)):
                 if tokens[i] == tgt_field.unk_token:
                     _, max_index = attn[i].max(0)
+                    #ここでエラー
+                    #ソースのテキストの外にmax_indexがなっている->attnの問題？
+                    print(src_raw.size())
+                    print(max_index.item())
+                    print()
                     tokens[i] = src_raw[max_index.item()]
                     if self.phrase_table != "":
                         with open(self.phrase_table, "r") as f:
@@ -88,6 +102,7 @@ class TranslationBuilder(object):
             else:
                 src_vocab = None
                 src_raw = None
+
             pred_sents = [self._build_target_tokens(
                 src[:, b] if src is not None else None,
                 src_vocab, src_raw,

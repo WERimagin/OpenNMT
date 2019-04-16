@@ -506,16 +506,19 @@ interro
 {
   疑問詞をつけて実権
   trainデータはシャッフル済み、valデータはしていない（精度が高くでる？)
+  srcもtgtもinterro用にデータを作成->片方だけシャッフルして合って正しくテストできなかったから
   単語ベクトルはfix->sepを考えるとどうするべきか
   コピー、カバレッジは使用
 
+
   python preprocess.py \
   -train_src data/squad-src-train-interro.txt \
-  -train_tgt data/squad-tgt-train.txt \
+  -train_tgt data/squad-tgt-train-interro.txt \
   -valid_src data/squad-src-val-interro.txt \
-  -valid_tgt data/squad-tgt-val.txt \
+  -valid_tgt data/squad-tgt-val-interro.txt \
   -save_data data/demo \
   -lower -dynamic_dict
+
   python embeddings_to_torch.py \
   -emb_file_both "../data/glove.840B.300d.txt" \
   -dict_file "data/demo.vocab.pt" \
@@ -534,7 +537,30 @@ interro
   -src data/squad-src-val-interro.txt \
   -output pred.txt \
   -replace_unk -verbose -dynamic_dict \
-  -model model_data/
+  -model model_data/  -beam_size 3 -batch_size 16
+
+  23000
+  使用できなかった(index error)
+  28000
+  beam_size 3
+  0.48070181218777946
+  0.35073380216473277
+  0.27458077002009196
+  0.21788886391189688
+  beam_size 2
+  0.49384338632525876
+  0.3591639173518169
+  0.27985258420589904
+  0.22106952897274582
+  31000
+  beam_size 3
+  0.49774443073103686
+  0.3618993312880334
+  0.2818080414470461
+  0.22224794295059433
+
+  単語ベクトルをfixしない->sepの存在
+
 }
 
 
