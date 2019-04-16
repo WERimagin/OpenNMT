@@ -1,10 +1,10 @@
 python preprocess.py \
--train_src data/squad-src-train-overlap-noninterro.txt \
--train_tgt data/squad-tgt-train-overlap-noninterro.txt \
--valid_src data/squad-src-val-overlap-noninterro.txt \
--valid_tgt data/squad-tgt-val-overlap-noninterro.txt \
+-train_src data/squad-src-train.txt \
+-train_tgt data/squad-tgt-train.txt \
+-valid_src data/squad-src-val.txt \
+-valid_tgt data/squad-tgt-val.txt \
 -save_data data/demo \
--lower
+-lower -dynamic_dict
 
 python preprocess.py \
 -train_src data/squad-src-train-du.txt \
@@ -35,8 +35,8 @@ python3 train.py \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -fix_word_vecs_enc -fix_word_vecs_dec \
 -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
--gpu_ranks 3 -world_size 1 \
--optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 15000 -decay_steps 2500 -train_steps 60000
+-gpu_ranks 2 -world_size 1 \
+-optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
 
 #transformer
 python train.py \
@@ -51,14 +51,14 @@ python train.py \
 -world_size 1 -gpu_ranks 3
 
 python translate.py \
--src data/squad-src-val-du.txt \
+-src data/squad-src-val-nonshuffle.txt \
 -output pred.txt \
 -replace_unk -verbose -dynamic_dict \
 -model model_data/
 
 python bleu.py \
--src data/squad-src-val-du.txt \
--tgt data/squad-tgt-val-du.txt \
+-src data/squad-src-val-nonshuffle.txt \
+-tgt data/squad-tgt-val-nonshuffle.txt \
 -pred pred.txt
 
 python bleu.py \

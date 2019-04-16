@@ -372,8 +372,8 @@ bridge
 
 コピー+カバレッジ
 {
-  やはり、start_decay_stepsをはやめていいと思う
-  12000か15000ぐらい
+  やはり、start_decay_stepsを早めていいと思う
+  12000か15000ぐらい->精度は落ちた18000かむしろ遅くするか
   python preprocess.py \
   -train_src data/squad-src-train-du.txt \
   -train_tgt data/squad-tgt-train-du.txt \
@@ -413,6 +413,7 @@ bridge
   0.1850335441619655
   0.13277520076621513
 
+  -start_decay_stepsを15000に
   python3 train.py \
   -data data/demo \
   -save_model model_data/demo-model \
@@ -431,6 +432,75 @@ bridge
   0.24607882917164436
   0.17144628693593253
   0.12455070037165465
+}
+
+duらのものでない、squad-src-train.txtで学習
+{
+  valデータがシャッフルされており、同じ文が含まれていないため数値が低いと推測
+  実際にシャッフルされてないデータを使用すると、bleuスコアは高く出た。
+  また、beam_sizeは2>3>5である気がする。要検証
+  python preprocess.py \
+  -train_src data/squad-src-train.txt \
+  -train_tgt data/squad-tgt-train.txt \
+  -valid_src data/squad-src-val.txt \
+  -valid_tgt data/squad-tgt-val.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+  squad-src-train.txt、データはシャッフル済み
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 2 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
+
+  python translate.py \
+  -src data/squad-src-val.txt \
+  -output pred.txt \
+  -replace_unk -verbose -dynamic_dict \
+  -model model_data/
+
+  26000
+  0.37422325030594705
+  0.22619345479585512
+  0.15657536618543771
+  0.11378448087007803
+  31000(batch_size 16,beam_size 2->beam_size 5だと実行できなかったため)
+  0.4072758645575424
+  0.24618911860940765
+  0.16926746519966543
+  0.12131234016752716
+  beam_size 3
+  0.392171360638032
+  0.23807774793728795
+  0.16477981256087937
+  0.11940936920759035
+
+  valをシャッフルしていないデータでテスト
+  python translate.py \
+  -src data/squad-src-val-nonshuffle.txt \
+  -output pred.txt \
+  -replace_unk -verbose -dynamic_dict \
+  -model model_data/
+
+  26000
+  0.4159896071557287
+  0.2584923298909386
+  0.18037140862163062
+  0.13040524793848138
+  31000(beam_size 3)
+  0.4323910548338726
+  0.26848483754117797
+  0.18656143861070532
+  0.13411561910927766
+  31000(beam_size 2)
+  0.4489726481188136
+  0.27807114292270935
+  0.19153013022779644
+  0.13610185425093663
+
 }
 
 

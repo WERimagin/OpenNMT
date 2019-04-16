@@ -157,7 +157,7 @@ def data_process(input_path,interro_path,train=False):
 
         if train==False:
             random_list=list(range(len(questions)))
-            random.shuffle(random_list)
+            #random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
             with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
