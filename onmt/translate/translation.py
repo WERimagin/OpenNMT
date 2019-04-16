@@ -57,13 +57,11 @@ class TranslationBuilder(object):
             for i in range(len(tokens)):
                 if tokens[i] == tgt_field.unk_token:
                     _, max_index = attn[i].max(0)
-                    #ここでエラー
-                    #ソースのテキストの外にmax_indexがなっている->attnの問題？
-                    print(src_raw)
-                    print(len(src_raw))
-                    print(max_index.item())
-                    print()
-                    tokens[i] = src_raw[max_index.item()]
+                    #UNKの置換時、アテンションのindexがsrcテキストの単語の長さの外を指す場合が確認
+                    #対処案として、その場合には一番最初の単語を指し示すこととした
+                    #(そもそもUNKが発生するのはそんなに起きない。1/1000程度)
+                    if(len(src_raw)<=max_index.item())tokens[i] = src_raw[0]
+                    else tokens[i] = src_raw[max_index.item()]
                     if self.phrase_table != "":
                         with open(self.phrase_table, "r") as f:
                             for line in f:
