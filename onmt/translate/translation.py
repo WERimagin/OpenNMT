@@ -59,7 +59,8 @@ class TranslationBuilder(object):
                     _, max_index = attn[i].max(0)
                     #ここでエラー
                     #ソースのテキストの外にmax_indexがなっている->attnの問題？
-                    print(src_raw.size())
+                    print(src_raw)
+                    print(len(src_raw))
                     print(max_index.item())
                     print()
                     tokens[i] = src_raw[max_index.item()]
