@@ -48,6 +48,12 @@ with open(args.noninterro,"r")as f:
     for line in f:
         noninterros.append(line.strip())
 
+data_size=int(len(srcs)*args.ratio)
+srcs=srcs[0:data_size]
+targets=targets[0:data_size]
+predicts=predicts[0:data_size]
+noninterros=noninterros[0:data_size]
+
 #srcs=[s.split() for s in targets]
 #predict
 p_noninterros=[]
@@ -57,6 +63,12 @@ for p in tqdm(predicts):
     p_noninterros.append(p_noninterro)
 #target
 t_noninterros=[t.split() for t in noninterros]
+
+for i in data_size:
+    print(srcs[i])
+    print(t_noninterros[i])
+    print(p_noninterros[i])
+    print()
 
 
 target_dict=defaultdict(lambda: [])
