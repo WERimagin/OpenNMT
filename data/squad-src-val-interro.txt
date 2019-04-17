@@ -1121,7 +1121,7 @@ nikola tesla ( serbian cyrillic : никола тесла ; 10 july 1856 – 7 j
 tesla gained experience in telephony and electrical engineering before emigrating to the united states in 1884 to work for thomas edison in new york city . <SEP> in what year ?
 tesla gained experience in telephony and electrical engineering before emigrating to the united states in 1884 to work for thomas edison in new york city . <SEP> who ?
 tesla gained experience in telephony and electrical engineering before emigrating to the united states in 1884 to work for thomas edison in new york city . <SEP> in what area of the united states ?
-his work in the formative years of electric power development was involved in a corporate alternating current/direct current " war of currents " as well as various patent battles . <SEP> what '' war '' ?
+his work in the formative years of electric power development was involved in a corporate alternating current/direct current " war of currents " as well as various patent battles . <SEP> what " war " ?
 tesla gained experience in telephony and electrical engineering before emigrating to the united states in 1884 to work for thomas edison in new york city . <SEP> when ?
 tesla gained experience in telephony and electrical engineering before emigrating to the united states in 1884 to work for thomas edison in new york city . <SEP> what other inventor ?
 tesla gained experience in telephony and electrical engineering before emigrating to the united states in 1884 to work for thomas edison in new york city . <SEP> where ?
@@ -4510,7 +4510,7 @@ it was founded by former arpa ipto director larry roberts as a means of making a
 tymnet was an international data communications network headquartered in san jose , ca that utilized virtual call packet switched technology and used x.25 , sna/sdlc , bsc and ascii interfaces to connect host computers ( servers ) at thousands of large companies , educational institutions , and government agencies . <SEP> what ?
 tymnet was an international data communications network headquartered in san jose , ca that utilized virtual call packet switched technology and used x.25 , sna/sdlc , bsc and ascii interfaces to connect host computers ( servers ) at thousands of large companies , educational institutions , and government agencies . <SEP> what ?
 users typically connected via dial-up connections or dedicated async connections . <SEP> how ?
-there were two kinds of x.25 networks . some such as datapac and transpac were initially implemented with an x.25 external interface . <SEP> how many types of x. 25 networks ?
+there were two kinds of x.25 networks . some such as datapac and transpac were initially implemented with an x.25 external interface . <SEP> how many types of x . 25 networks ?
 datapac was developed by bell northern research which was a joint venture of bell canada ( a common carrier ) and northern telecom ( a telecommunications equipment supplier ) . <SEP> who ?
 a user or host could call a host on a foreign network by including the dnic of the remote network as part of the destination address . <SEP> what ?
 austpac was an australian public x.25 network operated by telstra . <SEP> what ?

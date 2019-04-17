@@ -63,6 +63,8 @@ def data_process(input_path,interro_path,train=False):
     questions=[]
     answers=[]
     sentences=[]
+    interros=[]
+    non_interros=[]
 
     stop_words = stopwords.words('english')
 
@@ -93,6 +95,8 @@ def data_process(input_path,interro_path,train=False):
                 question_text=" ".join(tokenize(question_text))
                 sentence_text=" ".join(tokenize(sentence_text))
                 answer_text=" ".join(tokenize(answer_text))
+                interro=" ".join(tokenize(interro))
+                non_interro=" ".join(tokenize(non_interro))
 
                 #ゴミデータ(10個程度)は削除
                 if len(question_text)<=5:
@@ -114,6 +118,8 @@ def data_process(input_path,interro_path,train=False):
                 sentences.append(sentence_text)
                 questions.append(question_text)
                 answers.append(answer_text)
+                interros.append(interro)
+                non_interros.append(non_interro)
 
     print(all_count)
     print(len(sentences))
@@ -162,18 +168,33 @@ def data_process(input_path,interro_path,train=False):
             random_list=list(range(len(questions)))
             #random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
+
             with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
                     f.write(sentences[i]+"\n")
             with open("data/squad-tgt-val-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[0:val_num]:
                     f.write(questions[i]+"\n")
+            with open("data/squad-interro-val-interro{}.txt".format(setting),"w")as f:
+                for i in random_list[0:val_num]:
+                    f.write(interros[i]+"\n")
+            with open("data/squad-noninterro-val-interro{}.txt".format(setting),"w")as f:
+                for i in random_list[0:val_num]:
+                    f.write(non_interros[i]+"\n")
+
             with open("data/squad-src-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(sentences[i]+"\n")
             with open("data/squad-tgt-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(questions[i]+"\n")
+            with open("data/squad-interro-val-interro{}.txt".format(setting),"w")as f:
+                for i in random_list[val_num:]:
+                    f.write(interros[i]+"\n")
+            with open("data/squad-noninterro-val-interro{}.txt".format(setting),"w")as f:
+                for i in random_list[val_num:]:
+                    f.write(non_interros[i]+"\n")
+
 
 
 if __name__ == "__main__":
