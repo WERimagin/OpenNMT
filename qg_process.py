@@ -188,10 +188,10 @@ def data_process(input_path,interro_path,train=False):
             with open("data/squad-tgt-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(questions[i]+"\n")
-            with open("data/squad-interro-val-interro{}.txt".format(setting),"w")as f:
+            with open("data/squad-interro-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(interros[i]+"\n")
-            with open("data/squad-noninterro-val-interro{}.txt".format(setting),"w")as f:
+            with open("data/squad-noninterro-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(non_interros[i]+"\n")
 

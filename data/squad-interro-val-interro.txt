@@ -1,3402 +1,3168 @@
-when ?
-what movement ?
-what type of festival ?
-which festival ?
-what ?
-where ?
-what festival ?
-what cultural festival ?
-who ?
-what genre of music ?
-what year ?
-what band ?
-what band ?
-what group ?
-what ?
-where ?
-how many ?
-what ?
-where ?
-where ?
-what ?
-what type of heritage ?
-what year ?
-what museum in newcastle ?
-what ?
-what 1971 film ?
-what genre of film ?
-who ?
-what famous musician ?
-where ?
-what ?
-what ?
-where ?
-what famous 5.9-mile athletic event ?
-how far ?
-how ?
-how long ?
-how many passengers per year ?
-how many destinations ?
-what ?
-how many grade one ?
-what queen ?
-who ?
-what mainline station ?
-how ?
-how many hours ?
-where ?
-whose trains ?
-which train company ?
-what ?
-how many phases ?
-what type of tunnels ?
-what ?
-how many passengers a year ?
-what ?
-what ?
-what ?
-what ?
-what type of train ?
-what major newcastle road ?
-what newcastle road ?
-what ?
-what ?
-what ?
-how many ?
-how many major bus stations ?
-who ?
-what ?
-what bus company in newcastle ?
-what year ?
-what ?
-what type of living ?
-what streets ?
-what ?
-who ?
-when ?
-what ?
-when ?
-what cruise line ?
-how many lea-funded 11 to 18 schools ?
-how many of the schools in newcastle ?
-what ?
-what ?
-what religion ?
-how many universities ?
-which university ?
-what ?
-what ?
-what university ?
-how many cathedrals ?
-what year ?
-which cathedral ?
-which church 's saint ?
-what ?
-which parish church in newcastle ?
-what year ?
-what ?
-what ?
-what ?
-where ?
-where ?
-why ?
-what local radio station ?
-what ?
-what radio station ?
-how long ?
-what newcastle radio station ?
-where ?
-what year ?
-what title ?
-who ?
-what ?
-what country ?
-what school ?
-what ?
-what prize ?
-what ?
-where ?
-how many ?
-when ?
-who ?
-in which london borough ?
-in what year ?
-which monarchs ?
-which department ?
-in which year ?
-how many acres ?
-how many galleries ?
-how many years ?
-which cultures ?
-of which period ?
-in which world exposition ?
-who ?
-what ?
-where ?
-which german architect ?
-who ?
-what ?
-who ?
-in which year ?
-when ?
-how many visitors ?
-who ?
-most of the museum 's collection ?
-what ?
-which musical group ?
-whose directorship ?
-which musical genre ?
-in which city ?
-what ?
-where in dundee ?
-what ?
-when ?
-what ?
-what ?
-in which year ?
-what ?
-who ?
-what art historical style ?
-who ?
-what famous english physicist and mathematician ?
-what italian painter ?
-who ?
-who ?
-who ?
-who ?
-who ?
-who ?
-what ?
-what stone ?
-what part of the v & a collection ?
-in which year ?
-what technique ?
-who ?
-where on the side ?
-where ?
-who ?
-who ?
-what building ?
-how long ?
-what late gothic architectural sculptural feature ?
-statues of british artists ?
-who ?
-how many levels of galleries ?
-who ?
-what building ?
-which british monarch ?
-which part of the museum ?
-what ?
-what ?
-who ?
-what ?
-which gallery ?
-what ?
-what ?
-to which tube station ?
-who ?
-who ?
-what new moniker ?
-what shape ?
-what ?
-which tree species ?
-in which year ?
-which institution ?
-approximately how many ?
-what collection ?
-approximately how many ?
-what ?
-which ?
-approximately how many drawings of the italian architect andrea palladio ?
-which ?
-which ?
-which part of london ?
-when ?
-which european chateau ?
-which ?
-approximately how many items from the islamic world ?
-in which year ?
-what ?
-from which european country ?
-in which year ?
-approximately how many objects ?
-approximately how many textiles ?
-approximately how many paintings ?
-in which year ?
-who ?
-approximately how many works of art ?
-which countries ?
-what ?
-in which year ?
-which ?
-which company ?
-in which year ?
-that ?
-most of the objects in the japanese art collection ?
-of what ?
-tibetan art from which period ?
-which south asian island nation ?
-in which ?
-with what objects ?
-of what material ?
-by which ?
-what ?
-how ?
-in which year ?
-in which year ?
-which ?
-which ?
-to which centuries ?
-what ?
-who ?
-by what other name ?
-what cataloging system ?
-what archival system ?
-what type of item ?
-what ?
-in which year ?
-what ?
-to which artist ?
-approximately how many images ?
-what ?
-who ?
-from which continent ?
-which italian that ?
-which artist who had a major influence on the gothic revival ?
-what type of works from asia ?
-what ?
-what british cultural trend during the georgian ?
-who ?
-what ?
-which ancient roman monument ?
-what ?
-which sculpture by michelangelo ?
-of what objects ?
-how ?
-in which year ?
-who ?
-in which year ?
-in which year ?
-which part of the v & a collection ?
-which three famous british potters ?
-from which countries ?
-what ?
-during which time period ?
-in which countries ?
-how many years ?
-approximately how many items ?
-where ?
-by which artist ?
-by which two artists ?
-when ?
-who ?
-when ?
-whose chandelier grace the rotunda at the v & a 's main entrance ?
-to which century ?
-approximately how many british drawings ?
-approximately how many old masters works ?
-which famous germain renaissance painter and printmaker ?
-which ?
-which ?
-approximately how many items ?
-which department ?
-why ?
-in which year ?
-from which company ?
-when ?
-which ?
-how many costumes ?
-what costumes collection ?
-which examples of fashion ?
-from which period ?
-when ?
-what ?
-in which year ?
-what ?
-to which year ?
-to whom ?
-to which year ?
-from which country ?
-which husband and wife modern furniture design team ?
-approximately how many items ?
-from which ancient civilization ?
-in which year ?
-approximately how many gems in reverend chauncy hare townshend 's collection ?
-who ?
-into which categories ?
-to which year ?
-how many tons ?
-who ?
-approximately how many silver and gold objects ?
-to which year ?
-which material ?
-whose relics ?
-to which year ?
-which material ?
-approximately how many names ?
-which member of parliament ?
-which museum ?
-approximately how many musical instruments ?
-in which year ?
-approximately how many british oil paintings ?
-approximately how many european oil paintings ?
-approximately how many british watercolours ?
-who ?
-who ?
-in which year ?
-how many paintings ?
-what ?
-of which ?
-of which nationality ?
-in which galleries ?
-whose 1758 portrait by françois boucher ?
-what ?
-whose portrait by françois clouet ?
-who ?
-in which year ?
-how many ?
-what ?
-whose society portraits from the late 19th to early 20th centuries ?
-approximately how many objects ?
-which time period ?
-which uses of sculpture ?
-with which ?
-which c1622-23 sculpture by bernini ?
-what ?
-who ?
-to which period ?
-approximately how many works by rodin ?
-who ?
-in which year ?
-in which war ?
-which sculpture by rodin ?
-which ?
-which british sculptor whose work ?
-which english sculptor who became the leading portrait sculptor in regency era britain ?
-what sort of continental sculptors ?
-who ?
-to which year ?
-how ?
-which two british sculptors ?
-which museum ?
-approximately how many items ?
-which continents ?
-what ?
-which region ?
-how ?
-what ?
-in which century ?
-where ?
-what ?
-which leading english tapestry workshop in the late 17th century and early 18th century ?
-when ?
-who ?
-in which year ?
-by which ?
-which ?
-what ?
-in which year ?
-what collection ?
-which area ?
-what two environmental conditions ?
-that ?
-whose collections ?
-what type of conservation ?
-what company ?
-in what year ?
-in what borough of new york city ?
-when ?
-what kind of network ?
-when ?
-what cable sports ?
-what company ?
-how many affiliated stations ?
-in 2007 , what company ?
-how many of the network 's stations ?
-what entity in canada ?
-by what company ?
-what company ?
-what two radio networks ?
-what kind of markets ?
-what kind of programs ?
-which nbc radio network ?
-what company ?
-in what year ?
-in what year ?
-what ?
-what radio network ?
-to whom ?
-what network ?
-what investment firm ?
-who ?
-how much money ?
-what candy company ?
-when ?
-who ?
-what position ?
-when ?
-what new technology ?
-who ?
-how much ?
-what network ?
-when ?
-what developmental network ?
-what country ?
-when ?
-what ?
-where ?
-why ?
-what ?
-what country ?
-what japanese network ?
-why ?
-why ?
-what television specials ?
-which ?
-when ?
-what movie awards ?
-what peanuts special ?
-when ?
-who ?
-when ?
-where ?
-what network ?
-what series ?
-when ?
-which proctor and gamble ?
-what ?
-when ?
-when ?
-when ?
-for what ?
-for what ?
-who ?
-which channels ?
-in what year ?
-which channel ?
-how many television stations ?
-how many stations ?
-who ?
-what ?
-who ?
-how many affiliates ?
-to what network ?
-what ?
-who ?
-who ?
-when ?
-when ?
-when ?
-when ?
-where ?
-when ?
-when ?
-where ?
-that ?
-when ?
-what decade ?
-who ?
-when ?
-when ?
-what network ?
-when ?
-in what year ?
-who ?
-what colors ?
-what ?
-who ?
-in what year ?
-what image campaign ?
-where ?
-in which season ?
-when ?
-in what year ?
-what slogan ?
-in what year ?
+which nfl team ?
+which nfl team ?
+which nfl team ?
 what color ?
-in what color ?
-what graphic designer ?
-what typeface ?
+what ?
+what day ?
+what ?
+what ?
+what ?
+what day ?
 who ?
-when ?
-what entity ?
-when ?
-how many divisions ?
-in what year ?
-what new medical drama ?
-who ?
-who ?
-when ?
-who ?
-what hit reality series ?
-what reality series ?
-what cable company ?
-who ?
-which major network ?
-when ?
+what ?
+for what ?
 what year ?
-to what ?
+what stadium ?
+what ?
+what ?
+what year ?
+what team ?
+what team ?
+who ?
+for what ?
+which team ?
+the name of the nfl championship game ?
+which carolina panthers player ?
+how many appearances ?
+what year ?
+what team ?
+who ?
+who ?
+who ?
+who ?
+how many teams ?
+who ?
+what ?
+which carolina panthers team member ?
+what ?
+how many teams ?
+which team ?
+who ?
+who ?
+how many times ?
+who ?
+who ?
+who ?
+who ?
+who ?
+who ?
+who ?
+how many ?
+which team ?
+which denver linebacker ?
+how many ?
+who ?
+how many times ?
+who ?
+how many turnovers ?
+how many fumbles ?
+who ?
+what position ?
+what ?
+how many ?
+who ?
+how many times ?
+how many times ?
+which newton turnover ?
+who ?
+what position ?
+how many times ?
+how many times ?
+what denver player ?
+how many ?
 which network ?
-when ?
+what ?
+which group ?
+which performers ?
+at which super bowl ?
 who ?
-what company ?
+what ?
+what halftime performer ?
+what halftime performer ?
 who ?
-when ?
+which network ?
 what ?
 who ?
+what ranking ?
+what station ?
+how much money ?
+what band ?
+what two artists ?
 who ?
-what aaron sorkin ?
-for which tv season ?
-what place ?
+who ?
+who ?
+which super bowl halftime show ?
 what ?
+who ?
+what other two famous performers ?
+what performer ?
+who ?
+which super bowl ?
+in what year ?
+who ?
+when ?
+who ?
+who ?
+who ?
+what one word ?
+what year ?
+which louisiana venue ?
+which florida venue ?
+which california venue ?
+what venue in miami ?
+what site ?
+what ?
+what ?
+what ?
+what three stadiums ?
+how many sites ?
+where ?
+what ?
+what ?
+what florida stadium ?
+what new orleans stadium ?
+what ?
+when ?
+how many times ?
+what ?
+when ?
+when ?
+what ?
+when ?
+in what venue ?
+on what date ?
+in what year ?
+how many times ?
+what ?
+how many stadiums ?
+what ?
+prior to this consideration , when ?
+what other city ?
+what date ?
+how many times ?
+what city ?
+when ?
+who ?
+when ?
+who ?
+when ?
+how much ?
+what california city last ?
+where ?
+on what date ?
+how much ?
+what ?
+in what city ?
+what year ?
+when ?
+how much ?
+what year ?
+which super bowl ?
+when ?
+when ?
 when ?
 where ?
-in what city in 1959 ?
+when ?
+when ?
+how much ?
+when ?
 who ?
+how many ?
+how many ?
+which team in super bowl 50 ?
+what ?
+who ?
+what ?
+how many ?
+what ?
+how many teams ?
+what seed ?
+what seed ?
+when ?
+when ?
+how many teams ?
+how many games ?
+how many teams ?
+what ?
+which carolina panthers wide receiver ?
+how many teams ?
+in what year ?
+who ?
+how many ?
+how many ?
+what panther ?
+what year ?
+what year ?
+when ?
+what injury ?
+which player ?
+which ?
+when ?
+how many panthers players ?
+which team ?
+when ?
+what team ?
+how many panthers players ?
+how many ?
+how many total touchdowns ?
+how many interceptions ?
+how many punts ?
+who ?
+what ?
+what ?
+what ?
+which panthers rb ?
+how many offensive players from the panthers ?
+who ?
+how many yards ?
+how many touchdowns ?
+how many points ?
+how many yards ?
+how many touchdowns ?
+what ?
+how many receptions ?
+how many points ?
+how many career sacks ?
+how many ?
+how many balls ?
+who ?
+how many interceptions ?
+who ?
+how many panthers defense players ?
+which player ?
+how many 2015 season interceptions ?
+who ?
+who ?
+who ?
+who ?
+who ?
+who ?
+who ?
+how many years ?
+what ?
+what ?
+how old ?
+what injury ?
+when ?
+who ?
+what injury ?
+how old ?
+how many games ?
+what coach ?
+which ?
+who ?
+what foot ?
+who ?
+what ?
+how many picks ?
+who ?
+who ?
+how many touchdowns ?
+what ?
+how ?
+what ?
+who ?
+what position ?
+what ?
+how many times ?
+who ?
+how many touchdowns ?
+what ?
+how many ?
+what denver player ?
+who ?
+what ?
+how many yards ?
+how many sacks ?
+who ?
+what position ?
+what position ?
+what ?
+how many points ?
+which linebacker ?
+which linebacker ?
+who ?
+what denver player ?
+what two denver players ?
+who ?
+who ?
+how many total yards ?
+how many times ?
+what ?
+what ?
+what ?
+how many yards ?
+who ?
+who ?
+how many ?
+who ?
+what ?
+who ?
+how many yards ?
+who ?
+how many points ?
+who ?
+what ?
+how much time ?
+what team ?
+what ?
+who ?
+how many seconds ?
+who ?
+who ?
+how many points ?
+who ?
+who ?
+who ?
+how many seconds ?
+what carolina player ?
+what injury ?
+how many times ?
+how many years ?
+what injury ?
+what body part ?
+how many years ?
+what game ?
+how many ?
+what injury ?
+how many years ?
+who ?
+how old ?
+who ?
+how old ?
+what role ?
+who ?
+what team ?
+who ?
+how old ?
+who ?
+how many teams ?
+how many different teams to the super bowl ?
+who ?
+who ?
+which super bowl ?
+who ?
+how old ?
+what ?
+when ?
+when ?
+how old ?
+how much older ?
+who ?
+who ?
+who ?
+how old ?
+what position ?
+who ?
+what year ?
+how old ?
+what ?
+in what super bowl ?
+what team ?
+what position ?
+who ?
+what team ?
+what position ?
+who ?
+who ?
+what super bowl ?
+who ?
+what ?
+who ?
+what team ?
+what position ?
+which player ?
+what position ?
+what ?
+which kicker ?
+what ?
+what ?
+what ?
+what player ?
+what field type ?
+who ?
+what ?
+what team ?
+what color pants ?
+what ?
+what ?
+what ?
+what team ?
+what color ?
+what jersey ?
+who ?
+what ?
+what ?
+what color jersey ?
+what colors ?
+what university 's facility ?
+what university 's facility ?
+in what ?
+in what ?
+what hotel ?
+what ?
+where ?
+where ?
+where ?
+which hotel ?
+where ?
+which hotel ?
+where ?
+where ?
+where ?
+where ?
+when ?
+what ?
+who ?
+what ?
+who ?
+in what year ?
+which super bowl ?
+which ?
+what color ?
+when ?
+what ?
+what ?
+what color ?
+when ?
+what type of numeral ?
+what ?
+what color ?
+when ?
+what yard marker on the field ?
+what color ?
+what color ?
+what ?
+what ?
+what yard line ?
+what ?
+in what venue ?
+in what city ?
+who ?
+who ?
+when ?
+how many people ?
+who ?
+which building ?
+what ?
+where ?
+what ?
+who ?
+what football ?
+how many people ?
+who ?
+how much ?
+what ?
+at what university ?
+how much money ?
+how ?
+what type of rally ?
+which government entity ?
+where ?
+who ?
+who ?
+what ?
+who ?
+on what day ?
+on what day ?
+in what city ?
+what landmark ?
+what day of the week ?
+what day of the week ?
+what ?
+what ?
+what city ?
+when ?
+what new name ?
+where ?
+what replica ?
+what day ?
+what ?
+where ?
+what bridge ?
+what date ?
 what ?
 how much money ?
-of what ?
-what western ?
-what abc comedy ?
-what television show for abc ?
-what program for abc ?
+what health company ?
+what clothing company ?
+what petroleum company ?
 which ?
-in what series ?
+how much money ?
+how ?
 what ?
-how much ?
-in what year ?
+what ?
+how much money ?
+what percentage of money raised by the host committee ?
+what ?
+what percentage of funds ?
+what ?
+what ?
+how many ?
+what ?
+what percentage of money ?
+what ?
+who ?
+who ?
+what ?
+who ?
+what ?
+who ?
 what ?
 who ?
 who ?
+how many cameras ?
 what ?
-how many abc music stations ?
-in what year ?
-for which abc movie of the week film ?
-when ?
+how many different tv networks ?
+where ?
 what ?
-in what decade ?
-which ?
-what kind of data ?
-what football program ?
-when ?
-when ?
-what kind of audience share ?
-in what year ?
-what year ?
-which new subdivision of abc films ?
-what ?
-when ?
+what resolution ?
+where ?
+which television network ?
+how many broadcast television partners ?
 who ?
-who ?
-when ?
-what abc series ?
-what ?
-what company ?
-who ?
-who ?
-in 1974 , what detective series ?
-when ?
-what position ?
-what spinoff of happy days ?
-what television trend ?
-who ?
-how many seasons ?
-during which season ?
-what ?
-who ?
-what other division ?
-what ?
-when ?
-when ?
-who ?
-which female anchor from today ?
-who ?
-what channel ?
-what news network ?
-which ?
-what ?
-what ?
-what game ?
-who ?
-what ?
-what ?
-what year ?
-in what year ?
-what night ?
-when ?
-what company ?
-what abc division ?
-what ?
-what ?
-what library ?
-what ?
-how many owned-and-operated stations ?
-how many stations ?
-what percentage of american households ?
-when ?
-what ?
-when ?
-in what year ?
-in 2011 , which program ?
-in what format ?
-what ?
-what format ?
-what format ?
-how many affiliates ?
-what ?
-what ?
-what ?
-what network ?
-what drama program ?
-what soap operas ?
-who ?
-on what service ?
-what talk ?
-when ?
-what comic book series ?
-what program that aired between last man standing and shark tank ?
-what two comedies ?
-what day of the week ?
-who ?
-who ?
-who ?
-what crime drama ?
-who ?
-how many seasons ?
-when ?
-what french animation studio ?
-what cable provider ?
-what ?
-what radio station ?
-when ?
-what canadian investor ?
-what project ?
-who ?
-who ?
-which ?
-what ?
-what ?
-what ?
-at what address ?
-what percentage of prime-time tv viewership ?
-what drama from aaron spelling ?
-what ?
-what channel ?
-what entity ?
-with what other channel ?
-what ?
-who ?
-what position at abc ?
-how much ?
-what ?
-what comedy ?
-what soap opera ?
-what two talk shows ?
-what times ?
-who ?
-what ?
-what ?
-what abc station in south bend , indiana ?
-what ?
-what entity ?
-what entity ?
-which of abc 's main production facilities ?
-which of abc 's main production facilities ?
-what studio ?
-what programs ?
-that ?
-what show ?
-what ?
-when ?
-when ?
-that ?
-what ?
-when ?
-how many variants ?
-what new typeface ?
-what network ?
-how many primary affiliates ?
-how many primary affiliates ?
-what important legislation ?
-how much ?
-what ?
-what ?
-what production company ?
-why ?
-when ?
-what ?
-what ?
-what production company ?
-what ?
-when ?
-what anitrust regulator ?
-when ?
-what company ?
-how much ?
-of how many stations ?
-when ?
-what ?
-to what position ?
-after the merger between abc and capital cities , who ?
-who ?
-which sitcom ?
-which sitcom ?
+what resolution ?
 which network ?
-what comedy for abc ?
-what kind of series ?
-what comedy block ?
-what ?
-most of the productions in the tgif lineup ?
-with what company ?
-how many radio stations ?
-what ?
-who ?
-when ?
-where ?
-what kind of programs ?
-how much ?
-what ?
 who ?
 who ?
-what ?
-what ?
-what magazine ?
-what kind of shows ?
+on what date ?
+in what language ?
+which tv network ?
+who ?
+who ?
+what agency ?
+who ?
+who ?
 what service ?
+on what service ?
+what cbs website ?
+on what game console ?
+what version of windows ?
 what ?
+which game console ?
+which smartphone customers ?
+what app ?
+which wireless company ?
+which mobile service ?
+what ?
+what cellular carrier ?
+where ?
+what talk show ?
+what show ?
+which late night comedy host ?
+what other cbs ?
+what ?
+what ?
+what ?
+what ?
+what beverage company ?
+what brand ?
+what anniversary of the pokémon franchise ?
+what ?
+which company ?
+which company ?
+which video gaming company ?
+who ?
+which company ?
+which company ?
+what company ?
 what company ?
 what ?
-what broadcast group ?
 what ?
-what ?
-how many affiliates ?
-how many abc affiliates ?
-what ?
-who ?
-what ?
-what ?
-what ?
-what ?
-what ?
-in which regions in particular ?
-what ?
-which other empires or dynasties ?
-who ?
-what year ?
-which empire ?
-whom ?
-where ?
-where ?
-who ?
-what year ?
-who ?
-what ?
-who ?
-what ?
-which tribe ?
-who ?
-which of temüjin 's brothers ?
-who ?
-who ?
-when ?
-who ?
-how ?
-which of his future general 's fathers ?
-which of his future generals ?
-where ?
-what ?
-who ?
-which foreign forces ?
-what ?
-what ?
-who ?
-who ?
-what ?
-what year ?
-how many sons ?
-what ?
-what year ?
-which male child of ghengis khan and börte ?
-how many names of ghengis khan 's daughters ?
-what ?
-with whom ?
-what tribe ?
-how many warriors ?
-which of temüjin 's childhood friends ?
-who ?
-which shaman 's proclamation ?
-when ?
-which battle ?
-where ?
-what ?
-what ?
-who ?
-what ?
-to whom ?
-who ?
-who ?
-what tribe ?
-who ?
-what year ?
-what ?
-which well-known general ?
-what year ?
-what ?
-why ?
-what ?
-from whom ?
-which rival 's tribes ?
-which ?
-what aspect of the economy ?
-who ?
-by what year ?
-what ?
-what title ?
-who ?
-who ?
-what dynasty ?
-who ?
-when ?
-where ?
-which of genghis khan 's sons ?
-who ?
-what older dynasty ?
-how many soldiers ?
-which young general ?
-what other moniker ?
-what strategy ?
-where ?
-how ?
-which empire ?
-what kind of state ?
-who ?
-who ?
-which of genghis khan 's ambassadors ?
-how many soldiers ?
-what trading ?
-what mountain range ?
-how many divisions ?
-where ?
-who ?
-which area of khwarezmia ?
-what feature of the shah 's army ?
-which town 's massacre ?
-what metal ?
-what ?
-who ?
-what ?
-where ?
-what ?
-what ?
-how ?
-what victory symbols ?
-how ?
-who ?
-which residents of bukhara ?
-how ?
-who among the population of bukhara ?
-what year ?
-whose plan ?
-where ?
-where ?
-who ?
-which mongol leader ?
-by what name ?
-which two mongol leaders ?
-when ?
-where ?
-in which year ?
-what season ?
-who ?
-what river ?
-what omen ?
-what ?
-who ?
-what weapon ?
-where ?
-what ?
-which mongol leader ?
-which military campaign ?
-who ?
-which pair of genghis khan 's sons ?
-which of genghis khan 's sons ?
-which ?
-which son ?
-where ?
-which territory ?
-who ?
-when ?
-what ?
-what weapon ?
-which rival of the mongols ?
-what ?
-where ?
-what river ?
-what memorial ?
-what ?
-which buddhist monastery ?
-where ?
-when ?
-who ?
-on which date ?
-what kind of water body ?
-what two other rulers ?
-what animals ?
-who ?
-what ?
-what ?
-who ?
-what perk ?
-which of genghis khan 's mentors ?
-how ?
-what ?
-which woman ?
-what ?
-who ?
-what ?
-which khitan prince ?
-why ?
-which ?
-who ?
-who among genghis khan 's subjects ?
-what ?
-who ?
-which two generals ?
-what ?
-what ?
-what ?
-how ?
-how ?
-what sea ?
-what body of water ?
-who ?
-what year ?
-to which ?
-which middle eastern country ?
-what ?
-what effect ?
-what recent decade ?
-what ?
-how ?
-what ?
-what ?
-whose likeness ?
-what ?
-why ?
-what city ?
-what ?
-what ?
-which mongolian president ?
-what innovation in mongolian language ?
-where in china ?
-what ?
-which descendant of genghis khan ?
-what chinese dynasty ?
-what ?
-which middle eastern nation in particular views ?
-what proportion of the general population in the area than became iran ?
-how many people ?
-which descendant of genghis khan ?
-who ?
-which of genghis khan 's descendants ?
-in which year ?
-which major cities in eastern europe ?
-which descendants of genghis khan ?
-which mongol conqueror ?
-where ?
-which mongolian word meaning wide-spreading ?
-which massive lake ?
-what ?
-of what word ?
-what spelling of genghis ?
-what ?
-how ?
-how ?
-what ?
-how ?
-what word ?
-what ?
-what ?
-how ?
-what else ?
-what type of professionals ?
-what types of health outcomes ?
-what type of treatment ?
-what other role ?
-what types of preparation ?
-who ?
-what body ?
-what ?
-what type of professional ?
-what types of responsibilities ?
-what ?
-what ?
-what term ?
-who ?
-who ?
-how ?
-in which two codes ?
-what ?
-what stature ?
-where ?
-in which ?
-who ?
-which two compounds ?
-how far ?
-where ?
-what ?
-what sorts of items ?
-in what year ?
-what ?
-what responsibilities ?
-what ?
-what ?
-what ?
-where ?
-what ?
-what ?
-which pharmacists ?
-where ?
-in what ?
-what types of pharmacy functions ?
-what ?
-what ?
-what ?
-what ?
-who ?
-what ?
-where ?
-what ?
-what ?
-what ?
-what ?
-what type of authority ?
-in what states ?
-when ?
-what ?
-what entities ?
-what ?
-where ?
-what ?
-what ?
-what ?
-when ?
-who ?
-what ?
-what ?
-what ?
-why ?
-who ?
-what ?
-what practice ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-who ?
-what ?
-what ?
-what ?
-who ?
-what ?
-what two things ?
-what ?
-whose needs ?
-how fast ?
-how many ?
-what types of diseases ?
-what types of medications ?
-what else ?
-how ?
-who ?
-what body ?
-what ?
-what ?
-what ?
-where ?
-what ?
-what ?
-why ?
-why ?
-how else ?
-where ?
-what ?
-what responsibilities ?
-what ?
-what ?
-what ?
-which ?
-who ?
-what ?
-what fields ?
-what degree ?
-what ?
-what symbol ?
-what country ?
-what countries ?
-which countries ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-which part of the immune system ?
-what ?
-what ?
-what ?
-what ?
-what ?
-how ?
-what kind of immune system ?
-which other ancient organism ?
-how ?
-that ?
-what ?
-of what medical treatment ?
-what ?
-what ?
-when ?
-what ?
-what ?
-what ?
-what field ?
-what ?
-what even ?
-which animal 's venom ?
-who ?
-who ?
-who ?
-what ?
-what virus ?
-when ?
-what ?
-which system ?
-what protection ?
-what type of immune systems ?
-what immune system ?
-what ?
-what ?
-what molecules ?
-what molecules ?
-what term ?
-what part of the innate immune system ?
-what ?
-what ?
-what ?
-what ?
-what responses ?
-what ?
-what ?
-what ?
-what enzymes in saliva ?
-what ?
-what compounds in the stomach ?
-what ?
-what probiotic flora ?
-what ?
-what ?
-what ?
-that ?
-what ?
-what type of cells ?
-when ?
-what ?
-what ?
-what ?
-what percentage of leukocytes ?
-what ?
-what ?
-what ?
-what cells ?
-what ?
-what ?
-what ?
-that ?
-what ?
-that ?
-in what types of organisms ?
-what ?
-that ?
-what ?
-what kind of t cells ?
-what class of t cells ?
-what kind of t cells ?
-what co-receptor on the t cell ?
-what ?
-what toxin ?
-when ?
-what co-receptor ?
-how many receptors on a helper t cell ?
-how many ?
-what chemicals ?
-what ?
-of what receptor ?
-what type of t cells ?
-what kind of human t cells ?
-what kind of cell ?
-what ?
-what ?
-when ?
-the function of long-lived memory cells ?
-what antibody ?
-what ?
-of which immune responses ?
-what ?
-what ?
-what ?
-what chronic conditions ?
-what kind of deprivation ?
-what ?
-what ?
-what ?
-what type of immune cells ?
-what molecules ?
-what ?
-what ?
-what ?
-what kind of disorders ?
-where ?
-what kind of disorders ?
-in what ?
-at what age ?
-what ?
-what ?
-by what process ?
-what ?
-what ?
-what kind of proteins ?
-what kind of system of infection ?
-who ?
-what ?
-what ?
-what other scientist influence frank burnet ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what gene ?
-what ?
-what ?
-what ?
-what cell type ?
-what ?
-what molecules of the adaptive immune system ?
-what ?
-what ?
-that ?
-what ?
-from what pathogens ?
-what ?
-what ?
-who ?
-under elie metchnikoff 's cellular theory , what cells ?
-what two scientists ?
-that ?
-what receptors ?
-what ?
-what ?
-how many classes of immune hypersensitivity ?
-what type of hypersensitivity ?
-what ?
-what ?
-what food bacteria ?
-what ?
-what bacteria ?
-what protein ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what kind of amino acids ?
-what ?
-by what cells ?
-what ?
-of what hormones ?
-how ?
-the speed of the killing response of the human immune system ?
-what type of cascade ?
-what ?
-what ?
-what ?
-what country ?
-where ?
-which people ?
-who ?
-why ?
-what ?
-what civil rights movement in the us ?
-that ?
-who ?
-what ?
-what character in the play ?
-what ?
-what play ?
-who ?
-what ?
-what poet ?
-what ?
-what famous author ?
-who ?
-what ?
-which famous indian ?
-in what activities ?
-what person ?
-what ?
-what issue ?
-who ?
-that students ?
-what ?
-how much literature ?
-what issue ?
-what type of protest ?
-what type of civil disobedience ?
-what terminology ?
-how ?
-when ?
-from what ?
-what ?
-what ?
-what type of person ?
-by what population group ?
-what group of people ?
-what author ?
-what ?
-what ?
-what ?
-who ?
-who ?
-who ?
-what ?
-what ?
-who ?
-what ?
-what public entity of learning ?
-why ?
-what two women ?
-what ?
-what ?
-what ?
-what dilemma ?
-what book of the bible ?
-what behavior ?
-what dictionary ?
-what other terminology ?
-that ?
-what type of civil disobedience ?
-when ?
-what ?
-why ?
-what ?
-what group of people ?
-of who ?
-what ?
-what ?
-why ?
-what ?
-what type of civil disobedience ?
-what ?
-when ?
-what ?
-what ?
-what position ?
-when ?
-when ?
-what ?
+what company ?
 how long ?
-that ?
-what group of civil disobedients ?
-how long ?
-what ?
-what type of actions ?
-what type of goals ?
+besides death wish coffee , how many other competitors ?
+which company ?
+how many other contestants ?
+which company ?
+which company ?
+what company ?
 who ?
+what universal trailer ?
+what lionsgate trailer ?
 what ?
 what ?
-when ?
-what year ?
-what ?
-how ?
-what ?
-when ?
-what ?
-what type of government investigations ?
-what ?
-what ?
-why ?
-why ?
-what ?
-for what reason ?
-what ?
-which duty ?
-why ?
-which reason ?
-what third type of plea ?
-where in las vegas ?
-what ?
-how ?
-what type of sentences ?
-why ?
-why ?
-what type of punishment ?
-what ?
-when ?
-what type of plea ?
-which famous indian ?
-what way ?
-why ?
-what type of treatment ?
-what ?
-what ?
-what us war ?
-what needs ?
-why ?
-what ?
-why ?
-for what reason ?
-what ?
-when ?
-what us war ?
-what type of defense ?
-why ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what percentile of gross domestic product ?
-what three things ?
+what film ?
+which ?
+which other film trailer ?
+what famous july fourth holiday movie ?
+what movie company ?
+what company ?
+who ?
+who ?
+along with dan fouts , who ?
+who ?
+how many color ?
 who ?
 who ?
 who ?
-what ?
-who ?
-what ?
-what ?
-in what year ?
-what ?
-what ?
-what ?
-what ?
-what ?
-who ?
-what ?
-what ?
-what ?
-what ?
-when ?
-how much ?
-who ?
-to who ?
-what kind of contract ?
-what project structures ?
-of who ?
-what ?
-what ?
-when ?
-what financial issue ?
-who ?
-who ?
-who ?
-when ?
-who ?
-what ?
-that ?
-what ?
-what ?
-who ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-on what ?
-in the most common construction procurement , who ?
-whose role ?
-who ?
-with who ?
 who ?
 who ?
 who ?
 who ?
 what ?
+what area ?
+what radio station ?
 who ?
 what ?
-who ?
-what ?
-what ?
-how much revenue ?
-how many ?
-how many employees ?
-how many women ?
-what ?
-what ?
-where ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what right ?
-what ?
-what ?
-what country ?
-what ?
-what ?
-what ?
-what factor ?
-who ?
-what religion 's schools ?
-what religious group ?
-what type of education ?
-what power ?
-what ?
-what ?
-what ?
-what denomination ?
-where ?
-who ?
-what article of the grundgesetz grants the right ?
-what percentage of german students ?
-what ?
-in 1992 , what percentage of east german students ?
-what ?
-what ?
-how ?
-what ?
-what types of schools ?
-how ?
-what ?
-what ?
-what ?
-how many examination boards ?
-what body in india ?
-what ?
-what ?
-what ?
-what language ?
-what ?
-how ?
-what ?
-what ?
-in what year ?
-what language ?
-what language ?
-what ?
-how many ?
-what ?
-how ?
-where ?
-what ?
-what language ?
-how many private schools ?
-how many ?
-what percentage of new zealand students ?
-what religion 's schools ?
-what city ?
-what denomination ?
-where ?
-what denomination ?
 in what city ?
-what group ?
-what percentage of filipino primary school students ?
-in the philippines , what percentage of secondary school students ?
-what percentage of filipino tertiary education ?
-in what month and year ?
-along with english and mathematics , what subject ?
-what ?
-what stipend ?
-what aid ?
-what south african law ?
-in what year ?
-what type of school ?
-what schools ?
-in what century ?
-what types of schools ?
-how ?
-how ?
-what ?
-how many people ?
-what ?
-what school model ?
-what age ?
-what schools ?
-what percentage of british children ?
-at a-level , what percentage of british students ?
-what ?
-what court case ?
-what ?
-in what part of the united states ?
-what ?
-where ?
-what amendment to the united states constitution ?
-what state constitutional amendments ?
-what ?
-in what year ?
-in what year ?
-what ?
 who ?
-about how much ?
-what ?
-what notable private school ?
-how ?
-what individual ?
-when ?
-what ?
-what organization ?
-what president of the university ?
-what ?
-how many individual libraries ?
-how many volumes ?
-how many us presidents ?
+who ?
+who ?
+which station ?
+who ?
+what two radio stations ?
+what radio station in south carolina ?
+what bbc radio station ?
+what radio station ?
+who ?
+what british tv network ?
+who else ?
+who ?
+what player ?
+who ?
+in what year ?
+who ?
+how many of the prior super bowl mvps ?
+what former mvp ?
+which mvp ?
+how many players ?
+how many former mvp honorees ?
+who ?
+who ?
+which mvp honoree ?
 how many ?
 what ?
+what award ?
 what ?
-what river ?
+into what language ?
+who ?
+what actress ?
+who ?
+what actor ?
+who ?
 how many ?
+who ?
+on what date ?
+what nationality ?
+at what super bowl ?
 what ?
-in what year ?
-what year ?
-in what year ?
-in what year ?
-what ?
-after what ?
-in what year ?
-what liberal ?
-in what year ?
+what previous super bowl halftime show ?
+who ?
+what company ?
+what song ?
+who ?
+which ?
+which single ?
+what other former halftime show performer ?
+what team ?
+who ?
+who ?
+who ?
+who ?
+how many yards ?
+who ?
+who ?
+which team ?
+who ?
+which denver player ?
 who ?
 what ?
-what president ?
-what conviction ?
-from whom ?
+which former referee ?
+whose pass to jerricho cotchery ?
+who ?
+which player ?
+what super bowl ?
+who ?
+what analyst ?
+who ?
+who ?
+what year ?
+which retired ref ?
+who ?
+who ?
+when ?
+who ?
+how many yards ?
+how many yards ?
+how many yards ?
+how many passing yards ?
+who ?
+how much time ?
+who ?
+how many yards ?
 who ?
 how ?
-in what year of 20th century ?
+who ?
+what position ?
+which panther ?
+who ?
+who ?
+who ?
+who ?
+how many yards ?
+who ?
+which fullback ?
+who ?
+who ?
+how ?
+who ?
+who ?
+who ?
+how many yards ?
+what kicker ?
+who ?
+who ?
 what ?
-in what year ?
-what ?
-how far from state house in downtown boston ?
-how many residential dorms house upper class , sophomore , jr , and sr ?
-what ?
-how far from the yard ?
+which broncos player ?
+who ?
+who ?
+what yard line ?
+who ?
+who ?
+who ?
+of how many yards ?
+who ?
+who ?
+who ?
 where ?
 what ?
-where ?
-how much more land ?
 what ?
-what additional benefits ?
+what yard line ?
+how many yards ?
+how many of the following three fourth quarter drives after the field goal makng the score 16-10 ?
+on what yard line ?
+who ?
+what panther defender ?
+what player ?
+who ?
+who ?
+who ?
+which player ?
+which panthers player ?
+how much time ?
 what ?
 what ?
-how many graduate students ?
-when ?
+what ?
+how many plays ?
+what ?
+how many solo sacks ?
+how many touchdowns ?
+how many field goals ?
+what player ?
+how many ?
+how many touchdowns ?
+who ?
+who ?
+which player ?
+what ?
+what ?
+how many of the four field goal attempts ?
+how many total yards ?
+how many first downs ?
+what team ?
+who ?
+who ?
+how many yards ?
+how many first downs ?
+who ?
+which team ?
+how many first downs ?
+how many first downs ?
+what team ?
+what team di the broncos ?
+how many teams ?
+what ?
 what year ?
+who ?
+who ?
+how old ?
+over how many species of trees ?
 what ?
-how great ?
-what project ?
+what garden ?
+which end of the saxon garden ?
 what ?
-what ?
-when ?
-what south african vice consul ?
-by how much ?
-what ?
-in what year ?
+how ?
+what animals ?
+how many ?
+how many lakes ?
 why ?
-in what year ?
-how ?
-how ?
-what criticism in ny times article that ?
 what ?
-how many courses ?
+how many of warsaw 's inhabitants ?
+what percentage of the population of warsaw ?
 what ?
 what ?
 what ?
-how much ?
+how many professors ?
 what ?
-what percentage of total financial aid for undergraduates from harvard ?
+what year ?
+what ?
+when ?
+how many items ?
+what profession ?
+who ?
+how much area ?
+what ?
+what ?
+why ?
+which ?
+where ?
+what ?
+what ?
+how many beds ?
+what ?
+what type of venue ?
+what ?
+where ?
 what ?
 what ?
 where ?
-how many total volumes ?
+how long ?
+what ?
+what theatre ?
+what ?
+how ?
+when ?
+what ?
+what type of flower ?
+what ?
 how many museums ?
 what ?
+what ?
+what ?
+where ?
 what museum ?
-in what year ?
-in what year ?
-where ?
-how many intercollegiate sports ?
-what ?
-at what time ?
-what ?
-in what year ?
-in what year ?
-what school ?
-what ?
-what ?
-how many weight rooms ?
-how ?
-in what body of water ?
-who ?
-in what year ?
-what un secretary ?
-what columbia president ?
-who ?
-what harvard alumni ?
-what tv host and writer ?
-what famous conductor ?
-what ?
-what famous civil rights leader ?
-what fields medal ?
-what prestigious legal scholars ?
-what shakespeare scholar ?
-which florida city ?
-what ?
-what ?
-in which county ?
-what year ?
-what river ?
-how far ?
-what ?
-by what people ?
-what historical figure ?
-what ?
-what sport ?
+what type of theatre ?
+where in warsaw ?
+how many rooms ?
+what castle ?
 how many ?
+what ?
+what ?
+when ?
+who ?
+when ?
+how many times ?
+where ?
+why ?
+what ?
+what ?
+how long ?
+when ?
+what ?
 what ?
 where ?
-who ?
+where ?
 what ?
-what ?
-who ?
-for what nation ?
-who ?
-what ?
-which fort ?
-after what event ?
-what ?
-why ?
-who ?
+where ?
 when ?
-what ?
-after what battle ?
-what factors ?
-in what year ?
-during which period ?
-which us president ?
-what ?
-what ?
-what ?
-what ?
-how many buildings ?
-what ?
-what ?
-who ?
-what type of movies ?
-what ?
-what ?
-what term ?
-who ?
-what ?
-in what part of the city ?
-what ?
-who ?
-how ?
-how many city ?
-what political group ?
-what ?
-who ?
-what ?
-how ?
-what ?
-what river ?
-what ?
-how much of jacksonville ?
-what town ?
-what distinction ?
-as what ?
-how many floors ?
-what ?
-what type of climate ?
-when ?
-how ?
-what ?
-what ?
-what ?
-what else ?
-what ?
-what storm ?
-how fast ?
-what ?
-what ?
-in what year ?
-what ethnic group located in jacksonville ?
-how many residents ?
-what jacksonville community ?
-what portion of households in jacksonville ?
-how many of jacksonville 's city residents ?
-how many men older than 18 ?
-what percentage of global assets ?
-how many ?
-how much ?
-what ?
-what percent of the global assets in 2000 ?
-what ?
-how much ?
-how much of the global wealth ?
-why ?
-how many ?
-what publication ?
-what ?
-what ?
-what ?
-who ?
-what ?
-how many of the richest 400 americans ?
-what institute ?
-what ?
-what impacts distribution of wealth when ?
-what ?
-how ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what impact ?
-when ?
-what impact ?
-what ?
-why ?
-what trend ?
-what ?
-what type of wages ?
-what ?
-under what law ?
-what ?
-how ?
-what ?
-what ?
-what ?
-what ?
-what type of outcomes ?
-what ?
-when ?
-what ?
-what ?
-who ?
-what ?
-what drives down wages in a job with many workers willing ?
-why ?
-what type of wages ?
-whose competition drives wages ?
-what ?
-what type of motivators ?
-what type of motivators ?
-what type of entrepreneurship ?
-what ?
-what ?
-what motivation ?
-what type of impact ?
-what ?
-what tax ?
-what ?
-what system ?
-what ?
-what ?
-what ?
-what index ?
-what ?
-what ?
-who ?
-what ?
-what ?
-what ?
-what type of wages ?
-what ?
-what ?
-what ?
-how much potential economic growth ?
-what ?
-who ?
-when ?
-when ?
-what ?
-what amount of growth ?
-what ?
-when ?
-what impact ?
-what impact ?
-what ?
-what ?
-when ?
-what ?
-how ?
-what ?
-what ?
-what types of organizations ?
-which set of countries ?
-how much support ?
-under which policy ?
-what ?
-what ?
-what organization ?
-how much support ?
-what level of economic mobility ?
-what country ?
-what ?
-what ?
-what ?
-what ?
-what college ?
-what ?
-what rate of unionization ?
-what ?
-what effect ?
-what effect ?
-what ?
-what ?
-what scale ?
-when rich countries ?
-what ?
-what ?
-what ?
-what ?
-what ?
-who ?
-what kind of pay gap ?
-who ?
-what gender ?
-who ?
-what ?
-what types of programs ?
-what ?
-what ?
 what ?
 what profession ?
-what ?
-what ?
-what ?
-what ?
-during what time period ?
+who ?
+who ?
 when ?
-in what sector ?
-in what sector ?
+what ?
+what exchange in warsaw ?
+what ?
+when ?
+what city ?
+when ?
+who ?
+why ?
+what archdiocese ?
+what ?
+what ?
+what ?
+what ?
+what ?
 who ?
 what ?
 what ?
+what city ?
+who ?
+when ?
+in what year ?
+when ?
+who ?
+when ?
 what ?
+why ?
+what year ?
+how long ?
+what kingdom ?
+whose army ?
+when ?
+when ?
+how long ?
 what ?
-what process ?
+who ?
+when ?
+what army ?
+when ?
+who ?
+how much of warsaw 's population ?
+when ?
+how long ?
+what army ?
+why ?
+when ?
+how many days ?
 what ?
+what campaign ?
+what type of housing ?
+what ?
+what building ?
+what list ?
+what pope ?
+what ?
+how long ?
 where ?
-who ?
 what ?
-who ?
-what ?
-what forces ?
-what career ?
-what type of skills ?
-what ?
-why ?
-what ?
-what ?
-in u.s. states , what ?
-what year ?
-what ?
-what ?
-which ?
-what nationality ?
-what rates of health and social problems ?
-how ?
-how many ?
-what ?
-where ?
-what ?
-who ?
-how ?
-what characteristic in recent years ?
-who ?
-how many factors of health and social problems ?
-where ?
-what ?
-what ?
-what ?
-how many ?
-what ?
-how much of a difference in homicide rates ?
-what ?
-that ?
-what ?
-what ?
-what ?
-what political ?
-when ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-who ?
-what ?
-what ?
-what ?
-why ?
-which ?
-what ?
-how ?
-what ?
-what ?
-what ?
-when ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what institution ?
-when ?
-what ?
-who ?
-what ?
-what ?
-when ?
-what ?
-how long ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-how ?
-in some countries over how many steps ?
-what ?
-what ?
-what ?
-why ?
-what ?
-what combined ?
-how ?
-what ?
-what ?
-what ?
-when ?
-when ?
-how ?
-what ?
-what ?
-what type of income ?
-how ?
-what ?
-who ?
-what ?
-what ?
-how ?
-when ?
-what ?
-what ?
-how ?
-what ?
-what ?
-what ?
-why ?
-what ?
-who ?
-what year ?
-what ?
-what type/genre of tv show ?
-in what ?
-who ?
-what doctor ?
-who ?
-who ?
-how many actors ?
-who ?
-which episode ?
-when ?
-what else ?
-what planet ?
-what vehicle ?
-that ?
-what feature ?
-why ?
-how ?
-what enemy of doctor ?
-what ?
-what type of beings ?
-what type of lord ?
-what ?
-why ?
-who ?
-how long ?
-how many seasons ?
-who ?
-what documentary ?
-what ?
-what tv station ?
-what ?
-who ?
-what network ?
-how many ?
-in what country ?
-what ?
-what year ?
-what ?
-who ?
-what type of special doctor who shows ?
-what years ?
-what new series ?
-what year ?
-that ?
-what other series ?
-when ?
-how long ?
-who long ?
-what major event u.s. ?
-what other event ?
-what popular phrase ?
-who ?
-what ?
-what ?
-who ?
-which ?
-how many of the survey respondents ?
-what journalist ?
-who ?
-what publication ?
-what image ?
-what ?
-what ?
-who ?
-when ?
-how many seasons ?
-when ?
-how many episodes ?
-what ?
-what ?
-in what year ?
-how long ?
-when ?
-which episode in 2008 ?
-what year ?
-how many ?
-what ?
-how many ?
-how long ?
-in what year ?
-who ?
-how many of the episodes ?
-which seasons ?
-when ?
-what years ?
-how ?
-who ?
-what ?
-what type of film ?
-how ?
-who ?
-who ?
-what year ?
-what animation company ?
-when ?
-when ?
-what first ?
-what term ?
-what term ?
-how many times ?
-how many incarnations ?
-in what ?
-in what two serials ?
-in what year ?
-who ?
-what ?
-what actor ?
-what ?
-what two doctors ?
-what doctor ?
-which episode ?
-which doctor ?
-in which episode ?
-what ?
-which three doctors ?
-what special audio recording ?
-which doctors ?
-which doctors ?
-in what year ?
-in what episode ?
-in what episode ?
-in what episode ?
-in what episode ?
-in what year ?
-what ?
-what ?
-in what year ?
-in 2005 , what ?
-in what ?
-what type of creature ?
-what ?
-what ?
-what ?
-what ?
-what ?
-who ?
-who ?
-who ?
-who ?
-who ?
-when ?
-what ?
-in what series ?
-who ?
-who ?
-what planet ?
-what scientist ?
-what ?
-who ?
-what title ?
-who ?
-what literary reference ?
-who ?
-who ?
-what ?
-in what year ?
-what ?
-who ?
-what workshop ?
-what kind of techniques ?
-when ?
-what ?
-who ?
-who ?
-for which doctor ?
-who ?
-in what show ?
-what ?
-what radio station ?
-which series version ?
+how many kilometers ?
+how many miles east of berlin ?
+what river ?
 how high ?
-who ?
-who ?
-who ?
-how high on the charts ?
+where ?
+how many geomorphologic formations ?
+what formation ?
+which plateau ?
 what ?
-which doctor who-related song ?
+what ?
+what plateau ?
+what ?
+what ?
+what type of forested areas ?
+what ?
+when ?
+when ?
+what style ?
+what type of architecture ?
+when ?
+what ?
+the house of the baryczko merchant family ?
+what ?
+when ?
+when ?
+what type of architecture ?
+what ?
+when ?
+why ?
+what style ?
+what building ?
+what ?
+what ?
+what fortification ?
 who ?
+what monument ?
+what type of space in warsaw ?
+where ?
+where ?
+what park ?
+when ?
+why ?
+where ?
+what ?
+what forest ?
+how many botanical gardens ?
+how many people ?
+what ?
+when ?
+what conviction ?
+what ?
+what type of city ?
+what ?
+what percentage ?
+what percentage of warsaw 's population ?
+when ?
+what ?
+what ?
+in what districts ?
+who in warsaw ?
+how many members ?
+what ?
+how many days ?
+what ?
+who ?
+when ?
+who ?
+what district of warsaw ?
+what ?
+how many ?
+what ?
+how much of poland 's national income ?
+what ?
+when ?
+what ?
+how many ?
+whose former headquarters ?
+when ?
+what car ?
+what south korean car manufacturer ?
+who ?
+what ?
+what ?
+what ?
+what river ?
+how many people ?
+where ?
+what ?
+on what river ?
+how far ?
+how many residents ?
+what rank for most populous city in the european union ?
+in what country ?
+when ?
+from which countries ?
+who ?
+what century ?
+who ?
+who ?
+what religion ?
+what ?
+when ?
+when ?
+who ?
+what river ?
+what ?
+what part of france ?
+what ?
+when ?
+whose shrine ?
+where ?
+what ?
+who ?
+who ?
+in what year ?
+where ?
+what ?
+what ?
+what kind of bureaucracy ?
+who ?
+when ?
+when ?
+who ?
+what ?
+who ?
+who ?
+what ?
+when ?
+how many ?
+who ?
+what river ?
+when ?
+where ?
+who ?
+who ?
+where ?
+who ?
+who ?
+when ?
+who ?
+where ?
+who ?
+when ?
+who ?
+in what year ?
+what country ?
+what culture ?
+who ?
+when ?
+who ?
+who ?
+what culture 's arrival in scotland ?
+where ?
+who ?
+who ?
+what country ?
+what year ?
+who ?
+when ?
+what ?
+what major conquest ?
+how long ?
+what year ?
+who ?
+what ?
+who ?
+what ?
+what kind of coronation ?
+when ?
+what group ?
+what continent ?
+who ?
+who ?
+who ?
+where ?
+how many customaries ?
+what ?
+what kind of arches ?
+what architecture type ?
+what architecture type ?
+what place ?
+when ?
+who ?
+when ?
+what kind of needlework ?
+what ?
+who ?
+what ?
+in what century ?
+who ?
+where ?
+what monastery ?
+who ?
+what tradition ?
+in what year ?
+what ?
+in what year ?
+when ?
+in what year ?
+what ?
+what ?
+in what year ?
+who ?
+in what area of the united states ?
+what " war " ?
+when ?
+what other inventor ?
+where ?
+who ?
+what other invention of tesla 's ?
+when ?
+what ?
+where ?
+when ?
+what remote control vehicle ?
+where ?
+what year ?
+what ?
+where ?
+what ?
+how ?
+what year ?
+what ?
+when ?
+what ?
+what modern-day country ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what ?
+how many siblings ?
+what language ?
+in what year ?
+what ?
+what ?
+what ?
+where ?
+what job ?
+who ?
+what language ?
+what ?
+what ?
+in what year ?
+when ?
+why ?
+who ?
+in what language ?
+what disease ?
+how long ?
+what ?
+what ?
+where ?
+what ?
+what disease ?
+how long ?
+what ?
+what bargain ?
+where ?
+whose works ?
+what ?
+what year ?
+why ?
+when ?
+what year ?
+what school ?
+in what year ?
+what ?
+where ?
+when ?
+when ?
+how ?
+what ?
+what ?
+why ?
+what ?
+what ?
+what health issue ?
+when ?
+what secret ?
+what ?
+what ?
+why ?
+when ?
+what ?
+what ?
+why ?
+when ?
+where ?
+what ?
+what city ?
+why ?
+how ?
+which university ?
+where ?
+when ?
+who ?
+where ?
+which company ?
+what position ?
+what ?
+what position ?
+in what year ?
+where ?
+what ?
+what ?
+when ?
+where ?
+where ?
+who ?
+where ?
+where ?
+where ?
+when ?
+who ?
+where ?
+how much ?
+what ?
+how long ?
+how much ?
+what ?
+what alternate payment ?
+who ?
+what ?
+what ?
+what ?
+what ?
+what ?
+when ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+which years ?
+what ?
+what ?
+what else ?
+who ?
+when ?
+where ?
+where ?
+when ?
+what ?
+who else ?
+where ?
+what ?
+what ?
+when ?
+what ?
+what ?
+what sort of design ?
+when ?
+what high maintenance part ?
+when ?
+who ?
+what ?
+in what year ?
+why ?
+who ?
+who ?
+who ?
+who other than tesla ?
+what ?
+what ?
+in what year ?
+how much ?
+who ?
+what ?
+how much ?
+when ?
+what ?
+in which city ?
+where ?
+what ?
+what cycle ac current system ?
+what motor ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what company ?
+which current type ?
+who ?
+when ?
+what ?
+who ?
+in 1893 , who ?
+where ?
+who ?
+what ?
+what ?
+who ?
+where ?
+in what year ?
+what type of power ?
+who ?
+what landmark ?
+what company ?
+what company ?
+what system ?
+who ?
+when ?
+what type of system ?
+what ?
+when ?
+how much ?
+what ?
+by 1897 , how much ?
+who ?
+how much ?
+how much ?
+how old ?
+where ?
+what ?
+what ?
+when ?
+what ?
+how old ?
+what sort of power transmission ?
+what organization ?
+what ?
+when ?
+what position ?
+how long ?
+what other institute ?
+why ?
+what ?
+when ?
+when ?
+when ?
+what ?
+what ?
+what type of image ?
+who ?
+what ?
+when ?
+what ?
+what ?
+what ?
+when ?
+what ?
+what ?
+what ?
+what ?
+where ?
+what ?
+what ?
+where ?
+where ?
+which engineer ?
+in which year ?
+who ?
+what ?
+who ?
+when ?
+what ?
+how ?
+what other projectiles ?
+what association ?
+which of tesla 's inventions ?
+what philadelphia institution ?
+when ?
+what ?
+where ?
+what ?
+what type of animal ?
+when ?
+who ?
+when ?
+when ?
+in what year ?
+what date ?
+what ?
+what kind of electricity ?
+what sort of waves ?
+what ?
+how big ?
+from what distance ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+to what ?
+what planet ?
+what magazine ?
+what ?
+when ?
+how much money ?
+what ?
+what ?
+when ?
+when ?
+what ?
+when ?
+what ?
+what ?
+what kind of facility ?
+where ?
+who ?
+on what ?
+how ?
+how much correspondence ?
+why ?
+what ?
+how tall ?
+how many horsepower ?
+at what speed ?
+when ?
+what ?
+how ?
+where ?
+what unforeseen problem ?
+what publication ?
+what ?
+what ?
+who ?
+what ?
+where ?
+what ?
+what ?
+how much ?
+what award ?
+in what magazine ?
+how ?
+what later invention ?
+who ?
+who ?
+who ?
+what ?
+what ?
+what ?
+how many possible bids for the prize ?
+who ?
+in what year ?
+what ?
+for what invention ?
+what ?
+what kind of engines ?
+what ?
+what other compensation ?
+for how long ?
+what ?
+what ?
+how far ?
+how much energy loss ?
+what ?
+when ?
+what ?
+who ?
+what ?
+when ?
+what kind of weapon ?
+what ?
+what ground based group ?
+what ?
+when ?
+what ?
+of what material ?
+what ?
+how much time ?
+what kind of weapons ?
+where ?
+in what city ?
+how many volts ?
+what ?
+what ?
+where ?
+what ?
+how old ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what ?
+who ?
+who ?
+what day ?
+how many people ?
+where ?
+where ?
+who ?
+who ?
+when ?
+what ?
+in how many countries ?
+what ?
+where ?
+at what time ?
+what ?
+how late ?
+who ?
+what ?
+why ?
+what ?
+what ?
+what ?
+what ?
+how many ?
+what animals ?
+how much ?
+where ?
+to what place ?
+how much ?
+how tall ?
+in what time frame ?
+how many languages ?
+what ?
+what other visual phenomena ?
+what kind of memory ?
+how long ?
+what amount of time ?
+where ?
+who ?
+what ?
+what characteristic ?
+who ?
+when ?
+who ?
+who ?
+what ?
+with what word ?
+what ?
+what famous writer ?
+where ?
+when ?
+who ?
+who ?
+why ?
+what subatomic particle ?
+what ?
+to what century ?
+whose theory ?
+what ?
+which theory of einstein 's ?
+when ?
+what shape of space ?
+how old ?
+what idea ?
+what ?
+what attribute of humans ?
+when ?
+who ?
+when ?
+what term ?
+what ?
+what ?
+when ?
+what entity ?
+what religion ?
+what type of religious behavior ?
+which two religions ?
+what article ?
+what ?
+in the article 's title , what ?
+what ?
+who ?
+who ?
+where ?
+when ?
+what ?
+what kind of fiction ?
+what kind of media ?
+how many types of science fiction ?
+on which ?
+for what occasion ?
+to which ?
+how many other important people ?
+what branch of theoretical computer science deals ?
+by what main attribute ?
+what ?
+what measure of a computational problem ?
+what method ?
+what ?
+what unit ?
+what practical role ?
+what two fields of theoretical computer science ?
+what field of computer science ?
+what field of computer science ?
+what field of computer science ?
+what ?
+what ?
+what ?
+what ?
+by how many kilometers ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what kind of problems ?
+what ?
+what ?
+what ?
+what answer ?
+what kind of graph ?
+what ?
+what encoding decision ?
+a function problem ?
+how many ?
+what ?
+how ?
+what ?
+what ?
+what ?
+how ?
+in what unit ?
+whose thesis states ?
+what ?
+what term ?
+how ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what type of turing machine ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what two resources ?
+what commonality ?
+what type of turing machine ?
+what ?
+what ?
+what ?
+what ?
+what ?
+of what general measure ?
+what ?
+what ?
+when ?
+what ?
+by what ?
+which ?
+what ?
+what expression ?
+what ?
+how ?
+what ?
+into what ?
+what thesis ?
+what ?
+what function ?
+what ?
+what ?
+by what type of proof system ?
+what ?
+in what expression ?
+what ?
+what kind of statement ?
+what ?
+what ?
+what ?
+what concept ?
+what function in relationship ?
+what ?
+what ?
+what ?
+what measurement of time ?
+what ?
+on what ?
+what ?
+which ?
+what conclusion ?
+what ?
+what complexity class ?
+what hypothesis ?
+what complexity class ?
+what ?
+in what theoretical machine ?
+what effect ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what class ?
+what finite hierarchy ?
+to what ?
+who ?
+what computational problem ?
+what ?
+what ?
+what ?
+where ?
+what evidence between and among complexity classes ?
+in what ?
+how ?
+what ?
+what implication ?
+what variable ?
+what ?
+what lies between l and p ?
+what ?
+what ?
+what type of problems ?
+what eponymous variation of arithmetic ?
+what ?
+how quickly ?
+what ?
+what tactic ?
+who ?
+what theoretical device ?
+in what year ?
+what ?
+what paper ?
+what individuals ?
+in what year ?
+what complex measurements ?
+in what ?
+who ?
+in what year ?
+who ?
+what ?
+what ?
+who ?
+what theorem ?
+what ?
+how many ?
+what ?
+what ?
+where ?
+what ?
+where ?
+what factor ?
+what ?
+what ?
+what type of teaching ?
+who ?
+what ?
+what type of education ?
+what ?
+what ?
+what ?
+what type of text ?
+that ?
+who ?
+what ?
+who ?
+what ?
+where else ?
+what ?
+what ?
+what ?
+who ?
+what ?
+why ?
+who ?
+who ?
+who ?
+who ?
+who ?
+where ?
+what ?
+where ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what objective ?
+who ?
+what type of disability ?
+what ?
+what type of curricula ?
 what ?
 in what ?
 what ?
-in what episode ?
+what ?
+what function ?
+what ?
+what ?
 who ?
-who ?
+which type of school ?
+what type of parenting role ?
+what type of approaches for primary school ?
+what type of system ?
+in a platoon style teaching , what ?
+what ?
+how many teachers ?
+what ?
+how ?
+what type of support ?
+what ?
+what ?
+what types of discipline ?
+how common of a type ?
 when ?
-what doctor who mini-episode ?
+how common ?
+what western country ?
+what ?
+how many us states ?
+where ?
+what tool ?
+where ?
+what ?
+what countries ?
+what ?
+what ?
+where ?
+how ?
+what ?
+what type of teacher ?
+what ?
+what type of boundaries ?
+what ?
 who ?
-how many ?
-which series ?
-what music ?
+what countries ?
+what ?
+what type of discipline ?
+what country ?
+what country ?
+what country ?
+what country 's schools ?
+what class sizes ?
+what ?
+who ?
+who ?
+who ?
+what type of authority ?
+where else ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+how ?
+what ?
+what ?
+what type of studies ?
+what kind of levels of motivation ?
+what ?
+what ?
+what type of relationships ?
+what ?
+what ?
+by what type of teachers ?
+what ?
+what ?
+what ?
+where ?
+what ?
+what ?
+what ?
+how many students ?
+what ?
+where ?
+what ?
+how many people ?
+what study ?
+where ?
+why ?
+who ?
+what ?
+what register ?
+what ?
+what ?
+what ?
+what ?
+how many teachers ?
+where ?
+how much higher ?
+which study ?
+how many ways ?
+what ?
+what ?
+what type of intervention would changing the work environment ?
+where ?
+what ?
+what certificate ?
+what ?
+in what country ?
+who ?
+what ?
+what ?
+what ?
+what ?
+what ?
+where ?
+what ?
+where ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+with whom ?
+what part of the teaching council act ?
+when ?
 what ?
 when ?
-what logo ?
-which logo ?
-what logo ?
-which logo ?
-which doctor ?
+who ?
+how ?
+who ?
+what ?
+what ?
+what ?
+what type of degree ?
+when ?
+what ?
+what type of positions ?
+what type of opportunities ?
+what types of teachers ?
+with whom ?
+what ?
+how many universities ?
+how long until the provisional registration ?
+what ?
+how much ?
+how much ?
+what ?
+what group ?
+what area ?
+what language ?
+how long ?
+what percentage of primary schools ?
+who ?
+what group ?
+what ?
+when ?
+what ?
+what ?
+who ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what two factors ?
+in a report on k-12 teachers , which teachers ?
+what website ?
+how many types of religious or spiritual teachers ?
+which denomination ?
+what ?
+what ?
+who ?
+what type of mentorship ?
+who ?
+who ?
+what ?
+who ?
+in what area ?
+what ?
+what ?
+what ?
+how much ?
+what ?
+who ?
+who ?
+what ?
+what ?
+what ?
+of what nationality ?
+when ?
+what organization 's teaching ?
+what ?
+what ?
+how ?
+what ?
+whose authority ?
+what ?
+what ?
+what book ?
+what ?
+what version of the english translation of the bible ?
+what development ?
+what ?
+when ?
+where ?
+of what region ?
+into what religion ?
+what profession ?
+how ?
+how ?
+how ?
+in what year ?
+what educational study ?
+what ?
+what fields of study ?
+how ?
+what ?
+when ?
+where ?
+on what ?
+what ?
+to what ?
+how ?
+what ?
+who ?
+what lesson ?
+when ?
+who ?
+when ?
+when ?
+what ?
+when ?
+when ?
+what position ?
+where ?
+what degree ?
+when ?
+why ?
+what theology ?
+what ?
+what ?
+when ?
+who ?
+what ?
+who ?
+which thesis questions ?
+how ?
+who ?
+what church money collector ?
+who ?
+what ?
+what ?
+who ?
+what ?
+where ?
+where ?
+what story ?
+what story of little truth ?
+on whose comments ?
+where ?
+what ?
+when ?
+what device ?
+who ?
+how long ?
+how long ?
+when ?
+who ?
+what part of luther 's career ?
+when ?
+what ?
+what ?
+what sections of church dogma ?
+what ?
+what ?
+when ?
+what ?
+where ?
+by what ?
+what ?
+what ?
+how many points ?
+to whom ?
+where ?
+what ?
+how much of the indulgences ?
+when ?
+which pope ?
+what ?
+when ?
+what ?
+what ?
+when ?
+what ?
+who ?
+what scripture ?
+what ?
+when ?
+what ?
+what ?
+who ?
+when ?
+what authority ?
+when ?
+of what ?
+who ?
+who ?
+to whom ?
+what else ?
+when ?
+how ?
+what ?
+what ?
+who ?
+what ?
+what ?
+who ?
+why ?
+what manner of words ?
+how ?
+when ?
+who ?
+what ?
+what ?
+where ?
+what ?
+what book ?
+how ?
+what ?
+what ?
+when ?
+what ?
+what ?
+when ?
+how ?
+what ?
+what ?
+what ?
+how ?
+when ?
+at this time where ?
+what ?
+what ?
+who ?
+when ?
+what ?
+what group ?
+who ?
+when ?
+what ?
+what ?
+what ?
+how ?
+how quick ?
+who ?
+at what point in luther 's sermons ?
+what ?
+what type of people ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what event ?
+when ?
+what ?
+who ?
 who ?
 where ?
+what ?
+who ?
+how many ways ?
+what ?
+by whom ?
+what ?
+what kind of death ?
+what ?
+who ?
+when ?
+what event ?
+what protection ?
+who ?
+how ?
+how old ?
+how old ?
+when ?
+when ?
+at what point in the day ?
+what else ?
+when ?
+who ?
+what ?
+what kind of marriage ?
+why ?
+what ?
+what ?
+when ?
+what ?
+how many children ?
+what ?
+how ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what role ?
+who ?
+what unintended development ?
+when ?
+what ?
+for whom ?
+what parts of the original catholic mass ?
+what ?
+when ?
+what ?
+what type of education ?
+what ?
+what ?
+what ?
+when ?
+to whom ?
+for whom ?
+what ?
+what ?
+what ?
+what work of luther 's ?
+what translation of luther 's ?
+which work of luther 's ?
+what work ?
+how ?
+where ?
+when ?
+when ?
+what ?
+what word ?
+what ?
+where ?
+which ?
+why ?
+what ?
+what ?
+what work of luther 's ?
+what artist ?
+whose english translation of the bible ?
+in what type of work ?
+what art forms ?
+what ?
+what ?
+what instrument ?
+what ?
+why ?
+what hymn ?
+who ?
+what ?
+when ?
+what ?
+where ?
+what earlier hymn ?
+why ?
+when ?
+where ?
+what ?
+what ?
+what ?
+when ?
+what ?
+what ?
+what ?
+what ?
+which of luther 's hymn ?
+what ?
+what ?
+how many hymns ?
+what ?
+what ?
+whose tune ?
+what ?
+what famous composer ?
+where ?
+where ?
+how many hymns of luther ?
+how many ?
+how many hymns ?
+what ?
+what ?
+what ?
 in what years ?
 when ?
 what ?
+what other doctrines ?
 what ?
 what ?
-how popular ?
-when ?
-what station ?
-what country ?
-in what area ?
-how many days ?
-when ?
-which australian tv station ?
-what ?
-which station ?
-what ?
-what year ?
-what ?
-what canadian cable station ?
-which doctor who show ?
-what science fiction writer ?
-who ?
-what ?
-for which ?
-on what date ?
-what holiday ?
-what countries ?
-what shows ?
-what ?
-what doctor ?
-what series years ?
-who ?
-what ?
-what doctor ?
-what ?
-which actor ?
-what doctor ?
-when ?
-what ?
-that ?
-who ?
-when ?
-in what year ?
-when ?
-why ?
-what special ?
-what charity ?
-what type of lenses ?
-what ?
-what ?
-how many segments ?
-who ?
-what actress ?
-what star ?
-which family ?
-what series ?
-what character on coupling ?
-which ?
-what story ?
-how long ?
-what ?
-in what year ?
-what ?
-which doctors ?
-what series ?
-what company ?
-what year ?
-when ?
-in what year ?
-when ?
-how long ?
-who ?
-who ?
-when ?
-what company ?
-who ?
-who ?
-when ?
-what years ?
-in what year ?
-what doctor ?
-what award ?
 where ?
-for what type of music ?
-what year ?
-which doctor who show ?
-which season of doctor ?
-what show ?
-what spot ?
-what publication ?
-what rank ?
-what ?
-how many ?
-how many ?
-in what year ?
 who ?
+what theologian ?
+who else ?
+when ?
+where ?
+who ?
+when ?
+who ?
+what ?
+when ?
+who ?
+what ?
+how many of the fifteen points of discussion ?
+what one point ?
+what point ?
+what ?
+what ?
+what ?
+when ?
+what ?
+what ?
+which group ?
+what ruler ?
+what ?
+what ?
+how ?
+what ?
+what ?
+what ?
+what ?
+who ?
+when ?
+how ?
+what ?
+what ?
+who ?
+what kind of war ?
+what book ?
+what ?
+how ?
+what purpose ?
+what ?
+who ?
+what ?
+how ?
+what book ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+how ?
+what ?
+what ?
+what sacrament accords christians ?
+what ?
+what ?
+what ?
+who ?
+who ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what ?
+when ?
+how near to his death ?
+what ?
+what ?
+what ?
+who ?
+what ?
+what ?
+when ?
+who ?
+what action by luther ?
+what later actions by the nazis ?
+whose writings ?
+how ?
+when ?
+who ?
+who ?
+how ?
+what ?
+what ?
+when ?
+what ?
+who ?
+what ?
+who ?
+what ?
+what ?
+what about luther ?
+what kind of affect ?
+who else ?
+what ?
+when ?
+what ?
+who ?
+when ?
+how ?
+besides the arguments with rome and his own fellow reformers , what scandal ?
+what ?
+what ?
+what ?
+what other aspect of luther 's life ?
+how ?
 how many times ?
-how many awards ?
-how many awards ?
-what doctor ?
-what doctor ?
-which comedian ?
-who ?
-what weapon ?
-who ?
-what series ?
-what kind of university ?
+where ?
 when ?
-how many professional schools ?
-how many academic research divisions ?
-how many students ?
-university of chicago scholars ?
-who ?
+what ?
 where ?
 what ?
-in what year ?
-what society ?
-what person ?
-who ?
-what year ?
-what year ?
-who ?
-who ?
-what ?
-how much ?
-what ?
-who ?
-what year ?
-that ?
-who ?
-in what year ?
-who ?
-what ?
-why ?
-how long ?
-in what year ?
-in what year ?
 when ?
-of what neighborhood ?
-what ?
-in what year ?
-what ?
-in what year ?
-how many pages ?
-what policy ?
 when ?
-what institute ?
-how much ?
-what buildings ?
+for whom ?
+when ?
+what ?
+what scripture ?
+what ?
+when ?
+what event ?
+at what time ?
+on what date ?
+where ?
 who ?
 what ?
-how many quadrangles ?
-who ?
-during what ?
-who ?
-what administration ?
-what public policy school ?
+in what language ?
+what portion of luther 's last statement ?
+what kind of images of luther ?
+in contrast how ?
+how ?
+what ?
 when ?
-what other locations ?
-what river ?
-in what year ?
-what year ?
-who ?
+when ?
+on what other calendar ?
+when ?
+on what english calendar ?
+how ?
+what ?
+how many counties ?
+what ?
+what ?
+on what ?
+what ?
+how many megaregions ?
+what ?
+which border ?
+what ?
+which coastline ?
+how many metropolitan areas ?
+how many inhabitants ?
+which of the three ?
 how many people ?
-how many vice presidents ?
 what ?
-who ?
-of how many divisions of graduate ?
-how many ?
-how many academic majors ?
-how many academic minors ?
-how many divisions ?
-what division ?
 what ?
-how many student ?
-what guide ?
 what ?
 what ?
-how many public charter schools ?
+of which state ?
 what ?
-where ?
-how many libraries in total ?
-how man volumes ?
+which city ?
 what ?
-in what year ?
-how many volumes ?
-how many research institutes ?
-how many ?
-what ?
-what lab ?
-where ?
-what role in economics ?
-what ?
-what ?
-when ?
-what year ?
-what year ?
-when ?
-when ?
-how many students ?
-in the fall quarter of 2014 , how many students ?
-in the fall quarter of 2014 , how many students ?
-in the fall quarter of 2014 , how many students ?
-in the fall quarter of 2014 , how many students ?
-who ?
-what player ?
-why ?
-how many clubs ?
-what ?
-what club ?
-what ?
-what ?
-who ?
-who ?
-how many vice presidents ?
-roughly how much ?
-how many fraternities ?
-how many ?
-what ?
-how many ?
-how many fraternities ?
-in what month ?
-in what year ?
-what ?
-what ?
-what ?
-what microsoft ceo ?
-who ?
-who ?
-what goldman sachs ceo ?
-who ?
-who ?
-what alumni ?
-what alumni ?
-what alumni ?
-what prohibition agent ?
-what ?
-what ?
-what alumni member ?
-what ?
-what ?
-what minimalist composer ?
-what ?
-what video game series ?
-what american actor ?
-what comedian ?
-what ?
-what nasa astronaut ?
-what popular environmentalist ?
-who ?
-what geochemist ?
-what nobel memorial prize in economic sciences winner ?
-what british prime minister advisor ?
-who ?
-what university alumni member ?
-what ?
-what chess grandmaster ?
-what conservative international relations scholar ?
-who ?
-who ?
-who ?
-who ?
-who ?
-what egyptologist ?
-what mathematician ?
-what meteorologist ?
-who ?
-what cancer researchers ?
-who ?
-what shakespeare scholar ?
-what ?
-what ?
-what ?
-what ?
-who ?
-who ?
-when ?
-what non-chinese empire ?
-what dynasty ?
-what dynasty ?
-who ?
-when ?
-what writing ?
-what ?
-what ?
-what nominal title ?
-which tribes ?
-when ?
-who ?
-when ?
-what ?
-who ?
-what khitan leader ?
-what han chinese leader ?
-how many soldiers ?
-how many khitan tumens ?
-what ethnicity ?
-in what dynasty ?
-what kind of interethnic marriage ?
-who ?
-what dynasty ?
-who ?
-where ?
-when ?
-who ?
-what chinese era name ?
-who ?
-where ?
-who ?
-where ?
-when ?
-what ?
-what administrative division ?
-who ?
-how many ?
-what natural resources ?
-where ?
-where ?
-when ?
-what city ?
-what ?
-what kinds of growth ?
-what ?
-where ?
-where ?
-who ?
-who ?
-when ?
-when ?
-who ?
-how many people in quzhou ?
-where ?
-when ?
-what area ?
-what ?
-how ?
-when ?
-what ?
-where ?
-in what battle ?
-when ?
-when ?
-who ?
-when ?
-what ?
-when ?
-who ?
-what ?
-who ?
-what government department ?
-when ?
-who ?
-when ?
-who ?
-what ?
-how many ?
-where ?
-what ?
-how long after a banquet with tugh temur ?
-who ?
-who ?
-what ?
-what academy ?
-when ?
-what ?
-what religions ?
-when ?
-what chinese-style name ?
-how old ?
-how many successors of kublai ?
-which ?
-what ?
-why ?
-what ?
-when ?
-what uprising ?
-why ?
-who ?
-when ?
-what ?
-what ?
-what crops ?
-what type of musical instruments ?
-what religion ?
-what type of practices ?
-what fields of study ?
-what ?
-what ?
-what ?
-how ?
-what astronomer ?
-how accurate ?
-what ?
-what city ?
-what major crop ?
-what ?
-what legitimate dynasty ?
-what legitimate dynasty ?
-what ?
-what cultures ?
-what ?
-who ?
-what kind of division of power ?
-what ?
-who ?
-when ?
-who ?
-who ?
-when ?
-which languages ?
-how well ?
-which ?
-what ?
-by what year ?
-when ?
-how ?
-what type of arts ?
-which arts ?
-what dynasty ?
-what form of poetry ?
-what ?
-which ?
-which religion ?
-what ?
-what government agency ?
-what ?
-when ?
-when ?
-what modern math concept ?
-what type of math ?
-when ?
-what ?
-what ?
-what ?
-what ?
-when ?
-who ?
-what type of medicine ?
-what type of medicine ?
-what department ?
-why ?
-how many schools of medicine ?
-how ?
-how ?
-what techniques ?
-when ?
-what ?
-who ?
-when ?
-what aspect of western medicine ?
-what philosophies ?
-how ?
-who ?
-when ?
-who ?
-when ?
-what ?
-what ?
-when ?
-what ?
-when ?
-what mongolian system ?
-what chinese system ?
-who ?
-how ?
-where ?
-who ?
-who ?
-where ?
-what types of work ?
-who ?
-what yuan policies ?
-what jewish practice ?
-who ?
-what ?
-who ?
-who ?
-what ?
-which part of china ?
-which part of china ?
-why ?
-why ?
-who ?
-who ?
-who ?
-who ?
-why ?
-what region of china ?
-who ?
-where ?
-what modern city ?
-what ?
-where ?
-what ?
+in which cardinal direction from los angeles ?
 what country ?
 what ?
-what type of climate ?
-how ?
-what mountain ?
-what regions ?
 what ?
-how long ?
-when ?
+what ?
+which city ?
+which company ?
+what other major industry ?
+what ?
+what other culture ?
+what ?
+what famous snowbaorder ?
+to which island ?
+what ?
+what ?
+why ?
+which region of california ?
+what ?
 where ?
+how many miles ?
+what landmark ?
+which country ?
+which californio ?
+what else ?
+what ?
+how many times ?
+which senator ?
+which newspaper ?
+in which year ?
+what ?
+how many counties ?
+which ?
+what ?
+which mountain range ?
+which region ?
+where ?
+although southern california consts of a heavily developed urban environment , how much of it ?
+what else ?
+what kind of region ?
+what ?
+what other area ?
+who ?
+which other county ?
+other than the 1980s , in which decade ?
+what kind of climate ?
+what characteristic ?
+what ?
+how frequent ?
+what ?
+in which body of water ?
+what term best ?
+what type of landscapes ?
+which mountains ?
+how many earthquakes ?
+what magnitude ?
+what kind of destruction ?
+how much ?
+which fault ?
+what magnitude of earthquake ?
+which organization ?
+what ?
+what other kind of recognition ?
+that ?
+from which year ?
+what ?
+what ?
+what kind of economy ?
+which region ?
+what ?
+how many ?
+that ?
+what ?
+what ?
+what ?
+what ?
+how many cities in southern california ?
+that ?
+which other developed southern californian city ?
+what ?
+what ?
+what ?
+what characteristic best ?
+what else ?
+which type of livestock ?
+what industry ?
+what type of district ?
+what ?
+what ?
+of which area ?
+in which area ?
+century city ?
+what ?
+what ?
+which county ?
+where ?
+to which business center ?
+what other business district ?
+at what rate ?
+what ?
+where ?
+outside of northern san diego , which other region ?
+university city ?
+what ?
+what ?
+what ranking in terms of busiest airports from international passenger volume ?
+which airport ?
+what ?
+what ?
+how many lines ?
+how many ?
+what ?
+what ?
+to which region of california ?
+what ?
+what kind of universities ?
+what kind of university ?
+how many campuses ?
+how many campuses ?
+to which sport ?
+which sport ?
+what ?
+what ?
+which team ?
+how many teams ?
+which year ?
+what ?
 when ?
-when ?
+what other kind of sport ?
 what ?
-what words to they ?
+which conference ?
+which ncaa group ?
 what ?
+at which level of education ?
 what ?
+what company ?
 who ?
 what year ?
 what ?
 what ?
-where ?
-when ?
-how far ?
-how long ago ?
-when ?
+what year ?
+how many of the six total packages available to broadcasters ?
 who ?
-how old ?
+how much ?
+what consortium ?
+who ?
+how many ?
+what channel ?
+what ?
+what service ?
+when ?
+what ?
+when ?
+what ?
+who ?
 who ?
 who ?
 what ?
-what voyager ?
-where ?
+what channels ?
+what year ?
+what ?
+what additional srevice ?
+what additional srevice ?
+when ?
+what year ?
+what ?
+what ?
+what kind of service ?
+who ?
+who ?
+when ?
+what platform ?
+how many households ?
+by what name ?
+what kind of company ?
+how many customers ?
+what other digital tv service ?
+what ?
+what ?
 what ?
 when ?
-what two governors ?
+when ?
+what ?
+what optional soundtracks ?
+what ?
+what ?
+what ?
+when ?
+what satellite ?
+what satellite ?
+how many television and radio channels ?
+what ?
+when ?
+how many people ?
+what ?
+what ?
+what ?
+when ?
+when ?
+what platform ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what service ?
+when ?
 who ?
-how ?
-where ?
-where ?
-how ?
-how ?
+what ?
+who ?
+how much ?
+who ?
+what ?
+when ?
+what ?
+what ?
+who ?
 how many ?
 when ?
-when ?
-how many of the mau mau ?
-what ?
-when ?
-who ?
-when ?
-when ?
 what ?
 what ?
-who ?
-what kind of government ?
-what titles ?
-who ?
-who ?
+what ?
+what ?
+how many homes ?
+how large ?
+when ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what company ?
+what company ?
+what ?
+what kind of economy ?
 where ?
+at what ?
+what city in victoria ?
 what ?
 where ?
-how ?
+where ?
+where ?
+how many miners ?
+what ?
+what kind of representational system ?
+how many electorates ?
+how many representatives ?
+what ?
+how often ?
+what political party ?
 what party ?
-who ?
+which party ?
 what ?
-who ?
-what ?
-what group ?
-what group ?
-what ?
-when ?
-what ?
-where ?
-how ?
-how long ?
-what ?
-who ?
-where ?
-when ?
-what ?
-what constitutional change ?
-when ?
-what else ?
-when ?
-what ?
-when ?
-why ?
-who ?
-why ?
-who ?
-what ?
-who ?
-where ?
-when ?
-what kind of missions ?
-what ?
-what kind of allegations ?
-what other forces ?
-why ?
-what ?
-what else ?
-what ?
-who ?
-how much ?
-what kind of market ?
-what ?
-what ?
-what ?
-what percent of the labor force work ?
-how much ?
-what ?
-what ?
-where ?
-how much of the gdp ?
-what ?
-what ?
-what ?
-what institution ?
-why ?
-how ?
-how ?
-where ?
-what ?
-where ?
-what percent ?
-what program ?
-what country ?
-how much of gdp ?
-what ?
-what ?
-what ?
-what year ?
-where ?
-where ?
-when ?
-where ?
-how many barrels of oil ?
-what ?
-how much ?
-how much ?
-what ?
-what ?
-where ?
-what ?
-what ?
-what ?
-what ?
-why ?
-what ?
-where ?
-what percent of girls ?
-what ?
-what ?
-what language ?
-what ?
-where ?
-where ?
-what ?
-what ?
-how many followers ?
-where ?
-what percent of the muslim population ?
-what religion ?
-how much of the population ?
-who ?
-how many ?
-how many doctors ?
-what ?
+what party ?
+what percentage of victorians ?
 how many ?
 what ?
-what ?
-how many cases of malaria ?
-who ?
-when ?
-what ?
-what ?
-what system ?
-what ?
+how many ?
+where in australia ?
+how ?
+how populous ?
+what city ?
 what ?
 what ?
 when ?
+where ?
+where ?
 when ?
-what ?
-why ?
-when ?
+how much victorian farmland ?
+what percentage of farmland ?
+how much of victoria 's farmland ?
 how much ?
-what age ?
+how many tonnes of tomatoes ?
+when ?
+on what ?
+what group ?
+what ?
+what document ?
 what ?
 what ?
-what ?
-what ?
-what age children ?
-what ?
-what ?
-what ?
-who ?
-what ?
-what ?
-why ?
-what sports ?
-what ?
-who ?
-what countries ?
-how many gold medals ?
-how well ?
-what else ?
-why ?
-why ?
-what sport ?
 what ?
 when ?
-who ?
-when ?
-what ?
-what ?
-who ?
-how many meals a day ?
-what time ?
-what ?
 what ?
 what organization ?
-what un organizations ?
+what ?
+what church ?
+what government ?
+what type of manufacturing plant ?
+when ?
+when ?
+when ?
+what brand of car ?
+how high ?
+what ?
+how high ?
+what type of topological systems ?
+what ?
+where ?
+of what mountain system ?
+in what direction ?
 what ?
 what ?
-what un resolution ?
+who ?
+which rail line ?
+what entity ?
+what type of rail line ?
+what kind of rail system ?
+how many seats ?
+how many seats ?
+what ?
+what ?
+who ?
+on what date ?
+when ?
+what ?
+how much ?
+how much gold ?
+how many ?
+how many catholic schools ?
+how many students ?
+how many full time teachers ?
+what percentage of private school students ?
+what state in australia ?
+how many dairy cows ?
+what percentage of australia 's dairy cattle ?
+how much of australia 's milk ?
+where ?
+what ?
+to what gauge ?
+what gauge of rail lines ?
+where ?
+how many narrow gauge rail lines ?
+when ?
+what ?
+what name ?
+where ?
+when ?
+what ?
+what ?
+what ?
+what ?
+who ?
+who ?
+who ?
+how ?
+how much ?
+what percentage ?
+how many farms ?
+how much land ?
+how much percentage of victoria 's land ?
+what part ?
+what other tourist attraction ?
+where ?
+what event ?
+where ?
+what ?
+when ?
+what treaty ?
+what swiss city ?
+what name ?
+when ?
+what ?
+when ?
+who ?
+in what city ?
+what ?
+what ?
+in what year ?
+where ?
+what modern city ?
+who ?
+what trading company ?
+when ?
+who ?
+what ?
+by what name ?
+where in south carolina ?
+from whom ?
+what french town ?
+when ?
+what southern city ?
+who ?
+what coalition ?
+with what ?
+when ?
+what proclamation ?
+when ?
+which french kind ?
+how many ?
+what group ?
+what event ?
+how many ?
+how ?
+what ?
+when ?
+what king and former huguenot ?
+which successor to henry ?
+what ?
+how many ?
+what percentage of france 's population ?
+what northern province in france ?
+what ?
+what city north of new york ?
+what town in upstate new york ?
+what huguenot area ?
+what ?
+in what borough ?
+what country ?
+how many refugees ?
+what ?
+what two areas in the republic ?
+what declaration ?
+by what other name ?
+who ?
+by what name ?
+what time of day ?
+where ?
+what house ?
+what social construct ?
+what other english towns ?
+in what irish town ?
+what irish cities ?
+where ?
+after whom ?
+when ?
+what ?
+what ?
+what persons ?
+when ?
+what ?
+when ?
+what ?
+what religion ?
+what ?
+how ?
+how many ?
+what ?
+where else ?
+what ?
+when ?
+what ?
+in what year ?
+by what document ?
+what south african industry ?
+where ?
+what characteristic ?
+what revolutionary war midnight rider ?
+what signer of the articles of confederation ?
+in what city ?
+what church in virginia ?
+in what state ?
+what industry ?
+what style of lace ?
+what reference ?
+when ?
+what ?
+what portion of berlin 's population ?
+why ?
+what years ?
+what ?
+which central european country ?
+where ?
+what ?
+whom ?
+who ?
+what ?
+which army ?
+when ?
+what ?
+what present-day area ?
+which spanish officer ?
+when ?
+what european event ?
+in what english colony ?
+in what area of this british colony ?
+what town ?
+how many settlers original ?
+when ?
+who ?
+what dutch document ?
+what leader ?
+what ?
+what english law ?
+when ?
+how many ?
+who ?
+what catholic church liturgical belief ?
+what war in ireland ?
+which irish cities ?
+what textile industry ?
+which noble ?
+which count ?
+what industry ?
+in what era ?
+in what year ?
+what two member nations of the holy roman empire ?
+what ?
+what area in south africa ?
+what ?
+from what french king ?
+what ?
+what ?
+who ?
+where ?
+when ?
+what leader of the swiss reformation ?
+what other european protestant leader ?
+when ?
+what group ?
+how many ?
+when ?
+how many ?
+who ?
+how ?
+what ?
+what ?
+what present day county ?
+where ?
+from whom ?
+what french city ?
+what ?
+how ?
+for how long ?
+what ?
+who ?
+where ?
+what books ?
+who ?
+what early huguenot church ?
+when ?
+what ?
+what london neighborhood ?
+when ?
+what protestant religions ?
+what proclamation ?
+what dual titles ?
+what military impact ?
+what german ruler ?
+what german poet ?
+what german general and fighter pilot ?
+who ?
+what ?
+what ideal thermodynamic cycle ?
+what ?
+at what pressure ?
+what types of engines ?
+what ?
+who ?
+about what year ?
+what ?
+who ?
+in what country ?
+on what date ?
+where ?
+in what ?
+in what geographical portion of wales ?
+what device ?
+what types of pumps ?
+in what decade ?
+what ?
+what ?
+how many expansion stages ?
+what ?
+in what century ?
+what sort of engines ?
+what class of ships ?
+along with poppet valve gears , what type of gears ?
+what ?
+how ?
+what ?
+what ?
+what ?
+what ?
+what ?
+who ?
+what sort of motion ?
+how many horsepower ?
+of what ?
+what ?
+in what century ?
+who ?
+what ?
+who ?
+in what year ?
+what type of engines ?
+what ?
+in what field ?
+what power ?
+what product ?
+what ?
+in what part of the 19th century ?
+above what horsepower ?
+what percentage of electrical power in the united states ?
+power of what ?
+what ?
+what ?
+what ?
+what type of heating element ?
+what instrument ?
+what year ?
+what company ?
+who ?
+where ?
+at what degree ?
+what degree ?
+at what angle ?
+what ?
+how many piston strokes ?
+how many ?
+how many events ?
+what ?
+what ?
+that ?
+what part ?
+what type of steam engine ?
+what ?
+where ?
+what ?
+what ?
+what sort of system ?
+what working fluid ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what devices ?
+what ?
+what ?
+what ?
+what ?
+what ?
+who ?
+what type of locomotive ?
+on what railroad ?
+for what railroad ?
 who ?
 what nationality ?
-who ?
-who ?
-when ?
-who ?
-how many people ?
-what kind of people ?
-how much of the ipcc attendees ?
-when ?
-who ?
-who ?
 what ?
-who ?
-what ?
-where ?
-what ?
-what kind of non-peer-reviewed sources ?
-how many coordinating lead authors ?
-how many ?
-how many contributing authors ?
-who ?
-who ?
+what needs ?
+what percentage of electricity ?
+what marine engines ?
+along with diesel engines , what engines ?
+what engines ?
 what ?
 what ?
-how much of the greenhouse effect ?
 what ?
-how much ?
-when ?
-how many organizations ?
-which journal ?
-how sure ?
-how much ?
-which ipcc author ?
-what ?
-who ?
+in what decade ?
 what ?
 what ?
 how ?
-when ?
-when ?
-why ?
-what other activities ?
 what ?
-what ?
-what councils ?
-what ?
-what ?
-what ?
-what report ?
-what ?
-what direction ?
-what ?
-what ?
-what ?
-when ?
-who ?
-what ?
-what ?
-what range of years ?
-who ?
-where ?
-when ?
-what senate committee ?
-who ?
-who ?
-when ?
-who ?
-when ?
-when ?
-how many medieval warm period reconstructions ?
-what problem ?
-how many medieval warm period reconstructions ?
-when ?
-how ?
-how ?
-how ?
-what danger ?
-how much ?
-how much ?
-when ?
-what role ?
-who ?
-what approach ?
-what ?
-what ?
-whose goals often still ?
-who ?
-what ?
-what conflicts ?
-who ?
 what ?
 what ?
 who ?
-how many scientists ?
-where ?
-what ?
-how ?
-what ?
-what ?
-what ?
-what ?
-how many chloroplasts per cell ?
-how ?
-how ?
-what ?
-how ?
-which organisms ?
-what nationality ?
-what ?
-when ?
+what type of engines ?
+what type of steam engines ?
+what type of steam engine ?
+along with electric motors , what type of engines ?
 who ?
 what ?
+in what year ?
+who ?
+who ?
+who ?
+who ?
+in what year ?
+in what application ?
 what ?
-what kind of cell wall ?
-how ?
-what kind of cell ?
-how long ago ?
-what ?
-what kind of membrane ?
-what ?
-what ?
-how many chloroplast lineages ?
-what ?
-what ?
-which lineage ?
-what chloroplast lineage ?
-what kind of organism ?
-what ?
-what ?
-what kind of structure ?
-what kinds of pigments ?
-what ?
-what ?
-what ?
-what ?
-what ?
-why ?
-what ?
-what ?
-what ?
-what kind of membrane ?
-what ?
-what ?
-what additional membranes ?
-what ?
-what kind of chloroplasts ?
-what kind of protists ?
-how ?
-what ?
-which membrane ?
-what ?
-what kind of chloroplasts ?
-what part of cryptophyte chloroplasts ?
+what modern company ?
 where ?
-how ?
+how many cylinders ?
+how many pounds of steam per kilowatt hour ?
+what percentage of a high pressure engine 's efficiency ?
 what ?
+what device ?
+in what sort of places ?
+about how many cubic meters of make-up water ?
 what ?
 what ?
 where ?
 what ?
-what kind of diseases ?
 what ?
+after what year ?
 what ?
-how many membranes ?
-what ?
-where ?
-how ?
-what ?
-what lineage ?
-what lineage ?
-how many membranes ?
-what ?
-where ?
-what ?
-what ?
-what ?
-how many membranes ?
-what ?
-where ?
-where ?
+after what year ?
 what ?
 what ?
 what ?
 what ?
-where ?
-what ?
-how many base pairs ?
-how many protein-encoding genes ?
-how many base pairs ?
-what ?
-when ?
+of what length ?
 who ?
 what ?
+in what year ?
+in what year ?
+in what year ?
 what ?
-how ?
-how many major chloroplast replication models ?
 what ?
 what ?
-how ?
-what kind of gradients ?
-what ?
-how ?
-how ?
-where ?
-what ?
-what kind of cpdna ?
-how ?
-how ?
-what shows us ?
-what ?
-what kind of chloroplasts ?
-what kind of chloroplasts ?
-what ?
-how much of the protein products of transferred genes ?
-what new tasks ?
-what ?
-what ?
-where ?
-what ?
-what ?
-how ?
-how large across ?
-how thick ?
-what shape ?
-what shape ?
-what ?
-what ?
-how ?
-what ?
-what ?
-what ?
-what chloroplast structure ?
-what part of chloroplasts ?
-what ?
-what ?
-why ?
-when ?
-where ?
-where ?
-what ?
-what ?
-where ?
-what ?
-how large ?
-how large ?
-what ?
-why ?
-what ?
-what shape ?
-what ?
-how large ?
-what ?
-what ?
-how ?
-when ?
-where ?
-what shape ?
-what ?
-what ?
-how ?
-in what model ?
-what shape ?
-how many ?
-how many ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-how many types of thylakoids ?
-what ?
-what ?
-what shape ?
-how large ?
-how many photosynthetic carotenoids ?
-why ?
-what ?
-what ?
-what ?
-what color ?
-what ?
-what ?
-how big ?
-what ?
-what ?
-what effect ?
-what process down the line ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what parts of plants ?
-what ?
-what plant cells ?
-where ?
-what ?
-where ?
-where ?
-how many chloroplasts ?
-how many chloroplasts ?
-what layers of a leaf ?
-when ?
-when ?
-what ?
-why ?
-how many major immune responses ?
-what ?
-what ?
-how ?
-what ?
-what molecules ?
-when ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-where ?
-how concentrated ?
-what ?
-what ?
-what ?
-in what process ?
-where ?
-what ?
-what cycle ?
-what ?
-what ?
-how many ?
-what ?
-when ?
-what ?
-what root problem ?
-what ?
-what ?
-when ?
-why ?
-how much carbon ?
-what ?
-where ?
-which amino acids ?
-what ?
-what ?
-what ?
-what ?
-where ?
 what ?
 what ?
 what ?
@@ -3405,1438 +3171,1000 @@ what plants ?
 what ?
 what ?
 what ?
-what ?
+what parts of a conventional reciprocating steam engine ?
+along with wear , what development ?
 when ?
-what ?
-what ?
-what ?
-where ?
-what ?
-what ?
-how many pd rings ?
-how large ?
-how far apart ?
-what ?
-what kind of light ?
-what ?
-what kind of light ?
-why ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what theorem ?
-why ?
-what ?
-what ?
-what ?
-what ?
-how many digits ?
-how many prime numbers ?
-who ?
-what type of behavior in primes ?
-what theorem ?
-when ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what name ?
-what other number ?
-what type of numbers ?
-what number ?
-who ?
-who ?
-how many ?
-what type of number ?
-which theorem ?
-what ?
-what ?
-what ?
-what ?
-what civilization ?
-what work from around 300 bc ?
-who ?
-what ?
-in what year ?
-besides leibniz , what other mathematician ?
-of what form ?
-of what form ?
-to what extent ?
-what ?
-what ?
-how many divisions ?
-what ?
-how many modern types of primality tests for general numbers n ?
-what ?
-what ?
-what type of algorithm ?
-when ?
-what ?
-what ?
-what type of numbers ?
-what ?
-what ?
-of what form ?
-of what form ?
-what test ?
-what ?
-what ?
-what ?
-in what year ?
-what ?
-what organization ?
-in what interval ?
-what ?
-who ?
-what ?
-how ?
-on what theorem ?
-what ?
-which ?
-what ?
-how many ?
-how many ?
-what function ?
-what type of value ?
-what ?
-what ?
-of what mathematical nature ?
-when ?
-what ?
-what ?
-what type of prime distribution ?
-what type of prime distribution ?
-which conjecture ?
-when ?
-how many numbers ?
-which theorem states ?
-which theorem states ?
-what conjecture ?
-what ?
-which conjecture ?
-of what form ?
-what conjecture ?
-what general theory ?
-what british mathematician ?
-when ?
-what ?
-what type of number generators ?
-what type of decimal ?
-what period ?
-what ?
-what ?
-what condition ?
-what ?
-what ?
-how many bits ?
-on what type of exponentiation ?
-how many bits ?
-what type of insect ?
-where ?
-what ?
-what ?
-how much larger ?
-what ?
-how ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-under what condition ?
-what theorem ?
-what ?
-what form ?
-what ?
-of what ?
-in what theory ?
-what type of ideals ?
-what type of number theory ?
-which theorem ?
-what type of commutative ring ?
-what ?
-what ?
-in what type of ring ?
-what ?
-what ?
-to what ?
-what ?
-which french composer ?
-what ?
-which ?
-by what ?
-where ?
-where ?
-what ?
-what river ?
-how long ?
-what country ?
-how long ?
-where ?
-what ?
-what ?
-what century ?
-what ?
-what ?
-what ?
-what ?
-how ?
-what ?
-when ?
-where ?
-where ?
-what ?
-what ?
-when ?
-where ?
-why ?
-where ?
-which direction ?
-how long ?
-what ?
-what ?
-what ?
-where ?
-how long ?
-what ?
-what ?
-which lake ?
-what ?
-what ?
-what ?
-with what lake ?
-what ?
-what ?
-what ?
-what ?
-where ?
-what ?
-why else ?
-where ?
-what ?
-where ?
-why ?
-where ?
-what ?
-what ?
-how many bodies of water ?
-what ?
-what lake ?
-which border ?
-what ?
-how many bodies of water ?
-where else ?
-what mountainous region ?
-why ?
-what lake in a german island mainau ?
-where ?
-how much of the lake connecting with the rhine ?
-what ?
-where ?
-what island ?
-to what other lake ?
-what ?
-what ?
-what direction ?
-what ?
-how much water ?
-where ?
-where ?
-when ?
-what ?
-what ?
-what other country ?
-what ?
-what ?
-what ?
-how long ?
-how wide ?
-what ?
-what ?
-what ends at this bend ?
-what ?
-which century ?
-what ?
-what ?
-which canal ?
-what ?
-what region of the rhine ?
-when ?
-what ?
-what ?
-what ?
-where ?
-what ?
-what ?
-what ?
-what ?
-in what country ?
-which country ?
-which of the tributaries in germany ?
-what country ?
-how much ?
-what flows between the bingen and bonn ?
-what gorge ?
-how ?
-what ?
-what flows between bingen and bonn ?
-where ?
-what ?
-what ?
-what ?
-what ?
-what rive ?
-what ?
-where ?
-what ?
-which section of the rhine ?
-what country ?
-what city ?
-which river ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-where ?
-what city ?
-what ?
-what ?
-what ?
-how wide ?
-what part of the rhine ?
-what ?
-what ?
-what ?
-how wide ?
-what ?
-what ?
-how much of the water flow ?
-which direction ?
-where ?
-what ?
-what ?
-where ?
-what ?
-what ?
-where ?
-where ?
-where ?
-how much of the rhine flow ?
-what ?
-where ?
-what ?
-for what ?
-what ?
-what ?
-what part of the rhine ?
-what ?
-where ?
-what ?
-where ?
-how many main flows ?
-what ?
-what ?
-what ?
-what flood ?
-what year ?
-where ?
-when ?
-what ?
-what ?
-what ?
-what ?
-when ?
-what type of delta ?
-besides rivers , what ?
-what ?
-what other city ?
-what sea ?
-what period ?
-what period ?
-what ?
-what rift system ?
-what ?
-what time ?
-what other river ?
-how ?
-what period ?
-where ?
-what period ?
-how many major ice ages ?
-how far ?
-in early pleistocene , what direction ?
-where ?
-when ?
-when ?
-which direction ?
-how much lower ?
-what else ?
-what ?
-what ?
-what ?
-when ?
-what ?
-where ?
-when ?
-when ?
-when ?
-why ?
-how long ?
-why ?
-how quickly ?
-when ?
-when ?
-where ?
-what country ?
-when ?
-what ?
-what ?
-when ?
-how many ?
-where ?
-what ?
-where ?
-what ?
-how many branches ?
-when ?
-since when ?
-who ?
-when ?
-what other river ?
-when ?
-which direction ?
-how many legions in five bases ?
-what ?
-what ?
-what ?
-when ?
-what ?
-what ?
-who ?
-who ?
-when ?
-when ?
-who ?
-when ?
-what ?
-what ?
-who ?
-when ?
-when ?
-when ?
-when ?
-who ?
-what ?
-when ?
-where ?
-what ?
-when ?
-what bridge ?
-what ?
-what ?
-who ?
-what ?
-when ?
-what act ?
-what ?
-to what body ?
-where ?
-what ?
-how many hundred of years ?
-why ?
-when ?
-what ?
-which sea ?
-what campaigh ?
-when ?
-what ?
-when ?
-where ?
-how many of the scottish electorate ?
-what percentage ?
-how ?
-what percentage of scotland 's voting population ?
-what ?
-whose control of the uk 's government ?
-when ?
-what ?
-where ?
-who ?
-what nationality ?
-what shape ?
-who ?
-what ?
-where ?
-where ?
-where ?
-where ?
-who ?
-what former administrative building ?
-what ?
-what ?
-which hall ?
-who ?
-who ?
-what type of ballot ?
-how many msps ?
-who ?
-who ?
-who ?
-how many seats ?
-who ?
-what ?
-why ?
-how many seats ?
-how many members in the seats of the scottish parliament ?
-where ?
-what ?
-who ?
-what words ?
-what ?
-which month ?
-where ?
-who ?
-how much ?
-what ?
-what day of the week ?
-how long ?
-who ?
-what ?
-what ?
-who ?
-what ?
-what ?
-what members ?
-what language other than english ?
-what time ?
-what ?
-what ?
-how ?
-how long ?
-what ?
-who ?
-who ?
-what type of issues ?
-what ?
-when ?
-why ?
-how long ?
-who ?
-what ?
-where ?
-what ?
-what ?
-what ?
-where ?
-who ?
-what ?
-what ?
-what type of committee ?
-what session ?
-when ?
-how many ministries of the scottish government ?
-of the what ?
-what ?
-what ?
-what topic ?
-what kind of committee ?
-what act ?
-who ?
-what ?
-what body ?
-who ?
-where ?
-who ?
-why ?
-how much ?
-which ?
-what ?
-who ?
-where ?
-what ?
-who ?
-who ?
-how ?
-what ?
-what ?
-what ?
-where ?
-what ?
-what ?
-how many parts ?
-what vote on a bill ?
-what type ?
-when ?
-who ?
-why ?
-what ?
-who ?
-what ?
-what party ?
-who ?
-who ?
-who ?
-what day of the week ?
-what ?
-who ?
-what ?
-how many days ?
-what ?
-who ?
-what ?
-what ?
-what ?
-on what day ?
-who ?
-what ?
-how many general questions ?
-what ?
-when ?
-how many members ?
-why ?
-what ?
-how ?
-what method ?
-what ?
-what set ?
-how ?
-what ?
-when ?
-which ?
-what act ?
-when ?
-who ?
-by how much ?
-how many seats ?
-what ?
-what ?
-what net loss ?
-who ?
-who ?
-what consequence of establishing the scottish parliament ?
-what ?
-what phenomenon ?
-what party ?
-which country ?
-what ?
-what aspects of life ?
-what goal ?
-what ?
-what process ?
-where ?
-what ?
-what ?
-on what basis ?
-what ?
-what ?
-what ?
-what ?
-why ?
-what type of role that islamism seeks ?
-what ?
-what ?
-what ?
-what term ?
-what ?
-what ?
-when ?
-what ?
-when ?
-what ?
-who ?
-when ?
-what ?
-who ?
-what relationship with israel ?
-what ?
-when ?
-how ?
-what type of interpretation of islam ?
-what ?
-who ?
-what type of movement ?
-what type of assistance to out of town students ?
-what ?
-why ?
-what ?
-what organization ?
-who ?
-what year ?
-what book ?
-what ?
-when ?
-when ?
-what ?
-who ?
-when ?
-where ?
-where ?
-who ?
-what profession ?
-where ?
-where ?
-what ?
-what ?
-what ?
-what type of revolution ?
-by what method ?
-when ?
-where ?
-who ?
-the motto of the muslim brotherhood ?
-what influence ?
-when ?
-who ?
-when ?
-what egyptian president ?
-what status ?
-what percentage of seats ?
-what ?
-who ?
-what ?
-what ?
-what ?
-who ?
-where ?
-who ?
-what long term agenda ?
-what republic ?
-what type of sanctions ?
-when ?
-who ?
-who ?
-what ?
-what ?
-how effective ?
-how many ?
-what ?
-whose occupation of kuwait ?
-what monarchy ?
-whose puppet ?
-who ?
-what ?
-where ?
-where ?
-who ?
-whose ideas ?
-when ?
-what organization ?
-what movements ?
-when ?
-who ?
-when ?
-which ?
-what sin ?
-who ?
-what ?
-when ?
-how ?
-who ?
-until 1987 , what stance ?
-what organization ?
-what ?
-what beverage ?
-where ?
-what organization ?
-how many people ?
-what ?
-when ?
-what ?
-what type of regime ?
-who ?
-what organization ?
-how ?
-where ?
-when ?
-how ?
-who ?
-what ?
-when ?
-where ?
-what ?
-what ?
-what type of civil war ?
-when ?
-what ?
-how much of afghanistan ?
-where ?
-what ?
-who ?
-when ?
-what ?
-what ?
-what ?
-when ?
-what type of group ?
-who ?
-how many people ?
-what ?
-what ?
-when ?
-when ?
-why ?
-when ?
-what ?
-what ?
-when ?
-when ?
-what system ?
-what ?
-what type of jihad ?
-how ?
-who ?
-where ?
-what ?
-how many ?
-what type of outlook ?
-when ?
-what ?
-how long as the u.s. government ?
-what department in the u.s. ?
-who ?
-what position in the government ?
-what ?
-in which ancient language ?
-by what ?
-which eastern county ?
-what subtle tool ?
-which ?
-what ?
-who ?
-what ?
-who besides the russians ?
-how ?
-what ?
-what ?
-what ?
-what ?
-which ?
-which theory ?
-what ?
-where ?
-where ?
-where what kind ?
-how ?
-which theory ?
-what ?
-which book by edward ?
-what type of human ?
-what law ?
-when ?
-what ?
-how ?
-what ?
-what ?
-what ?
-what ?
-who besides the british ?
-during which ?
-who ?
-how many ?
-which ?
-which region ?
-when ?
-which american show ?
-which historic empire ?
-how ?
-when ?
-what ?
-how many years ?
-when ?
-what ?
-when ?
-when ?
-what profession ?
-what ?
-who ?
-on what ?
-when ?
-what ?
-who ?
-what advancements besides military technology ?
-what ?
-what ?
-which country ?
-when ?
-what ?
-why ?
-when ?
-when ?
-what ?
-how ?
-what ?
-what ?
-what continent ?
-what ?
-who ?
-which regions ?
-what ?
-what ?
-who ?
-when ?
-when ?
-who ?
-what ?
-which country ?
-when ?
-when ?
-what religion ?
-where ?
-when ?
-what ?
-how ?
-what ?
-where ?
-where ?
-where ?
-where ?
-by when ?
-where ?
-what ?
-when ?
-by when ?
-when ?
-when ?
-when ?
-who ?
-what ?
-where ?
-of what ?
-what ?
-who ?
-what ?
-when ?
-which country ?
-which area of china ?
-who ?
-who ?
-after ww-ii where ?
-who ?
-what ?
-who ?
-who ?
-who ?
-what policy ?
-what ?
-when ?
-what policy ?
-when ?
-when ?
-by the late 19th century , which country ?
-what kinds of sciences ?
-in which continent besides asia ?
-how ?
-what ?
-what ?
-which country besides the cuba ?
-what ?
-who ?
-when ?
-who besides woodrow wilson ?
-what ?
-what ?
-how many ?
-who ?
-when ?
-who ?
-how many provinces ?
-when ?
-what ?
-who ?
-what ?
-which country today ?
-what ?
-what ?
-when ?
-who ?
-what ?
-what ?
-approximately how many ?
-what ?
-what percentage of the u.s. population self-identify ?
-when ?
-where ?
-why ?
-in what year ?
-where ?
-who ?
-what ?
-what ?
-when ?
-who ?
-where ?
-what ?
-what church ?
-what ?
-when ?
-where ?
-when ?
-who ?
-in what year ?
-when ?
-why ?
-when ?
-why ?
-when ?
-where ?
-who ?
-of what church ?
-what book ?
-what ?
-why ?
-who ?
-who ?
-who ?
-in 1968 , who ?
-who ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-which church ?
-what ?
-when ?
-what ?
-what ?
-in what year ?
-who ?
-which ?
-when ?
-what ?
-what ?
-what part of the umc ?
-in what year ?
-in what year ?
-what ?
-in what year ?
-in what year ?
-what group ?
-what ?
-who ?
-with what ?
-what ?
-which task ?
-what ?
-who ?
-for what purpose ?
-what ?
-what ?
-when ?
-in what country ?
-from what book ?
-what ?
-what ?
-who ?
-who ?
-what church ?
-what ?
-what book ?
-what ?
-how often ?
-into how many jurisdictions ?
-how many central conferences ?
-what ?
-who ?
-what ?
-who ?
-of whom ?
-on how many acres ?
-why ?
-where ?
-how many members ?
-what ?
-how long ?
-how many times a year ?
-where ?
-what ?
-what ?
-what ?
-what ?
-what ?
-with approximately how many colleges ?
-how many schools and institutions ?
-who ?
-each deacon in full connection ?
-what ?
-what ?
-who ?
-how many years ?
-who ?
-of how many years as provisional deacons ?
-who ?
-who ?
-what ?
-in what year ?
-what ?
-what ?
-who ?
-how many years ?
-what type of membership ?
-what ?
-how ?
-in which ?
-what ?
-how ?
-what directions the local church ?
-what ?
-how ?
-how often ?
-how many courses ?
-what ?
-what type of status ?
-in what year ?
-when ?
-what year ?
-how many members ?
-how many congregations ?
-approximately how many members ?
-approximately how many ?
-which state ?
-what ?
-what ?
-what ?
-which group ?
-what ?
-when ?
-when ?
-who ?
-how many people ?
-how many people ?
-where ?
-when ?
-when ?
-how successful ?
-why ?
-what ?
-what order ?
-who ?
-how much resources ?
-where ?
-where ?
-what territory ?
-what land ?
-when ?
-what ?
-what ?
-what ?
-what time ?
-how long ?
-when ?
-what ?
-what ?
-where ?
-where ?
-what ?
-where ?
-what ?
-what tribes ?
-where ?
-what rule ?
-what ?
-what ?
-what tribes ?
 what ?
 how much ?
+in addition to watt , boulton and smeaton , whose engine ?
+what ?
+how many mechanisms ?
+what ?
+what type of valve ?
 what ?
 what ?
-who ?
-how ?
-where ?
-how ?
-what ?
-how ?
-how ?
-when ?
-who ?
-who ?
-where ?
-what ?
-what ?
-what ?
-when ?
-what governor in charge of new france ?
-what ?
-who ?
-where ?
-where ?
-what ?
-what native chief ?
-what ?
-what ?
-what title ?
-who ?
-who ?
-who ?
-when ?
-who ?
-what letter ?
-how ?
-why ?
-how many ?
-when ?
-what ?
-what ?
-why ?
-what ?
-when ?
-how ?
-what ?
-what political response ?
-what ?
-what ?
-who ?
-how much success ?
-how many casualties ?
-what future revolutionary key figures ?
-whose activities ?
-what difficulties ?
-where ?
-who ?
-who ?
-how ?
-who ?
-where ?
-where ?
-who ?
-how ?
-what other clashes ?
-who ?
-in what meeting ?
-what proposed attacks ?
-where ?
-who ?
-who ?
-when ?
-where ?
-how much gun powder ?
-what plans of the british ?
-who ?
-where ?
-where ?
-what disagreement ?
-what ?
+in what year ?
+how much ?
+how many valves ?
+what award ?
 what ?
 who ?
 what ?
-what troops ?
-on what lake ?
+who ?
 what ?
-what other reason ?
+what ?
+what state ?
+how much turbine power ?
+what ?
+what ?
+what ?
+what components ?
+what ?
+what mechanism ?
+what ?
+people of what nationality ?
+what ?
+what ?
+in what year ?
+what ?
+what ?
+what ?
+what ?
 where ?
 what ?
-how many of the pitt 's planned expeditions ?
-how many ?
-how many troops ?
-what success ?
-what impact ?
-what ?
-how successful ?
-what naval battles ?
-who ?
-what ?
-what battle outside quebec city ?
-who ?
-what british general ?
-when ?
-when ?
-what choice ?
-why ?
-how many french colonists ?
-when ?
-where ?
-what north american city ?
-who ?
-what ?
-what lands ?
-what ?
-when ?
-what natives ?
-what ?
-what concept ?
-what ?
-how long ?
-who ?
-what ?
-what ?
-what ?
-what ?
-what ?
-who ?
-what ?
-how many elements ?
 where ?
 what ?
-when ?
-whose work ?
-what ?
-who ?
-what force ?
-whose first law of motion ?
-what insight of galileo ?
-who ?
-what law ?
-what ?
-what ?
-what path ?
-what sate ?
-what concept ?
-what ?
-who ?
-what ?
-what ?
-what ?
-what kind of measurements ?
-what ?
-what ?
-what ?
-when ?
-what law ?
-what kind of force ?
-what ?
-in what kind of system of particles ?
-what ?
-what ?
-what ?
-what ?
-how ?
-how ?
-what physical quantities ?
-how ?
 what ?
 in what ?
 what ?
-what ?
-when ?
-what geometric shape ?
-what ?
-how many forces ?
-what ?
-what ?
+how many atoms ?
+how much ?
+which gas ?
+how much of the earth 's atmosphere ?
+what element ?
 what ?
 what ?
 what ?
-what force ?
-what ?
-what ?
-what force ?
-what ?
-what ?
+of what group in the periodic table ?
+what type of compounds ?
+how abundant ?
+under normal conditions , what ?
+which energy to ?
+what element ?
+in what ?
+what life process ?
+from what ?
+what form of oxygen ?
 who ?
-who ?
+what english chemist ?
 what ?
-who ?
-where ?
-where ?
+what researcher ?
 what ?
-what ?
-who ?
-what equation ?
-what equation ?
-how ?
-what type of measurements ?
-what notion ?
-what ?
-what ?
-what value ?
-what ?
-what ?
-how ?
-what ?
-what ?
-what ?
-how many interactions ?
-what nuclear forces ?
-what force ?
-what ?
-what ?
-who ?
 in what century ?
-what kind of self-consistent models ?
-what type of physics model ?
-who ?
-who ?
-how fast ?
-where ?
+for what ?
+what chemist ?
+by who ?
 what ?
-how ?
+what compound ?
+what chemical ?
+what ?
+in what year ?
+why ?
+what effect ?
+what inventor ?
+in what year ?
+what early greek ?
+what ?
+what ?
+what famous artist ?
+of what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what other sources of high oxidative potential ?
+what chemical element ?
 what ?
 what ?
 what ?
 who ?
-when ?
-who ?
-what planet ?
-what planet ?
+in what compound ?
+what geologic feature ?
+what part of the earth ?
+what part of the earth 's geological structure ?
+what ?
+what ?
+what ?
+what ?
+what element ?
 what theory ?
-who ?
-who ?
-what theory best ?
-what space-time path ?
+what type of combustible materials ?
+what distinct quality of combustion ?
+what material 's weight gain during rusting ?
+how ?
 what ?
-in what sense ?
 what ?
-what magnetic and electric force ?
-what ?
-who ?
+how ?
+of what ?
 when ?
-how many ?
-how many vector equations ?
-who ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
-what ?
+in what year ?
+what researcher ?
+what previous work ?
 what ?
 how ?
 what ?
-what ?
-what ?
-how ?
-what ?
-what ?
-what ?
-how ?
-what ?
-what ?
-what ?
-how many times ?
-at what ?
-what ?
-what ?
-what ?
-what ?
+what type of combustion ?
 what ?
 what ?
 in what way ?
 what ?
+in what year ?
+what second part of air ?
+of what ?
+what ?
+what function ?
+what light radiation ?
+what ?
+what part the composition of the earth 's atmosphere ?
+what characteristic of oxygen ?
+for what purpose ?
+what chemist ?
+in what year ?
+when ?
+what welding process ?
+what component of water ?
+what ?
+how much oxygen ?
+in what type of water ?
+how much ?
+where ?
+how ?
+how much of the sun ?
+where by mass ?
+how ?
+by what century ?
+by what ?
+what scientist ?
+what minor amount of liquid oxygen ?
+on what date ?
+what celestial object ?
+what molecule ?
+what spacecraft ?
+what type of process ?
+the formation of which planet ?
+what ?
+to what ?
+in what process ?
+by what process ?
+what objects in organisms ?
+what group of scientists ?
+about what weather feature ?
+how much heavier ?
+what form of oxygen ?
+during what type of climate ?
+at what ?
+what ?
+where ?
+on what scale ?
+what ?
+what magnetic character ?
+what ?
+what ?
+what kind of field ?
+what device ?
+what ?
+for what purpose ?
+what ?
+to what type of organisms ?
+when ?
+at what temperature ?
+what ?
+what substance ?
+what element ?
+from what type of materials ?
+where on earth ?
+at what ?
+why ?
+what measurement ?
+when ?
+during which eon ?
+what ?
+how ?
+when ?
+what ?
+what type of process ?
+in how many places ?
+what process ?
+what ?
+what mechanism ?
+what percentage of oxygen ?
+what gas ?
+what type of technology ?
+how much ?
+what ?
+what ?
+what type of electric current ?
+what ?
+what other catalysts ?
+as a euphoric how ?
 what ?
 what ?
 what ?
-in what kind of fluid ?
+what type of exercise ?
+what ?
+that ?
+what ?
+what medical treatment ?
+what ?
+what medical treatment ?
+in what process ?
+what ?
+what characteristic of oxygen ?
 what ?
 what ?
+what ?
+what ?
+what event ?
+what ?
+what type of reaction ?
+what gas ?
+what ?
+by what means ?
+in what state ?
+in what form ?
+what type of organization ?
+what type of compounds such as acetone , ?
+in what group of compounds ?
+what function ?
+in what compound ?
+how ?
+in what type of molecules ?
+how many ?
+which organic compounds ?
+what ?
+in what calcium ?
+what health condition ?
+what ?
+what ?
+what physical condition ?
+why ?
+what ?
+how much of normal ?
+how much damage ?
+when ?
+at what point ?
+to what ?
+what medical appliance ?
+what percentage of oxygen ?
+when ?
+what ?
+when ?
+what ?
+who ?
+why ?
+on what date ?
+when ?
+when ?
+what ?
+why ?
+when ?
+why ?
+from 1947 to 1967 , how much ?
+when ?
+when ?
+when ?
+when ?
+who ?
+how many times ?
+which oil producer ?
+why ?
+when ?
+why ?
+how much ?
+why ?
+how much ?
+which group ?
+which ?
+what ?
+what ?
+what ?
+with which other country ?
+that ?
+what ?
+which industry 's competitive positions ?
+which problem ?
+in which area ?
+how long ?
+which country ?
+which country ?
+which country ?
+who ?
+which country ?
+what ?
+when ?
+that ?
+which country ?
+what ?
+why ?
+how ?
+who ?
+when ?
+why ?
+what ?
+what ?
+what ?
+which president ?
+when ?
+when ?
+what ?
+that ?
+who ?
+which country ?
+which country ?
+how long ?
+who ?
+which country ?
+how much ?
+what ?
+when ?
+when ?
+which country 's invasion ?
+which countries ?
+which country 's arms purchase from the us ?
+when ?
+when ?
+which ?
+which country 's cars ?
+what type of engines ?
+which country 's imports ?
+when ?
+that ?
+what ?
+when ?
+why ?
+how many passengers ?
+by which year ?
+which full-sized model cars ?
+by which year ?
+by which year ?
+which car ?
+when ?
+which year ?
+why ?
+what ?
+what project ?
+what program ?
+what year ?
+what president ?
+how many people ?
+how long ?
+what program ?
+who ?
+what space station ?
+in what year ?
+what type of launch ?
+what ?
+how many of the remaining launches ?
+what ?
+what ?
+what apollo mission ?
+how many kgs of moon rocks ?
+what other areas ?
+how many people ?
+how many people ?
+who ?
+what ?
+when ?
+in what year ?
+who ?
+how many study ?
+who ?
+who ?
+what country ?
+what ?
+who ?
+what ?
+who ?
+from what country ?
+how many days after gagarin 's flight ?
+what ?
+what month and day ?
+who ?
+how long ?
+what ?
+who ?
+where ?
+where ?
+what university ?
+in what state ?
+where ?
+who ?
+how many ?
+what spacecraft ?
+how high in altitude in feet ?
+how big ?
+who ?
+when ?
+who ?
+to who ?
+what ?
+from what military branch ?
+who ?
+how long ?
+what ?
+what ?
+in what year ?
+who ?
+who ?
+when ?
+which nasa faction ?
+who ?
+who ?
+who ?
+where ?
+when ?
+who ?
+what ?
+what ?
+who ?
+what ?
+what apollo mission ?
+what ?
+in what year ?
+what ?
+what ?
+how many men ?
+how many people ?
+where ?
+in what kind of material ?
+what ?
+how much ?
+what ?
+what type of antenna ?
+how much ?
+what ?
+who ?
+how much thrust ?
+in what year ?
+what ?
+how many astronauts ?
+how much ?
+how long ?
+who ?
+from where ?
+when ?
+what ?
+when ?
+what ?
+what ?
+what ?
+how much ?
+how much weight ?
+what ?
+what ?
+how many stages ?
+what ?
+from what ?
+how many ?
+who ?
+which mission ?
+how many astronauts ?
+what type of medal ?
+in what year ?
+what ?
+from what mission and onward ?
+in what year ?
+how high in miles ?
+how far ?
+what ?
+how many people ?
+what ?
+what ?
+what type of undergarment , if any , ?
+what ?
+who ?
+for which ?
+what year ?
+who ?
+what crew ?
+what ?
+in what month and year ?
+what ?
+where ?
+who ?
+what ?
+what year ?
+who ?
+where ?
+who ?
+what ?
+what other location ?
+what ?
+when ?
+what type of atmosphere ?
+who ?
+what ?
+who ?
+how soon after the cabin fire incident ?
+what type of mixture ?
+what type of materials inside the cabin ?
+what ?
+what type of missions ?
+what ?
+how many ?
+what ?
+what ?
+when ?
+what ?
+which apollo ?
+from what pad ?
+who ?
+what ?
+what type of saturn ?
+what spacecraft ?
+on what day ?
+what ?
+what ?
+from what ?
+in what month and year ?
+what ?
+who ?
+what day ?
+which lunar probe ?
+what ?
+what ?
+what ?
+what ?
+how many more landing sites for the apollo missions ?
+how long ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what month and year ?
+what apollo mission ?
+what ?
+what ?
+what year ?
+how ?
+how old ?
+what new component ?
+what ?
+what ?
+what ?
+what ?
+how much ?
+how many saturn v rockets ?
+how much ?
+what ?
+what ?
+what planet ?
+when ?
+when ?
+that ?
+which nasa orbiter ?
+for which ?
+what crew ?
+from what bible book ?
+how much of the population of earth ?
+what ?
+what type of camera ?
+what ?
+what ?
+who ?
+who ?
+what types of recordings at johnson space center ?
+which company ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what effect ?
+what ?
+what ?
+what ?
+what ?
+what ?
+how many sources of european union law ?
+who ?
+who ?
+under what treaty ?
+what ?
+what ?
+which two courts ?
+under what treaty ?
+which court ?
+what ?
+by whom ?
+who ?
+what ?
+what ?
+what ?
+who ?
+who ?
+what court ?
+what governing body ?
+which treaty ?
+where ?
+what powers ?
+under what instances ?
+when ?
+what ?
+what ?
+when ?
+who ?
+how ?
+which two treaties ?
+in what years ?
+which country in 1985 ?
+what ?
+when year ?
+when ?
+when ?
+when ?
+when ?
+what ?
+how similar ?
+what type of treaty ?
+that ?
+what reform ?
+what ?
+which ?
+what treaty ?
+what ?
+who ?
+which authority figure ?
+how many commissioner ?
+who ?
+which article of the treaty on european union states that commissioners ?
+who ?
+how ?
+which country ?
+who ?
+what commission ?
+who ?
+who ?
+when ?
+which main case ?
+who ?
+when ?
+which two ?
+what ?
+how often ?
+how much of a voting majority ?
+what two bodies ?
+which entity ?
+which entities ?
+when ?
+how often ?
+which party ?
+of what type of individuals ?
+who ?
+how ?
+what ?
+how many votes out of the 352 total votes ?
+which entity ?
+how often ?
+how many votes in total ?
+what ?
+what type of vote ?
+what type of vote ?
+what articles ?
+within the eu , which court ?
+which tfeu article ?
+what ?
+which articles ?
+what entity ?
+which branch of the eu ?
+what ?
+how many total judges ?
+under which courts ?
+what ?
+how ?
+what ?
+what entity ?
+how long ?
+what ?
+which law ?
+what ?
+what ?
+which entities ?
+when ?
+which court ?
+what ?
+what ?
+when ?
+what ?
+in what ?
+which type of law ?
+during what year ?
+which actions by eu institutions ?
+which type of law ?
+in which case ?
+which tefu article ?
+what type of company ?
+what ?
+how many ?
+how many ?
+when ?
+what ?
+what ?
+how long ?
+which company ?
+at what age ?
+which courts ?
+what ?
+what ?
+how much money ?
+which entity ?
+what ?
+how long ?
+where ?
+which measure ?
+how long ?
+which ?
+what ?
+in what ?
+where ?
+that ?
+how many ?
+which entities ?
+when ?
+what other entity ?
+when ?
+when ?
+what charter ?
+what entity ?
+of what treaty ?
+what year ?
+when ?
+how many general principles ?
+how many pieces of legislation ?
+how many member states ?
+which member state ?
+what title ?
+what year ?
+what lead to the uk ?
+when ?
+which directive ?
+when ?
+what ?
+which countries ?
+what year ?
+what ?
+which article ?
+when ?
+in which ?
+what ?
+which articles ?
+which article ?
+when ?
+how long ?
+what ?
+what entity ?
+what ?
+what ?
+for what ?
+in which case ?
+what ?
+which country ?
+which year ?
+what ?
+which two importers ?
+in which case ?
+under which directive ?
+what ?
+which entity ?
+what ?
+in which case ?
+what ?
+which articles of the free movement of workers regulation ?
+which belgian footballer ?
+what language ?
+in which case ?
+how many hours ?
+what ?
+what ?
+in which case ?
+what ?
+which treaty ?
+under what ?
+in which case ?
+which tfeu article ?
+in which case ?
+in which year ?
+when ?
+when ?
+to who ?
+why ?
+what ?
+what ?
+which newspaper 's parent company ?
+how much capital ?
+how much capital ?
+what ?
+in which case ?
+which name ?
+how many square kilometers of rainforest ?
+how many nations ?
+how many ?
+what percentage ?
+what ?
+what rainforest ?
+in what country ?
+how many species of trees ?
+what kind of forest ?
+how many square kilometers ?
+how many nations ?
+which nation ?
+what ?
+which type of climate ?
+what ?
+during what time ?
+when ?
+what ?
+how many degrees ?
+what ?
+during which period in history ?
+what ?
+what extinction event ?
+how many years ago ?
+under what ?
+which global event ?
+how many years ?
+in which point ?
+in which direction ?
+what ?
+how long ago ?
+where ?
+when ?
+where ?
+where ?
+what ?
+what basin ?
+what period the drainage basin of the amazon likely split ?
+where ?
+where ?
+where ?
+what ?
+what ?
+what ?
+what ?
+how ?
+how ?
+how many years ?
+what ?
+what ?
+what ?
+which ?
+changes in rainfall ?
+how ?
+why ?
+what ?
+how many tons of dust ?
+how many miles ?
+which basin ?
+how many tons of dust ?
+what tool ?
+how much dust ?
+how much ?
+how much ?
+how much saharan dust ?
+that ?
+what organization ?
+how much ?
+how many miles across the atlantic ocean ?
+how many tons of saharan dust ?
+what ?
+what ?
+what ?
+which findings ?
+how many people ?
+what feature of the amazon ?
+what well-known archeologist ?
+how many inhabitants ?
+in what book ?
+which archaeologist ?
+which book ?
+what ?
+how many people ?
+what ?
+who ?
+during what time ?
+what ?
+how long since it ?
+what time period ?
+who ?
+in what year ?
+what ?
+who ?
+for how many years ?
+what ?
+how much ?
+what ?
+in which region tribe ?
+what type of soil ?
+what ?
+what tribe ?
+who ?
+what ?
+how many species of insects ?
+what portion of bird species ?
+how many plant species ?
+what ?
+how many invertebrate species ?
+to how many species of insect ?
+how many species of bird and mammals ?
+how many plant species ?
+how many ?
+what amount of bird species on earth ?
+how many kilometers of acres of the ecuadorian rainforest ?
+how many tree species ?
+how many ?
+what ?
+what ?
+where ?
+how many tree species ?
+how many tons of live plants ?
+what ?
+how many plant species ?
+which animal that lives in the amazon river ?
+what ?
+what fish living in the amazon river ?
+what ?
+what type of bat that lives in the amazon rainforest ?
+what ?
+what method ?
+what ?
+what ?
+how many square kilometres of the amazon forest ?
+how many ?
+what ?
+where ?
+what percentage of the land cleared in the amazon ?
+what ?
+how many square miles per year ?
+what ?
+how much higher ?
+what ?
+what ?
+what amount of the worlds carbon ?
+how many metric tons of carbon ?
+what change in conditions ?
+by what type of emissions ?
+what year ?
+how long ?
+what ?
+what kind of territories ?
+what type of conservation effort ?
+in what two ways ?
+what ?
+in what ?
+what kind of sending technology ?
+what tribe ?
+what ?
+what ?
+why ?
+who ?
+in what year ?
+what type of radar ?
+in what year ?
+what organization ?
+what ?
+what ?
+what organization ?
+in what year ?
+how many square miles large ?
+how many ?
+in what year ?
+how many tons of carbon ?
+what ?
+where ?
+what size ?
 what ?
 what ?
 what ?
@@ -4845,25 +4173,696 @@ what ?
 what ?
 what ?
 where ?
+how much ?
+how many species of ctenophores ?
+how many species of ctenophores ?
+how many species of ctenophora ?
+what ?
+how much food ?
+what ?
+what ?
+how much ?
+what ?
+what ?
+what ?
+how many different species of ctenohore ?
+what gender ?
+what ?
+what ?
+what ?
+what type of hermaphrodite ?
+which species ?
+what ?
+what ?
+what ?
+what ?
+which group ?
+which group ?
+what sea ?
+what specific type of ctenophore ?
+what ?
+what ?
+what ?
+what ?
+where ?
+where ?
+what ?
+what ctenophore ?
+what event ?
+when ?
+how old ?
+what ?
+what event ?
+what ?
+what ?
+which other phylum ?
+which phylum ?
+what ?
+what ?
+what ?
+which two groups ?
+what ?
+which group ?
+what ?
+what ?
+what ?
+which cidippid ?
+which group of ctenophore ?
+why ?
+with what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what ?
+what direction ?
+what ?
 how ?
-what force ?
+what ?
+what ?
+what ?
+what ?
+where ?
 what ?
 what ?
 what ?
 what ?
 what ?
+what ?
+by what ?
+where ?
+what ?
+what ?
+what ?
+how many types of movements ?
+what ?
+how many rows of combs ?
+where ?
+how ?
+what runs from the balancer in the statocyst ?
+what ?
+what ?
+how many auricles ?
+what ?
+what ?
+what ?
+what ?
+by what ?
+by what ?
+by what other name ?
+what group ?
+what ?
+what ?
+which species ?
+what ?
+what ?
+how ?
+which species ?
+what ?
+what ?
+what ?
+where ?
+how ?
+how ?
+what genus ?
+where ?
+where ?
+when ?
+which ?
+what ?
+when ?
+what ?
+what animal ?
 what ?
 what ?
 what ?
 why ?
 what ?
-in what treatment ?
-what changes macroscopic ?
+what ?
+where ?
+what ?
+how ?
+how ?
+when ?
+how ?
+why ?
+what ?
+how many species ?
+what ?
+how old ?
+what type of fossils ?
+which genus ?
+which period ?
+what ?
+which genus of ctenophores ?
+when ?
+who ?
+which city ?
+how far ?
+what ?
+what ?
+how ?
+in what year ?
+what ?
+in what year ?
+how many ?
+what entity ?
+what percentage of the population in fresno ?
+what ethnic neighborhood in fresno ?
+what ?
+what ?
+what ?
+what new product ?
+what ?
+what ?
+in what year ?
+what present-day company ?
+in what town ?
+on what show ?
+who ?
+how many large public parks ?
+which park ?
+which park ?
+which ?
+which park ?
+during what period ?
+what ?
+what former building ?
+which one of fresno 's hotels ?
+in what year ?
+what ?
+which artist ?
+where ?
+what feature ?
+where ?
+what ?
+when ?
+where ?
+who ?
+around which historic theatre ?
+when ?
+from what landmark within fresno ?
+what ?
+how far ?
+during what period ?
+after its re-opening , which types of movies ?
+in what year ?
+where ?
+which two ?
+what type of theater ?
+how ?
+what area ?
+which fresno district ?
+which district in fresno ?
+what type of homes ?
+what types of houses ?
+how recently ?
+which boulevard ?
+who ?
+in what year ?
+how many homes ?
+which company ?
+what ?
+in which direction ?
+of which ethnic community ?
+what ?
+which neighborhood ?
+who ?
+what kinds of trees ?
+which ?
+what ?
+what area of brookhaven ?
+when ?
+on which corner ?
+what ?
+where ?
+how much retail activity ?
+who ?
+how many total acres ?
+how many seats ?
+how many ?
+what months out of the year ?
+when ?
+who ?
+what ?
+how ?
+what month ?
+how much rain per year ?
+in which direction ?
+in which months ?
+what ?
+on what date ?
+in what year ?
+what ?
+what ?
+what ?
+what ?
+how many native american people ?
+what ?
+how many people per square mile ?
+how many households ?
+what ?
+how many same-sex married couples or partnerships ?
+what ?
+what ?
+how many people ?
+how many housing units ?
+what ?
+about how many of the asian population ?
+what ?
+why ?
+what ?
+when ?
+what ?
+what ?
+what route ?
+what ?
+what ?
+which ?
+in what year ?
+which state ?
+what ?
+which company ?
+where ?
+what two railroads ?
+which railroad ?
+which city ?
 what ?
 what ?
 what ?
 what ?
 what ?
 what ?
+who ?
 what ?
+how ?
+what ?
+how ?
+how ?
+how ?
+how ?
+how ?
+how ?
+how ?
+how ?
+in cases with shared medium how ?
+what ?
+what ?
+what ?
+how ?
+what ?
+what ?
+what ?
+what things ?
+what ?
+what ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+how ?
+what ?
+what ?
+why ?
+what ?
+what ?
+what ?
+what ?
+what ?
+when ?
+what ?
+what ?
+what ?
+what network ?
+what ?
+what ?
+what ?
+how many layers ?
+what ?
+what ?
+what ?
+why ?
+what ?
+who ?
+what ?
+what ?
+how ?
+how many types of x . 25 networks ?
+who ?
+what ?
+what ?
+what ?
+what ?
+who ?
+who else ?
+what ?
+what ?
+what ?
+who ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what ?
+what ?
+who ?
+how many ?
+what ?
+where ?
+how ?
+how much of the european population ?
+when ?
+for how long ?
+what ?
+how old ?
+where ?
+when ?
+how many ?
+who ?
+who ?
+what ?
+where ?
+what ?
+which direction ?
+which country ?
+what types of european groups ?
+where ?
+when ?
+what effect ?
+when ?
+how ?
+where ?
+who ?
+what ?
+who ?
+when ?
+what ?
+who ?
+what ?
+what ?
+what ?
+where and when ?
+who ?
+what ?
+what ?
+who ?
+what ?
+when ?
+what ?
+what ?
+what ?
+how high ?
+what percent of untreated victims of the ?
+what ?
+what skin-related symptom ?
+when ?
+what ?
+how ?
+where ?
+what ?
+what strains of y. pestis ?
+what ?
+how and when ?
+when ?
+what ?
+where ?
+what ?
+when ?
+who ?
+what ?
+what ?
+what ?
+who ?
+what ?
+why ?
+how much ?
+where ?
+during which years ?
+why ?
+how significant ?
+why ?
+how many years ?
+what ?
+what ?
+which diseases ?
+how many bodies ?
+how much of the population in the middle ?
+how much of paris ' population ?
+what ?
+how many people ?
+which ?
+when ?
+what ?
+how many french people ?
+what ?
+when ?
+how many people ?
+when ?
+how many people ?
+by what country ?
+which outbreak ?
+when ?
+how many times ?
+how many ?
+how many ?
+how many residents of seville ?
+who ?
+when ?
+during which years ?
+how many people ?
+how long ?
+how many people , at most , ?
+that ?
+into which ?
+when ?
+what ?
+what changes the mineral content of a rock ?
+what ?
+which parts of the earth ?
+what ?
+in what decade ?
+what ?
+what ?
+what type of fault boundary ?
+whose theory ?
+which ?
+what types of waves ?
+what ?
+why ?
+which timeline ?
+what ?
+during which period ?
+what principle ?
+when ?
+that ?
+what ?
+by what ?
+what ?
+what ?
+what ?
+which principle ?
+whose principles ?
+what ?
+whose theory of evolution ?
+when ?
+what type of correlation ?
+when ?
+what techniques ?
+at which ?
+what type of ratios ?
+how ?
+when ?
+where ?
+when ?
+when ?
+that ?
+where ?
+that ?
+what ?
+where ?
+what type of gradients ?
+what activity ?
+what events ?
+what ?
+what type of rock ?
+when ?
+where ?
+what ?
+what ?
+what ?
+what modern formations ?
+what ?
+what properties ?
+where ?
+what type of microscope ?
+how else ?
+how else ?
+what type of geologists ?
+how ?
+what kind of experiments of rock deformation ?
+in which ?
+what ?
+what ?
+what ?
+which ?
+by who ?
+what type of surveys ?
+what ?
+what tool ?
+for what types ?
+why ?
+who ?
+what types of scientists ?
+who ?
+where ?
+what ?
+what ?
+what ?
+what ?
+who ?
+what ?
+who ?
+in what year ?
+in what year ?
+what ?
+to whom ?
+what doctrine ?
+which theory ?
+which theory ?
+which famous evolutionist ?
+how many miles south of edinburgh ?
+how many miles from the north sea ?
+what network ?
+what county ?
+what ?
+who ?
+what trade ?
+what resource ?
+what century ?
+what ?
+what ?
+what river ?
+what ?
+whose wall ?
+what tribes ?
+which country ?
+who ?
+how high ?
+what ?
+how many times ?
+what ?
+what ?
+what ?
+what ?
+what ?
+who ?
+how ?
+how many folks ?
+what percentage of newcastle 's population ?
+who ?
+who ?
+what ?
+what ?
+who ?
+what ?
+what ?
+what ?
+what ?
+what type of layout ?
+what ?
+what runs from the riverside ?
+what kind of buildings ?
+what ?
+what ?
+what ?
+what street ?
+when ?
+what ?
+what ?
+what ?
+when ?
+what honorary title ?
+what ?
+who ?
+who ?
+why ?
+how many days ?
+what ?
+when ?
+how high ?
+how ?
+what earlier market ?
+when ?
+how many guests ?
+how ?
+who ?
+what ?
+what kind of influence ?
+what type of shadow ?
+when ?
+what area ?
+what year ?
+what ?
+what department store ?
+how ?
+what year ?
+what type of destination ?
+of what type ?
+what ?
+where ?
+what ?
+what ?
+what profession ?
+what ?
+what proportion ?
+where ?
+what type of markets ?
+what ?
+what market other than harrogate , cheltenham , bath , inner london , hastings and brighton ?
+which borough of newcastle ?
+what ?
+what ?
+what type of surnames ?
+what ?
+what percentage of newcastle 's population ?
+what ?
+who ?
+what ?
+which ?
+from what culture ?
+where ?
+what folks ?
+what ?
+what language ?
+what ?
+what ?
+what ?
+what type of impact ?
+what ?
+what ?
+how many screens ?
+what ?
+what ?
+what ?
+who ?
+what ?
+when ?
+on what street ?
+what ?
+what first ?
+what company ?
+what ?
+what ?
+what ?
+how many cds ?
+what ?
+who ?
+what festival ?
+when ?
+how often ?
+how many weeks each year ?
 what ?
