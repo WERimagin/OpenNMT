@@ -79,6 +79,28 @@ for s,t,p in zip(srcs,t_noninterros,p_noninterros):
     target_dict[s].append(t)
     predict_dict[s]=p
 
+targets_set=[target_dict[s] for s in src_set]
+predicts_set=[predict_dict[s] for s in src_set]
+
+print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
+print(corpus_bleu(targets_set,predicts_set,weights=(0.5,0.5,0,0)))
+print(corpus_bleu(targets_set,predicts_set,weights=(0.333,0.333,0.333,0)))
+print(corpus_bleu(targets_set,predicts_set,weights=(0.25,0.25,0.25,0.25)))
+
+print()
+
+####normal bleu
+
+targets=[t.split() for t in targets]
+predicts=[p.split() for p in predicts]
+
+target_dict=defaultdict(lambda: [])
+predict_dict=defaultdict(str)
+src_set=set(srcs)
+for s,t,p in zip(srcs,targets,predicts):
+    target_dict[s].append(t)
+    predict_dict[s]=p
+
 targets=[target_dict[s] for s in src_set]
 predicts=[predict_dict[s] for s in src_set]
 
