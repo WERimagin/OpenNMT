@@ -66,8 +66,10 @@ t_noninterros=[t.split() for t in noninterros]
 
 for i in range(data_size):
     print(srcs[i])
-    print(t_noninterros[i])
-    print(p_noninterros[i])
+    print(targets[i])
+    print(" ".join(t_noninterros[i]))
+    print(predicts[i])
+    print(" ".join(p_noninterros[i]))
     print()
 
 
