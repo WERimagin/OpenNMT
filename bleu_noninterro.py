@@ -20,7 +20,7 @@ parser.add_argument("-src", type=str, default="src.txt", help="input model epoch
 parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
 parser.add_argument("-noninterro", type=str, default="noniterro.txt", help="input model epoch")
 parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
-parser.add_argument("-ratio", type=double, default=1, help="input model epoch")
+parser.add_argument("-ratio", type=float, default=1.0, help="input model epoch")
 args = parser.parse_args()
 
 random.seed(0)
