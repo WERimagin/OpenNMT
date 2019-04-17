@@ -64,7 +64,7 @@ for p in tqdm(predicts):
 #target
 t_noninterros=[t.split() for t in noninterros]
 
-for i in data_size:
+for i in range(data_size):
     print(srcs[i])
     print(t_noninterros[i])
     print(p_noninterros[i])
