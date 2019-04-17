@@ -23,6 +23,7 @@ parser.add_argument("-tgt", type=str, default="target.txt", help="input model ep
 parser.add_argument("-noninterro", type=str, default="noniterro.txt", help="input model epoch")
 parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("-ratio", type=float, default=1.0, help="input model epoch")
+parser.add_argument("-print", action="store_true", help="input model epoch")
 args = parser.parse_args()
 
 random.seed(0)
@@ -64,13 +65,14 @@ for p in tqdm(predicts):
 #target
 t_noninterros=[t.split() for t in noninterros]
 
-for i in range(data_size):
-    print(srcs[i])
-    print(targets[i])
-    print(" ".join(t_noninterros[i]))
-    print(predicts[i])
-    print(" ".join(p_noninterros[i]))
-    print()
+if args.print:
+    for i in range(data_size):
+        print(srcs[i])
+        print(targets[i])
+        print(" ".join(t_noninterros[i]))
+        print(predicts[i])
+        print(" ".join(p_noninterros[i]))
+        print()
 
 
 target_dict=defaultdict(lambda: [])
