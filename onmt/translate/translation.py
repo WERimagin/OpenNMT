@@ -60,8 +60,8 @@ class TranslationBuilder(object):
                     #UNKの置換時、アテンションのindexがsrcテキストの単語の長さの外を指す場合が確認
                     #対処案として、その場合には一番最初の単語を指し示すこととした
                     #(そもそもUNKが発生するのはそんなに起きない。1/1000程度)
-                    if(len(src_raw)<=max_index.item())tokens[i] = src_raw[0]
-                    else tokens[i] = src_raw[max_index.item()]
+                    if len(src_raw)<=max_index.item(): tokens[i] = src_raw[0]
+                    else: tokens[i] = src_raw[max_index.item()]
                     if self.phrase_table != "":
                         with open(self.phrase_table, "r") as f:
                             for line in f:
