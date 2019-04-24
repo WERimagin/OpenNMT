@@ -39,7 +39,7 @@ with open(args.pred,"r")as f:
     for line in f:
         predicts.append(line.strip())
 
-for count,line in enumerate(targets[0:1000]):
+for count,line in enumerate(targets[0:3000]):
     line=line.split()
     for  in range(len(line)-1):
         if line[i]==line[i+1]:
