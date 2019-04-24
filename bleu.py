@@ -41,7 +41,7 @@ with open(args.pred,"r")as f:
 
 for count,line in enumerate(targets[0:3000]):
     line=line.split()
-    for  in range(len(line)-1):
+    for i in range(len(line)-1):
         if line[i]==line[i+1]:
             print(count)
             print(line)
