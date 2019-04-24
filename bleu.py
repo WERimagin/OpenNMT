@@ -39,11 +39,11 @@ with open(args.pred,"r")as f:
     for line in f:
         predicts.append(line.strip())
 
-for i,line in enumerate(targets[0:1000]):
+for count,line in enumerate(targets[0:1000]):
     line=line.split()
-    for i in range(len(line)-1):
+    for  in range(len(line)-1):
         if line[i]==line[i+1]:
-            print(i)
+            print(count)
             print(line)
 
 
