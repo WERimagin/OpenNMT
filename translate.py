@@ -31,7 +31,7 @@ def main(opt):
         if opt.tgt is not None else repeat(None)
     shard_pairs = zip(src_shards, tgt_shards)
 
-    for i, (src_shard, tgt_shard) in tqdm(enumerate(shard_pairs)):
+    for i, (src_shard, tgt_shard) in enumerate(shard_pairs):
         logger.info("Translating shard %d." % i)
         translator.translate(
             src=src_shard,

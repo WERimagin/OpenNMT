@@ -326,7 +326,7 @@ class Translator(object):
         start_time = time.time()
 
         #batch
-        for batch in data_iter:
+        for batch in tqdm(data_iter):
             batch_data = self.translate_batch(
                 batch, data.src_vocabs, attn_debug
             )

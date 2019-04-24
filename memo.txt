@@ -33,7 +33,6 @@ python3 train.py \
 -data data/demo \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
--fix_word_vecs_enc -fix_word_vecs_dec \
 -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
 -gpu_ranks 3 -world_size 1 \
 -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
@@ -42,7 +41,6 @@ python3 train.py \
 -data data/demo \
 -save_model model_data/demo-model \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
--copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
 -gpu_ranks 3 -world_size 1 \
 -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
 
@@ -65,14 +63,26 @@ python translate.py \
 -model model_data/
 
 python bleu.py \
--src data/squad-src-val-interro.txt \
--tgt data/squad-tgt-val-interro.txt \
+-src data/squad-src-val-nonshuffle.txt \
+-tgt data/squad-tgt-val-nonshuffle.txt \
 -pred pred.txt
 
+#bleuスコア
 python bleu.py \
--src data/squad-src-val.txt \
--tgt data/squad-tgt-val.txt \
--pred pred.txt
+-src data/squad-src-val-interro.txt \
+-tgt data/squad-tgt-val-interro.txt \
+-pred data/squad-pred-val-interro.txt
+
+#疑問詞をのぞいたbleuスコア
+python bleu_noninterro.py \
+-src data/squad-src-val-nonshuffle.txt \
+-tgt data/squad-tgt-val-nonshuffle.txt \
+-pred data/squad-pred-val-nonshuffle.txt \
+-noninterro data/squad-noninterro-val-interro.txt -ratio 0.01
+
+
+
+
 
 python2 qgevalcap/eval.py \
 -src data/squad-src-val-overlap-noninterro.txt \
