@@ -67,6 +67,11 @@ python bleu.py \
 -tgt data/squad-tgt-val-nonshuffle.txt \
 -pred pred.txt
 
+python bleu.py \
+-src data/squad-src-val-interro.txt \
+-tgt data/squad-tgt-val-interro.txt \
+-pred data/pred.txt
+
 #bleuスコア
 python bleu.py \
 -src data/squad-src-val-interro.txt \
@@ -179,6 +184,9 @@ train
 --beam_size 5
 #n-bestの生成
 -n_best 1
+#n-bestの保存ログ
+--dump_beam
+dump_beam
 #bleuの報告
 -report_bleu
 #コピーに必要
@@ -190,19 +198,3 @@ train
 -warmup_steps
 #gradの値がこの値を超えたら正規化する
 -max_grad_norm
-
-beamに関するエラーコード
-Traceback (most recent call last):
-  File "translate.py", line 50, in <module>
-    main(opt)
-  File "translate.py", line 34, in main
-    attn_debug=opt.attn_debug
-  File "/home/sasazawa/OpenNMT/onmt/translate/translator.py", line 332, in translate
-    translations = xlation_builder.from_batch(batch_data)
-  File "/home/sasazawa/OpenNMT/onmt/translate/translation.py", line 95, in from_batch
-    for n in range(self.n_best)]
-  File "/home/sasazawa/OpenNMT/onmt/translate/translation.py", line 95, in <listcomp>
-    for n in range(self.n_best)]
-  File "/home/sasazawa/OpenNMT/onmt/translate/translation.py", line 51, in _build_target_tokens
-    tokens[i] = src_raw[max_index.item()]
-IndexError: list index out of range

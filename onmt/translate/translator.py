@@ -330,7 +330,6 @@ class Translator(object):
             batch_data = self.translate_batch(
                 batch, data.src_vocabs, attn_debug
             )
-            #ここでエラー
             translations = xlation_builder.from_batch(batch_data)
 
             for trans in translations:

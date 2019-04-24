@@ -39,6 +39,13 @@ with open(args.pred,"r")as f:
     for line in f:
         predicts.append(line.strip())
 
+for line in targets[0:1000]:
+    line=line.split()
+    for i in range(len(line)-1):
+        if line[i]==line[i+1]:
+            print(line)
+    
+
 #srcs=[s.split() for s in targets]
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
