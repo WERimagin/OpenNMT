@@ -42,7 +42,7 @@ with open(args.pred,"r")as f:
 
 
 #srcs=[s.split() for s in targets]
-targets=[[t.split()] for t in targets]
+targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
 
 
