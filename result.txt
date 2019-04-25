@@ -552,6 +552,7 @@ interro
   0.35413721820048794
   0.27647473481934515
   0.21892831261744478
+
   28000(demo-model_step_28000_ppl_12.0609_acc_56.5888.pt)
   beam_size 3
   0.48070181218777946
@@ -608,6 +609,8 @@ interro
   -tgt data/squad-tgt-val-nonshuffle.txt \
   -pred data/squad-pred-val-nonshuffle.txt \
   -noninterro data/squad-noninterro-val-interro.txt
+
+  demo-model_step_26000_ppl_16.9188_acc_48.6529.pt
   （疑問詞抜きのbleu）
   0.4274382950603582
   0.26312441639729117
@@ -628,7 +631,7 @@ interro
   -pred data/squad-pred-val-interro.txt \
   -noninterro data/squad-noninterro-val-interro.txt
 
-  demo-model_step_28000_ppl_12.0609_acc_56.5888.pt
+  demo-model_step_31000_ppl_17.0881_acc_48.7707.pt
   0.4388107007341951
   0.2803067322706341
   0.19612238948168204
@@ -646,6 +649,20 @@ interro
   -tgt data/squad-tgt-val-nonshuffle.txt \
   -pred data/squad-pred-val-nonshuffle.txt \
   -noninterro data/squad-noninterro-val-interro.txt
+
+  --beam_size 5
+  0.326583001256204
+  0.18901396654966804
+  0.12790261482470383
+  0.09153840207135153
+
+  0.3395153796802409
+  0.1974370402231964
+  0.13308626661932121
+  0.09432631366591678
+
+  --beamsize 2
+  demo-model_step_31000_ppl_17.0881_acc_48.7707.pt
   0.36406168556973145
   0.2098442719219568
   0.13881712641852068
@@ -715,6 +732,11 @@ interro
   -model model_data/
 
   demo-model_step_33000_ppl_17.7369_acc_54.5408.pt
+  0.3474318307866521
+  0.20531740524195985
+  0.13954556980631552
+  0.10081358661483941
+
   0.4614979957196342
   0.32843613105306757
   0.2514502371805991
@@ -812,8 +834,6 @@ beam_sizeの比較
   0.3379914491279306
   0.26533754222924094
   0.21132804762887195
-
-
 
 }
 
