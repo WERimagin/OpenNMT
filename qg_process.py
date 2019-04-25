@@ -110,7 +110,6 @@ def data_process(input_path,interro_path,train=False):
                 if True:
                     #疑問詞がないものは削除
                     if interro=="":
-                        print(question_text)
                         continue
 
                 if use_interro:
@@ -125,7 +124,7 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
-    setting=""
+    setting="-interro"
 
     if use_interro==False:
         if train==True:
