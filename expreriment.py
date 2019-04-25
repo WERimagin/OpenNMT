@@ -47,7 +47,7 @@ with open(args.pred2,"r")as f:
     for line in f:
         predicts2.append(line.strip())
 
-data_size=int(len(srcs)*data_rate)
+data_size=int(len(srcs)*args.data_rate)
 for i in range(data_size):
     if predicts1[i]!=predicts2[i]:
         print(srcs[i])
