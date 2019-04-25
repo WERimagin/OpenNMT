@@ -19,6 +19,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-src", type=str, default="src.txt", help="input model epoch")
 parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
 parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
+#parser.add_argument("-split", action="store_true")
 args = parser.parse_args()
 
 random.seed(0)
@@ -52,15 +53,17 @@ for count,line in enumerate(targets):
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
 
-target_dict=defaultdict(lambda: [])
-predict_dict=defaultdict(str)
-src_set=set(srcs)
-for s,t,p in zip(srcs,targets,predicts):
-    target_dict[s].append(t)
-    predict_dict[s]=p
+if True:
+    target_dict=defaultdict(lambda: [])
+    predict_dict=defaultdict(str)
+    src_set=set(srcs)
+    for s,t,p in zip(srcs,targets,predicts):
+        target_dict[s].append(t)
+        predict_dict[s]=p
 
-targets=[target_dict[s] for s in src_set]
-predicts=[predict_dict[s] for s in src_set]
+    targets=[target_dict[s] for s in src_set]
+    predicts=[predict_dict[s] for s in src_set]
+
 
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.5,0.5,0,0)))
