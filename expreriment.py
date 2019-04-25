@@ -20,7 +20,7 @@ parser.add_argument("-src", type=str, default="src.txt", help="input model epoch
 parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
 parser.add_argument("-pred1", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("-pred2", type=str, default="pred.txt", help="input model epoch")
-parser.add_argument("-data_rate",type=float,defulat=1)
+parser.add_argument("-data_rate",type=float, default=1.0)
 parser.add_argument("-notsplit", action="store_true")
 args = parser.parse_args()
 
