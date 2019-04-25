@@ -41,23 +41,20 @@ with open(args.pred,"r")as f:
         predicts.append(line.strip())
 
 
-
-
-
 #srcs=[s.split() for s in targets]
 targets=[[t.split()] for t in targets]
 predicts=[p.split() for p in predicts]
 
-if args.notsplit:
-    target_dict=defaultdict(lambda: [])
-    predict_dict=defaultdict(str)
-    src_set=set(srcs)
-    for s,t,p in zip(srcs,targets,predicts):
-        target_dict[s].append(t)
-        predict_dict[s]=p
 
-    targets=[target_dict[s] for s in src_set]
-    predicts=[predict_dict[s] for s in src_set]
+target_dict=defaultdict(lambda: [])
+predict_dict=defaultdict(str)
+src_set=set(srcs)
+for s,t,p in zip(srcs,targets,predicts):
+    target_dict[s].append(t)
+    predict_dict[s]=p
+
+targets=[target_dict[s] for s in src_set]
+predicts=[predict_dict[s] for s in src_set]
 
 
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
