@@ -28,7 +28,7 @@ random.seed(0)
 
 srcs=[]
 targets=[]
-predicts=[]
+predicts1=[]
 predicts2=[]
 
 with open(args.src,"r")as f:
@@ -41,7 +41,7 @@ with open(args.tgt,"r")as f:
 
 with open(args.pred1,"r")as f:
     for line in f:
-        predicts.append(line.strip())
+        predicts1.append(line.strip())
 
 with open(args.pred2,"r")as f:
     for line in f:
