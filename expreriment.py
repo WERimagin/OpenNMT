@@ -51,6 +51,7 @@ data_size=int(len(srcs)*args.data_rate)
 for i in range(data_size):
     if predicts1[i]!=predicts2[i]:
         print(srcs[i])
+        print(targets[i])
         print(predicts1[i])
         print(predicts2[i])
         print()
