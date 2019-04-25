@@ -50,7 +50,7 @@ for count,line in enumerate(targets):
 
 
 #srcs=[s.split() for s in targets]
-targets=[t.split() for t in targets]
+targets=[[t.split()] for t in targets]
 predicts=[p.split() for p in predicts]
 
 if args.notsplit:
