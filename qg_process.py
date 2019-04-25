@@ -110,6 +110,7 @@ def data_process(input_path,interro_path,train=False):
                 if True:
                     #疑問詞がないものは削除
                     if interro=="":
+                        print(question_text)
                         continue
 
                 if use_interro:
@@ -156,7 +157,7 @@ def data_process(input_path,interro_path,train=False):
     else:
         if train==True:
             random_list=list(range(len(questions)))
-            random.shuffle(random_list)
+            #random.shuffle(random_list)
             with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
                 for i in random_list:
                     f.write(sentences[i]+"\n")

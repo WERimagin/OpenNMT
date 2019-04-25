@@ -819,3 +819,4 @@ beam_sizeの比較
 
 transformerで実験
 answerを付け加えて実験
+... the the...のように単語が重複している部分を取り除く
