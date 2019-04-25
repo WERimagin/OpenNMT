@@ -72,6 +72,11 @@ python bleu.py \
 -tgt data/squad-tgt-val-interro.txt \
 -pred data/pred.txt
 
+python bleu.py \
+-src data/coqa-src-dev.txt \
+-tgt data/coqa-src-dev.txt \
+-pred pred.txt
+
 #bleuスコア
 python bleu.py \
 -src data/squad-src-val-interro.txt \

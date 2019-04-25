@@ -6,6 +6,7 @@ import os
 import math
 import time
 from itertools import count
+from tqdm import tqdm
 
 import torch
 
@@ -327,9 +328,11 @@ class Translator(object):
 
         #batch
         for batch in tqdm(data_iter):
+            #翻訳
             batch_data = self.translate_batch(
                 batch, data.src_vocabs, attn_debug
             )
+            #翻訳したidを単語に変換などの処理
             translations = xlation_builder.from_batch(batch_data)
 
             for trans in translations:
@@ -666,6 +669,7 @@ class Translator(object):
             memory_lengths=memory_lengths)
 
         #ビームサーチを行う。
+        #単語ずつ
         for step in range(max_length):
             decoder_input = beam.current_predictions.view(1, -1, 1)
 

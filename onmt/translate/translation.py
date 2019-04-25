@@ -102,6 +102,7 @@ class TranslationBuilder(object):
                 src_vocab = None
                 src_raw = None
 
+            #idをwordに変換する
             pred_sents = [self._build_target_tokens(
                 src[:, b] if src is not None else None,
                 src_vocab, src_raw,

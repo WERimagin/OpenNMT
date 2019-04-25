@@ -726,17 +726,23 @@ def translate_opts(parser):
 
     # Alpha and Beta values for Google Length + Coverage penalty
     # Described here: https://arxiv.org/pdf/1609.08144.pdf, Section 7
+
+    #カバレッジのペナルティ
     group.add('--stepwise_penalty', '-stepwise_penalty', action='store_true',
               help="Apply penalty at every decoding step. "
                    "Helpful for summary penalty.")
+    #文の長さに応じたペナルティ
     group.add('--length_penalty', '-length_penalty', default='none',
               choices=['none', 'wu', 'avg'],
               help="Length Penalty to use.")
     group.add('--ratio', '-ratio', type=float, default=-0.,
               help="Ratio based beam stop condition")
+
+    #カバレッジのペナルティ2?
     group.add('--coverage_penalty', '-coverage_penalty', default='none',
               choices=['none', 'wu', 'summary'],
               help="Coverage Penalty to use.")
+    #長さに応じたペナルティ
     group.add('--alpha', '-alpha', type=float, default=0.,
               help="Google NMT length penalty parameter "
                    "(higher = longer generation)")
