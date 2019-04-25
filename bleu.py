@@ -19,7 +19,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-src", type=str, default="src.txt", help="input model epoch")
 parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
 parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
-#parser.add_argument("-split", action="store_true")
+parser.add_argument("-notsplit", action="store_true")
 args = parser.parse_args()
 
 random.seed(0)
@@ -53,7 +53,7 @@ for count,line in enumerate(targets):
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
 
-if True:
+if args.notsplit:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
