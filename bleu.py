@@ -40,12 +40,7 @@ with open(args.pred,"r")as f:
     for line in f:
         predicts.append(line.strip())
 
-for count,line in enumerate(targets):
-    line=line.split()
-    for i in range(len(line)-1):
-        if line[i]==line[i+1]:
-            print(count)
-            print(line)
+
 
 
 
