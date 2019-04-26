@@ -10,6 +10,7 @@ import json
 import gzip
 import pandas as pd
 import numpy as np
+import re
 from tqdm import tqdm
 from nltk.tokenize import word_tokenize,sent_tokenize
 import pickle
@@ -28,23 +29,29 @@ def check_overlap(sentence,question,stop_words):
     return False
 
 def answer_find(context_text,answer_start,answer_end):
-    context=sent_tokenize(context_text)
+
+    #context=sent_tokenize(context_text)
+    context=re.split("\.\s|\?\s|\!\s",context_text)
     start_p=0
 
-    #start_p:対象となる文の文字レベルでの始まりの位置
-    #end_p:対象となる文の文字レベルでの終端の位置
-    #answer_startがstart_pからend_pの間にあるかを確認。answer_endも同様
     for i,sentence in enumerate(context):
-        end_p=start_p+len(sentence)
-        if start_p<=answer_start and answer_start<=end_p:
-            sentence_start_id=i
-        if start_p<=answer_end and answer_end<=end_p:
-            sentence_end_id=i
+        start_p=context_text.find(sentence,start_p)
+        end_p=start_p+len(sentence)+1
+
+        if start_p<=answer_start<end_p:
+            sentence_start_id=start_p
+        if start_p<answer_end<=end_p:
+            sentence_end_id=end_p
         #スペースが消えている分の追加、end_pの計算のところでするべきかは不明
-        start_p+=len(sentence)+1
+        #findで処理する
+        start_p+=len(sentence)
 
     #得られた文を結合する（大抵は文は一つ）
-    answer_sentence=" ".join(context[sentence_start_id:sentence_end_id+1])
+    answer_sentence=context_text[sentence_start_id:sentence_end_id]
+
+    if sentence_start_id != sentence_end_id:
+        print(answer_sentence)
+
 
     return answer_sentence
 

@@ -1,0 +1,20 @@
+
+squad-src-val-nonshuffle.txt
+squad-tgt-val-nonshuffle.txt
+squad-pred-val-nonshuffle.txt
+demo-model_step_31000_ppl_17.0881_acc_48.7707.pt
+  文のみ、疑問詞を使用しない
+
+squad-src-val-interro.txt
+squad-tgt-val-interro.txt
+squad-pred-val-interro-beam5.txt
+demo-model_step_28000_ppl_12.0609_acc_56.5888.pt
+  文＋疑問詞を使用
+  beam2~5まで
+
+squad-src-val-interro.txt
+squad-tgt-val-interro.txt
+squad-pred-val-noncopycoverage.txt
+demo-model_step_33000_ppl_17.7369_acc_54.5408.pt
+  文＋疑問詞を使用
+  コピー、カバレッジを使用しない

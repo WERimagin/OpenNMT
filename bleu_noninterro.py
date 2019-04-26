@@ -18,9 +18,9 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-src", type=str, default="src.txt", help="input model epoch")
-parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
-parser.add_argument("-noninterro", type=str, default="noniterro.txt", help="input model epoch")
+parser.add_argument("-src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
+parser.add_argument("-tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
+parser.add_argument("-noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
 parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("-ratio", type=float, default=1.0, help="input model epoch")
 parser.add_argument("-print", action="store_true", help="input model epoch")

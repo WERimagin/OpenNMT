@@ -712,7 +712,7 @@ def translate_opts(parser):
 
     group = parser.add_argument_group('Beam')
     #beamサイズ
-    group.add('--beam_size', '-beam_size', type=int, default=5,
+    group.add('--beam_size', '-beam_size', type=int, default=2,
               help='Beam size')
     #翻訳の最低の長さと最高の長さ
     group.add('--min_length', '-min_length', type=int, default=0,

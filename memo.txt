@@ -60,7 +60,13 @@ python translate.py \
 -src data/squad-src-val-nonshuffle.txt \
 -output pred.txt \
 -replace_unk -dynamic_dict \
--model model_data/
+-model model_data/demo-model_step_31000_ppl_17.0881_acc_48.7707.pt
+
+python translate.py \
+-src data/squad-src-val-interro.txt \
+-output pred.txt \
+-replace_unk \
+-model model_data/demo-model_step_33000_ppl_17.7369_acc_54.5408.pt
 
 python bleu.py \
 -src data/squad-src-val-nonshuffle.txt \
@@ -70,33 +76,29 @@ python bleu.py \
 python bleu.py \
 -src data/squad-src-val-interro.txt \
 -tgt data/squad-tgt-val-interro.txt \
--pred data/pred.txt
-
-python bleu.py \
--src data/coqa-src-dev.txt \
--tgt data/coqa-src-dev.txt \
 -pred pred.txt
+
 
 #bleuスコア
 python bleu.py \
 -src data/squad-src-val-interro.txt \
 -tgt data/squad-tgt-val-interro.txt \
--pred data/squad-pred-val-interro.txt
+-pred data/squad-pred-val-interro-beam5.txt
 
 #疑問詞をのぞいたbleuスコア
 python bleu_noninterro.py \
 -src data/squad-src-val-interro.txt \
--tgt data/squad-tgt-val-nonshuffle.txt \
--pred squad-pred-val-normal-beam5.txt \
+-tgt data/squad-tgt-val-interro.txt \
+-pred squad-pred-val-interro-noncopycoverage-beam2.txt  \
 -noninterro data/squad-noninterro-val-interro.txt
 
 
-python bleu.py \
+python expreriment.py \
 -src data/squad-src-val-interro.txt \
 -tgt data/squad-tgt-val-interro.txt \
 -pred1 data/squad-pred-val-interro-beam2.txt \
 -pred2 data/squad-pred-val-interro-beam5.txt \
--data_rate 0.05
+-data_rate 0.01
 
 
 

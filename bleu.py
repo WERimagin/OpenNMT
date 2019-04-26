@@ -16,8 +16,8 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-src", type=str, default="src.txt", help="input model epoch")
-parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
+parser.add_argument("-src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
+parser.add_argument("-tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
 parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("-notsplit", action="store_true")
 args = parser.parse_args()
