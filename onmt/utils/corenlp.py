@@ -116,3 +116,24 @@ class CoreNLP():
         question=" ".join([token_list[node]["text"] for node in node_list])
         neg_question=" ".join([token_list[node]["text"] for node in neg_node_list])
         return question,neg_question,vb_check
+
+    #charactor単位でのそれぞれの文のスタートとエンドの位置を返す
+    #[(0,10),(11,35),(35,60)]など
+    def sentence_tokenize(self,text):
+        #テキストの一番最初に空白、改行がある場合はインデックスがずれるのでそれの処理
+        space_count=0
+        while True:
+            if text[space_count]==" " or text[space_count]=="\n":
+                space_count+=1
+            else:
+                break
+        #print(space_count)
+        q=self.nlp.annotate(text, properties={'annotators': 'tokenize,ssplit','outputFormat': 'json'})
+        sentences=[]
+        for sentence in q["sentences"]:
+            tokens=sentence["tokens"]#文の中の単語
+            start_id=tokens[0]["characterOffsetBegin"]+space_count
+            end_id=tokens[-1]["characterOffsetEnd"]+space_count
+            sentences.append((start_id,end_id))
+
+        return sentences

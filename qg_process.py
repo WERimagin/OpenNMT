@@ -39,18 +39,22 @@ def answer_find(context_text,answer_start,answer_end):
         end_p=start_p+len(sentence)+1
 
         if start_p<=answer_start<end_p:
-            sentence_start_id=start_p
+            sentence_start_id=i
         if start_p<answer_end<=end_p:
-            sentence_end_id=end_p
+            sentence_end_id=i
         #スペースが消えている分の追加、end_pの計算のところでするべきかは不明
         #findで処理する
         start_p+=len(sentence)
 
-    #得られた文を結合する（大抵は文は一つ）
-    answer_sentence=context_text[sentence_start_id:sentence_end_id]
 
-    if sentence_start_id != sentence_end_id:
+    #得られた文を結合する（大抵は文は一つ）
+    answer_sentence=context_text[sentence_start_id:sentence_end_id+1]
+    if sentence_start_id!=sentence_end_id:
+        print(context_text)
+        print(context)
+        print(answer_start,answer_end)
         print(answer_sentence)
+        print()
 
 
     return answer_sentence
@@ -58,6 +62,20 @@ def answer_find(context_text,answer_start,answer_end):
 #sentenceを受け取り、tokenizeして返す
 def tokenize(sent):
     return [token.replace('``','"').replace("''",'"') for token in word_tokenize(sent)]
+
+#単語が連続して現れている部分は削除する
+def overlap_rm(sentence):
+    #print(sentence)
+    sentence=sentence.split()
+    #print(sentence)
+    #print()
+    rm_index=[]
+    for i in range(len(sentence)-1):
+        if sentence[i+1]==sentence[i]:
+            rm_index.append(i+1)
+    new_sentence=[sentence[i] for i in range(len(sentence)) if i not in rm_index]
+    return " ".join(new_sentence)
+
 
 def data_process(input_path,interro_path,train=False):
     with open(input_path,"r") as f:
@@ -104,6 +122,9 @@ def data_process(input_path,interro_path,train=False):
                 answer_text=" ".join(tokenize(answer_text))
                 interro=" ".join(tokenize(interro))
                 non_interro=" ".join(tokenize(non_interro))
+
+                question_text=overlap_rm(question_text)
+                sentence_text=overlap_rm(sentence_text)
 
                 #ゴミデータ(10個程度)は削除
                 if len(question_text)<=5:

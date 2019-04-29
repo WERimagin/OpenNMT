@@ -1,0 +1,8 @@
+nohup: qg_corenlpprocess.py: No such file or directory
+  File "qg_corenlpprocess.py", line 1
+SyntaxError: Non-ASCII character '\xe3' in file qg_corenlpprocess.py on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+Python 2.7.15 (default, Jun 17 2018, 13:05:56) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+  File "qg_corenlpprocess.py", line 1
+SyntaxError: Non-ASCII character '\xe3' in file qg_corenlpprocess.py on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
