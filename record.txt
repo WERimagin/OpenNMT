@@ -889,6 +889,10 @@ beam_sizeの比較
   -tgt data/squad-tgt-val-interro.txt \
   -pred pred.txt
 
+  python bleu_noninterro.py \
+  -pred pred.txt
+
+
   demo-model_step_28000_ppl_11.8541_acc_56.5289.pt
   0.49773664346497004
   0.3628009541249536

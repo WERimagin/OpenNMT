@@ -215,12 +215,13 @@ class BeamSearch(DecodeStrategy):
                 step - 1, _B_old, self.beam_size, self.alive_attn.size(-1))
             if self.alive_attn is not None else None)
         non_finished_batch = []
+        #バッチの中の一つの文（beamの候補）ごと
         for i in range(self.is_finished.size(0)):
             b = self._batch_offset[i]
             finished_hyp = self.is_finished[i].nonzero().view(-1)
             # Store finished hypotheses for this batch.
             #終了した生成文を追加
-            print(finished_hyp)
+            #finished_hyp:eosでない文
             for j in finished_hyp:
                 if self.ratio > 0:
                     s = self.topk_scores[i, j] / (step + 1)
