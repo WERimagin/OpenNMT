@@ -118,6 +118,7 @@ class BeamSearch(DecodeStrategy):
         return self.select_indices.view(self.batch_size, self.beam_size)\
             .fmod(self.beam_size)
 
+    #デコードして出てきた単語に対して1ステップ進める
     def advance(self, log_probs, attn):
         vocab_size = log_probs.size(-1)
 
@@ -216,6 +217,7 @@ class BeamSearch(DecodeStrategy):
             b = self._batch_offset[i]
             finished_hyp = self.is_finished[i].nonzero().view(-1)
             # Store finished hypotheses for this batch.
+            #終了した生成文を追加
             for j in finished_hyp:
                 if self.ratio > 0:
                     s = self.topk_scores[i, j] / (step + 1)
