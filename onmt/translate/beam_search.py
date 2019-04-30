@@ -213,6 +213,7 @@ class BeamSearch(DecodeStrategy):
                 step - 1, _B_old, self.beam_size, self.alive_attn.size(-1))
             if self.alive_attn is not None else None)
         non_finished_batch = []
+        print(self.is_finished)
         for i in range(self.is_finished.size(0)):
             b = self._batch_offset[i]
             finished_hyp = self.is_finished[i].nonzero().view(-1)
