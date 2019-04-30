@@ -208,7 +208,7 @@ class BeamSearch(DecodeStrategy):
         self.is_finished = self.is_finished.to('cpu')
         self.top_beam_finished |= self.is_finished[:, 0].eq(1)
         predictions = self.alive_seq.view(_B_old, self.beam_size, step)
-        print(predictions)
+        print(predictions.size())
         attention = (
             self.alive_attn.view(
                 step - 1, _B_old, self.beam_size, self.alive_attn.size(-1))
