@@ -178,7 +178,7 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
-    setting="-interro"
+    setting=""
 
     if use_interro==False:
         if train==True:
