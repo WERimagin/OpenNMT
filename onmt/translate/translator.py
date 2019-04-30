@@ -669,7 +669,7 @@ class Translator(object):
             memory_lengths=memory_lengths)
 
         #ビームサーチを行う。
-        #単語ずつ
+        #単語ずつ、ただしバッチ単位で同時
         for step in range(max_length):
             decoder_input = beam.current_predictions.view(1, -1, 1)
 

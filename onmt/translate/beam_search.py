@@ -195,6 +195,7 @@ class BeamSearch(DecodeStrategy):
                 beta=self.global_scorer.beta)
             self.topk_scores -= cov_penalty.view(_B, self.beam_size)
 
+        #(2),確保しているビームの候補のうち、eosで終わっているものの番号
         self.is_finished = self.topk_ids.eq(self.eos)
         self.ensure_max_length()
 
@@ -207,8 +208,8 @@ class BeamSearch(DecodeStrategy):
         # it's faster to not move this back to the original device
         self.is_finished = self.is_finished.to('cpu')
         self.top_beam_finished |= self.is_finished[:, 0].eq(1)
+        #(batch,beam_size,seq_len)
         predictions = self.alive_seq.view(_B_old, self.beam_size, step)
-        print(predictions.size())
         attention = (
             self.alive_attn.view(
                 step - 1, _B_old, self.beam_size, self.alive_attn.size(-1))
@@ -219,6 +220,7 @@ class BeamSearch(DecodeStrategy):
             finished_hyp = self.is_finished[i].nonzero().view(-1)
             # Store finished hypotheses for this batch.
             #終了した生成文を追加
+            print(finished_hyp)
             for j in finished_hyp:
                 if self.ratio > 0:
                     s = self.topk_scores[i, j] / (step + 1)
