@@ -691,7 +691,7 @@ interro
   答えを入れた時の精度の変化（疑問詞のあと、疑問詞抜き）
   複数の文を見ないと質問文
   multi hop,複数文
-  
+
 
 
 
@@ -847,6 +847,55 @@ beam_sizeの比較
   0.26533754222924094
   0.21132804762887195
 
+}
+
+やり直し
+{
+  疑問詞の?マークを取り除く
+  the,the,...のように連続したものを除去
+  sentenceの分割をnltkに変更
+  この条件でinterroを使った質問生成
+  fixを設定で忘れていたので追加
+  python preprocess.py \
+  -train_src data/squad-src-train-interro.txt \
+  -train_tgt data/squad-tgt-train-interro.txt \
+  -valid_src data/squad-src-val-interro.txt \
+  -valid_tgt data/squad-tgt-val-interro.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 3 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
+
+  python translate.py \
+  -src data/squad-src-val-interro.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict \
+  -model model_data/
+
+  python bleu.py \
+  -src data/squad-src-val-interro.txt \
+  -tgt data/squad-tgt-val-interro.txt \
+  -pred pred.txt
+
+  demo-model_step_28000_ppl_11.8541_acc_56.5289.pt
+  0.49773664346497004
+  0.3628009541249536
+  0.28349837368466735
+  0.22499884309669207
+
+  demo-model_step_33000_ppl_11.9292_acc_56.7303.pt
 }
 
 transformerで実験
