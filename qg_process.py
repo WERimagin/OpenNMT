@@ -95,16 +95,46 @@ def data_process(input_path,interro_path,train=False):
 
     all_count=0
 
-    #context_text:文章
-    #question_text:質問
-    #answer_text:解答
-    #answer_start,answer_end:解答の文章の中での最初と最後の位置
     for topic in tqdm(data["data"]):
         topic=topic["paragraphs"]
         for paragraph in topic:
             context_text=paragraph["context"].lower()
             for qas in paragraph["qas"]:
 
+                sentence_text=interro_data[all_count]["sentence_text"]
+                question_text=interro_data[all_count]["question_text"]
+                answer_text=interro_data[all_count]["answer_text"]
+                interro=interro_data[all_count]["interro"]
+                non_interro=interro_data[all_count]["non_interro"]
+                all_count+=1
+
+
+
+                if True:
+                    #テキストとノンストップワードが一つも重複してないものは除去
+                    if check_overlap(sentence_text,question_text,stop_words)==False:
+                        continue
+
+                if True:
+                    #疑問詞がないものは削除
+                    if interro=="":
+                        continue
+
+                if interro[-1]=="?":
+                    print(interro)
+                    interro=interro[:-2]
+                    print(interro)
+
+                if use_interro:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro])
+
+                sentences.append(sentence_text)
+                questions.append(question_text)
+                answers.append(answer_text)
+                interros.append(interro)
+                non_interros.append(non_interro)
+
+                """
                 question_text=qas["question"].lower()
                 a=qas["answers"][0]
                 answer_text=a["text"].lower()
@@ -142,17 +172,13 @@ def data_process(input_path,interro_path,train=False):
 
                 if use_interro:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
+                """
 
-                sentences.append(sentence_text)
-                questions.append(question_text)
-                answers.append(answer_text)
-                interros.append(interro)
-                non_interros.append(non_interro)
 
     print(all_count)
     print(len(sentences))
 
-    setting=""
+    setting="-interro"
 
     if use_interro==False:
         if train==True:
@@ -229,11 +255,11 @@ if __name__ == "__main__":
     random.seed(0)
 
     data_process(input_path="data/squad-dev-v1.1.json",
-                interro_path="data/squad-interro-dev.json",
+                interro_path="data/squad-data-dev.json",
                 train=False
                 )
 
     data_process(input_path="data/squad-train-v1.1.json",
-                interro_path="data/squad-interro-train.json",
+                interro_path="data/squad-data-train.json",
                 train=True
                 )
