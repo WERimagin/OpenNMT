@@ -881,7 +881,8 @@ beam_sizeの比較
   python translate.py \
   -src data/squad-src-val-interro.txt \
   -output pred.txt \
-  -replace_unk -dynamic_dict \
+  -replace_unk -dynamic_dict\
+  -length_penalty avg \
   -model model_data/
 
   python bleu.py \
@@ -899,8 +900,145 @@ beam_sizeの比較
   0.28349837368466735
   0.22499884309669207
 
+  --length_penalty wu
+  0.49773664346497004
+  0.3628009541249536
+  0.28349837368466735
+  0.22499884309669207
+
+  --length_penalty avg
+  0.5025626991443817
+  0.36655626286980736
+  0.28653498494945284
+  0.22744561610146702
+
+  beam5 avg
+  0.4832065868870641
+  0.35406794689197385
+  0.278156030105797
+  0.22173113292896543
+
   demo-model_step_33000_ppl_11.9292_acc_56.7303.pt
+  --length_penalty avg
+  0.5045372750880516
+  0.36847654057226176
+  0.28806625485724674
+  0.2286262058783443
+
+  no length penalty
+  0.4997517790850251
+  0.3652903283501461
+  0.2858435187520519
+  0.2271285164733917
+
+  --length_penalty wu
+  0.4997517790850251
+  0.3652903283501461
+  0.2858435187520519
+  0.2271285164733917
+
+
 }
+
+  interroなし
+{
+  python preprocess.py \
+  -train_src data/squad-src-train-normal.txt \
+  -train_tgt data/squad-tgt-train-normal.txt \
+  -valid_src data/squad-src-val-normal.txt \
+  -valid_tgt data/squad-tgt-val-normal.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 3 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
+
+  python translate.py \
+  -src data/squad-src-val-interro.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict -length_penalty avg \
+  -model model_data/
+
+
+  demo-model_step_36000_ppl_17.4393_acc_48.5345.pt
+  0.3955432751381806
+  0.23620602659204437
+  0.1614321699565451
+  0.1150910279724184
+  squad-pred-val-normal.txt
+
+  -length_penaltyなし
+  0.38879295746827147
+  0.2313044301788705
+  0.1575652632014402
+  0.11217150622436259
+
+  demo-model_step_30000_ppl_17.4093_acc_48.4701.pt
+  0.3958691272103621
+  0.23529535212788663
+  0.15995035223218648
+  0.11398689189422896
+}
+
+normal,コピー、カバレッジなし
+{
+  python preprocess.py \
+  -train_src data/squad-src-train-normal.txt \
+  -train_tgt data/squad-tgt-train-normal.txt \
+  -valid_src data/squad-src-val-normal.txt \
+  -valid_tgt data/squad-tgt-val-normal.txt \
+  -save_data data/demo \
+  -lower
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -gpu_ranks 3 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+}
+
+interro、コピーカバレッジなし
+{
+  python preprocess.py \
+  -train_src data/squad-src-train-interro.txt \
+  -train_tgt data/squad-tgt-train-interro.txt \
+  -valid_src data/squad-src-val-interro.txt \
+  -valid_tgt data/squad-tgt-val-interro.txt \
+  -save_data data/demo \
+  -lower
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -gpu_ranks 2 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
+}
+
 
 transformerで実験
 answerを付け加えて実験
