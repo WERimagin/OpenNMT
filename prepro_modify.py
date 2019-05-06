@@ -165,9 +165,9 @@ def data_process(input_path,interro_path,train=False):
                 for i in random_list[val_num:]:
                     f.write(questions[i]+"\n")
     else:
+        setting=""
         if train==True:
             random_list=list(range(len(questions)))
-            #random.shuffle(random_list)
             with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
                 for i in random_list:
                     f.write(sentences[i]+"\n")
@@ -177,7 +177,6 @@ def data_process(input_path,interro_path,train=False):
 
         if train==False:
             random_list=list(range(len(questions)))
-            #random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
 
             with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
