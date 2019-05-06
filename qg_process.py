@@ -90,9 +90,7 @@ def data_process(input_path,interro_path,train=False):
     sentences=[]
     interros=[]
     non_interros=[]
-
     stop_words = stopwords.words('english')
-
     all_count=0
 
     for topic in tqdm(data["data"]):
@@ -100,15 +98,12 @@ def data_process(input_path,interro_path,train=False):
         for paragraph in topic:
             context_text=paragraph["context"].lower()
             for qas in paragraph["qas"]:
-
                 sentence_text=interro_data[all_count]["sentence_text"]
                 question_text=interro_data[all_count]["question_text"]
                 answer_text=interro_data[all_count]["answer_text"]
                 interro=interro_data[all_count]["interro"]
                 non_interro=interro_data[all_count]["non_interro"]
                 all_count+=1
-
-
 
                 if True:
                     #テキストとノンストップワードが一つも重複してないものは除去
@@ -174,11 +169,8 @@ def data_process(input_path,interro_path,train=False):
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
                 """
 
-
     print(all_count)
     print(len(sentences))
-
-
 
     if use_interro==False:
         setting="-normal"
@@ -209,9 +201,9 @@ def data_process(input_path,interro_path,train=False):
                 for i in random_list[val_num:]:
                     f.write(questions[i]+"\n")
     else:
+        setting=""
         if train==True:
             random_list=list(range(len(questions)))
-            #random.shuffle(random_list)
             with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
                 for i in random_list:
                     f.write(sentences[i]+"\n")
@@ -221,7 +213,6 @@ def data_process(input_path,interro_path,train=False):
 
         if train==False:
             random_list=list(range(len(questions)))
-            #random.shuffle(random_list)
             val_num=int(len(random_list)*0.5)
 
             with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
