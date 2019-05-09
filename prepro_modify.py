@@ -83,16 +83,14 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=False
+    use_interro=True
 
     questions=[]
     answers=[]
     sentences=[]
     interros=[]
     non_interros=[]
-
     stop_words = stopwords.words('english')
-
     all_count=0
 
     for topic in tqdm(data["data"]):
@@ -131,10 +129,48 @@ def data_process(input_path,interro_path,train=False):
                 interros.append(interro)
                 non_interros.append(non_interro)
 
+                """
+                question_text=qas["question"].lower()
+                a=qas["answers"][0]
+                answer_text=a["text"].lower()
+                answer_start=a["answer_start"]
+                answer_end=a["answer_start"]+len(a["text"])
+                interro=interro_data[all_count]["interro"]
+                non_interro=interro_data[all_count]["non_interro"]
+                all_count+=1
+
+                #contextの中からanswerが含まれる文を見つけ出す
+                sentence_text=answer_find(context_text,answer_start,answer_end)
+
+                question_text=" ".join(tokenize(question_text))
+                sentence_text=" ".join(tokenize(sentence_text))
+                answer_text=" ".join(tokenize(answer_text))
+                interro=" ".join(tokenize(interro))
+                non_interro=" ".join(tokenize(non_interro))
+
+                question_text=overlap_rm(question_text)
+                sentence_text=overlap_rm(sentence_text)
+
+                #ゴミデータ(10個程度)は削除
+                if len(question_text)<=5:
+                    continue
+
+                if True:
+                    #テキストとノンストップワードが一つも重複してないものは除去
+                    if check_overlap(sentence_text,question_text,stop_words)==False:
+                        continue
+
+                if True:
+                    #疑問詞がないものは削除
+                    if interro=="":
+                        continue
+
+                if use_interro:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro])
+                """
+
     print(all_count)
     print(len(sentences))
-
-
 
     if use_interro==False:
         setting="-normal"
@@ -212,12 +248,10 @@ if __name__ == "__main__":
 
     data_process(input_path="data/squad-dev-v1.1.json",
                 interro_path="data/squad-data-dev.json",
-                modify_path="data/squad-val-normalmodify.json",
                 train=False
                 )
 
     data_process(input_path="data/squad-train-v1.1.json",
                 interro_path="data/squad-data-train.json",
-                modify_path="data/squad-train-normalmodify.json",
                 train=True
                 )

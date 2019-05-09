@@ -18,12 +18,12 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
-parser.add_argument("-tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
-parser.add_argument("-noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
-parser.add_argument("-pred", type=str, default="pred.txt", help="input model epoch")
-parser.add_argument("-ratio", type=float, default=1.0, help="input model epoch")
-parser.add_argument("-print", action="store_true", help="input model epoch")
+parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
+parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
+parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
+parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
+parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
+parser.add_argument("--print", action="store_true", help="input model epoch")
 args = parser.parse_args()
 
 random.seed(0)
@@ -60,7 +60,6 @@ noninterros=noninterros[0:data_size]
 p_noninterros=[]
 corenlp=CoreNLP()
 for p in tqdm(predicts[3600:]):
-    print(p)
     interro,p_noninterro=corenlp.forward(p)
     p_noninterros.append(p_noninterro)
 #target
