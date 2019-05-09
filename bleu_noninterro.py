@@ -63,7 +63,7 @@ corenlp=CoreNLP()
 for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
     count+=1
-    print(interro,p_interro,count)
+    print(interro,p_noninterro,count)
     p_noninterros.append(p_noninterro)
 #target
 t_noninterros=[t.split() for t in noninterros]
