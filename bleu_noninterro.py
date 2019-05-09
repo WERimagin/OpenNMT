@@ -59,7 +59,7 @@ noninterros=noninterros[0:data_size]
 #predict
 p_noninterros=[]
 corenlp=CoreNLP()
-for p in tqdm(predicts):
+for p in tqdm(predicts[3800:]):
     interro,p_noninterro=corenlp.forward(p)
     p_noninterros.append(p_noninterro)
 #target
