@@ -57,10 +57,13 @@ noninterros=noninterros[0:data_size]
 
 #srcs=[s.split() for s in targets]
 #predict
+count=0
 p_noninterros=[]
 corenlp=CoreNLP()
-for p in tqdm(predicts[3600:]):
+for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
+    count+=1
+    print(interro,p_interro,count)
     p_noninterros.append(p_noninterro)
 #target
 t_noninterros=[t.split() for t in noninterros]
