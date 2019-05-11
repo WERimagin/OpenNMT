@@ -50,7 +50,7 @@ target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
 src_set=set(srcs)
 for s,t,p in zip(srcs,targets,predicts):
-    if args.interro!="" and args.interro not in targets:
+    if args.interro!="" and args.interro not in t:
         continue
     print(s,t,p)
     target_dict[s].append(t)
