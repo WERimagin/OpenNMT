@@ -45,10 +45,6 @@ with open(args.pred,"r")as f:
 #srcs=[s.split() for s in targets]
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
-print(max([len(p) for p in targets]))
-print(min([len(p) for p in targets]))
-print(max([len(p) for p in predicts]))
-print(min([len(p) for p in predicts]))
 
 target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
@@ -56,13 +52,13 @@ src_set=set(srcs)
 for s,t,p in zip(srcs,targets,predicts):
     if args.interro!="" and args.interro not in targets:
         continue
+    print(s,t,p)
     target_dict[s].append(t)
     predict_dict[s]=p
 
 targets=[target_dict[s] for s in src_set if s in target_dict]
 predicts=[predict_dict[s] for s in src_set if s in predict_dict]
 
-print("size:{}".format(len(targets)))
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.5,0.5,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.333,0.333,0.333,0)))
