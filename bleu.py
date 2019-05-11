@@ -45,7 +45,10 @@ with open(args.pred,"r")as f:
 #srcs=[s.split() for s in targets]
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
-
+print(max([len(p) for p in targets]))
+print(min([len(p) for p in targets]))
+print(max([len(p) for p in predicts]))
+print(min([len(p) for p in predicts]))
 
 target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
