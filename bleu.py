@@ -20,6 +20,7 @@ parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt",
 parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
 parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("--notsplit", action="store_true")
+parser.add_argument("--interro", type=str, default="")
 args = parser.parse_args()
 
 random.seed(0)
@@ -50,13 +51,15 @@ target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
 src_set=set(srcs)
 for s,t,p in zip(srcs,targets,predicts):
+    if args.interro not in targets:
+        continue
     target_dict[s].append(t)
     predict_dict[s]=p
 
 targets=[target_dict[s] for s in src_set]
 predicts=[predict_dict[s] for s in src_set]
 
-
+print("size:{}".format(len(targets)))
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.5,0.5,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.333,0.333,0.333,0)))

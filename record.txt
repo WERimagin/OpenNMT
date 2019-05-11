@@ -893,6 +893,17 @@ beam_sizeの比較
   python bleu_noninterro.py \
   -pred pred.txt
 
+  demo-model_step_33000_ppl_11.9292_acc_56.7303.pt
+  0.3975609908906012
+  0.24891312588288864
+  0.17457407327874952
+  0.1284325392444405
+
+  0.5045372750880516
+  0.36847654057226176
+  0.28806625485724674
+  0.2286262058783443
+
 
   demo-model_step_28000_ppl_11.8541_acc_56.5289.pt
   0.49773664346497004
@@ -917,6 +928,8 @@ beam_sizeの比較
   0.35406794689197385
   0.278156030105797
   0.22173113292896543
+
+
 
   demo-model_step_33000_ppl_11.9292_acc_56.7303.pt
   --length_penalty avg
@@ -969,6 +982,12 @@ beam_sizeの比較
   -output pred.txt \
   -replace_unk -dynamic_dict -length_penalty avg \
   -model model_data/
+
+  python translate.py \
+  -src data/squad-src-train-full-sentence.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict -length_penalty avg \
+  -model model_data/demo-model_step_36000_ppl_17.4393_acc_48.5345.pt
 
 
   demo-model_step_36000_ppl_17.4393_acc_48.5345.pt
@@ -1042,4 +1061,4 @@ interro、コピーカバレッジなし
 
 transformerで実験
 answerを付け加えて実験
-... the the...のように単語が重複している部分を取り除く
+... the the...のように単語が重複している部分を取り除く 
