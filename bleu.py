@@ -52,7 +52,6 @@ src_set=set(srcs)
 for s,t,p in zip(srcs,targets,predicts):
     if args.interro!="" and args.interro not in t:
         continue
-    print(s,t,p)
     target_dict[s].append(t)
     predict_dict[s]=p
 
