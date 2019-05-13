@@ -180,7 +180,7 @@ def data_process(input_path,interro_path,train=False):
     print(len(sentences))
 
     setting=""
-    if use_interro==True and use_pre==True and use_pre==False:
+    if use_interro==True and use_pre==True and use_be==False:
         setting="interro-pre"
 
     if train==True:
