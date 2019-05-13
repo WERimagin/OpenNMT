@@ -84,6 +84,8 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=True
+    use_pre=True
+    use_be=False
 
     questions=[]
     answers=[]
@@ -103,6 +105,8 @@ def data_process(input_path,interro_path,train=False):
                 answer_text=interro_data[all_count]["answer_text"]
                 interro=interro_data[all_count]["interro"]
                 non_interro=interro_data[all_count]["non_interro"]
+                pre_text=interro_data[all_count]["pre_text"]
+                be_text=interro[all_count]["be_text"]
                 all_count+=1
 
                 if True:
@@ -119,6 +123,9 @@ def data_process(input_path,interro_path,train=False):
                     print(interro)
                     interro=interro[:-2]
                     print(interro)
+
+                if use_pre:
+                    sentence_text=" ".join([pre_text,sentence_text])
 
                 if use_interro:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
@@ -172,6 +179,38 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
+    if use_interro==True and use_pre==True and use_pre==False:
+        setting="interro-pre"
+
+    if train==True:
+        random_list=list(range(len(questions)))
+        with open("data/squad-src-train-{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(sentences[i]+"\n")
+        with open("data/squad-tgt-train-{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(questions[i]+"\n")
+
+    if train==False:
+        random_list=list(range(len(questions)))
+        val_num=int(len(random_list)*0.5)
+
+        with open("data/squad-src-val-{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(sentences[i]+"\n")
+        with open("data/squad-tgt-val-{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(questions[i]+"\n")
+
+        with open("data/squad-src-test-{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(sentences[i]+"\n")
+        with open("data/squad-tgt-test-{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(questions[i]+"\n")
+
+
+    """
     if use_interro==False:
         setting="-normal"
         if train==True:
@@ -201,7 +240,7 @@ def data_process(input_path,interro_path,train=False):
                 for i in random_list[val_num:]:
                     f.write(questions[i]+"\n")
     else:
-        setting=""
+        setting="-forward"
         if train==True:
             random_list=list(range(len(questions)))
             with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
@@ -240,7 +279,7 @@ def data_process(input_path,interro_path,train=False):
             with open("data/squad-noninterro-test-interro{}.txt".format(setting),"w")as f:
                 for i in random_list[val_num:]:
                     f.write(non_interros[i]+"\n")
-
+    """
 
 
 if __name__ == "__main__":
