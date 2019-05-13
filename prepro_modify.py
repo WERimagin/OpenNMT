@@ -179,6 +179,7 @@ def data_process(input_path,interro_path,train=False):
     print(all_count)
     print(len(sentences))
 
+    setting=""
     if use_interro==True and use_pre==True and use_pre==False:
         setting="interro-pre"
 
