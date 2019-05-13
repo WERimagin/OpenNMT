@@ -106,7 +106,7 @@ def data_process(input_path,interro_path,train=False):
                 interro=interro_data[all_count]["interro"]
                 non_interro=interro_data[all_count]["non_interro"]
                 pre_text=interro_data[all_count]["pre_text"]
-                be_text=interro[all_count]["be_text"]
+                be_text=interro_data[all_count]["be_text"]
                 all_count+=1
 
                 if True:
