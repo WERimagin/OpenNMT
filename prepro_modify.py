@@ -85,6 +85,7 @@ def data_process(input_path,interro_path,train=False):
 
     use_interro=True
     use_pre=True
+    use_sentence=False
     use_be=False
 
     questions=[]
@@ -124,11 +125,21 @@ def data_process(input_path,interro_path,train=False):
                     interro=interro[:-2]
                     print(interro)
 
+                sentence_list=[]
                 if use_pre:
-                    sentence_text=" ".join([pre_text,sentence_text])
+                    sentence_list.append(pre_text)
+
+                if use_sentence:
+                    sentence_list.append(sentence_text)
+
+                if use_be:
+                    sentence_list.append(be_text)
 
                 if use_interro:
-                    sentence_text=" ".join([sentence_text,"<SEP>",interro])
+                    sentence_list.append("<SEP>")
+                    sentence_list.append(interro)
+
+                sentence_text=" ".join(sentence_list)
 
                 sentences.append(sentence_text)
                 questions.append(question_text)
@@ -180,8 +191,13 @@ def data_process(input_path,interro_path,train=False):
     print(len(sentences))
 
     setting=""
-    if use_interro==True and use_pre==True and use_be==False:
+    if use_interro==True and use_pre==True and use_sentence==True use_be==False:
         setting="interro-pre"
+    elif use_interro==True and use_pre==True and use_sentence==False use_be==False:
+        setting="interro-pre-nonsentence"
+    else:
+        printf("setting no match error")
+        return 0
 
     if train==True:
         random_list=list(range(len(questions)))
