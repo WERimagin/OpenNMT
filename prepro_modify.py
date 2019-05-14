@@ -127,12 +127,16 @@ def data_process(input_path,interro_path,train=False):
 
                 sentence_list=[]
                 if use_pre:
+                    if pre_text=="":
+                        continue
                     sentence_list.append(pre_text)
 
                 if use_sentence:
                     sentence_list.append(sentence_text)
 
                 if use_be:
+                    if be_text=="":
+                        continue
                     sentence_list.append(be_text)
 
                 if use_interro:
