@@ -191,9 +191,9 @@ def data_process(input_path,interro_path,train=False):
     print(len(sentences))
 
     setting=""
-    if use_interro==True and use_pre==True and use_sentence==True use_be==False:
+    if use_interro==True and use_pre==True and use_sentence==True and use_be==False:
         setting="interro-pre"
-    elif use_interro==True and use_pre==True and use_sentence==False use_be==False:
+    elif use_interro==True and use_pre==True and use_sentence==False and use_be==False:
         setting="interro-pre-nonsentence"
     else:
         printf("setting no match error")
