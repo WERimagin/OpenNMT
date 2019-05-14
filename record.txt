@@ -1058,7 +1058,112 @@ interro、コピーカバレッジなし
   -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 60000
 }
 
+pre,be
+{
+  一つ前の文も使用
+  (ただしコピー機構を忘れてるのでやり直し)
+  python preprocess.py \
+  -train_src data/squad-src-train-interro-pre.txt \
+  -train_tgt data/squad-tgt-train-interro-pre.txt \
+  -valid_src data/squad-src-val-interro-pre.txt \
+  -valid_tgt data/squad-tgt-val-interro-pre.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python translate.py \
+  -src data/squad-src-val-interro-pre.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict \
+  -length_penalty avg \
+  -model model_data
+
+  python bleu.py
+
+  demo-model_step_28000_ppl_17.2756_acc_55.1112.pt
+  0.4900451424710959
+  0.3471740670309648
+  0.2642918904800276
+  0.20386143766335796
+
+  demo-model_step_42000_ppl_17.6708_acc_55.3027.pt
+  0.4919776546095722
+  0.34939364366528347
+  0.266987352717384
+  0.20672488438778683
+
+  一つ前の文のみ
+  python preprocess.py \
+  -train_src data/squad-src-train-interro-pre-nonsentence.txt \
+  -train_tgt data/squad-tgt-train-interro-pre-nonsentence.txt \
+  -valid_src data/squad-src-val-interro-pre-nonsentence.txt \
+  -valid_tgt data/squad-tgt-val-interro-pre-nonsentence.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 1 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+
+  python translate.py \
+  -src data/squad-src-val-interro-pre-nonsentence.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict \
+  -length_penalty avg \
+  -model model_data/
+
+  demo-model_step_11000_ppl_34.2267_acc_45.3541.pt
+  demo-model_step_18000_ppl_35.3044_acc_45.2018.pt
+  demo-model_step_21000_ppl_35.8494_acc_45.6021.pt
+  0.22679279410460595
+  0.06450191440000551
+  0.025404466937417075
+  0.0114230497680811
+
+  demo-model_step_28000_ppl_40.2296_acc_45.774.pt
+  0.2261251072951863
+  0.06235751743987969
+  0.025079192676208593
+  0.010942787149933606
+
+  一つ前の文と本体の文を使用
+  python preprocess.py \
+  -train_src data/squad-src-train-interro-pre.txt \
+  -train_tgt data/squad-tgt-train-interro-pre.txt \
+  -valid_src data/squad-src-val-interro-pre.txt \
+  -valid_tgt data/squad-tgt-val-interro-pre.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 1 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+}
 
 transformerで実験
 answerを付け加えて実験
-... the the...のように単語が重複している部分を取り除く 
+... the the...のように単語が重複している部分を取り除く
