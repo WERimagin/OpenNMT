@@ -84,7 +84,7 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=True
-    use_pre=False
+    use_pre=True
     use_sentence=True
     use_be=True
 
@@ -127,9 +127,8 @@ def data_process(input_path,interro_path,train=False):
 
                 sentence_list=[]
                 if use_pre:
-                    if pre_text=="":
-                        continue
-                    sentence_list.append(pre_text)
+                    if pre_text!="":
+                        sentence_list.append(pre_text)
 
                 if use_sentence:
                     sentence_list.append(sentence_text)
@@ -200,6 +199,8 @@ def data_process(input_path,interro_path,train=False):
         setting="interro-pre-nonsentence"
     elif use_interro==True and use_pre==False and use_sentence==True and use_be==True:
         setting="interro-be"
+    elif use_interro==True and use_pre==True and use_sentence==True and use_be==True:
+        setting="interro-pre-be"
     else:
         printf("setting no match error")
         return 0
