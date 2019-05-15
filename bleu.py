@@ -19,8 +19,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
 parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
 parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
+parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 parser.add_argument("--notsplit", action="store_true")
-parser.add_argument("--interro", type=str, default="")
+parser.add_argument("--tgt_interro", type=str, default="",help="if target_interro is not tgt_interro, skip")
 args = parser.parse_args()
 
 random.seed(0)
@@ -28,6 +29,7 @@ random.seed(0)
 srcs=[]
 targets=[]
 predicts=[]
+interros=[]
 
 with open(args.src,"r")as f:
     for line in f:
@@ -41,6 +43,10 @@ with open(args.pred,"r")as f:
     for line in f:
         predicts.append(line.strip())
 
+with open(args.interro,"r")as f:
+    for line in f:
+        interros.append(line.strip())
+
 
 #srcs=[s.split() for s in targets]
 targets=[t.split() for t in targets]
@@ -49,8 +55,8 @@ predicts=[p.split() for p in predicts]
 target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
 src_set=set(srcs)
-for s,t,p in zip(srcs,targets,predicts):
-    if args.interro!="" and args.interro not in t:
+for s,t,p,i in zip(srcs,targets,predicts,interros):
+    if args.tgt_interro!="" and if args.tgt_interro!=i:
         continue
     target_dict[s].append(t)
     predict_dict[s]=p
