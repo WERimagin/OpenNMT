@@ -1126,19 +1126,20 @@ pre,be
   -length_penalty avg \
   -model model_data/
 
+  python bleu.py \
+  --src data/squad-src-val-interro-pre-nonsentence.txt \
+  --tgt data/squad-tgt-val-interro-pre-nonsentence.txt \
+  --pred data/squad-pred-val-interro-pre-nonsentence.txt
+
   demo-model_step_11000_ppl_34.2267_acc_45.3541.pt
   demo-model_step_18000_ppl_35.3044_acc_45.2018.pt
   demo-model_step_21000_ppl_35.8494_acc_45.6021.pt
-  0.22679279410460595
-  0.06450191440000551
-  0.025404466937417075
-  0.0114230497680811
+  0.40939564175317267
+  0.26279032904185834
+  0.1897171010919778
+  0.13897456832120028
 
   demo-model_step_28000_ppl_40.2296_acc_45.774.pt
-  0.2261251072951863
-  0.06235751743987969
-  0.025079192676208593
-  0.010942787149933606
 
   一つ前の文と本体の文を使用
   python preprocess.py \
@@ -1162,6 +1163,113 @@ pre,be
   -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
   -gpu_ranks 1 -world_size 1 \
   -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+
+  python translate.py \
+  -src data/squad-src-val-interro-pre.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict \
+  -length_penalty avg \
+  -model model_data/
+
+  demo-model_step_33000_ppl_11.3005_acc_56.9382.pt
+  0.5032371539982251
+  0.3658838071288494
+  0.2853185130992992
+  0.2252475586314428
+
+  demo-model_step_23000_ppl_11.0855_acc_56.854.pt
+  0.48903605008351314
+  0.3562269570368222
+  0.27814101154312243
+  0.21988576840953375
+
+
+  be+sentence
+  python preprocess.py \
+  -train_src data/squad-src-train-interro-be.txt \
+  -train_tgt data/squad-tgt-train-interro-be.txt \
+  -valid_src data/squad-src-val-interro-be.txt \
+  -valid_tgt data/squad-tgt-val-interro-be.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 1 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+
+  python translate.py \
+  -src data/squad-src-val-interro-be.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict \
+  -length_penalty avg \
+  -model model_data/
+
+  demo-model_step_33000_ppl_11.9764_acc_56.524.pt
+  0.4985471120567939
+  0.363235454835992
+  0.283654524456831
+  0.22462168520139153
+
+  demo-model_step_28000_ppl_11.8785_acc_56.5355.pt
+  0.4987921249182921
+  0.3625628657489757
+  0.28290592720943875
+  0.22398351185953566
+
+
+  pre-sentence-be全て
+  srcの最大長を150に変更
+
+  python preprocess.py \
+  -train_src data/squad-src-train-interro-pre-be.txt \
+  -train_tgt data/squad-tgt-train-interro-pre-be.txt \
+  -valid_src data/squad-src-val-interro-pre-be.txt \
+  -valid_tgt data/squad-tgt-val-interro-pre-be.txt \
+  -save_data data/demo \
+  -lower -dynamic_dict --src_seq_length 150
+
+  python embeddings_to_torch.py \
+  -emb_file_both "../data/glove.840B.300d.txt" \
+  -dict_file "data/demo.vocab.pt" \
+  -output_file "data/embeddings"
+
+  python3 train.py \
+  -data data/demo \
+  -save_model model_data/demo-model \
+  -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
+  -fix_word_vecs_enc -fix_word_vecs_dec \
+  -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
+  -gpu_ranks 1 -world_size 1 \
+  -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
+
+  python translate.py \
+  -src data/squad-src-val-interro-pre-be.txt \
+  -output pred.txt \
+  -replace_unk -dynamic_dict \
+  -length_penalty avg \
+  -model model_data/
+
+  demo-model_step_33000_ppl_11.1138_acc_56.4051.pt
+  0.4890713892027046
+  0.352109876906949
+  0.27351763778935806
+  0.21549500350102874
+
+  demo-model_step_30000_ppl_11.0883_acc_56.4332.pt
+  0.4859967701663198
+  0.34989382837682625
+  0.27190898472879893
+  0.21426690549060207
 }
 
 transformerで実験
