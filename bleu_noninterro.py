@@ -84,6 +84,7 @@ for s,t,p in zip(srcs,t_noninterros,p_noninterros):
 targets_set=[target_dict[s] for s in src_set]
 predicts_set=[predict_dict[s] for s in src_set]
 
+print(len(targets_set),len(predicts_set))
 print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
 print(corpus_bleu(targets_set,predicts_set,weights=(0.5,0.5,0,0)))
 print(corpus_bleu(targets_set,predicts_set,weights=(0.333,0.333,0.333,0)))
