@@ -20,9 +20,12 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
 parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
+parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
-parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
+
+parser.add_argument("--tgt_interro", type=str, default="",help="if target_interro is not tgt_interro, skip")
+
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
 parser.add_argument("--print", action="store_true", help="input model epoch")
 args = parser.parse_args()
