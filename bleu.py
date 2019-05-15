@@ -56,7 +56,7 @@ target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
 src_set=set(srcs)
 for s,t,p,i in zip(srcs,targets,predicts,interros):
-    if args.tgt_interro!="" and if args.tgt_interro!=i:
+    if args.tgt_interro!="" and args.tgt_interro!=i:
         continue
     target_dict[s].append(t)
     predict_dict[s]=p
