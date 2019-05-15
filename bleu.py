@@ -70,8 +70,8 @@ predicts=[predict_dict[s] for s in src_set if s in predict_dict]
 
 if args.print:
     for i in range(5):
-        print("target:{}".format(targets[i]))
-        print("predict:{}".format(predicts[i][0]))
+        print("target:{}".format(" ".join(targets[i][0])))
+        print("predict:{}".format(" ".join(predicts[i])))
         print()
 
 print(len(targets),len(predicts))
