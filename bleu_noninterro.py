@@ -20,6 +20,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
 parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
+parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
 parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
@@ -31,6 +32,7 @@ random.seed(0)
 srcs=[]
 targets=[]
 predicts=[]
+interros=[]
 noninterros=[]
 
 with open(args.src,"r")as f:
@@ -45,18 +47,22 @@ with open(args.pred,"r")as f:
     for line in f:
         predicts.append(line.strip())
 
+with open(args.interro,"r")as f:
+    for line in f:
+        interros.append(line.strip())
+
 with open(args.noninterro,"r")as f:
     for line in f:
         noninterros.append(line.strip())
 
+#check interro is tgt_interro and data_size trim
 data_size=int(len(srcs)*args.ratio)
-srcs=srcs[0:data_size]
-targets=targets[0:data_size]
-predicts=predicts[0:data_size]
-noninterros=noninterros[0:data_size]
+srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+targets=[targets[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+predicts=[predicts[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+noninterros=[noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
 
-#srcs=[s.split() for s in targets]
-#predict
+#extract noninterro(who are you? -> are you ?)
 count=0
 p_noninterros=[]
 corenlp=CoreNLP()
@@ -64,19 +70,9 @@ for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
     count+=1
     p_noninterros.append(p_noninterro)
-#target
 t_noninterros=[t.split() for t in noninterros]
 
-if args.print:
-    for i in range(data_size):
-        print(srcs[i])
-        print(targets[i])
-        print(" ".join(t_noninterros[i]))
-        print(predicts[i])
-        print(" ".join(p_noninterros[i]))
-        print()
-
-
+#bleu
 target_dict=defaultdict(lambda: [])
 predict_dict=defaultdict(str)
 
