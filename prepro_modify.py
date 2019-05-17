@@ -85,8 +85,9 @@ def data_process(input_path,interro_path,train=False):
 
     use_interro=True
     use_pre=False
-    use_sentence=False
-    use_be=True
+    use_sentence=True
+    use_be=False
+    use_answer=True
 
     questions=[]
     answers=[]
@@ -143,6 +144,10 @@ def data_process(input_path,interro_path,train=False):
                     sentence_list.append("<SEP>")
                     sentence_list.append(interro)
 
+                if use_answer:
+                    sentence_list.append("<SEP2>")
+                    sentence_list.append(answer_text)
+
                 sentence_text=" ".join(sentence_list)
 
                 sentences.append(sentence_text)
@@ -195,19 +200,26 @@ def data_process(input_path,interro_path,train=False):
     print(len(sentences))
 
     setting=""
-    if use_interro==True and use_pre==True and use_sentence==True and use_be==False:
-        setting="interro-pre"
-    elif use_interro==True and use_pre==True and use_sentence==False and use_be==False:
-        setting="interro-pre-nonsentence"
-    elif use_interro==True and use_pre==False and use_sentence==True and use_be==True:
-        setting="interro-be"
-    elif use_interro==True and use_pre==True and use_sentence==True and use_be==True:
-        setting="interro-pre-be"
-    elif use_interro==True and use_pre==False and use_sentence==False and use_be==True:
-        setting="interro-be-nonsentence"
+    if use_pre or use_be:
+        if use_interro==True and use_pre==True and use_sentence==True and use_be==False:
+            setting="interro-pre"
+        elif use_interro==True and use_pre==True and use_sentence==False and use_be==False:
+            setting="interro-pre-nonsentence"
+        elif use_interro==True and use_pre==False and use_sentence==True and use_be==True:
+            setting="interro-be"
+        elif use_interro==True and use_pre==True and use_sentence==True and use_be==True:
+            setting="interro-pre-be"
+        elif use_interro==True and use_pre==False and use_sentence==False and use_be==True:
+            setting="interro-be-nonsentence"
+        else:
+            printf("setting no match error")
+            return 0
     else:
-        printf("setting no match error")
-        return 0
+        if use_interro==True and use_answer==True:
+            setting="interro-answer"
+        else:
+            printf("setting no match error")
+            return 0
 
     if train==True:
         random_list=list(range(len(questions)))
