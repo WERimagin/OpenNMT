@@ -83,7 +83,7 @@ class RNNEncoder(EncoderBase):
 
         #print(encoder_final.size())
         print(memory_bank.size())
-        print(length)
+        print(lengths)
         return encoder_final, memory_bank, lengths
 
     def _initialize_bridge(self, rnn_type,
