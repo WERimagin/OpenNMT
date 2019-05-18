@@ -80,6 +80,8 @@ class RNNEncoder(EncoderBase):
 
         if self.use_bridge:
             encoder_final = self._bridge(encoder_final)
+
+        print(encoder_final.size(),memory_bank.size(),length)
         return encoder_final, memory_bank, lengths
 
     def _initialize_bridge(self, rnn_type,

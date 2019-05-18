@@ -98,6 +98,7 @@ class RNNDecoderBase(DecoderBase):
         self.state = {}
 
         # Build the RNN.
+        #LSTM
         self.rnn = self._build_rnn(rnn_type,
                                    input_size=self._input_size,
                                    hidden_size=hidden_size,
@@ -233,7 +234,8 @@ class RNNDecoderBase(DecoderBase):
                     attns[k] = torch.stack(attns[k])
         return dec_outs, attns
 
-
+#input_feedなし
+#よって、全て一気にrnnに投げたあと、全て同時にattentionを計算(過去のhiddenなしで計算できるから)
 class StdRNNDecoder(RNNDecoderBase):
     """Standard fully batched RNN decoder with attention.
 
@@ -276,9 +278,11 @@ class StdRNNDecoder(RNNDecoderBase):
         assert self.copy_attn is None  # TODO, no support yet.
         assert not self._coverage  # TODO, no support yet.
 
+        #embedding
         attns = {}
         emb = self.embeddings(tgt)
 
+        #rnn
         if isinstance(self.rnn, nn.GRU):
             rnn_output, dec_state = self.rnn(emb, self.state["hidden"][0])
         else:
@@ -371,6 +375,7 @@ class InputFeedRNNDecoder(RNNDecoderBase):
         if self._coverage:
             attns["coverage"] = []
 
+        #embedding
         emb = self.embeddings(tgt)
         assert emb.dim() == 3  # len x batch x embedding_dim
 
@@ -381,8 +386,13 @@ class InputFeedRNNDecoder(RNNDecoderBase):
         # Input feed concatenates hidden state with
         # input at every time step.
         for emb_t in emb.split(1):
+            #対象の単語のembeddingと前回の単語の計算結果をcat
             decoder_input = torch.cat([emb_t.squeeze(0), input_feed], 1)
+
+            #rnn
             rnn_output, dec_state = self.rnn(decoder_input, dec_state)
+
+            #attention(rnnのoutputを使用する)
             if self.attentional:
                 decoder_output, p_attn = self.attn(
                     rnn_output,
@@ -420,7 +430,7 @@ class InputFeedRNNDecoder(RNNDecoderBase):
                    hidden_size, num_layers, dropout):
         assert rnn_type != "SRU", "SRU doesn't support input feed! " \
             "Please set -input_feed 0!"
-        stacked_cell = StackedLSTM if rnn_type == "LSTM" else StackedGRU
+        stacked_cell = StackedLSTM if rnn_type == "LSTM" else StackedGRU #StackedLSTM
         return stacked_cell(num_layers, input_size, hidden_size, dropout)
 
     @property

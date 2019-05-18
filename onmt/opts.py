@@ -122,7 +122,8 @@ def model_opts(parser):
               help="Size of windows in the cnn, the kernel_size is "
                    "(cnn_kernel_width, 1) in conv layer")
 
-    #coverageと関係ありそう？
+    #attentionの与え方
+    #これが1ならば、attentionがhidden_stateと結合して(?)rnnに与えられる。0ならばrnnの上でattentionを計算
     group.add('--input_feed', '-input_feed', type=int, default=1,
               help="Feed the context vector at each time step as "
                    "additional input (via concatenation with the word "

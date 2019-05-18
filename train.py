@@ -7,11 +7,20 @@
 train.main
 opennmt.train_single.main
     model_builder.build_model
+        model_builder.build_base_model
+            model_builder.build_encoder(option)
+                rnn_encoder.from_opt
+                    rnn_encoder.init
+            model_builder.build_decoder
+                rnn_decoder_from_opt
+                    rnn_decoder.init
+            onmt.models.NMTmodel(encoder,decoder)
     trainer.build_trainer
-opennmt.trainer.trainer.train
-    models.model
-        rnn_encoder
-        rnn_decoder
+    opennmt.trainer.trainer.train
+        trainer._gradient_accumulation
+        models.model.forward
+            rnn_encoder.forward
+            rnn_decoder.forward
 
 モデルのセーブ
 opennmt.trainer.Trainer model.saver
