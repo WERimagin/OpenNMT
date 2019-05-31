@@ -106,8 +106,8 @@ def data_process(input_path,interro_path,train=False):
                 sentence_text=interro_data[all_count]["sentence_text"]
                 question_text=interro_data[all_count]["question_text"]
                 answer_text=interro_data[all_count]["answer_text"]
-                interro=interro_data[all_count]["interro"]
-                non_interro=interro_data[all_count]["non_interro"]
+                interro_text=interro_data[all_count]["interro"]
+                non_interro_text=interro_data[all_count]["non_interro"]
                 all_count+=1
 
                 if len(sentence_text)<=5 or len(question_text)<=5:
@@ -115,14 +115,14 @@ def data_process(input_path,interro_path,train=False):
                     continue
 
                 #疑問詞がないものは削除
-                if interro=="":
+                if interro_text=="":
                     non_interro_count+=1
                     continue
 
-                if interro[-1]=="?":
-                    print(interro)
-                    interro=interro[:-2]
-                    print(interro)
+                if interro_text[-1]=="?":
+                    print(interro_text)
+                    interro_text=interro_text[:-2]
+                    print(interro_text)
 
                 if True:
                     #テキストとノンストップワードが一つも重複してないものは除去
@@ -130,14 +130,22 @@ def data_process(input_path,interro_path,train=False):
                         overlap_count+=1
                         continue
 
-                if use_interro:
-                    sentence_text=" ".join([sentence_text,"<SEP>",interro])
+                sentence_text=" ".join(tokenize(sentence_text))
+                question_text=" ".join(tokenize(question_text))
+                answer_text=" ".join(tokenize(answer_text))
+                interro_text=" ".join(tokenize(interro_text))
+                non_interro_text=" ".join(tokenize(non_interro_text))
 
-                sentences.append(" ".join(tokenize(sentence_text)))
-                questions.append(" ".join(tokenize(question_text)))
-                answers.append(" ".join(tokenize(answer_text)))
-                interros.append(" ".join(tokenize(interro)))
-                non_interros.append(" ".join(tokenize(non_interro)))
+                if use_interro:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
+
+
+
+                sentences.append(sentence_text)
+                questions.append(question_text)
+                answers.append(answer_text)
+                interros.append(interro)
+                non_interros.append(non_interro)
 
 
     print(all_count)
