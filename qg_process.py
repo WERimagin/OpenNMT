@@ -154,74 +154,61 @@ def data_process(input_path,interro_path,train=False):
     print(overlap_count)
     print(len(sentences))
 
-    if use_interro==False:
-        setting="-normal"
-        if train==True:
-            random_list=list(range(len(questions)))
-            #random.shuffle(random_list)
-            with open("data/squad-src-train{}.txt".format(setting),"w")as f:
-                for i in random_list:
-                    f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-train{}.txt".format(setting),"w")as f:
-                for i in random_list:
-                    f.write(questions[i]+"\n")
-
-        if train==False:
-            random_list=list(range(len(questions)))
-            #random.shuffle(random_list)
-            val_num=int(len(random_list)*0.5)
-            with open("data/squad-src-val{}.txt".format(setting),"w")as f:
-                for i in random_list[0:val_num]:
-                    f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-val{}.txt".format(setting),"w")as f:
-                for i in random_list[0:val_num]:
-                    f.write(questions[i]+"\n")
-            with open("data/squad-src-test{}.txt".format(setting),"w")as f:
-                for i in random_list[val_num:]:
-                    f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-test{}.txt".format(setting),"w")as f:
-                for i in random_list[val_num:]:
-                    f.write(questions[i]+"\n")
+    if use_interro==True:
+        setting="-interro"
     else:
-        setting=""
-        if train==True:
-            random_list=list(range(len(questions)))
-            with open("data/squad-src-train-interro{}.txt".format(setting),"w")as f:
-                for i in random_list:
-                    f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-train-interro{}.txt".format(setting),"w")as f:
-                for i in random_list:
-                    f.write(questions[i]+"\n")
+        setting="-normal"
 
-        if train==False:
-            random_list=list(range(len(questions)))
-            val_num=int(len(random_list)*0.5)
+    if train==True:
+        random_list=list(range(len(questions)))
+        #random.shuffle(random_list)
+        with open("data/squad-src-train{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(sentences[i]+"\n")
+        with open("data/squad-tgt-train{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(questions[i]+"\n")
+        with open("data/squad-ans-train{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(answers[i]+"\n")
 
-            with open("data/squad-src-val-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[0:val_num]:
-                    f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-val-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[0:val_num]:
-                    f.write(questions[i]+"\n")
-            with open("data/squad-interro-val-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[0:val_num]:
-                    f.write(interros[i]+"\n")
-            with open("data/squad-noninterro-val-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[0:val_num]:
-                    f.write(non_interros[i]+"\n")
+    if train==False:
+        random_list=list(range(len(questions)))
+        #random.shuffle(random_list)
+        val_num=int(len(random_list)*0.5)
+        with open("data/squad-src-val{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(sentences[i]+"\n")
+        with open("data/squad-tgt-val{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(questions[i]+"\n")
+        with open("data/squad-ans-val{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(answers[i]+"\n")
+        with open("data/squad-interro-val{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(interros[i]+"\n")
+        with open("data/squad-noninterro-val{}.txt".format(setting),"w")as f:
+            for i in random_list[0:val_num]:
+                f.write(non_interros[i]+"\n")
 
-            with open("data/squad-src-test-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[val_num:]:
-                    f.write(sentences[i]+"\n")
-            with open("data/squad-tgt-test-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[val_num:]:
-                    f.write(questions[i]+"\n")
-            with open("data/squad-interro-test-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[val_num:]:
-                    f.write(interros[i]+"\n")
-            with open("data/squad-noninterro-test-interro{}.txt".format(setting),"w")as f:
-                for i in random_list[val_num:]:
-                    f.write(non_interros[i]+"\n")
+        with open("data/squad-src-test{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(sentences[i]+"\n")
+        with open("data/squad-tgt-test{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(questions[i]+"\n")
+        with open("data/squad-ans-test{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(answers[i]+"\n")
+        with open("data/squad-interro-test{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(interros[i]+"\n")
+        with open("data/squad-noninterro-test{}.txt".format(setting),"w")as f:
+            for i in random_list[val_num:]:
+                f.write(non_interros[i]+"\n")
+
+
 
 
 
