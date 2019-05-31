@@ -126,7 +126,7 @@ def data_process(input_path,train=False):
 
 
 
-    if 0:
+    if 1:
         if train==True:
             with open("data/squad-data-train.json","w")as f:
                 json.dump(data_list,f,indent=4)
