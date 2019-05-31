@@ -91,7 +91,12 @@ def data_process(input_path,interro_path,train=False):
     interros=[]
     non_interros=[]
     stop_words = stopwords.words('english')
+
+
     all_count=0
+    overlap_count=0
+    noise_count=0
+    non_interro_count=0
 
     for topic in tqdm(data["data"]):
         topic=topic["paragraphs"]
@@ -105,74 +110,40 @@ def data_process(input_path,interro_path,train=False):
                 non_interro=interro_data[all_count]["non_interro"]
                 all_count+=1
 
-                if True:
-                    #テキストとノンストップワードが一つも重複してないものは除去
-                    if check_overlap(sentence_text,question_text,stop_words)==False:
-                        print(sentence_text)
-                        print(question_text)
-                        print()
-                        continue
+                if len(sentence_text)<=5 or len(question_text)<=5:
+                    noise_count+=1
+                    continue
 
-                if True:
-                    #疑問詞がないものは削除
-                    if interro=="":
-                        continue
+                #疑問詞がないものは削除
+                if interro=="":
+                    non_interro_count+=1
+                    continue
 
                 if interro[-1]=="?":
                     print(interro)
                     interro=interro[:-2]
                     print(interro)
 
-                if use_interro:
-                    sentence_text=" ".join([sentence_text,"<SEP>",interro])
-
-                sentences.append(sentence_text)
-                questions.append(question_text)
-                answers.append(answer_text)
-                interros.append(interro)
-                non_interros.append(non_interro)
-
-                """
-                question_text=qas["question"].lower()
-                a=qas["answers"][0]
-                answer_text=a["text"].lower()
-                answer_start=a["answer_start"]
-                answer_end=a["answer_start"]+len(a["text"])
-                interro=interro_data[all_count]["interro"]
-                non_interro=interro_data[all_count]["non_interro"]
-                all_count+=1
-
-                #contextの中からanswerが含まれる文を見つけ出す
-                sentence_text=answer_find(context_text,answer_start,answer_end)
-
-                question_text=" ".join(tokenize(question_text))
-                sentence_text=" ".join(tokenize(sentence_text))
-                answer_text=" ".join(tokenize(answer_text))
-                interro=" ".join(tokenize(interro))
-                non_interro=" ".join(tokenize(non_interro))
-
-                question_text=overlap_rm(question_text)
-                sentence_text=overlap_rm(sentence_text)
-
-                #ゴミデータ(10個程度)は削除
-                if len(question_text)<=5:
-                    continue
-
                 if True:
                     #テキストとノンストップワードが一つも重複してないものは除去
                     if check_overlap(sentence_text,question_text,stop_words)==False:
-                        continue
-
-                if True:
-                    #疑問詞がないものは削除
-                    if interro=="":
+                        overlap_count+=1
                         continue
 
                 if use_interro:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
-                """
+
+                sentences.append(" ".join(tokenize(sentence_text)))
+                questions.append(" ".join(tokenize(question_text)))
+                answers.append(" ".join(tokenize(answer_text)))
+                interros.append(" ".join(tokenize(interro)))
+                non_interros.append(" ".join(tokenize(non_interro)))
+
 
     print(all_count)
+    print(noise_count)
+    print(non_interro_count)
+    print(overlap_count)
     print(len(sentences))
 
     if use_interro==False:
