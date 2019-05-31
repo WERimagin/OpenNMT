@@ -105,7 +105,7 @@ was the commissioner of the nfl in 2012 ?
 if the commissioner of the nfl ?
 is the commissioner of the nfl ?
 did the nfl commissioner use to describe what super bowl 50 was intended to be ?
-did roger goodell announce that super bowl 50 would be " important " ?
+did roger goodell announce that super bowl 50 would be '' important '' ?
 was one of three considered for super bowl 50 ?
 was one of three considered for super bowl 50 ?
 was one of three considered for super bowl 50 ?
@@ -192,7 +192,7 @@ panthers went to the pro bowl ?
 panthers were designated all-pro ?
 tore his acl in the preseason ?
 did the league begin having schedules with 16 games in them ?
-did the the saints hit a 13-0 record ?
+did the saints hit a 13-0 record ?
 did the packers arrive at a record of 13-0 ?
 did the carolina panthers lose kelvin benjamin to during their preseason ?
 did the panthers lose to an acl injury in a preseason game ?
@@ -220,7 +220,6 @@ did carolina lead the nfl in scoring for offensive plays ?
 did newton get for passes in the 2015 season ?
 did newton get in the 2015 season ?
 was newton 's quarterback rating for 2015 ?
-did cotchery get for the 2015 season ?
 did the panthers defense surrender ?
 did jared allen have ?
 tackles did luke kuechly register ?
@@ -440,11 +439,11 @@ did the nfl experience take place ?
 is the moscone center located ?
 is the mayor of san francisco ?
 is the city supervisor of san francisco ?
-was the opening of " super bowl city " ?
+was the opening of '' super bowl city '' ?
 were estimated to go to the different game-themed events during the week prior to super bowl 50 in the city it was held in ?
 was the mayor of san francisco during super bowl 50 ?
 was the nfl experience held at for super bowl 50 ?
-was the name of the event at the the embarcadero that was held prior to super bowl 50 to help show off some of the things that san francisco has to offer ?
+was the name of the event at the embarcadero that was held prior to super bowl 50 to help show off some of the things that san francisco has to offer ?
 was the nfl experience held for the 2015 season ?
 opened on january 30th at the justin herman plaza ?
 is the mayor of san francisco ?
@@ -504,9 +503,9 @@ was the name of the work to give grants for youth development and other things ?
 is the trophy given to the super bowl champion named for ?
 designed the vince lombardi trophy ?
 is the name of the trophy given to anyone who plays on the winning team in a super bowl ?
-is the designer of the " 50 ? "
+is the designer of the '' 50 ? ''
 is the name of the trophy that all super bowl winners receive ?
-designs both the " 50 " as well as the trophy ?
+designs both the '' 50 '' as well as the trophy ?
 on television station could an american viewer watch the game ?
 , with jim nantz , was a member of the game 's lead broadcast team ?
 shared sideline duties with evan washburn ?
@@ -555,7 +554,7 @@ followed the late show with stephen colbert ?
 followed the late local programming after super bowl 50 ?
 was the base rate for a 30-second ad during super bowl 50 ?
 signed a contract allowing them to broadcast ads at a discount ?
-sponsored the " crash the super bowl " contest ?
+sponsored the '' crash the super bowl '' contest ?
 was celebrated during the super bowl ?
 was the starting cost for a tv commercial lasting 30 seconds and airing during super bowl 50 ?
 was given permission to air tv commercials during super bowl 50 at a discounted price ?
@@ -573,7 +572,7 @@ was the death wish coffee commercial ?
 participated in the contest ?
 won a contest to have their ad shown for free during super bowl 50 ?
 did the company , that had their ad shown for free , beat out ?
-sponsored a contest called " small business big game " ?
+sponsored a contest called '' small business big game '' ?
 had a commercial aired for free as a result of the quickbooks contest ?
 had a contest to win a free super bowl commercial ?
 won the competition to get a free super bowl commercial aired ?
@@ -818,7 +817,7 @@ is the saxon garden in polish ?
 was the summer theatre located ?
 was the summer theatre in operation ?
 was warsaw 's first literary cabaret ?
-was the best example of " polish monumental theatre " ?
+was the best example of '' polish monumental theatre '' ?
 is the polish word for wreaths ?
 man people gather along the banks of the vistula for the wianki festival ?
 is the wianki festival held ?
@@ -844,7 +843,7 @@ did polonia warsaw win the country 's championship prior to 2000 ?
 has polonia won the cup ?
 is polonia 's home venue located ?
 was polonia relegated from the country 's top flight in 2013 ?
-is polish for " mermaid " ?
+is polish for '' mermaid '' ?
 is warsaw 's symbol ?
 has the imagery of the mermaid been used by warsaw ?
 is the oldest armed seal of warsaw from ?
@@ -867,7 +866,7 @@ is the first reference in history to warsaw ?
 served as poland 's capital in 1313 ?
 did warsaw become the capital of the kingdom of poland ?
 moved his court from kraków to warsaw in 1596 ?
-did warsaw gain the title of the " phoenix city " ?
+did warsaw gain the title of the '' phoenix city '' ?
 is warsaw the seat of ?
 is another notable university in warsaw after the university of warsaw ?
 was warsaw 's old town listed as in 1980 ?
@@ -934,6 +933,7 @@ can be found on the highest terrace ?
 does warsaw 's mixture of architectural styles reflect ?
 was warsaw completely razed to the ground by bombing raids ?
 did warsaw start to rebuild ?
+was destroyed between the 1950s and 1960s ?
 were the mass constructed residential blocks designed in ?
 is represented in the majestic churches ?
 was st. john 's cathedral constructed ?
@@ -1068,7 +1068,7 @@ was margaret 's husband ?
 was scotland invaded by william ?
 was the hostage ?
 did alexander i marry ?
-is know as the " davidian revolution " ?
+is know as the '' davidian revolution '' ?
 was ralph earl of ?
 was ralph in charge of being at war with ?
 made ralph earl ?
@@ -1134,7 +1134,7 @@ did he first mention wireless communication ?
 did he make ?
 was his unfinished project called ?
 did tesla die ?
-was named " the tesla " in his honor ?
+was named '' the tesla '' in his honor ?
 did tesla live for much of his life ?
 was tesla 's reputation in popular culture ?
 did tesla finance his work ?
@@ -1373,7 +1373,7 @@ are longitudinal waves found ?
 can tesla 's theories as to what caused the skin damage be found ?
 made the induction motor more efficient ?
 did benjamin lamme achieve success making the motor more efficient ?
-called their system the " tesla polyphase system " ?
+called their system the '' tesla polyphase system '' ?
 was tesla 's device called ?
 demonstrated the egg of columbus ?
 did the herald tribune publish its tesla article ?
@@ -1438,7 +1438,7 @@ did he work on the oscillators ?
 caused tesla to hit his experiment with a sledgehammer ?
 published an article about tesla in 1912 ?
 did tesla think could improve the brain 's intelligence ?
-was tesla 's plan to make students " bright " ?
+was tesla 's plan to make students '' bright '' ?
 approved of this plan ?
 was maxwell 's job ?
 did tesla look for investors prior to wwi ?
@@ -1498,6 +1498,7 @@ first discovered his body ?
 had been left hanging on the door to tesla 's room ?
 was given as the cause of death ?
 happened to tesla 's belongings ?
+analyzed tesla 's belongings ?
 did he find that could constitute a hazard ?
 gave tesla 's eulogy ?
 wrote the eulogy ?
@@ -1507,6 +1508,7 @@ was the funeral held ?
 was tesla 's property sent ?
 was tesla 's nephew ?
 transported tesla 's ashes from the us .
+were the ashes sent ?
 are the ashes now ?
 was the total number of patents that tesla had ?
 did tesla hold patents ?
@@ -1543,7 +1545,7 @@ did tesla say helped his scientific abilities ?
 reportedly wanted tesla 's company ?
 did tesla admit to a reporter that maybe he 'd sacrificed too much by not having a relationship ?
 was tesla 's secretary ?
-said tesla had a " distinguished sweetness " ?
+said tesla had a '' distinguished sweetness '' ?
 was tesla likely to do with his work ?
 was tesla 's sociability described ?
 was julian hawthorne 's relation to tesla ?
@@ -1560,7 +1562,7 @@ did tesla disagree with ?
 was tesla 's attitude toward the idea that matter could be turned into energy ?
 did tesla speak critically toward ?
 did tesla start working on the problem of energy and matter ?
-did tesla consider a " false conception " ?
+did tesla consider a '' false conception '' ?
 was tesla when he wrote that he 'd completed his dynamic theory of gravity ?
 was tesla a fan of ?
 was his belief as to what nature was supposed to be ?
@@ -1570,7 +1572,7 @@ did tesla think would run the world of the future ?
 did he talk about his thoughts on gender ?
 did he use for what he believed would be humanity 's future rulers ?
 the issues of era did tesla 's article talk about ?
-were the " great forces " mentioned in the article 's title ?
+were the '' great forces '' mentioned in the article 's title ?
 was the article published ?
 did tesla believe would not be able to solve the problems of the time ?
 did tesla grow up in ?
@@ -1634,7 +1636,7 @@ is one variable on which the running time may be contingent ?
 is the time needed to obtain the solution to a problem calculated ?
 is the size of the input measured ?
 that the solution to a problem is solvable with reasonable resources assuming it allows for a polynomial time algorithm ?
-if input size is is equal to n , can respectively be assumed is the function of n ?
+if input size is equal to n , can respectively be assumed is the function of n ?
 corresponds to the maximum measurement of time across all functions of n ?
 is worst-case time complexity written as an expression ?
 assuming that t represents a polynomial in t -LRB- n -RRB- , is the term given to the corresponding algorithm ?
@@ -1738,10 +1740,10 @@ is attributed to alan turing ?
 was the alan turing 's definitional model of a computing device received ?
 in the most basic sense did a turing machine emulate ?
 is commonly considered the bellwether ushering in systematic studies computational complexity ?
-were responsible for authoring " on the computational complexity of algorithms " ?
+were responsible for authoring '' on the computational complexity of algorithms '' ?
 was hatmanis and stearn 's seminal work in computational complexity received ?
-were defined by " on the computational complexity of algorithms " ?
-year did edmond 's characterize a " good " algorithm ?
+were defined by '' on the computational complexity of algorithms '' ?
+year did edmond 's characterize a '' good '' algorithm ?
 provided a definition of linear bounded automata in 1960 ?
 did raymond sullivan publish a study of rudimentary sets ?
 in 1962 , was responsible for the authorship of a paper published on real time-computations ?
@@ -2116,7 +2118,7 @@ was the style of luther 's salute at the end of his speech ?
 considers luther 's speech a world classic ?
 did michael mullet call luther 's speech ?
 did luther refuse to do ?
-said , " here i stand .
+said , '' here i stand .
 is the statement doubtful in the eyes of scholars ?
 does mullet think luther would choose ?
 was the fate of luther decided ?
@@ -2149,7 +2151,6 @@ did the reforms cause ?
 was responsible for causing more violence in wittenberg ?
 asked luther to return to the city ?
 did luther return to wittenberg ?
-did luther think was required to stop the violence ?
 did luther do during lent at this time ?
 are the eight sermons called that luther preached in march 1522 ?
 did luther want people to bring about change ?
@@ -2439,9 +2440,9 @@ is luther commemorated by the church of england ?
 is luther commemorated ?
 is luther commemorated on the lutheran , episcopal , and church of england calendars ?
 is southern california often abbreviated as ?
-despite being traditionall described as " eight counties " , does this region actually have ?
+despite being traditionall described as '' eight counties '' , does this region actually have ?
 is a major importance of southern california in relation to california and the united states ?
-are the ties that best described what the " eight counties " are based on ?
+are the ties that best described what the '' eight counties '' are based on ?
 the reasons for the las two counties to be added are based ?
 is the name of the region that is not defined by the eight or 10 county definitions ?
 are there in the united states ?
@@ -2548,7 +2549,7 @@ was the argricultural region known for ?
 has managed to survive major military spending cutbacks ?
 is southern california home to many of ?
 does cbd stand for ?
-is the only district in the cbd to not have " downtown " in it 's name ?
+is the only district in the cbd to not have '' downtown '' in it 's name ?
 downtown santa monica and downtown glendale are a part ?
 warner center is located ?
 is an example of a district that belongs to which city ?
@@ -2621,9 +2622,9 @@ is the name brand of the personal video recorder that bskyb offers ?
 were removed from the network in march of 2007 ?
 did bskyb and virgin media have a dispute over the carriage of sky channels on cable tv ?
 did virgin media claim bskyb did that resulted virgin not carrying the channels anymore ?
-did bskyb offer besides hd channels that they claimed offered " substantially more value " ?
-did bskyb offer besides video on demand that they claimed offered " substantially more value " ?
-did the english high court find microsoft 's use of the term " skydrive " infringed on sky 's right ?
+did bskyb offer besides hd channels that they claimed offered '' substantially more value '' ?
+did bskyb offer besides video on demand that they claimed offered '' substantially more value '' ?
+did the english high court find microsoft 's use of the term '' skydrive '' infringed on sky 's right ?
 did bskyb and microsoft announce their settlement ?
 did microsoft announce that it would rename sky drive to ?
 did microsoft announce that it would rename sky drive pro to ?
@@ -2878,7 +2879,7 @@ were first to grant rights to the huguenots ?
 predicated the emigration of huguenot refugees ?
 was the gate known ?
 allegedly haunted the gate ?
-were the " supposedly reformed " known ?
+were the '' supposedly reformed '' known ?
 did these reformed supposedly gather to engage in huguenot rituals ?
 did huguenots and walloons settle in england ?
 was the site of a weaving school in canterbury ?
@@ -2964,10 +2965,9 @@ general religious belief did the nations that received huguenot refugees have in
 accepted huguenot colonists ?
 made emigration to these colonies attractive ?
 did the huguenot name possibly descend ?
-is the theory that this king 's name is the origin of " huguenot " called ?
-according to the theory , does the name " huguenot " mean ?
+is the theory that this king 's name is the origin of '' huguenot '' called ?
+according to the theory , does the name '' huguenot '' mean ?
 was one french pro-reform roman catholic of the 15th century ?
-did this pro-reform leader teach ?
 did this leader publish a french language bible ?
 was a student of lefevre ?
 was educated at the university of paris ?
@@ -2994,7 +2994,6 @@ did bayle publish ?
 is the patron saint of the huguenots ?
 was established in england ?
 was the charter for this church signed ?
-is the present-day location of this church ?
 attracted huguenot refugees ?
 was the old truman brewery founded ?
 made northern european counties safe for huguenot immigration ?
@@ -3243,9 +3242,9 @@ did john mayow name the part of air that caused combustion ?
 did mayow and boyle perform their experiments ?
 besides combustion , other action did mayow show nitroaereus responsible ?
 showed that fire needed only a part of air ?
-" an account of further discoveries in air " was published in 1775 ?
+'' an account of further discoveries in air '' was published in 1775 ?
 was the occupation of joseph priestley ?
-by sunlight , did priestley concentrate on to make the gas he called " dephlogisticated air " ?
+by sunlight , did priestley concentrate on to make the gas he called '' dephlogisticated air '' ?
 did priestley use in his experiments on oxygen ?
 did priestley name the gas his experiment produced ?
 did priestley publish the findings of his experiments ?
@@ -3331,7 +3330,7 @@ was oxygen liquefied in a stable form ?
 eluded efforts to measure oxygen ?
 does the sun have in higher proportion than earth ?
 contained data to determine the oxygen content of the sun ?
-was involved the the depletion of the sun 's oxygen 16 ?
+was involved the depletion of the sun 's oxygen 16 ?
 before , did sol lose oxygen 16 ?
 is the name for a form of oxygen in which electrons are paired ?
 is singlet oxygen more reactive ?
@@ -3377,7 +3376,6 @@ is the oxygen cycle ?
 is oxygen stored in its cycle ?
 is responsible for the planet 's oxygen content ?
 does photosynthesis release into the earth 's atmosphere ?
-can be used to make oxygen ?
 will a zeolite sieve produce ?
 while producing oxygen , does a zeolite sieve absorb ?
 is the non organic separating of gases ?
@@ -3446,7 +3444,7 @@ did the european nations and japan separated themselves from united states durin
 did henry kissinger negotiate an israeli troop withdrawal from the sinai peninsula ?
 did the arab oil producers lift the embargo ?
 did the united states withdraw from the bretton woods accord ?
-does it mean when currencies are left to " float ? "
+does it mean when currencies are left to '' float ? ''
 was there a depreciation of the industrialized nations dollars ?
 did oil start getting priced in the terms of gold ?
 did oil start getting priced in terms of gold ?
@@ -3575,7 +3573,6 @@ did it take johnson to respond to kennedy ?
 was the general consensus johnson came to regarding america 's progress on going to space and reaching a position of leadership ?
 originally led the space task group ?
 was the space task group located ?
-was the manned spacecraft center located ?
 donated the land for the manned spacecraft center ?
 were the original launching facilities for missions ?
 would the launch operations center be located , as more land was needed for a bigger rocket ?
@@ -3602,7 +3599,7 @@ came around first to support the lor ?
 was hired to be the deputy director of the office of manned space flight ?
 was kennedy 's science adviser that opposed manned spacecraft flights ?
 did wiesner hire to monitor and second guess nasa 's decisions ?
-did golovin work prior to joining the " space vehicle panel " ?
+did golovin work prior to joining the '' space vehicle panel '' ?
 was the announcement for the lor made after being delayed ?
 was keeping pressure and showing disagreements for the lor , even in front of the president ?
 did wiesner shout out in front of the press during a presentation by von braun ?
@@ -3660,7 +3657,7 @@ did the second block , as-202 , travel downrange in km ?
 did these flights test on the cm ?
 were on the test flight of the as-206 ?
 were the astronauts wearing during the dual mission as-278 ?
-was originally on the spacesuits prior to the clear " fishbowl " helmet ?
+was originally on the spacesuits prior to the clear '' fishbowl '' helmet ?
 was included into the apollo spacesuit ?
 did the lmp acronym stand for regarding the block ii launch positions ?
 selected the first apollo crew ?
@@ -3694,7 +3691,6 @@ were approved by mueller after the incident ?
 had to happen to each mission before they would continue on to the next mission ?
 since nasa did n't know attempts each test would end up requiring , what did they use instead of numbers for the trials ?
 was the technical name of the first unmanned saturn v flight , apollo 4 ?
-was one thing that was specifically tested on the apollo 4 test launch regarding the cm ?
 was apollo 6 , or as-502 , tested ?
 was cancelled by nasa after the apollo 6 testing , after deeming the saturn v ready to hold men ?
 was the first testing of the lm , unmanned , in earth 's orbit ?
@@ -3719,7 +3715,7 @@ was redesigned to allow better maneuverability in the lrv ?
 did nasa have planned ?
 would the astronauts be project to be able to stay on the moon for in the latter missions ?
 would have to be increased regarding the lm and csm for the last five missions ?
-happened to the apollo 13 crew to force them to use the lm as a " life boat " as it had been designed ?
+happened to the apollo 13 crew to force them to use the lm as a '' life boat '' as it had been designed ?
 along with one veteran , other two types of crew could be included in lieu of veterans after the successful landings of apollo 11 and 12 ?
 happened to the apollo program in for the rest of 1970 after the incident regarding apollo 13 ?
 was redesigned during the apollo program being grounded during 1970 ?
@@ -3870,7 +3866,7 @@ deals with eu staff issues ?
 is one term for an elected president of the cjeu ?
 is the cjeu 's duty ?
 if there is a conflict between eu law and national law , take precedence ?
-was the reason the italian constitutional court gave that resulted in mr. costa losing his his claim against enel ?
+was the reason the italian constitutional court gave that resulted in mr. costa losing his claim against enel ?
 were the years two regulations that conflicted with an italian law originate in the simmenthal spa case ?
 have had to develop principles dedicated to conflict resolution between laws of different systems ?
 did costa v enel take place ?
@@ -3947,7 +3943,7 @@ has free movement and trade been central to european development ?
 do the treaties generally limit ?
 has taken the view that the goals of free trade are underpinned by the aims to improve people 's well being ?
 helps the process of free movement of goods ?
-did did article 34 discriminate against in procureur du roi v dassonville ?
+did article 34 discriminate against in procureur du roi v dassonville ?
 article 34 meant states could be responsible ?
 were french vigilantes sabotaging shipments of spanish strawberries ?
 is the minimum percent of alcohol content a german law requires all spirits and liqueurs to have ?
@@ -3991,7 +3987,7 @@ did the court of justice hold that a german court could n't deny a dutch buildin
 is also used to describe the amazon rainforest in english ?
 is covered in the basin ?
 control this region in total ?
-nations contain " amazonas " in their names ?
+nations contain '' amazonas '' in their names ?
 does the amazon represents in rainforests on the planet ?
 is the dutch word for the amazon rainforest ?
 covers the majority of the amazon basin in south america ?
@@ -4082,7 +4078,7 @@ was the first european to travel the entire length of the amazon river ?
 did the first european travel the entire length of the amazon river ?
 geoglyphs dating to period were found in deforested land along the amazon river ?
 is given credit for discovering geoglyphs along the amazon river ?
-was evidence shown that humans shaped the the amazon ?
+was evidence shown that humans shaped the amazon ?
 is terra preta called ?
 is terra preta distributed over the amazon forest ?
 did the development of this fertile soil provide in hostile environment ?
@@ -4153,13 +4149,13 @@ organized the trees of the amazon into four categories ?
 did one individual suggest classifying the trees of the amazon into four categories ?
 was used to classify trees into four categories ?
 did the amazon experience its worst drought of recent history ?
-argued that drought , among other effects , could cause the amazon forest to reach a " tipping point ? "
+argued that drought , among other effects , could cause the amazon forest to reach a '' tipping point ? ''
 along with drought , is one other factor that is pushing the amazon rainforest towards a tipping point ?
 might the amazon forest become if it passes the tipping point and starts to die ?
 predicted that the amazon forest could survive only three years of drought ?
 did the amazon experience a drought that may have been more extreme than in 2005 ?
 was the region impacted by the 2010 drought ?
-areas were impacted by the the death of vegetation in the 2010 drought ?
+areas were impacted by the death of vegetation in the 2010 drought ?
 the southern part of the amazon forest was mainly impacted by drought ?
 are absorbed the amazon in a typical year ?
 are ctenophora commonly known as ?
@@ -4227,7 +4223,7 @@ are the hairs on ctenophores called ?
 are cilia used for ?
 does ctenophore mean in greek ?
 is used as a description on ctenophores in most textbooks ?
-are are hardest to study ?
+are hardest to study ?
 are coastal species tough ?
 the inside of a ctenophore is lined ?
 do photocytes produce ?
@@ -4312,7 +4308,7 @@ were found in the burgess shale ?
 did the fossils found in the burgess shale lack ?
 were the fossils found in china ?
 were found in china ?
-is considered the " aunt " of ctenophores ?
+is considered the '' aunt '' of ctenophores ?
 vendobionta lived during ?
 do some researchers believe is the earliest-diverging animal phylum is ?
 does not have cydipped-like larvae ?
@@ -4354,7 +4350,7 @@ did fresno get its first pedestrian mall ?
 was the pedestrian mall renamed ?
 has a piece of his artwork located at the fulton mall ?
 after reopening , will the art pieces be located after restoration ?
-will enrich the the pedestrian friendly environment after restoration ?
+will enrich the pedestrian friendly environment after restoration ?
 is the neighborhood of sunnyside located in fresno ?
 are the two major thoroughfares of sunnyside ?
 was most of sunnside developed ?
@@ -4401,7 +4397,7 @@ does the neighborhood have ?
 founded woodward park ?
 is woodward park ?
 does the amphitheatre at woodward park have ?
-miles , once completed , will the the lewis s. eaton trail cover ?
+miles , once completed , will the lewis s. eaton trail cover ?
 is woodward park open ?
 was the sierra sky park airport formed ?
 created the nation 's first aviation community ?
@@ -4489,8 +4485,8 @@ happens to the packet at the destination
 is the node requiered to look up
 is a connection identifier
 does connection orientation require
-do x . 25 and frame relay both require
-were x . 25 and frame relay used for
+do x. 25 and frame relay both require
+were x. 25 and frame relay used for
 is a typical configuration
 did arpnet and sita become operational
 was apple talk
@@ -4526,7 +4522,6 @@ was the first internet2 network named
 did internet2 partner with
 is nsfnet
 did nsfnet promote
-did nsfnet eventually provide
 does vbns stand for
 did vbns do
 operated the vbsn network
@@ -4548,7 +4543,6 @@ did the mongol army throw in their catapults ?
 did the genoese traders bring the plague ?
 contributed to the severity of the plague ?
 did the disease first move in ?
-was the last to receive the disease ?
 were able to avoid the plague ?
 was the disease spreading between 1348 and 1350 ?
 did a plague-ridden ship land in norway ?
@@ -4756,7 +4750,7 @@ was the name of the king of the scots ?
 did newcastle fight off the scots during the 14th century ?
 did a 1530 royal act restrict shipments of ?
 was the cartel of newcastle burgesses known as ?
-does the phrase " taking coals to newcastle " mean ?
+does the phrase '' taking coals to newcastle '' mean ?
 was the american timothy dexter widely regarded as ?
 did the merchants of newcastle plot to do to timothy dexter ?
 did the keelmen live with in a tight-knight community east of newcastle ?
@@ -4833,11 +4827,11 @@ is the dialect of newcastle known as ?
 conquered much of england after the end of roman imperial rule ?
 does the geordie dialect keep of the older language which came before it ?
 strang is an anglo-saxon word means what in modern english ?
-" bairn " and " hyem " have origins ?
+'' bairn '' and '' hyem '' have origins ?
 are some words from the geordia dialect used ?
-are likely to use words like " howay " and " hadaway " ?
+are likely to use words like '' howay '' and '' hadaway '' ?
 appears to be used exclusively in newcastle and surrounding areas ?
-does " hoy " originate from ?
+does '' hoy '' originate from ?
 was published in february of 2007 ?
 was newcastle named as the most type of city in the uk ?
 's the average decibel level of noise in newcastle ?
@@ -4866,3 +4860,8 @@ is the evolution festival hosted ?
 is the av festival held ?
 does the food and drink festival run ?
 is the largest traveling fair in europe ?
+does the largest traveling fair in europe take place ?
+did the fair held in june have its origins in ?
+is the northern rock cyclone ?
+is held in newcastle 's gay community in mid-july ?
+is an annual two-day multicultural event held in newcastle in late august ?

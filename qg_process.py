@@ -108,6 +108,9 @@ def data_process(input_path,interro_path,train=False):
                 if True:
                     #テキストとノンストップワードが一つも重複してないものは除去
                     if check_overlap(sentence_text,question_text,stop_words)==False:
+                        print(sentence_text)
+                        print(question_text)
+                        print()
                         continue
 
                 if True:

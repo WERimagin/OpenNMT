@@ -1,8 +1,3 @@
-does the largest traveling fair in europe take place ?
-did the fair held in june have its origins in ?
-is the northern rock cyclone ?
-is held in newcastle 's gay community in mid-july ?
-is an annual two-day multicultural event held in newcastle in late august ?
 will the 2009 international arts fair be held ?
 is held in october in newcastle ?
 is the sama festival ?
@@ -94,7 +89,7 @@ is nicknamed the martyr ?
 did all three cathedrals in newcastle begin their existence as ?
 is typically agreed to be the oldest one in town ?
 was the latest addition to the church of st. andrew ?
-was added to the the church of st. andrew in 1726 ?
+was added to the church of st. andrew in 1726 ?
 surrounds the church of st. andrew ?
 received a battering during the siege of newcastle ?
 was itv tyne tees based for over 40 years ?
@@ -232,7 +227,6 @@ most of the chinese works of art in the far eastern collections date from two dy
 is the gallery of japanese art named after ?
 did the gallery of japanese art open ?
 the sculpture of amida nyorai is included in the v & a 's japanese art collection is dated to which century ?
-is dated to which time period ?
 suzuki chokichi 's incense burner dated 1875 is made from material ?
 is represented in the v & a collection ?
 is represented in the v & a collection ?
@@ -278,7 +272,7 @@ designed the möllendorff dinner service ?
 was möllendorff dinner service designed ?
 was the salting bequest made ?
 did the salting bequest enhanced ?
-are represented the the v & a ceramics collection ?
+are represented the v & a ceramics collection ?
 were the v & a 's collection of delftware produced ?
 are the largest objects in the v & a ceramics and glass collection ?
 the largest objects in the v & a ceramics and glass collection were produced ?
@@ -370,7 +364,7 @@ donated rodin 's works to the v & a ?
 were rodin 's works given to the v & a ?
 britain 's support of france led to rodin donating many of his sculptures to the v & a ?
 was not donated by the artist ?
-british sculptor and a leading member of the new sculpture movement is represented in the the v & a collection ?
+british sculptor and a leading member of the new sculpture movement is represented in the v & a collection ?
 include the queen victoria memorial in front of buckingham palace is included in the v & a collection ?
 is represented in the v & a collection ?
 are represented in the british galleries of the v & a ?
@@ -391,7 +385,7 @@ do the devonshire hunting tapestries depict ?
 is represented in the v & a collection ?
 is the sicilian tristan quilt dated ?
 designed the forest tapestry in the v & a collection ?
-was the the forest tapestry created ?
+was the forest tapestry created ?
 the art deco period of textiles works is represented american artist ?
 a rug by russian-born british designer is included in the v & a collection ?
 is the former name of the v & a theatre & performance galleries ?
@@ -448,7 +442,7 @@ were abc 's international networks mainly situated in the 1970s ?
 was abc forced to sell its interests in international networks in the 70s ?
 was the first international event broadcast by abc ?
 did abc expand in to in the mid-1960s ?
-did abc purchase a stake in in 1951 ?
+did abc purchase a stake in 1951 ?
 was nbc unable to broadcast the coronation of queen elizabeth ii ?
 was cbs unable to broadcast the coronation of queen elizabeth ii ?
 did abc acquire the rights to in 2000 ?
@@ -534,7 +528,7 @@ removed abc stations from it 's systems in certain markets in april 2000 ?
 did the fcc rule in favor of in the april 2000 dispute between time warner cable and abc ?
 was the most watched for the 2000-01 season ?
 was time warner cable forced to restore abc stations to affected markets ?
-did abc 's " tgif " end ?
+did abc 's '' tgif '' end ?
 network did sabrina the teenage witch move in 2000 ?
 began airing the tgif comedy family matters for the 1997-98 season ?
 did abc first premiere who wants to be a millionaire ?
@@ -745,7 +739,7 @@ regained the ratings lead in america in 1984 ?
 ended its broadcast run in 1986 ?
 abc began to focus on after nbc 's success in 1984 ?
 debuted in 1989 for abc ?
-does " tgif " stand for ?
+does '' tgif '' stand for ?
 were produced by what production company ?
 miller-boyett productions was a studio affiliated ?
 new broadcast regulations from the fcc in 1968 allowed companies to own a maximum of ?
@@ -849,7 +843,7 @@ did genghis khan famously measure against the linchpin ?
 an important shaman was alleged to be trying to distance genghis khan from of his brothers ?
 did genghis khan exploit for intelligence gathering ?
 was the ally of his father that genghis khan fell out as time passed ?
-had temüjin created a significant " mongol " tribal alliance ?
+had temüjin created a significant '' mongol '' tribal alliance ?
 is the term for a meeting of mongol chiefs ?
 was given to genghis khan posthumously ?
 gave genghis khan the title khadan ?
@@ -1273,7 +1267,7 @@ bacteria often secrete to ingest a physical barrier ?
 involves inserting a hollow tube into a host cell ?
 formulated the idea of clonal selection theory of immunity ?
 are two examples of nonself entities in accordance with frank burnet 's theory ?
-is the complex " two-signal " activation of t cells referred to ?
+is the complex '' two-signal '' activation of t cells referred to ?
 when he was formulating his theory of immunity ?
 are the most powerful class of anti-inflammatory drugs ?
 are two examples of cytotoxic or immunosuppressive drugs ?
@@ -1332,7 +1326,7 @@ is a product of what process ?
 results when complement proteins bind to microbes and activate their protease activity ?
 is it called when people in society rebel against laws they think are unfair ?
 is an example of major civil disobedience in south africa ?
-was the the movement called that brought baltic countries independence from the soviet union ?
+was the movement called that brought baltic countries independence from the soviet union ?
 in 2004 the orange revolution occurred in ?
 was the location of the 2003 rose revolution ?
 brought forward one of the earliest examples of civil disobedience ?
@@ -1423,12 +1417,13 @@ brought medicine to iraq without the permission of the government ?
 did julia butterfly hill live in a tree ?
 was the outcome of living in the california redwood tree ?
 are taken sometimes in civil disobedience ?
+is an example of illegal disobedience ?
 are usually done skirting the law ?
 lived in a tree to prevent it from being cut down as a form of civil disobedience ?
 was joseph haas arrested for ?
 did joseph haas say in his email ?
 civil disobedience can occur people speak about a certain topic that is deemed as ?
-did the the case go before the supreme court ?
+did the case go before the supreme court ?
 is one criminal behavior that is hard to stop by authorities ?
 can you protest against the government in an individual way ?
 brownlee argues that sometimes people behave in way to have their issue heard ?
@@ -1500,6 +1495,7 @@ generally dictates the construction materials used ?
 residential construction can generate is not carefully planned ?
 dutch architect janjaap ruijssenaars 's performative architecture 3d-printed building is scheduled to be built ?
 working versions of 3d-printing building technology are already printing building material per hour ?
+the design team is most commonly employed ?
 provides the bill of quantities ?
 the owner typically awards a contract ?
 is given when the contractor is given a performance specification and must undertake the project from design to construction , while adhering to the performance specifications ?
@@ -1630,7 +1626,7 @@ was the south african schools act passed ?
 along with public schools , was recognized under the south african schools act ?
 in south africa , along with privately governed schools , are classified as independent ?
 did missionaries notably establish church schools in south africa ?
-after apartheid , are referred to as " model c " schools ?
+after apartheid , are referred to as '' model c '' schools ?
 do academic results in former model c schools compare to other schools ?
 do the fees at former model c schools compare to those at other schools ?
 as of 2008 , about percentage of swedish students attended private schools ?
@@ -1709,7 +1705,7 @@ does harvard have ?
 was the color crimson adopted at harvard as official color ?
 is the earliest traces of the color crimson at harvard ?
 was the harvard endowment total in 2011 ?
-were the losses suffered in the the financial crisis of 2008-09 to harvard endowment ?
+were the losses suffered in the financial crisis of 2008-09 to harvard endowment ?
 did harvard halt due to the financial crisis ?
 are harvard 's pell grant reserves ?
 is harvard 's total financial aid reserves ?
@@ -1740,7 +1736,7 @@ does the fogg museum of art cover ?
 specializes in cultural history and civilizations of the western hemisphere ?
 starting has harvard topped the academic rankings of world universities ?
 beginning was harvard on top of the world reputation rankings ?
-according to the princeton review has harvard ranked as a " dream college " in 2013
+according to the princeton review has harvard ranked as a '' dream college '' in 2013
 does harvard compete in ncaa division i
 is harvard 's most intense rival ?
 is the harvard-yale rivalry set aside ?
@@ -1751,7 +1747,7 @@ was walter camp a captain for the football team ?
 is the name of harvard 's basketball facility ?
 is the name of harvard 's primary recreational sports facility ?
 are in the malkin athletic center
-harvard - yale regatta predates " the game " by many years ?
+harvard - yale regatta predates '' the game '' by many years ?
 is the harvard - yale regatta held ?
 is the primary rival of the harvard crimson hockey team ?
 did harvard win an intercolleiate sailing association national championship ?
@@ -1856,9 +1852,10 @@ does the richest 1 % of people have ?
 according to oxfam , the 85 richest people have wealth equal to average people ?
 in order to be considered in the top percentile , a person would need to amass money each year ?
 has caused oxfam 's findings to be questioned ?
+does oxfam and credit suisse believe their findings are being doubted ?
 were owned by just 1 % of adults ?
 do the three richest people in the world posses more of than the lowest 48 nations together ?
-was the combined wealth of the " 10 million dollar millionaires " in 2008 ?
+was the combined wealth of the '' 10 million dollar millionaires '' in 2008 ?
 will the wealthiest 1 percent own by 2016 ?
 are there more poor people in the united states and europe than china ?
 americans are richer than more than half of all citizens ?
@@ -1984,7 +1981,7 @@ does the wage gap between genders provide an advantage ?
 in many countries , is there ?
 does a gender pay gap tend to favor ?
 is less willing to travel or relocate for work ?
-is the author of the book , " knowledge and decisions " ?
+is the author of the book , '' knowledge and decisions '' ?
 does a u.s. census report state that even after other factors there still exists this between earnings of men and women ?
 help to redistribute wealth ?
 is the level of inequality in underdeveloped countries ?
@@ -2000,7 +1997,7 @@ did income inequality begin to increase in the us ?
 are jobs beginning to increase ?
 are jobs beginning to decrease ?
 plotted the relationships between levels of income and inequality ?
-is a a developing economy 's level of inequality bulging out called ?
+is a developing economy 's level of inequality bulging out called ?
 has recent testing of kuznets theory with superior data show it to be ?
 does kuznets ' curve predict about income inequality given time ?
 may be possible for multiple kuznets ' cycles to be in at any given time ?
@@ -2009,7 +2006,7 @@ according to the wealth concentration theory , advantage do the wealthy have in 
 does newly created wealth concentrate ?
 is best able to leverage the accumulation of wealth ?
 can significantly contribute to the continuing inequality in a society over time ?
-wrote the book " capital in the twenty-first century " ?
+wrote the book '' capital in the twenty-first century '' ?
 do larger fortunes generate ?
 should serve as a brake on wealth concentration ?
 does joseph stiglitz have ?
@@ -2156,7 +2153,6 @@ did the bbc produce doctor who ?
 ended the series in 1989 ?
 was shown about doctor who ?
 after cancelling the show , did the bbc tell the public ?
-showed the broadcasts of the original doctor who series ?
 was the bbc hoping that an independent production firm would do for doctor who ?
 approached the bbc in 1989 about relaunching the show ?
 showed a doctor who film ?
@@ -2201,7 +2197,7 @@ did the serial format change for the doctor who series ?
 was each doctor who episode in the 2005 revival series -LRB- including ads -RRB- ?
 was an extended episode of doctor who shown ?
 was over an hour long ?
-in did " the eleventh hour " play ?
+in did '' the eleventh hour '' play ?
 doctor who episodes have been shown , in total ?
 is the most common length of doctor who episodes ?
 doctor who christmas specials have been shown ?
@@ -2222,7 +2218,7 @@ did the bbc work with to reconstruct some of the invasion episodes ?
 was the invasion originally shown ?
 worked on some of the reign of terror episodes ?
 was the doctor who series released on dvd ?
-was the term " regeneration " first used ?
+was the term '' regeneration '' first used ?
 prompted the regeneration concept ?
 was used for the first regeneration ?
 was used for the second regeneration ?
@@ -2236,9 +2232,9 @@ was the name of the 50th anniversary show ?
 played the valeyard ?
 was the name of the serial where the valeyard appears ?
 does the war doctor exist between ?
-was first referred to as " his secret " ?
+was first referred to as '' his secret '' ?
 featured the return of william hartnell ?
-returned for the " children in need " show ?
+returned for the '' children in need '' show ?
 does the first doctor see himself ?
 was the name of the 50th anniversary episode ?
 were in the sirens of time ?
@@ -2246,7 +2242,7 @@ was released for the 40th anniversary ?
 were featured in the four doctors ?
 were in project : lazarus ?
 was the doctor who 40th anniversary show ?
-does the " fall of the eleventh " happen ?
+does the '' fall of the eleventh '' happen ?
 is it brought up that the first doctor might not actually be the first doctor ?
 was the fifth doctor confirmed ?
 does the eleventh doctor first acknowledge his number ?
@@ -2327,7 +2323,7 @@ was the current doctor during the 50th anniversary special ?
 the first episode of doctor premiered the day after what famous event in history ?
 have the first episodes of doctor who always appeared ?
 did the show see audiences as high as 12 million ?
-was the " dalekmania " period ?
+was the '' dalekmania '' period ?
 channel shows repeats of the doctor who shows ?
 was the main reason for the show 's suspension in 1989 ?
 fans blame the poor viewership of the late 80 's to competition from show ?
@@ -2415,7 +2411,7 @@ was the largest simulcast of a tv drama ?
 who won an award for best writing in a children 's serial ?
 is considered the best drama that the bbc has ever produced ?
 does doctor who hold in the 100 greatest british tv programs of the 20th century ?
-called doctor who " the greatest uk science fiction series ever " ?
+called doctor who '' the greatest uk science fiction series ever '' ?
 does doctor who hold in a list of the 100 greatest kids ' tv shows ?
 was the most revered award that doctor who has won ?
 bafta tv awards has doctor who won ?
@@ -2508,7 +2504,7 @@ does the university run ?
 does the urban education institute help run ?
 is the hyde park day school located ?
 the university of chicago library system has ?
-does the the university of chicago library system hold ?
+does the university of chicago library system hold ?
 is the name given to the university 's main library ?
 was the joe and rika mansueto library constructed ?
 does the john crerar library roughly hold ?
@@ -2562,10 +2558,10 @@ was also obama 's campaign adviser ?
 was also an attorney general and a federal judge ?
 is also the governor of the bank of japan ?
 was also an alumni at the university ?
-alumni wrote " the closing of the american mind " ?
+alumni wrote '' the closing of the american mind '' ?
 is the name of the american writer and satirist who is also a university alumni ?
 also write the bestseller before i fall ?
-alumni wrote " the good war " ?
+alumni wrote '' the good war '' ?
 is the name of the pulitzer prize novelist who was also a university alumni ?
 is also a university graduate ?
 is the name of the bungie inc. founder who is also a university graduate ?
@@ -2839,7 +2835,7 @@ do some believe about this pronunciation ?
 was the scottish geologist that named mt kenya as mt kenia ?
 did thompsons indicate mt kenya ?
 are the biggest game animals of kenya called ?
-are the " big five " animals in kenya ?
+are the '' big five '' animals in kenya ?
 are these animals mostly located ?
 does the annual animal migration occur ?
 do the wildebeest migrate searching for food and water ?
@@ -2884,7 +2880,7 @@ does kenya curb coruption ?
 is president kibaki part of ?
 did president kibaki run against ?
 led to protests and open discrediting of the eck ?
-called themselves the " people 's president " ?
+called themselves the '' people 's president '' ?
 did the government and civil society organisations start after the riots ?
 initiated the community dialogues ?
 started peace meetings ?
@@ -3099,9 +3095,9 @@ did watson say the mistake went in ?
 was martin parry 's role in the ipcc ?
 was the topic of the error ?
 was the verdict on other alleged errors ?
-was the paper published that the " millennial northern hemisphere temperature reconstruction " graph was based on ?
-wrote the paper that the " millennial northern hemisphere temperature reconstruction " graph was based on ?
-is the nickname for the " millennial northern hemisphere temperature reconstruction " graph ?
+was the paper published that the '' millennial northern hemisphere temperature reconstruction '' graph was based on ?
+wrote the paper that the '' millennial northern hemisphere temperature reconstruction '' graph was based on ?
+is the nickname for the '' millennial northern hemisphere temperature reconstruction '' graph ?
 reconstructions supported the 1999 paper 's information ?
 was the current warming compared to ?
 led the science and environmental policy project ?
@@ -3131,7 +3127,7 @@ did oppenheimer advocate ?
 has successfully dealt with ozone depletion ?
 did the kyoto protocol try to address ?
 oppose the ipcc ?
-said people involved in the ozone situation had " a better understanding of scientific ignorance and uncertainties " ?
+said people involved in the ozone situation had '' a better understanding of scientific ignorance and uncertainties '' ?
 remain unsolved problems with the kyoto protocol ?
 did the ozone mitigation reduce ?
 ordered the stern review ?
@@ -3609,7 +3605,7 @@ is the glacial alpine valley known as ?
 the rhine forms an inland delta into ?
 is the delta in the rhine delimited in the west by ?
 is the delta in the rhine delimited in the east by ?
-in local alemannic dialect , is the the singular form of the names of the islands formed by the rhine ?
+in local alemannic dialect , is the singular form of the names of the islands formed by the rhine ?
 the inland delta at the mouth of the rhine is ?
 delimits the delta of the rhine in the east ?
 delimits the delta of the rhine in the west ?
@@ -3782,6 +3778,7 @@ was the north sea in the last cold phase than it is today ?
 besides the north sea and the irish channel , was lowered in the last cold phase ?
 was the source of the rhine in the last ice age ?
 stretched across middle europe in the last ice age ?
+was the last glacial maximum ?
 is the term for wind-blown dust in a tundra ?
 did europe slowly begin to warm up from the last ice age ?
 did frozen subsoil and expanded alpine glaciers begin to do ?
@@ -4116,7 +4113,7 @@ stated he wanted israel to vanish ?
 deployed its army into afghanistan in 1979 ?
 was the soviet union trying to suppress with its army ?
 did the conflict galvanize muslims around the world to do ?
-was the military use of the " afghan arabs " ?
+was the military use of the '' afghan arabs '' ?
 muslims came from around the world to fight in afghanistan ?
 did the gulf war inadvertently do in the early 1990s ?
 did the us military personal seek to put an end to ?
@@ -4211,7 +4208,7 @@ the term imperialism has been applied to western countries , and ?
 can be used in an informal imperialistic situation to expand a controlled area ?
 is more costly , formal , or informal imperialism ?
 the amount of land a country controls is its greatest ?
-suggested that imperialism was the " highest " form of capitalism ?
+suggested that imperialism was the '' highest '' form of capitalism ?
 does colonialism lack that imperialism has ?
 are often left out of the colonialism debat ?
 would one create an empire by means of imperialism ?
@@ -4228,7 +4225,7 @@ halford mackinder and friedrich ratzel of geographers ?
 would the geographical societies in europe support certain travelers ?
 suggested people in the tropics were uncivilized ?
 according to ellen churchill semple type of climate was necessary for humans to become fully human ?
-said portrayed the east as being the " others ? "
+said portrayed the east as being the '' others ? ''
 according to certain geographical theories does a tropical climate produce ?
 justified british imperialism ?
 did great britain colonize australia ?
@@ -4245,6 +4242,7 @@ muslim empires have used imperialism ?
 is older the british empire or the ethiopian empire ?
 the asante and lunda empires were in ?
 imperialism impacts social norms of a state , what is it called ?
+is cultural imperialism often referred to as ?
 changed the views of romanians during the cold war ?
 used cultural imperialism to sway local elites ?
 do regimes fight against cultural imperialism ?
@@ -4265,6 +4263,7 @@ did britain exploit in india ?
 did europe achieve ?
 did european chemists make that could be used in warfare ?
 was invented in 1880 that revolutionized warfare ?
+were the zulus using during the anglo-zulu war of 1879 ?
 theories on imperialism use as a model ?
 did the term imperialism first come to be used by its current definition ?
 was the idealized value of imperialism ?
@@ -4279,7 +4278,7 @@ europe first colonized the americas , then asia , but was third ?
 were the two forms of environmental determinism ?
 thought the world could be split into climatic zones ?
 have temperate climates ?
-did the the europeans think the peoples in the tropics were in need of ?
+did the europeans think the peoples in the tropics were in need of ?
 was a similar view about the asian continent called ?
 did the geographic scholars work for ?
 is the earliest britain had an imperialist policy ?
@@ -4306,7 +4305,7 @@ did the germanic tribes claim territory in north and west europe ?
 did the germanic tribes conquer the celtic peoples ?
 germany does n't have an imperialistic past until ?
 was otto von bismarck born ?
-was the the second german empire founded ?
+was the second german empire founded ?
 caused the dissolution of the holy roman empire ?
 was germany 's central interest ?
 besides africa , did germany have imperial interests ?
@@ -4318,7 +4317,7 @@ was the first sino-japanese war ?
 did japan force into an alliance ?
 did japan conquer in 1931 ?
 along with russia supported post ww-ii communist movements ?
-asserted russia 's right to " self-determination ? "
+asserted russia 's right to '' self-determination ? ''
 did russia apply its old tsarist regimes ?
 had established the russian empire to its former glory prior to 1921 ?
 trotsky thought was needed for a true russian revolution .
@@ -4365,11 +4364,11 @@ in the united states the umc ranks as the largest ?
 with umc ?
 did the movement that would become the united methodist church begin ?
 did the movement that would become the united methodist church begin ?
-was the student group called " the methodists ? "
+was the student group called '' the methodists ? ''
 did john and charles wesley come to america to teach the gospel ?
 in 1735 , did john and charles wesley teach the gospel in america ?
 in 1735 , did john and charles wesley teach the gospel to in america ?
-did " the holy club 's " teachings emphasize ?
+did '' the holy club 's '' teachings emphasize ?
 caused the separation of the methodists in the american colonies ?
 did wesley appoint thomas coke as bishop ?
 did wesley appoint as bishop in 1784 ?
@@ -4387,8 +4386,8 @@ did the methodist protestant church split from the methodist episcopal church ?
 did the general conference of the methodist episcopal church split into two conferences ?
 did the general conference of the methodist episcopal church split into two conferences ?
 was the united methodist church created ?
-did two leaders join hands and " give birth " to a new denomination ?
-was one man who joined hands and said " lord of the church , we are united in thee ... ? "
+did two leaders join hands and '' give birth '' to a new denomination ?
+was one man who joined hands and said '' lord of the church , we are united in thee ... ? ''
 the umc understands itself to be part ?
 recognizes the importance of the chalcedonian creed ?
 is the concept of the visible and invisible church ?
@@ -4398,7 +4397,7 @@ were the two lay preachers that wesley ordained as presbyters ?
 were two of the founders of the united methodist church ?
 led the team which systematized denominational doctrine ?
 is largely considered the first united methodist theologian ?
-is the grace that " goes before us ? "
+is the grace that '' goes before us ? ''
 is that power that enables us to love ?
 is prevenient grace ?
 prevenient grace allowas those tainted by to make a choice to accept or reject god 's salvation in christ ?
@@ -4413,7 +4412,7 @@ is a genuine love of god with heart , soul and mind ?
 has been characterized as arminian theology with an emphasis on the work of the holy spirit ?
 is seeing the holy bible as the primary authority in the church ?
 today , is generally considered one of the more moderate and tolerant denominations ?
-states that united methodist theology is at once " catholic , evangelical and reformed ? "
+states that united methodist theology is at once '' catholic , evangelical and reformed ? ''
 did the general conference go on record in support of the work of the religious coalition for reproductive choice ?
 are two official bodies of the umc governing coalition ?
 is the taskforce that was organized to identify with the pro-life position ?
@@ -4516,7 +4515,7 @@ by the opening of the 2008 general conference , was the total umc membership in 
 by the opening of the 2008 general conference , was the total umc membership overseas ?
 seeks to reconceive and promote biblical holiness in today 's church ?
 is an interdenominational group composed of various churches to promote the gospel throughout the world ?
-did delegates to the world methodist council vote to adopt the joint declaration on the doctrine of justification ? "
+did delegates to the world methodist council vote to adopt the joint declaration on the doctrine of justification ? ''
 was the french and indian war ?
 fought in the french and indian war ?
 were in french north american colonies ?

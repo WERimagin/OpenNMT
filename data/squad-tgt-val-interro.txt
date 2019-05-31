@@ -192,7 +192,7 @@ how many panthers went to the pro bowl ?
 how many panthers were designated all-pro ?
 what panther tore his acl in the preseason ?
 what year did the league begin having schedules with 16 games in them ?
-what year did the the saints hit a 13-0 record ?
+what year did the saints hit a 13-0 record ?
 when did the packers arrive at a record of 13-0 ?
 what injury did the carolina panthers lose kelvin benjamin to during their preseason ?
 which player did the panthers lose to an acl injury in a preseason game ?
@@ -220,7 +220,6 @@ how many points did carolina lead the nfl in scoring for offensive plays ?
 how many yards did newton get for passes in the 2015 season ?
 how many touchdowns did newton get in the 2015 season ?
 what was newton 's quarterback rating for 2015 ?
-how many receptions did cotchery get for the 2015 season ?
 how many points did the panthers defense surrender ?
 how many career sacks did jared allen have ?
 how many tackles did luke kuechly register ?
@@ -444,7 +443,7 @@ when was the opening of " super bowl city " ?
 how many people were estimated to go to the different game-themed events during the week prior to super bowl 50 in the city it was held in ?
 who was the mayor of san francisco during super bowl 50 ?
 which building was the nfl experience held at for super bowl 50 ?
-what was the name of the event at the the embarcadero that was held prior to super bowl 50 to help show off some of the things that san francisco has to offer ?
+what was the name of the event at the embarcadero that was held prior to super bowl 50 to help show off some of the things that san francisco has to offer ?
 where was the nfl experience held for the 2015 season ?
 what opened on january 30th at the justin herman plaza ?
 who is the mayor of san francisco ?
@@ -934,6 +933,7 @@ what type of forested areas can be found on the highest terrace ?
 what does warsaw 's mixture of architectural styles reflect ?
 when was warsaw completely razed to the ground by bombing raids ?
 when did warsaw start to rebuild ?
+what building from the 19th century was destroyed between the 1950s and 1960s ?
 what style were the mass constructed residential blocks designed in ?
 what type of architecture is represented in the majestic churches ?
 when was st. john 's cathedral constructed ?
@@ -1498,6 +1498,7 @@ who first discovered his body ?
 what had been left hanging on the door to tesla 's room ?
 what was given as the cause of death ?
 what happened to tesla 's belongings ?
+who analyzed tesla 's belongings ?
 what did he find that could constitute a hazard ?
 who gave tesla 's eulogy ?
 who wrote the eulogy ?
@@ -1507,6 +1508,7 @@ where was the funeral held ?
 where was tesla 's property sent ?
 who was tesla 's nephew ?
 who transported tesla 's ashes from the us .
+where were the ashes sent ?
 when are the ashes now ?
 what was the total number of patents that tesla had ?
 in how many countries did tesla hold patents ?
@@ -1634,7 +1636,7 @@ what is one variable on which the running time may be contingent ?
 how is the time needed to obtain the solution to a problem calculated ?
 in what unit is the size of the input measured ?
 whose thesis states that the solution to a problem is solvable with reasonable resources assuming it allows for a polynomial time algorithm ?
-if input size is is equal to n , what can respectively be assumed is the function of n ?
+if input size is equal to n , what can respectively be assumed is the function of n ?
 what term corresponds to the maximum measurement of time across all functions of n ?
 how is worst-case time complexity written as an expression ?
 assuming that t represents a polynomial in t ( n ) , what is the term given to the corresponding algorithm ?
@@ -2149,7 +2151,6 @@ what did the reforms cause ?
 what group was responsible for causing more violence in wittenberg ?
 who asked luther to return to the city ?
 when did luther return to wittenberg ?
-what did luther think was required to stop the violence ?
 what did luther do during lent at this time ?
 what are the eight sermons called that luther preached in march 1522 ?
 how did luther want people to bring about change ?
@@ -2343,7 +2344,7 @@ how did luther respond to agricola ?
 what book did luther write in response to agricola and the antinomians ?
 what did luther 's answer to the antinomians reaffirms ?
 what is the use of the law by the holy spirit ?
-what is luther 's opinion of what the law covers ? ?
+what is luther 's opinion of what the law covers ?
 what does refusing to preach the ten commandments not do ?
 what did luther claim the church would have to comprise if the law were not taught ?
 what do the ten commandments teach christians how to do ?
@@ -2967,7 +2968,6 @@ from what french king did the huguenot name possibly descend ?
 what is the theory that this king 's name is the origin of " huguenot " called ?
 according to the theory , what does the name " huguenot " mean ?
 who was one french pro-reform roman catholic of the 15th century ?
-where did this pro-reform leader teach ?
 when did this leader publish a french language bible ?
 what leader of the swiss reformation was a student of lefevre ?
 what other european protestant leader was educated at the university of paris ?
@@ -2994,7 +2994,6 @@ what books did bayle publish ?
 who is the patron saint of the huguenots ?
 what early huguenot church was established in england ?
 when was the charter for this church signed ?
-what is the present-day location of this church ?
 what london neighborhood attracted huguenot refugees ?
 when was the old truman brewery founded ?
 what protestant religions made northern european counties safe for huguenot immigration ?
@@ -3331,7 +3330,7 @@ on what date was oxygen liquefied in a stable form ?
 what celestial object eluded efforts to measure oxygen ?
 what molecule does the sun have in higher proportion than earth ?
 what spacecraft contained data to determine the oxygen content of the sun ?
-what type of process was involved the the depletion of the sun 's oxygen 16 ?
+what type of process was involved the depletion of the sun 's oxygen 16 ?
 before the formation of which planet , did sol lose oxygen 16 ?
 what is the name for a form of oxygen in which electrons are paired ?
 to what is singlet oxygen more reactive ?
@@ -3377,7 +3376,6 @@ what type of process is the oxygen cycle ?
 in how many places is oxygen stored in its cycle ?
 what process is responsible for the planet 's oxygen content ?
 what does photosynthesis release into the earth 's atmosphere ?
-what mechanism can be used to make oxygen ?
 what percentage of oxygen will a zeolite sieve produce ?
 while producing oxygen , what gas does a zeolite sieve absorb ?
 what type of technology is the non organic separating of gases ?
@@ -3575,7 +3573,6 @@ how long did it take johnson to respond to kennedy ?
 what was the general consensus johnson came to regarding america 's progress on going to space and reaching a position of leadership ?
 who originally led the space task group ?
 where was the space task group located ?
-where was the manned spacecraft center located ?
 what university donated the land for the manned spacecraft center ?
 in what state were the original launching facilities for missions ?
 where would the launch operations center be located , as more land was needed for a bigger rocket ?
@@ -3694,7 +3691,6 @@ what type of missions were approved by mueller after the incident ?
 what had to happen to each mission before they would continue on to the next mission ?
 since nasa did n't know how many attempts each test would end up requiring , what did they use instead of numbers for the trials ?
 what was the technical name of the first unmanned saturn v flight , apollo 4 ?
-what was one thing that was specifically tested on the apollo 4 test launch regarding the cm ?
 when was apollo 6 , or as-502 , tested ?
 what was cancelled by nasa after the apollo 6 testing , after deeming the saturn v ready to hold men ?
 which apollo was the first testing of the lm , unmanned , in earth 's orbit ?
@@ -3870,7 +3866,7 @@ what entity deals with eu staff issues ?
 how long is one term for an elected president of the cjeu ?
 what is the cjeu 's duty ?
 if there is a conflict between eu law and national law , which law take precedence ?
-what was the reason the italian constitutional court gave that resulted in mr. costa losing his his claim against enel ?
+what was the reason the italian constitutional court gave that resulted in mr. costa losing his claim against enel ?
 what were the years two regulations that conflicted with an italian law originate in the simmenthal spa case ?
 which entities have had to develop principles dedicated to conflict resolution between laws of different systems ?
 when did costa v enel take place ?
@@ -3947,7 +3943,7 @@ how long has free movement and trade been central to european development ?
 what do the treaties generally limit ?
 what entity has taken the view that the goals of free trade are underpinned by the aims to improve people 's well being ?
 what helps the process of free movement of goods ?
-what did did article 34 discriminate against in procureur du roi v dassonville ?
+what did article 34 discriminate against in procureur du roi v dassonville ?
 article 34 meant states could be responsible for what ?
 in which case were french vigilantes sabotaging shipments of spanish strawberries ?
 what is the minimum percent of alcohol content a german law requires all spirits and liqueurs to have ?
@@ -4082,7 +4078,7 @@ who was the first european to travel the entire length of the amazon river ?
 in what year did the first european travel the entire length of the amazon river ?
 geoglyphs dating to what period were found in deforested land along the amazon river ?
 who is given credit for discovering geoglyphs along the amazon river ?
-for how many years was evidence shown that humans shaped the the amazon ?
+for how many years was evidence shown that humans shaped the amazon ?
 what is terra preta called ?
 how much is terra preta distributed over the amazon forest ?
 what did the development of this fertile soil provide in hostile environment ?
@@ -4159,7 +4155,7 @@ what might the amazon forest become if it passes the tipping point and starts to
 what organization predicted that the amazon forest could survive only three years of drought ?
 in what year did the amazon experience a drought that may have been more extreme than in 2005 ?
 how many square miles large was the region impacted by the 2010 drought ?
-how many areas were impacted by the the death of vegetation in the 2010 drought ?
+how many areas were impacted by the death of vegetation in the 2010 drought ?
 the southern part of the amazon forest was mainly impacted by drought in what year ?
 how many tons of carbon are absorbed the amazon in a typical year ?
 what are ctenophora commonly known as ?
@@ -4227,7 +4223,7 @@ what are the hairs on ctenophores called ?
 what are cilia used for ?
 what does ctenophore mean in greek ?
 which cidippid is used as a description on ctenophores in most textbooks ?
-which group of ctenophore are are hardest to study ?
+which group of ctenophore are hardest to study ?
 why are coastal species tough ?
 the inside of a ctenophore is lined with what ?
 what do photocytes produce ?
@@ -4354,7 +4350,7 @@ in what year did fresno get its first pedestrian mall ?
 what was the pedestrian mall renamed ?
 which artist has a piece of his artwork located at the fulton mall ?
 after reopening , where will the art pieces be located after restoration ?
-what feature will enrich the the pedestrian friendly environment after restoration ?
+what feature will enrich the pedestrian friendly environment after restoration ?
 where is the neighborhood of sunnyside located in fresno ?
 what are the two major thoroughfares of sunnyside ?
 when was most of sunnside developed ?
@@ -4401,7 +4397,7 @@ how much retail activity does the neighborhood have ?
 who founded woodward park ?
 how many total acres is woodward park ?
 how many seats does the amphitheatre at woodward park have ?
-how many miles , once completed , will the the lewis s. eaton trail cover ?
+how many miles , once completed , will the lewis s. eaton trail cover ?
 what months out of the year is woodward park open ?
 when was the sierra sky park airport formed ?
 who created the nation 's first aviation community ?
@@ -4526,7 +4522,6 @@ what was the first internet2 network named
 who did internet2 partner with
 what is nsfnet
 what did nsfnet promote
-what did nsfnet eventually provide
 what does vbns stand for
 what did vbns do
 who operated the vbsn network
@@ -4548,7 +4543,6 @@ what did the mongol army throw in their catapults ?
 where did the genoese traders bring the plague ?
 what contributed to the severity of the plague ?
 which direction did the disease first move in ?
-which country was the last to receive the disease ?
 what types of european groups were able to avoid the plague ?
 where was the disease spreading between 1348 and 1350 ?
 when did a plague-ridden ship land in norway ?
@@ -4866,3 +4860,8 @@ when is the evolution festival hosted ?
 how often is the av festival held ?
 how many weeks each year does the food and drink festival run ?
 what is the largest traveling fair in europe ?
+when does the largest traveling fair in europe take place ?
+what movement did the fair held in june have its origins in ?
+what type of festival is the northern rock cyclone ?
+which festival is held in newcastle 's gay community in mid-july ?
+what is an annual two-day multicultural event held in newcastle in late august ?
