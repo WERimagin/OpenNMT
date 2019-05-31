@@ -1,3 +1,25 @@
+ファイル
+
+qg_prepro_corenlp.py
+  squadデータからcorenlpを使用して疑問詞のデータを抜き出してjsonファイルで格納
+
+qg_process.py
+  squadデータとqg_prepro_corenlp.pyからsentence,questionなどを格納
+
+preprocess.py
+  textを処理
+embedding_to_torch.py
+  gloveを使用して事前ベクトルを作成
+train.py
+  train
+translate.py
+  translate
+bleu.py
+  通常のbleuの測定
+bleu_noninterro.py
+  疑問詞抜きのbleuの測定
+
+
 python preprocess.py \
 -train_src data/squad-src-train-interro.txt \
 -train_tgt data/squad-tgt-train-interro.txt \
@@ -28,7 +50,7 @@ python3 train.py \
 -pre_word_vecs_enc "data/embeddings.enc.pt" -pre_word_vecs_dec "data/embeddings.dec.pt" \
 -fix_word_vecs_enc -fix_word_vecs_dec \
 -copy_attn -copy_attn_type general -coverage_attn -lambda_coverage 1 \
--gpu_ranks 1 -world_size 1 \
+-gpu_ranks 0 -world_size 1 \
 -optim sgd -learning_rate 1 -learning_rate_decay 0.5 -start_decay_steps 20000 -decay_steps 2500 -train_steps 50000
 
 

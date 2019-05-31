@@ -68,25 +68,22 @@ class RNNEncoder(EncoderBase):
         # s_len, batch, emb_dim = emb.size()
 
         packed_emb = emb
-        print(packed_emb.size())
         if lengths is not None and not self.no_pack_padded_seq:
             # Lengths data is wrapped inside a Tensor.
             lengths_list = lengths.view(-1).tolist()
+            #remove pad
             packed_emb = pack(emb, lengths_list)
-        print(packed_emb.size())
-        print(lengths.size())
 
-        memory_bank, encoder_final = self.rnn(packed_emb)
+        memory_bank, encoder_final = self.rnn(packed_emb)#without pad(why?)
 
         if lengths is not None and not self.no_pack_padded_seq:
+            #add pad
             memory_bank = unpack(memory_bank)[0]
 
 
         if self.use_bridge:
             encoder_final = self._bridge(encoder_final)
 
-        #print(encoder_final.size())
-        print()
         return encoder_final, memory_bank, lengths
 
     def _initialize_bridge(self, rnn_type,

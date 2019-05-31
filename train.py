@@ -6,6 +6,11 @@
 """
 train.main
 opennmt.train_single.main
+    onmt.inputters.inputter.build_dataset_iter
+        DatasetLazyIter
+            __iter__
+                _iter_dataset
+                    OrderedIterator
     model_builder.build_model
         model_builder.build_base_model
             model_builder.build_encoder(option)
@@ -14,6 +19,8 @@ opennmt.train_single.main
             model_builder.build_decoder
                 rnn_decoder_from_opt
                     rnn_decoder.init
+                        run_decoder._build_rnn
+
             onmt.models.NMTmodel(encoder,decoder)
     trainer.build_trainer
     opennmt.trainer.trainer.train
@@ -21,6 +28,7 @@ opennmt.train_single.main
         models.model.forward
             rnn_encoder.forward
             rnn_decoder.forward
+
 
 モデルのセーブ
 opennmt.trainer.Trainer model.saver
