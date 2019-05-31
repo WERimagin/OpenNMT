@@ -126,14 +126,13 @@ def data_process(input_path,train=False):
 
 
 
-    if 1:
-        if train==True:
-            with open("data/squad-data-train.json","w")as f:
-                json.dump(data_list,f,indent=4)
+    if train==True:
+        with open("data/squad-data-train.json","w")as f:
+            json.dump(data_list,f,indent=4)
 
-        if train==False:
-            with open("data/squad-data-dev.json","w")as f:
-                json.dump(data_list,f,indent=4)
+    if train==False:
+        with open("data/squad-data-dev.json","w")as f:
+            json.dump(data_list,f,indent=4)
 
 
 
@@ -144,6 +143,7 @@ if __name__ == "__main__":
     data_process(input_path="data/squad-dev-v1.1.json",
                 train=False
                 )
-    data_process(input_path="data/squad-train-v1.1.json",
-                train=True
-                )
+    if 0:
+        data_process(input_path="data/squad-train-v1.1.json",
+                    train=True
+                    )
