@@ -144,8 +144,8 @@ def data_process(input_path,interro_path,train=False):
                 sentences.append(sentence_text)
                 questions.append(question_text)
                 answers.append(answer_text)
-                interros.append(interro)
-                non_interros.append(non_interro)
+                interros.append(interro_text)
+                non_interros.append(non_interro_text)
 
 
     print(all_count)
