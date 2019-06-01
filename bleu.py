@@ -21,6 +21,7 @@ parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt",
 parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 
+parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
 parser.add_argument("--not_interro", action="store_true")
 
 parser.add_argument("--notsplit", action="store_true")
