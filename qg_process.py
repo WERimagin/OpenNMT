@@ -139,8 +139,6 @@ def data_process(input_path,interro_path,train=False):
                 if use_interro:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
 
-
-
                 sentences.append(sentence_text)
                 questions.append(question_text)
                 answers.append(answer_text)
