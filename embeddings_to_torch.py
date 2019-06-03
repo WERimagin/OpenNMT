@@ -54,7 +54,9 @@ def read_embeddings(file_enc, skip_lines=0, filter_set=None):
                 continue
             embs[l_split[0]] = [float(em) for em in l_split[1:]]
             #print(l_split[0])
-            if i==1000:break
+            if i==1000:
+                print("gameend")
+                break
     return embs, total_vectors_in_file
 
 
