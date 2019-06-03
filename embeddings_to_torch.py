@@ -36,6 +36,8 @@ def get_vocabs(dict_path):
 def read_embeddings(file_enc, skip_lines=0, filter_set=None):
     embs = dict()
     total_vectors_in_file = 0
+    print("start")
+    logger.info("start")
     with open(file_enc, 'rb') as f:
         for i, line in tqdm(enumerate(f)):
             if i < skip_lines:
@@ -56,6 +58,7 @@ def read_embeddings(file_enc, skip_lines=0, filter_set=None):
             #print(l_split[0])
             if i==1000:
                 print("gameend")
+                logger.info("end")
                 break
     return embs, total_vectors_in_file
 
@@ -77,6 +80,7 @@ def calc_vocab_load_stats(vocab, loaded_embed_dict):
 
 
 def main():
+    logger.info("shy?")
     parser = argparse.ArgumentParser(description='embeddings_to_torch.py')
     parser.add_argument('-emb_file_both', required=False,
                         help="loads Embeddings for both source and target "
