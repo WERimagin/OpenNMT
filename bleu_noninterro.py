@@ -61,7 +61,7 @@ with open(args.noninterro,"r")as f:
     for line in f:
         target_noninterros.append(line.strip())
 
-t_noninterros=[t.split() for t in noninterros]
+t_noninterros=[t.split() for t in target_noninterros]
 corenlp=CoreNLP()
 for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
@@ -79,7 +79,7 @@ if tgt_interro!="":
 
 if tgt_interro:
     targets_set=[[t] for t in t_noninterros]
-    predicts_set=[p for p in p_non_interros]
+    predicts_set=[p for p in p_noninterros]
 else:
     #bleu
     target_dict=defaultdict(lambda: [])
