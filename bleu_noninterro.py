@@ -13,6 +13,7 @@ from statistics import mean, median,variance,stdev
 import random
 import json
 import argparse
+import os.path
 
 
 
@@ -23,6 +24,7 @@ parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt",
 parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
+parser.add_argument("--pred_noninterro", type=str, default="data/squad-pred_noninterro-val-interro.txt", help="input model epoch")
 
 parser.add_argument("--tgt_interro", type=str, default="",help="if target_interro is not tgt_interro, skip")
 
@@ -36,7 +38,8 @@ srcs=[]
 targets=[]
 predicts=[]
 interros=[]
-noninterros=[]
+target_noninterros=[]
+pred_noninterros=[]
 
 with open(args.src,"r")as f:
     for line in f:
@@ -56,36 +59,39 @@ with open(args.interro,"r")as f:
 
 with open(args.noninterro,"r")as f:
     for line in f:
-        noninterros.append(line.strip())
+        target_noninterros.append(line.strip())
 
-#check interro is tgt_interro and data_size trim
-data_size=int(len(srcs)*args.ratio)
-srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
-targets=[targets[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
-predicts=[predicts[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
-noninterros=[noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
-
-#extract noninterro(who are you? -> are you ?)
-count=0
-p_noninterros=[]
+t_noninterros=[t.split() for t in noninterros]
 corenlp=CoreNLP()
 for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
-    count+=1
     p_noninterros.append(p_noninterro)
-t_noninterros=[t.split() for t in noninterros]
 
-#bleu
-target_dict=defaultdict(lambda: [])
-predict_dict=defaultdict(str)
+if tgt_interro!="":
+    #check interro is tgt_interro and data_size trim
+    data_size=int(len(srcs)*args.ratio)
+    srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+    targets=[targets[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+    predicts=[predicts[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+    t_noninterros=[target_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
+    p_noninterros=[pred_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
 
-src_set=set(srcs)
-for s,t,p in zip(srcs,t_noninterros,p_noninterros):
-    target_dict[s].append(t)
-    predict_dict[s]=p
 
-targets_set=[target_dict[s] for s in src_set]
-predicts_set=[predict_dict[s] for s in src_set]
+if tgt_interro:
+    targets_set=[[t] for t in t_noninterros]
+    predicts_set=[p for p in p_non_interros]
+else:
+    #bleu
+    target_dict=defaultdict(lambda: [])
+    predict_dict=defaultdict(str)
+
+    src_set=set(srcs)
+    for s,t,p in zip(srcs,t_noninterros,p_noninterros):
+        target_dict[s].append(t)
+        predict_dict[s]=p
+
+    targets_set=[target_dict[s] for s in src_set]
+    predicts_set=[predict_dict[s] for s in src_set]
 
 print(len(targets_set),len(predicts_set))
 print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
@@ -99,16 +105,18 @@ print()
 
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
+if tgt_interro:
+    pass
+else:
+    target_dict=defaultdict(lambda: [])
+    predict_dict=defaultdict(str)
+    src_set=set(srcs)
+    for s,t,p in zip(srcs,targets,predicts):
+        target_dict[s].append(t)
+        predict_dict[s]=p
 
-target_dict=defaultdict(lambda: [])
-predict_dict=defaultdict(str)
-src_set=set(srcs)
-for s,t,p in zip(srcs,targets,predicts):
-    target_dict[s].append(t)
-    predict_dict[s]=p
-
-targets=[target_dict[s] for s in src_set]
-predicts=[predict_dict[s] for s in src_set]
+    targets=[target_dict[s] for s in src_set]
+    predicts=[predict_dict[s] for s in src_set]
 
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.5,0.5,0,0)))

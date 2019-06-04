@@ -147,10 +147,6 @@ def data_process(input_path,interro_path,train=False):
 
 
     print(all_count)
-    print(noise_count)
-    print(non_interro_count)
-    print(overlap_count)
-    print(len(sentences))
 
     if use_interro==True:
         setting="-interro"
