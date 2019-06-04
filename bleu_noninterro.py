@@ -68,7 +68,7 @@ for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
     p_noninterros.append(p_noninterro)
 
-if tgt_interro!="":
+if args.tgt_interro!="":
     #check interro is tgt_interro and data_size trim
     data_size=int(len(srcs)*args.ratio)
     srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
