@@ -26,7 +26,7 @@ parser.add_argument("--interro", type=str, default="data/squad-interro-val-inter
 parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
 parser.add_argument("--pred_noninterro", type=str, default="data/squad-pred_noninterro-val-interro.txt", help="input model epoch")
 
-parser.add_argument("--tgt_interro", action="store_true")
+parser.add_argument("--not_interro", action="store_true")
 
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
 parser.add_argument("--print", action="store_true", help="input model epoch")
@@ -68,7 +68,7 @@ for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
     p_noninterros.append(p_noninterro)
 
-if args.tgt_interro!="":
+if 0:
     #check interro is tgt_interro and data_size trim
     data_size=int(len(srcs)*args.ratio)
     srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
@@ -78,7 +78,7 @@ if args.tgt_interro!="":
     p_noninterros=[pred_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
 
 
-if tgt_interro:
+if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
     predicts_set=[p for p in p_noninterros]
 else:
@@ -106,7 +106,7 @@ print()
 
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
-if tgt_interro:
+if args.not_interro:
     pass
 else:
     target_dict=defaultdict(lambda: [])
