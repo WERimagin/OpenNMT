@@ -63,6 +63,7 @@ with open(args.noninterro,"r")as f:
 
 t_noninterros=[t.split() for t in target_noninterros]
 corenlp=CoreNLP()
+p_noninterros=[]
 for p in tqdm(predicts):
     interro,p_noninterro=corenlp.forward(p)
     p_noninterros.append(p_noninterro)
