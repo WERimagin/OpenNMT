@@ -23,6 +23,7 @@ parser.add_argument("--interro", type=str, default="data/squad-interro-val-inter
 
 parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
 parser.add_argument("--not_interro", action="store_true")
+parser.add_argument("--all_interro", action="store_true")
 
 parser.add_argument("--notsplit", action="store_true")
 parser.add_argument("--print", action="store_true")
@@ -60,6 +61,16 @@ predicts=[p.split() for p in predicts]
 if args.not_interro:
     targets=[[t] for t in targets]
     predicts=predicts
+elif args.all_interro:
+    target_dict=defaultdict(lambda: [])
+    predict_dict=defaultdict(str)
+    src_set=set(srcs)
+    for s,t,p,i in zip(srcs,targets,predicts,interros):
+        target_dict[s].append(t)
+        predict_dict[s]=p
+
+    targets=[target_dict[s] for s in src_set if s in target_dict]
+    predicts=[predict_dict[s] for s in src_set if s in predict_dict]
 else:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
@@ -67,8 +78,8 @@ else:
     for s,t,p,i in zip(srcs,targets,predicts,interros):
         if args.tgt_interro!="" and not (args.tgt_interro in i):
             continue
-        target_dict[s].append(t)
-        predict_dict[s]=p
+        target_dict[i].append(t)
+        predict_dict[i]=p
 
     targets=[target_dict[s] for s in src_set if s in target_dict]
     predicts=[predict_dict[s] for s in src_set if s in predict_dict]
