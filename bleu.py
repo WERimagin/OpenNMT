@@ -74,10 +74,8 @@ elif args.all_interro:
 else:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
-    src_set=set(srcs)
+    src_set=set(interros)
     for s,t,p in zip(interros,targets,predicts):
-        if args.tgt_interro!="" and not (args.tgt_interro in i):
-            continue
         target_dict[s].append(t)
         predict_dict[s]=p
     targets=[target_dict[s] for s in src_set if s in target_dict]
