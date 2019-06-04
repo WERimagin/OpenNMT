@@ -107,7 +107,8 @@ print()
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
 if args.not_interro:
-    pass
+    targets=[[t] for t in targets]
+    predicts=[p for p in predicts]
 else:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
