@@ -75,7 +75,7 @@ else:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
-    for s,t,p,i in zip(interros,targets,predicts):
+    for s,t,p in zip(interros,targets,predicts):
         if args.tgt_interro!="" and not (args.tgt_interro in i):
             continue
         target_dict[s].append(t)
