@@ -87,8 +87,8 @@ else:
     src_set=set(srcs)
     for s,t,p in zip(srcs,t_noninterros,p_noninterros):
         target_dict[s].append(t)
-    targets_set=[target_dict[s] for s,p in zip(srcs,predicts)]
-    predicts_set=predicts
+    targets_set=[target_dict[s] for s,p in zip(srcs,p_noninterros)]
+    predicts_set=p_noninterros
 
 print(len(targets_set),len(predicts_set))
 print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
