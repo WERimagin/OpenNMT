@@ -83,7 +83,8 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=False
+    use_interro=True
+    use_pre_interro=True
 
     questions=[]
     answers=[]
@@ -137,7 +138,10 @@ def data_process(input_path,interro_path,train=False):
                 non_interro_text=" ".join(tokenize(non_interro_text))
 
                 if use_interro:
-                    sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
+                    if use_pre_interro:
+                        sentence_text=" ".join([interro_text,"<SEP>",sentence_text])
+                    else:
+                        sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
 
                 sentences.append(sentence_text)
                 questions.append(question_text)

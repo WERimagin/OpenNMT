@@ -72,14 +72,23 @@ elif args.all_interro:
     targets=[target_dict[s] for s in src_set if s in target_dict]
     predicts=[predict_dict[s] for s in src_set if s in predict_dict]
 else:
-    target_dict=defaultdict(lambda: [])
+    target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
-    src_set=set(interros)
-    for s,t,p in zip(interros,targets,predicts):
+    src_set=set(srcs)
+    for s,t,p in zip(srcs,targets,predicts):
         target_dict[s].append(t)
-        predict_dict[s]=p
+        #predict_dict[p]=s
+        """
+        if p not in predict_dicts[s]:
+            predict_dict[s].append(p)
+        """
+
+    targets=[target_dict[s] for s,p in zip(srcs,predict)]
+    predicts=predicts
+    """
     targets=[target_dict[s] for s in src_set if s in target_dict]
-    predicts=[predict_dict[s] for s in src_set if s in predict_dict]
+    predicts=[predict_dict[s] for p in src_set if s in predict_dict]
+    """
 
     if args.print:
         for i in range(5):
