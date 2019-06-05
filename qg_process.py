@@ -152,9 +152,11 @@ def data_process(input_path,interro_path,train=False):
 
     print(all_count)
 
-    if use_interro==True:
+    if use_interro==True and use_pre_interro==False:
         setting="-interro"
-    else:
+    elif use_interro==True and use_pre_interro==True:
+        setting="-preinterro"
+    elif use_interro==False:
         setting="-normal"
 
     if train==True:
