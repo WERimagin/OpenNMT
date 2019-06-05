@@ -82,17 +82,13 @@ if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
     predicts_set=[p for p in p_noninterros]
 else:
-    #bleu
-    target_dict=defaultdict(lambda: [])
+    target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
-
     src_set=set(srcs)
     for s,t,p in zip(srcs,t_noninterros,p_noninterros):
         target_dict[s].append(t)
-        predict_dict[s]=p
-
-    targets_set=[target_dict[s] for s in src_set]
-    predicts_set=[predict_dict[s] for s in src_set]
+    targets_set=[target_dict[s] for s,p in zip(srcs,predicts)]
+    predicts_set=predicts
 
 print(len(targets_set),len(predicts_set))
 print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
@@ -110,12 +106,13 @@ if args.not_interro:
     targets=[[t] for t in targets]
     predicts=[p for p in predicts]
 else:
-    target_dict=defaultdict(lambda: [])
+    target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
     for s,t,p in zip(srcs,targets,predicts):
         target_dict[s].append(t)
-        predict_dict[s]=p
+    targets=[target_dict[s] for s,p in zip(srcs,predicts)]
+    predicts=predicts
 
     targets=[target_dict[s] for s in src_set]
     predicts=[predict_dict[s] for s in src_set]
