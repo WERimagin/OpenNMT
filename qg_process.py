@@ -120,16 +120,15 @@ def data_process(input_path,interro_path,train=False):
                     non_interro_count+=1
                     continue
 
+                #テキストとノンストップワードが一つも重複してないものは除去
+                if check_overlap(sentence_text,question_text,stop_words)==False:
+                    overlap_count+=1
+                    continue
+
                 if interro_text[-1]=="?":
                     print(interro_text)
                     interro_text=interro_text[:-2]
                     print(interro_text)
-
-                if True:
-                    #テキストとノンストップワードが一つも重複してないものは除去
-                    if check_overlap(sentence_text,question_text,stop_words)==False:
-                        overlap_count+=1
-                        continue
 
                 sentence_text=" ".join(tokenize(sentence_text))
                 question_text=" ".join(tokenize(question_text))

@@ -78,7 +78,6 @@ else:
     for s,t,p in zip(srcs,targets,predicts):
         target_dict[s].append(t)
 
-
     targets=[target_dict[s] for s,p in zip(srcs,predicts)]
     predicts=predicts
     """

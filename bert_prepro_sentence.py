@@ -108,8 +108,15 @@ def data_process(input_path,interro_path,train=False):
                 non_interro=interro_data[all_count]["non_interro"]
                 all_count+=1
 
+                if len(sentence_text)<=5 or len(question_text)<=5:
+                    noise_count+=1
+                    continue
+
                 #疑問詞がないものは削除
                 if interro=="":
+                    continue
+
+                if check_overlap(sentence_text,question_text,stop_words)==False:
                     continue
 
                 if interro[-1]=="?":
@@ -117,11 +124,14 @@ def data_process(input_path,interro_path,train=False):
                     interro=interro[:-2]
                     print(interro)
 
+                sentence_text=" ".join(tokenize(sentence_text))
+                question_text=" ".join(tokenize(question_text))
+                answer_text=" ".join(tokenize(answer_text))
+                interro_text=" ".join(tokenize(interro_text))
+                non_interro_text=" ".join(tokenize(non_interro_text))
+
                 if use_interro:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
-
-                if check_overlap(sentence_text,question_text,stop_words)==False:
-                    continue
 
                 sentences.append(sentence_text)
                 questions.append(question_text)

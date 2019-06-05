@@ -124,19 +124,22 @@ def data_process(input_path,interro_path,modify_path1,modify_path2="",train=Fals
                 non_interro=interro_data[all_count]["non_interro"]
                 all_count+=1
 
-                if True:
-                    #疑問詞がないものは削除
-                    if interro=="":
-                        continue
+                #疑問詞がないものは削除
+                if interro=="":
+                    continue
+
+                if check_overlap(sentence_text,question_text,stop_words)==False:
+                    continue
 
                 modify_question=modify_data[modify_count]
                 modify_count+=1
 
                 question_text=" ".join(tokenize(question_text))
 
-                qas["modify_question"]=False
-                qas["question"]=question_text
-                new_paragraph["qas"].append(qas)
+                if use_original_sentence:
+                    qas["modify_question"]=False
+                    qas["question"]=question_text
+                    new_paragraph["qas"].append(qas)
 
                 if modify or train==False:
                     new_qas=qas.copy()
