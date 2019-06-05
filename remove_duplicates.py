@@ -32,7 +32,7 @@ def check_and_remove_duplicates(sentence, unit_size, start_idx):
             if sequence_list[-1] != temp_sequence:
                 sequence_list.append(temp_sequence)
             elif FLAGS.print==unit_size:
-                print("sentence:{}".format(" ".join(sentence)))
+                print("sentence:{}".format(sentence))
                 print("word:{}".format(temp_sequence))
 
         middle_sentence = ' '.join(sequence_list).strip()
