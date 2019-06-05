@@ -109,11 +109,10 @@ def data_process(input_path,interro_path,train=False):
                 all_count+=1
 
                 if len(sentence_text)<=5 or len(question_text)<=5:
-                    noise_count+=1
                     continue
 
                 #疑問詞がないものは削除
-                if interro=="":
+                if interro_text=="":
                     continue
 
                 if check_overlap(sentence_text,question_text,stop_words)==False:
