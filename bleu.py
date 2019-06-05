@@ -83,18 +83,18 @@ else:
             predict_dict[s].append(p)
         """
 
-    targets=[target_dict[s] for s,p in zip(srcs,predict)]
+    targets=[target_dict[s] for s,p in zip(srcs,predicts)]
     predicts=predicts
     """
     targets=[target_dict[s] for s in src_set if s in target_dict]
     predicts=[predict_dict[s] for p in src_set if s in predict_dict]
     """
 
-    if args.print:
-        for i in range(5):
-            print("target:{}".format(" ".join(targets[i][0])))
-            print("predict:{}".format(" ".join(predicts[i])))
-            print()
+if args.print:
+    for i in range(5):
+        print("target:{}".format(" ".join(targets[i][0])))
+        print("predict:{}".format(" ".join(predicts[i])))
+        print()
 
 print(len(targets),len(predicts))
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
