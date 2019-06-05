@@ -118,7 +118,6 @@ def data_process(input_path,interro_path,train=False):
                     sentence_text=" ".join([sentence_text,"<SEP>",interro])
 
                 if check_overlap(sentence_text,question_text,stop_words)==False:
-                    overlap_count+=1
                     continue
 
                 sentences.append(sentence_text)
