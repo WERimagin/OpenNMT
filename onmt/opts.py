@@ -201,6 +201,8 @@ def model_opts(parser):
               help="Which function to use for generating "
                    "probabilities over the target vocabulary (choices: "
                    "softmax, sparsemax)")
+
+    #コピー系
     group.add('--copy_attn_force', '-copy_attn_force', action="store_true",
               help='When available, train to copy.')
     group.add('--reuse_copy_attn', '-reuse_copy_attn', action="store_true",

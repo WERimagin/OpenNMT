@@ -151,6 +151,9 @@ def data_process(input_path,interro_path,train=False):
     with open("data/squad-tgt-{}-full-{}.txt".format(datatype,setting),"w")as f:
         for i in random_list:
             f.write(questions[i]+"\n")
+    with open("data/squad-ans-{}-full-{}.txt".format(datatype,setting),"w")as f:
+        for i in random_list:
+            f.write(answers[i]+"\n")
 
 
 if __name__ == "__main__":
