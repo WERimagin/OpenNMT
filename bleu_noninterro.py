@@ -26,7 +26,10 @@ parser.add_argument("--interro", type=str, default="data/squad-interro-val-inter
 parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
 parser.add_argument("--p_noninterro", type=str, default="data/squad-pred_noninterro-val-interro.txt", help="input model epoch")
 
+parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
 parser.add_argument("--not_interro", action="store_true")
+parser.add_argument("--all_interro", action="store_true")
+parser.add_argument("--interro_each", action="store_true")
 
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
 parser.add_argument("--print", action="store_true", help="input model epoch")
