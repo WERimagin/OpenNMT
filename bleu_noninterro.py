@@ -90,14 +90,15 @@ if 0:
 if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
     predicts_set=[p for p in p_noninterros]
-elif args.all_interro:
+elif args.interro_same:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
     for s,t,p in zip(srcs,t_noninterros,p_noninterros):
         target_dict[s].append(t)
-    targets_set=[target_dict[s] for s,p in zip(srcs,p_noninterros)]
-    predicts_set=p_noninterros
+        predict_dict[s]=p
+    targets=[target_dict[s] for s in src_set if s in target_dict]
+    predicts=[predict_dict[s] for s in src_set if s in predict_dict]
 elif args.interro_each:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
