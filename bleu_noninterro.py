@@ -106,7 +106,7 @@ elif args.interro_each:
         target_dict[s].append(t)
         predict_dict[" ".join(p)]=s
     targets_set=[target_dict[predict_dict[" ".join(p)]] for p in p_noninterros]
-    predicts_set=predicts
+    predicts_set=p_noninterros
 
 print(len(targets_set),len(predicts_set))
 print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
