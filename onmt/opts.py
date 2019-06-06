@@ -751,9 +751,13 @@ def translate_opts(parser):
                    "(higher = longer generation)")
     group.add('--beta', '-beta', type=float, default=-0.,
               help="Coverage penalty parameter")
+
+    #ngramの繰り返しを発生しないようにする
     group.add('--block_ngram_repeat', '-block_ngram_repeat',
               type=int, default=0,
               help='Block repetition of ngrams during decoding.')
+
+    #これらの単語は発生してもブロックしないようにする
     group.add('--ignore_when_blocking', '-ignore_when_blocking',
               nargs='+', type=str, default=[],
               help="Ignore these strings when blocking repeats. "
