@@ -97,8 +97,8 @@ elif args.same_interro:
     for s,t,p in zip(srcs,t_noninterros,p_noninterros):
         target_dict[s].append(t)
         predict_dict[s]=p
-    targets=[target_dict[s] for s in src_set if s in target_dict]
-    predicts=[predict_dict[s] for s in src_set if s in predict_dict]
+    targets_set=[target_dict[s] for s in src_set if s in target_dict]
+    predicts_set=[predict_dict[s] for s in src_set if s in predict_dict]
 elif args.each_interro:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
