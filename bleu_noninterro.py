@@ -28,8 +28,8 @@ parser.add_argument("--p_noninterro", type=str, default="data/squad-pred_noninte
 
 parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
 parser.add_argument("--not_interro", action="store_true")
-parser.add_argument("--all_interro", action="store_true")
-parser.add_argument("--interro_each", action="store_true")
+parser.add_argument("--same_interro", action="store_true")
+parser.add_argument("--each_interro", action="store_true")
 
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
 parser.add_argument("--print", action="store_true", help="input model epoch")
@@ -90,7 +90,7 @@ if 0:
 if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
     predicts_set=[p for p in p_noninterros]
-elif args.interro_same:
+elif args.same_interro:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
@@ -99,7 +99,7 @@ elif args.interro_same:
         predict_dict[s]=p
     targets=[target_dict[s] for s in src_set if s in target_dict]
     predicts=[predict_dict[s] for s in src_set if s in predict_dict]
-elif args.interro_each:
+elif args.each_interro:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
@@ -128,7 +128,7 @@ if args.not_interro:
     targets=[[t] for t in targets]
     predicts=predicts
 #srcの文を使用して同じものは全てreference
-elif args.all_interro:
+elif args.same_interro:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
     for s,t,p,i in zip(srcs,targets,predicts,interros):
@@ -137,7 +137,7 @@ elif args.all_interro:
     targets=[target_dict[s] for s in src_set if s in target_dict]
     predicts=[predict_dict[s] for s in src_set if s in predict_dict]
 #文と疑問詞が同じもののみをreferenceとして利用する。predictの文は全て違うものであると仮定する
-elif args.interro_each:
+elif args.each_interro:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     for s,t,p in zip(srcs,targets,predicts):
