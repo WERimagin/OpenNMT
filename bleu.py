@@ -24,9 +24,11 @@ parser.add_argument("--interro", type=str, default="data/squad-interro-val-inter
 parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
 parser.add_argument("--not_interro", action="store_true")
 parser.add_argument("--all_interro", action="store_true")
+parser.add_argument("--interro_each", action="store_true")
 
 parser.add_argument("--notsplit", action="store_true")
 parser.add_argument("--print", action="store_true")
+
 
 args = parser.parse_args()
 
@@ -58,9 +60,11 @@ with open(args.interro,"r")as f:
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
 
+#それぞれリファレンスは1対１対応
 if args.not_interro:
     targets=[[t] for t in targets]
     predicts=predicts
+#srcの文を使用して同じものは全てreference
 elif args.all_interro:
     target_dict=defaultdict(lambda: [])
     predict_dict=defaultdict(str)
@@ -68,22 +72,29 @@ elif args.all_interro:
     for s,t,p,i in zip(srcs,targets,predicts,interros):
         target_dict[s].append(t)
         predict_dict[s]=p
-
     targets=[target_dict[s] for s in src_set if s in target_dict]
     predicts=[predict_dict[s] for s in src_set if s in predict_dict]
+#文と疑問詞が同じもののみをreferenceとして利用する。predictの文は全て違うものであると仮定する
+elif args.interro_each:
+    target_dict=defaultdict(lambda:[])
+    predict_dict=defaultdict(str)
+    src_set=set(srcs)
+    for s,t,p in zip(srcs,targets,predicts):
+        target_dict[s].append(t)
+        predict_dict[p]=s
+    targets=[target_dict[predict_dict[p]] for p in predicts]
+    predicts=predicts
+#文と疑問詞が同じもののみをreferenceとして利用する。文と疑問詞が同じ場合は同じ文となることを考慮
 else:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
     for s,t,p in zip(srcs,targets,predicts):
         target_dict[s].append(t)
+        predict_dict[s]=p
+    targets=[target_dict[s] for s in src_set]
+    predicts=[predict_dict[s] for s in src_set]
 
-    targets=[target_dict[s] for s,p in zip(srcs,predicts)]
-    predicts=predicts
-    """
-    targets=[target_dict[s] for s in src_set if s in target_dict]
-    predicts=[predict_dict[s] for p in src_set if s in predict_dict]
-    """
 
 if args.print:
     for i in range(5):
