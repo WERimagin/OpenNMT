@@ -81,8 +81,8 @@ elif args.interro_each:
     src_set=set(srcs)
     for s,t,p in zip(srcs,targets,predicts):
         target_dict[s].append(t)
-        predict_dict[p]=s
-    targets=[target_dict[predict_dict[p]] for p in predicts]
+        predict_dict[" ".join(p)]=s
+    targets=[target_dict[predict_dict[" ".join(p)]] for p in predicts]
     predicts=predicts
 #文と疑問詞が同じもののみをreferenceとして利用する。文と疑問詞が同じ場合は同じ文となることを考慮
 else:
