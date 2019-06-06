@@ -38,8 +38,8 @@ srcs=[]
 targets=[]
 predicts=[]
 interros=[]
-target_noninterros=[]
-pred_noninterros=[]
+t_noninterros=[]
+p_noninterros=[]
 
 with open(args.src,"r")as f:
     for line in f:
@@ -59,14 +59,20 @@ with open(args.interro,"r")as f:
 
 with open(args.noninterro,"r")as f:
     for line in f:
-        target_noninterros.append(line.strip())
+        t_noninterros.append(line.strip().split())
 
-t_noninterros=[t.split() for t in target_noninterros]
-corenlp=CoreNLP()
-p_noninterros=[]
-for p in tqdm(predicts):
-    interro,p_noninterro=corenlp.forward(p)
-    p_noninterros.append(p_noninterro)
+if os.path.exists(args.p_noninterro,"r"):
+    with open(args.p_noninterro,"r")as f:
+        for line in f:
+            p_noninterros.append(line.strip().split())
+else:
+    corenlp=CoreNLP()
+    for p in tqdm(predicts):
+        interro,p_noninterro=corenlp.forward(p)
+        p_noninterros.append(p_noninterro)
+    with open(args.p_noninterro,"w")as f:
+        for line in p_noninterros:
+            f.write(" ".join(line)+"\n")
 
 if 0:
     #check interro is tgt_interro and data_size trim
@@ -81,7 +87,7 @@ if 0:
 if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
     predicts_set=[p for p in p_noninterros]
-else:
+elif args.all_interro:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
     src_set=set(srcs)
@@ -89,6 +95,15 @@ else:
         target_dict[s].append(t)
     targets_set=[target_dict[s] for s,p in zip(srcs,p_noninterros)]
     predicts_set=p_noninterros
+elif args.interro_each:
+    target_dict=defaultdict(lambda:[])
+    predict_dict=defaultdict(str)
+    src_set=set(srcs)
+    for s,t,p in zip(srcs,t_noninterros,p_noninterros):
+        target_dict[s].append(t)
+        predict_dict[" ".join(p)]=s
+    targets_set=[target_dict[predict_dict[" ".join(p)]] for p in p_noninterros]
+    predicts_set=predicts
 
 print(len(targets_set),len(predicts_set))
 print(corpus_bleu(targets_set,predicts_set,weights=(1,0,0,0)))
@@ -102,20 +117,30 @@ print()
 
 targets=[t.split() for t in targets]
 predicts=[p.split() for p in predicts]
+src_set=set(srcs)
+
+#それぞれリファレンスは1対１対応
 if args.not_interro:
     targets=[[t] for t in targets]
-    predicts=[p for p in predicts]
-else:
+    predicts=predicts
+#srcの文を使用して同じものは全てreference
+elif args.all_interro:
+    target_dict=defaultdict(lambda: [])
+    predict_dict=defaultdict(str)
+    for s,t,p,i in zip(srcs,targets,predicts,interros):
+        target_dict[s].append(t)
+        predict_dict[s]=p
+    targets=[target_dict[s] for s in src_set if s in target_dict]
+    predicts=[predict_dict[s] for s in src_set if s in predict_dict]
+#文と疑問詞が同じもののみをreferenceとして利用する。predictの文は全て違うものであると仮定する
+elif args.interro_each:
     target_dict=defaultdict(lambda:[])
     predict_dict=defaultdict(str)
-    src_set=set(srcs)
     for s,t,p in zip(srcs,targets,predicts):
         target_dict[s].append(t)
-    targets=[target_dict[s] for s,p in zip(srcs,predicts)]
+        predict_dict[" ".join(p)]=s
+    targets=[target_dict[predict_dict[" ".join(p)]] for p in predicts]
     predicts=predicts
-
-    targets=[target_dict[s] for s in src_set]
-    predicts=[predict_dict[s] for s in src_set]
 
 print(corpus_bleu(targets,predicts,weights=(1,0,0,0)))
 print(corpus_bleu(targets,predicts,weights=(0.5,0.5,0,0)))

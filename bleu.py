@@ -84,16 +84,7 @@ elif args.interro_each:
         predict_dict[" ".join(p)]=s
     targets=[target_dict[predict_dict[" ".join(p)]] for p in predicts]
     predicts=predicts
-#文と疑問詞が同じもののみをreferenceとして利用する。文と疑問詞が同じ場合は同じ文となることを考慮
-else:
-    target_dict=defaultdict(lambda:[])
-    predict_dict=defaultdict(str)
-    src_set=set(srcs)
-    for s,t,p in zip(srcs,targets,predicts):
-        target_dict[s].append(t)
-        predict_dict[s]=p
-    targets=[target_dict[s] for s in src_set]
-    predicts=[predict_dict[s] for s in src_set]
+
 
 
 if args.print:
