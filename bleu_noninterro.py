@@ -61,7 +61,7 @@ with open(args.noninterro,"r")as f:
     for line in f:
         t_noninterros.append(line.strip().split())
 
-if os.path.exists(args.p_noninterro,"r"):
+if os.path.exists(args.p_noninterro):
     with open(args.p_noninterro,"r")as f:
         for line in f:
             p_noninterros.append(line.strip().split())
