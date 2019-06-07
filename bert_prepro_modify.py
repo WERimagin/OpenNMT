@@ -77,21 +77,16 @@ def overlap_rm(sentence):
     return " ".join(new_sentence)
 
 
-def data_process(input_path,interro_path,modify_path1,modify_path2="",train=False):
+def data_process(input_path,interro_path,train=False,args):
     with open(input_path,"r") as f:
         data=json.load(f)
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
     modify_data=[]
-    with open(modify_path1,"r") as f:
+    with open(args.modify_path,"r") as f:
         for line in f:
             modify_data.append(line.rstrip())
-    if modify_path2!="":
-        with open(modify_path2,"r") as f:
-            for line in f:
-                modify_data.append(line.rstrip())
-
     print(len(modify_data))
 
     questions=[]
@@ -103,8 +98,8 @@ def data_process(input_path,interro_path,modify_path1,modify_path2="",train=Fals
     all_count=0
     modify_count=0
 
-    original=True
-    modify=True
+    original=args.original
+    modify=args.modify
 
     new_data={"data":[],
                 "version":"1.1"}
@@ -180,16 +175,23 @@ def data_process(input_path,interro_path,modify_path1,modify_path2="",train=Fals
 
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description="bert_prepro")
+    parser.add_argument("--model_path", type=str, default="")
+    parser.add_argument("--modify", action="store_true")
+    parser.add_argument("--original", action="store_true")
+    args = parser.parse_args()
+
     random.seed(0)
 
     data_process(input_path="data/squad-dev-v1.1.json",
                 interro_path="data/squad-data-dev.json",
-                modify_path1="data/squad-pred-dev-full-sentence.txt",
-                train=False
+                train=False,
+                args
                 )
 
     data_process(input_path="data/squad-train-v1.1.json",
                 interro_path="data/squad-data-train.json",
-                modify_path1="data/squad-pred-train-full-sentence.txt",
-                train=True
+                train=True,
+                args
                 )
