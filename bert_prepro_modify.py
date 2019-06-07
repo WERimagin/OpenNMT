@@ -187,14 +187,14 @@ if __name__ == "__main__":
 
     data_process(input_path="data/squad-dev-v1.1.json",
                 interro_path="data/squad-data-dev.json",
-                modify_path=parg.modify_path_dev,
+                modify_path=arg.modify_path_dev,
                 train=False,
                 args=args
                 )
 
     data_process(input_path="data/squad-train-v1.1.json",
                 interro_path="data/squad-data-train.json",
-                modify_path=parg.modify_path_train,
+                modify_path=arg.modify_path_train,
                 train=True,
                 args=args
                 )
