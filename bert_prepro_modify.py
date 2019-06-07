@@ -163,7 +163,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
     if original and modify:
         setting="original-modify"
     if not original and modify:
-        settin="modify"
+        setting="modify"
 
     if train:
         with open("data/squad-train-{}.json".format(setting),"w")as f:
