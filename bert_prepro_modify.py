@@ -166,10 +166,10 @@ def data_process(input_path,interro_path,modify_path,train,args):
         setting="modify"
 
     if train:
-        with open("data/squad-train-{}.json".format(setting),"w")as f:
+        with open("data/squad-train-{}-{}.json".format(args.output_name,setting),"w")as f:
             json.dump(new_data,f,indent=4)
     else:
-        with open("data/squad-dev-{}.json".format(setting),"w")as f:
+        with open("data/squad-dev-{}-{}.json".format(args.output_name,setting),"w")as f:
             json.dump(new_data,f,indent=4)
 
 
@@ -179,8 +179,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="bert_prepro")
     parser.add_argument("--modify_path_train", type=str, default="")
     parser.add_argument("--modify_path_dev", type=str, default="")
+    parser.add_argument("--output_name", type=str, default="")
     parser.add_argument("--modify", action="store_true")
     parser.add_argument("--original", action="store_true")
+
     args = parser.parse_args()
 
     random.seed(0)
