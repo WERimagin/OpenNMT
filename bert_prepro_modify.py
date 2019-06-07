@@ -103,6 +103,7 @@ def data_process(input_path,interro_path,modify_path1,modify_path2="",train=Fals
     all_count=0
     modify_count=0
 
+    original=True
     modify=True
 
     new_data={"data":[],
@@ -120,28 +121,36 @@ def data_process(input_path,interro_path,modify_path1,modify_path2="",train=Fals
                 sentence_text=interro_data[all_count]["sentence_text"]
                 question_text=interro_data[all_count]["question_text"]
                 answer_text=interro_data[all_count]["answer_text"]
-                interro=interro_data[all_count]["interro"]
-                non_interro=interro_data[all_count]["non_interro"]
+                interro_text=interro_data[all_count]["interro"]
+                non_interro_text=interro_data[all_count]["non_interro"]
                 all_count+=1
 
+                if len(sentence_text)<=5 or len(question_text)<=5:
+                    continue
+
                 #疑問詞がないものは削除
-                if interro=="":
+                if interro_text=="":
                     continue
 
                 if check_overlap(sentence_text,question_text,stop_words)==False:
                     continue
 
-                modify_question=modify_data[modify_count]
+                if interro_text[-1]=="?":
+                    print(interro_text)
+                    interro_text=interro_text[:-2]
+                    print(interro_text)
+
+                modify_question=modify_data[modify_count]#生成した質問文
                 modify_count+=1
 
                 question_text=" ".join(tokenize(question_text))
 
-                if use_original_sentence:
+                if original and train:
                     qas["modify_question"]=False
                     qas["question"]=question_text
                     new_paragraph["qas"].append(qas)
 
-                if modify or train==False:
+                if modify or !train:
                     new_qas=qas.copy()
                     new_qas["modify_question"]=True
                     new_qas["id"]=new_qas["id"]+"-modify_question"
@@ -154,10 +163,12 @@ def data_process(input_path,interro_path,modify_path1,modify_path2="",train=Fals
     print(all_count)
     print(modify_count)
 
-    if modify==False:
-        setting="normal"
-    else:
-        setting="modify-sentence"
+    if original and !modify:
+        setting="original"
+    if original and modify:
+        setting="original-modify"
+    if !original and modify:
+        settin="modify"
 
     if train:
         with open("data/squad-train-{}.json".format(setting),"w")as f:

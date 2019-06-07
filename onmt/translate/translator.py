@@ -831,9 +831,9 @@ class Translator(object):
             msg = "%s No words predicted" % (name,)
         else:
             msg="none"
-            #msg = ("%s AVG SCORE: %.4f, %s PPL: %.4f" % (
-            #    name, score_total / words_total,
-            #    name, math.exp(-score_total / words_total)))
+            msg = ("%s AVG SCORE: %.4f, %s PPL: %.4f" % (
+                name, score_total / words_total,
+                name, math.exp(-score_total / words_total)))
         return msg
 
     def _report_bleu(self, tgt_path):
