@@ -77,7 +77,7 @@ def overlap_rm(sentence):
     return " ".join(new_sentence)
 
 
-def data_process(input_path,interro_path,train=False,args):
+def data_process(input_path,interro_path,modify_path,train,args):
     with open(input_path,"r") as f:
         data=json.load(f)
     with open(interro_path,"r") as f:
@@ -177,7 +177,8 @@ def data_process(input_path,interro_path,train=False,args):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="bert_prepro")
-    parser.add_argument("--model_path", type=str, default="")
+    parser.add_argument("--model_path_train", type=str, default="")
+    parser.add_argument("--model_path_dev", type=str, default="")
     parser.add_argument("--modify", action="store_true")
     parser.add_argument("--original", action="store_true")
     args = parser.parse_args()
@@ -186,12 +187,14 @@ if __name__ == "__main__":
 
     data_process(input_path="data/squad-dev-v1.1.json",
                 interro_path="data/squad-data-dev.json",
+                modify_path=parg.modify_path_dev,
                 train=False,
-                args
+                args=args
                 )
 
     data_process(input_path="data/squad-train-v1.1.json",
                 interro_path="data/squad-data-train.json",
+                modify_path=parg.modify_path_train,
                 train=True,
-                args
+                args=args
                 )
