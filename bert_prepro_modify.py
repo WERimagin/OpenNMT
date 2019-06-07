@@ -17,7 +17,7 @@ import pickle
 import collections
 import random
 from nltk.corpus import stopwords
-from nltk.corpus import stopwords
+import argparse
 
 
 #sentenceとquestionで共通するノンストップワードが一つもない場合False
