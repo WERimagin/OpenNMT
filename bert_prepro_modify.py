@@ -177,8 +177,8 @@ def data_process(input_path,interro_path,modify_path,train,args):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="bert_prepro")
-    parser.add_argument("--model_path_train", type=str, default="")
-    parser.add_argument("--model_path_dev", type=str, default="")
+    parser.add_argument("--modify_path_train", type=str, default="")
+    parser.add_argument("--modify_path_dev", type=str, default="")
     parser.add_argument("--modify", action="store_true")
     parser.add_argument("--original", action="store_true")
     args = parser.parse_args()
