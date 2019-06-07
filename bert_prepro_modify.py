@@ -84,7 +84,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
         interro_data=json.load(f)
 
     modify_data=[]
-    with open(args.modify_path,"r") as f:
+    with open(modify_path,"r") as f:
         for line in f:
             modify_data.append(line.rstrip())
     print(len(modify_data))
