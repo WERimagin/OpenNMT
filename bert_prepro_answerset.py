@@ -107,7 +107,7 @@ def data_process(input_path,interro_path,train,args):
                             "qas":[]}
             context_text=paragraph["context"].lower()
 
-            sentence_interro_dict=defaultdict([])
+            sentence_interro_dict=defaultdict(list)
 
             #辞書にsentenceとinterroのペアで対応する答えを書き出し
             for qas in paragraph["qas"]:
