@@ -106,7 +106,6 @@ def data_process(input_path,interro_path,train,args):
             new_paragraph={"context":paragraph["context"],
                             "qas":[]}
             context_text=paragraph["context"].lower()
-
             sentence_interro_dict=defaultdict(list)
 
             #辞書にsentenceとinterroのペアで対応する答えを書き出し
@@ -134,6 +133,7 @@ def data_process(input_path,interro_path,train,args):
                     print(interro_text)
                 sentence_interro_dict[(sentence_text,interro_text)]+=qas["answers"]
 
+            all_count-=len(paragraph["qas"])#巻き戻し
             #辞書から引き出し
             for qas in paragraph["qas"]:
                 sentence_text=interro_data[all_count]["sentence_text"]
