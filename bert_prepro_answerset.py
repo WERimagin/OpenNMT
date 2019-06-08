@@ -78,7 +78,7 @@ def overlap_rm(sentence):
     return " ".join(new_sentence)
 
 
-def data_process(input_path,interro_path,modify_path,train,args):
+def data_process(input_path,interro_path,train,args):
     with open(input_path,"r") as f:
         data=json.load(f)
     with open(interro_path,"r") as f:
