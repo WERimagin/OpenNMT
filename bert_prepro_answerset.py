@@ -162,7 +162,7 @@ def data_process(input_path,interro_path,train,args):
                 answers=sentence_interro_dict[(sentence_text,interro_text)]
 
                 qas["modify_question"]=True
-                qas["id"]=new_qas["id"]+"-modify_question"
+                qas["id"]=qas["id"]+"-modify_question"
                 qas["question"]=question_text
                 qas["answers"]=answers
                 new_paragraph["qas"].append(qas)
