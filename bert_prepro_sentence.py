@@ -76,10 +76,6 @@ def overlap_rm(sentence):
     new_sentence=[sentence[i] for i in range(len(sentence)) if i not in rm_index]
     return " ".join(new_sentence)
 
-
-
-
-
 def data_process(input_path,interro_path,train=False):
     with open(input_path,"r") as f:
         data=json.load(f)
