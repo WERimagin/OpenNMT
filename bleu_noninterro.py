@@ -84,7 +84,7 @@ if args.tgt_interro!=""
     predicts=[predicts[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
     t_noninterros=[t_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
     p_noninterros=[p_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
-    print(data_size,args.tgt_interro)
+    print(len(srcs),args.tgt_interro)
 
 if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
