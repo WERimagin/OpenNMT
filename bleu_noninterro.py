@@ -77,7 +77,7 @@ else:
         for line in p_noninterros:
             f.write(" ".join(line)+"\n")
 
-if args.tgt_interro!=""
+if args.tgt_interro!="":
     data_size=len(srcs)
     srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
     targets=[targets[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
