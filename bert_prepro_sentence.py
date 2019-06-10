@@ -86,7 +86,7 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=False
+    use_interro=True
 
     questions=[]
     answers=[]
