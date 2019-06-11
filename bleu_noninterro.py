@@ -32,7 +32,7 @@ parser.add_argument("--same_interro", action="store_true")
 parser.add_argument("--each_interro", action="store_true")
 
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
-parser.add_argument("--print", type=int ,dafault=0)
+parser.add_argument("--print", type=int ,default=0)
 args = parser.parse_args()
 
 random.seed(0)
