@@ -92,7 +92,7 @@ if args.tgt_interro!="":
     print(len(srcs),args.tgt_interro)
 
 np.random.seed(0)
-randomlist=np.random.permututation(np.arange(len(srcs)))
+randomlist=np.random.permutation(np.arange(len(srcs)))
 for i in randomlist[0:args.print]:
     print(srcs[i])
     print(targets[i])
