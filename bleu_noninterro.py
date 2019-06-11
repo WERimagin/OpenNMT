@@ -32,7 +32,7 @@ parser.add_argument("--same_interro", action="store_true")
 parser.add_argument("--each_interro", action="store_true")
 
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
-parser.add_argument("--print", action="store_true", help="input model epoch")
+parser.add_argument("--print", type=int ,dafault=0)
 args = parser.parse_args()
 
 random.seed(0)
@@ -77,6 +77,10 @@ else:
         for line in p_noninterros:
             f.write(" ".join(line)+"\n")
 
+
+
+
+
 if args.tgt_interro!="":
     data_size=len(srcs)
     srcs=[srcs[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
@@ -85,6 +89,12 @@ if args.tgt_interro!="":
     t_noninterros=[t_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
     p_noninterros=[p_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
     print(len(srcs),args.tgt_interro)
+
+
+for i in range(args.print):
+    print(srcs[i])
+    print(targets[i])
+    print()
 
 if args.not_interro:
     targets_set=[[t] for t in t_noninterros]
