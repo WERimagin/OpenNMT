@@ -14,6 +14,7 @@ import random
 import json
 import argparse
 import os.path
+import numpy as np
 
 
 
@@ -90,8 +91,9 @@ if args.tgt_interro!="":
     p_noninterros=[p_noninterros[i] for i in range(data_size) if args.tgt_interro=="" or args.tgt_interro in interros[i]]
     print(len(srcs),args.tgt_interro)
 
-
-for i in range(args.print):
+np.random.seed(0)
+randomlist=np.random.permututation(np.arange(len(srcs)))
+for i in randomlist[0:args.print]:
     print(srcs[i])
     print(targets[i])
     print(predicts[i])
