@@ -93,7 +93,7 @@ if args.tgt_interro!="":
 
 for i in range(args.print):
     print(srcs[i])
-    print(targets[i])
+    print(predicts[i])
     print()
 
 if args.not_interro:
