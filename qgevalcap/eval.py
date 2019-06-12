@@ -96,8 +96,8 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
         res[key] = [pair['prediction'].encode('utf-8')]
         gts[key].append(pair['tokenized_question'].encode('utf-8'))
 
-    print(len(pairs))
-    print(len(res.items()))
+    #print(len(pairs))
+    print("size of items:{}".format(len(res.items())))
 
     QGEval = QGEvalCap(gts, res)
     return QGEval.evaluate()
