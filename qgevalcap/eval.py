@@ -99,8 +99,8 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
         p=pair['tokenized_question'].encode('utf-8')
         target_dict[s].append(t)
         predict_dict[p]=s
-    gts=[target_dict[predict_dict[p]] for p in output]
-    res=output
+    gts={i:target_dict[predict_dict[p]] for i,p in enumerate(output)}
+    res={i:p for i,p in enumerate(output)}
 
     """
     res = defaultdict(lambda: [])
@@ -111,7 +111,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
         gts[key].append(pair['tokenized_question'].encode('utf-8'))
     """
 
-    
+
     #print(len(pairs))
     print("size of items:{}".format(len(res.items())))
 
