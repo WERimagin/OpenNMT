@@ -95,8 +95,8 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
         predict_dict=defaultdict(str)
         for i,pair in enumerate(pairs):
             s=pair["tokenized_sentence"]
-            t=pair['prediction'].encode('utf-8')
-            p=pair['tokenized_question'].encode('utf-8')
+            t=pair['tokenized_question'].encode('utf-8')
+            p=pair['prediction'].encode('utf-8')
             target_dict[s].append(t)
             predict_dict[p]=s
 
