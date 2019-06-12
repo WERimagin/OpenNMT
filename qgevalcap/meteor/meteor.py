@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Python wrapper for METEOR implementation, by Xinlei Chen
-# Acknowledge Michael Denkowski for the generous discussion and help 
+# Acknowledge Michael Denkowski for the generous discussion and help
 
 import os
 import sys
@@ -16,9 +16,9 @@ class Meteor:
 
     def __init__(self):
         self.meteor_cmd = ['java', '-jar', '-Xmx2G', METEOR_JAR, \
-                '-', '-', '-stdio', '-l', 'en', 
+                '-', '-', '-stdio', '-l', 'en',
                 '-norm',
-                # '-t', 'adq' 
+                # '-t', 'adq'
                 # '-p', '0.85 0.2 0.6 0.75' # alpha beta gamma delta'',
                 # '-a', 'data/paraphrase-en.gz', '-m', 'exact stem paraphrase']
                 ]
@@ -58,6 +58,7 @@ class Meteor:
         hypothesis_str = hypothesis_str.replace('|||','').replace('  ',' ')
         score_line = ' ||| '.join(('SCORE', ' ||| '.join(reference_list), hypothesis_str.encode('utf-8')))
         # print score_line
+        print(score_line)
         self.meteor_p.stdin.write('{}\n'.format(score_line.encode('utf-8')))
         return self.meteor_p.stdout.readline().strip()
 
@@ -69,7 +70,7 @@ class Meteor:
         self.meteor_p.stdin.write('{}\n'.format(score_line))
         stats = self.meteor_p.stdout.readline().strip()
         eval_line = 'EVAL ||| {}'.format(stats)
-        # EVAL ||| stats 
+        # EVAL ||| stats
         self.meteor_p.stdin.write('{}\n'.format(eval_line))
         score = float(self.meteor_p.stdout.readline().strip())
         # bug fix: there are two values returned by the jar file, one average, and one all, so do it twice
@@ -77,7 +78,7 @@ class Meteor:
         score = float(self.meteor_p.stdout.readline().strip())
         self.lock.release()
         return score
- 
+
     def __del__(self):
         self.lock.acquire()
         self.meteor_p.stdin.close()
