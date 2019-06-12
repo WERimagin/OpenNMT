@@ -267,17 +267,17 @@ class BleuScorer(object):
 
         bleus = []
         bleu = 1.
-        print(totalcomps['correct'])
-        print(totalcomps['guess'])
-        print(self._testlen,self._reflen)
+        #print(totalcomps['correct'])
+        #print(totalcomps['guess'])
+        #print(self._testlen,self._reflen)
         #for bleu method(n=4)
         #この段階でtotalcompsで既に計算済み,あとは処理するだけ
         for k in xrange(n):
             bleu *= float(totalcomps['correct'][k] + tiny) \
                     / (totalcomps['guess'][k] + small)
             bleus.append(bleu ** (1./(k+1)))
-            print(bleu,bleu ** (1./(k+1)))
-            print(totalcomps['correct'][k],totalcomps['guess'][k])
+            #print(bleu,bleu ** (1./(k+1)))
+            #print(totalcomps['correct'][k],totalcomps['guess'][k])
         ratio = (self._testlen + tiny) / (self._reflen + small) ## N.B.: avoid zero division
         if ratio < 1:
             for k in xrange(n):
@@ -288,7 +288,7 @@ class BleuScorer(object):
             print "ratio:", ratio
 
         self._score = bleus
-        print(ratio)
-        print(bleus)
-        print(self._score,len(bleu_list))
+        #print(ratio)
+        #print(bleus)
+        #print(self._score,len(bleu_list))
         return self._score, bleu_list
