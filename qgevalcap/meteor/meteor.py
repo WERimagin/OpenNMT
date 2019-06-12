@@ -22,8 +22,6 @@ class Meteor:
                 # '-p', '0.85 0.2 0.6 0.75' # alpha beta gamma delta'',
                 # '-a', 'data/paraphrase-en.gz', '-m', 'exact stem paraphrase']
                 ]
-        print(os.path.abspath(__file__))
-        print(os.path.dirname(os.path.abspath(__file__)))
         self.meteor_p = subprocess.Popen(self.meteor_cmd, \
                 cwd=os.path.dirname(os.path.abspath(__file__)), \
                 stdin=subprocess.PIPE, \
@@ -44,11 +42,8 @@ class Meteor:
             stat = self._stat(res[i][0], gts[i])
             eval_line += ' ||| {}'.format(stat)
 
-        print(1)
         self.meteor_p.stdin.write('{}\n'.format(eval_line))
-        print(2)
         for i in range(0,len(imgIds)):
-            print(3)
             scores.append(float(self.meteor_p.stdout.readline().strip()))
         score = float(self.meteor_p.stdout.readline().strip())
         self.lock.release()
@@ -64,13 +59,7 @@ class Meteor:
         score_line = ' ||| '.join(('SCORE', ' ||| '.join(reference_list), hypothesis_str.encode('utf-8')))
         # print score_line
         #print(score_line)
-        print("s1")
-        print(type(self.meteor_p))
-        ##test
-        self.meteor_p.stdin.write('{}\n'.format("--version"))
-
         self.meteor_p.stdin.write('{}\n'.format(score_line.encode('utf-8')))
-        print("s2")
         return self.meteor_p.stdout.readline().strip()
 
     def _score(self, hypothesis_str, reference_list):
