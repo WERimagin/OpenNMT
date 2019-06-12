@@ -99,8 +99,11 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
             p=pair['tokenized_question'].encode('utf-8')
             target_dict[s].append(t)
             predict_dict[p]=s
+
+        print(list(target_dict.items())[0:5])
+        print(list(predict_dict.items())[0:5])
         gts={i:target_dict[predict_dict[p]] for i,p in enumerate(output)}
-        res={i:p for i,p in enumerate(output)}
+        res={i:[p] for i,p in enumerate(output)}
         print(list(res.items())[0:5])
         print(list(gts.items())[0:5])
 
