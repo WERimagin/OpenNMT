@@ -22,8 +22,8 @@ class QGEvalCap:
         output = []
         scorers = [
             (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
-            (Meteor(),"METEOR"),
-            #(Rouge(), "ROUGE_L"),
+            #(Meteor(),"METEOR"),
+            (Rouge(), "ROUGE_L"),
             #(Cider(), "CIDEr")
         ]
 
@@ -89,6 +89,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
     #gts:key:sentence,value:question
     #ただし、gtsの方は同じsentenceについてはquestionを一つのsentenceに与える
     #また、一つの文につき一つのpredictしか評価していない。->10000文の内4000文は評価していない。
+
     res = defaultdict(lambda: [])
     gts = defaultdict(lambda: [])
     for i,pair in enumerate(pairs[:]):
