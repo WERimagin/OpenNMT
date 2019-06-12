@@ -101,6 +101,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
             predict_dict[p]=s
 
         print(list(target_dict.items())[0:5])
+        print(list(target_dict.items())[0:5])
         print(list(predict_dict.items())[0:5])
         gts={i:target_dict[predict_dict[p]] for i,p in enumerate(output)}
         res={i:[p] for i,p in enumerate(output)}
@@ -127,9 +128,9 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("-out", "--out_file", dest="out_file", default="../data/pred_modify.txt", help="output file to compare")
-    parser.add_argument("-src", "--src_file", dest="src_file", default="../data/processed/src-dev.txt", help="src file")
-    parser.add_argument("-tgt", "--tgt_file", dest="tgt_file", default="../data/processed/tgt-dev.txt", help="target file")
+    parser.add_argument("-out", "--out_file", dest="out_file", default="data/squad-pred-test-interro.txt", help="output file to compare")
+    parser.add_argument("-src", "--src_file", dest="src_file", default="data/squad-src-test-interro.txt", help="src file")
+    parser.add_argument("-tgt", "--tgt_file", dest="tgt_file", default="data/squad-tgt-test-interro.txt", help="target file")
     args = parser.parse_args()
 
     print "scores: \n"
