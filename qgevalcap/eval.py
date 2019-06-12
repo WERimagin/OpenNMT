@@ -90,28 +90,28 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
     #ただし、gtsの方は同じsentenceについてはquestionを一つのsentenceに与える
     #また、一つの文につき一つのpredictしか評価していない。->10000文の内4000文は評価していない。
 
+    if 0:
+        target_dict=defaultdict(lambda:[])
+        predict_dict=defaultdict(str)
+        for i,pair in enumerate(pairs):
+            s=pair["tokenized_sentence"]
+            t=pair['prediction'].encode('utf-8')
+            p=pair['tokenized_question'].encode('utf-8')
+            target_dict[s].append(t)
+            predict_dict[p]=s
+        gts={i:target_dict[predict_dict[p]] for i,p in enumerate(output)}
+        res={i:[p] for i,p in enumerate(output)}
 
-    target_dict=defaultdict(lambda:[])
-    predict_dict=defaultdict(str)
-    for i,pair in enumerate(pairs):
-        s=pair["tokenized_sentence"]
-        t=pair['prediction'].encode('utf-8')
-        p=pair['tokenized_question'].encode('utf-8')
-        target_dict[s].append(t)
-        predict_dict[p]=s
-    gts={i:target_dict[predict_dict[p]] for i,p in enumerate(output)}
-    res={i:[p] for i,p in enumerate(output)}
+    if 1:
+        res = defaultdict(lambda: [])
+        gts = defaultdict(lambda: [])
+        for i,pair in enumerate(pairs[:]):
+            key = pair['tokenized_sentence']
+            res[key] = [pair['prediction'].encode('utf-8')]
+            gts[key].append(pair['tokenized_question'].encode('utf-8'))
+        print(list(res.items())[0:5])
+        print(list(gts.items())[0:5])
 
-
-
-    """
-    res = defaultdict(lambda: [])
-    gts = defaultdict(lambda: [])
-    for i,pair in enumerate(pairs[:]):
-        key = pair['tokenized_sentence']
-        res[key] = [pair['prediction'].encode('utf-8')]
-        gts[key].append(pair['tokenized_question'].encode('utf-8'))
-    """
 
 
     #print(len(pairs))
