@@ -21,10 +21,10 @@ class QGEvalCap:
     def evaluate(self):
         output = []
         scorers = [
-            (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"])
-            #(Meteor(),"METEOR"),
+            (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
+            (Meteor(),"METEOR"),
             #(Rouge(), "ROUGE_L"),
-            # (Cider(), "CIDEr")
+            #(Cider(), "CIDEr")
         ]
 
         # =================================================
@@ -82,6 +82,8 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
     import json
     from json import encoder
     encoder.FLOAT_REPR = lambda o: format(o, '.4f')
+
+    #pair:sentence,prediction,tokenized_question
 
     #res:key:sentence,value:prediction
     #gts:key:sentence,value:question
