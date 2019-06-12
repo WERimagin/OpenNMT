@@ -22,6 +22,8 @@ class Meteor:
                 # '-p', '0.85 0.2 0.6 0.75' # alpha beta gamma delta'',
                 # '-a', 'data/paraphrase-en.gz', '-m', 'exact stem paraphrase']
                 ]
+        print(os.path.abspath(__file__))
+        print(os.path.dirname(os.path.abspath(__file__)))
         self.meteor_p = subprocess.Popen(self.meteor_cmd, \
                 cwd=os.path.dirname(os.path.abspath(__file__)), \
                 stdin=subprocess.PIPE, \
@@ -66,7 +68,7 @@ class Meteor:
         print(type(self.meteor_p))
         ##test
         self.meteor_p.stdin.write('{}\n'.format("--version"))
-        
+
         self.meteor_p.stdin.write('{}\n'.format(score_line.encode('utf-8')))
         print("s2")
         return self.meteor_p.stdout.readline().strip()
