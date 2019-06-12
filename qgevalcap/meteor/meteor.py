@@ -64,6 +64,9 @@ class Meteor:
         #print(score_line)
         print("s1")
         print(type(self.meteor_p))
+        ##test
+        self.meteor_p.stdin.write('{}\n'.format("--version"))
+        
         self.meteor_p.stdin.write('{}\n'.format(score_line.encode('utf-8')))
         print("s2")
         return self.meteor_p.stdout.readline().strip()
