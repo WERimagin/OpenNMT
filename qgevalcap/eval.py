@@ -22,7 +22,7 @@ class QGEvalCap:
         output = []
         scorers = [
             (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
-            (Meteor(),"METEOR")
+            (Meteor(),"METEOR"),
             #(Rouge(), "ROUGE_L"),
             #(Cider(), "CIDEr")
         ]
@@ -33,7 +33,7 @@ class QGEvalCap:
         for scorer, method in scorers:
             # print 'computing %s score...'%(scorer.method())
             score, scores = scorer.compute_score(self.gts, self.res)
-            print(score)
+            #print(score)
             if type(method) == list:
                 for sc, scs, m in zip(score, scores, method):
                     print "%s: %0.5f"%(m, sc)
