@@ -90,6 +90,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
     #ただし、gtsの方は同じsentenceについてはquestionを一つのsentenceに与える
     #また、一つの文につき一つのpredictしか評価していない。->10000文の内4000文は評価していない。
 
+    #全ての文を評価する。(同じsrcでも答えが違っている場合はanswerを使うものは違っている可能性があるから)
     if 1:
         target_dict=defaultdict(lambda:[])
         predict_dict=defaultdict(str)
@@ -101,7 +102,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
             predict_dict[p]=s
         gts={i:target_dict[predict_dict[p]] for i,p in enumerate(output)}
         res={i:[p] for i,p in enumerate(output)}
-
+    
     if 0:
         res = defaultdict(lambda: [])
         gts = defaultdict(lambda: [])
