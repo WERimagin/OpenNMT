@@ -71,8 +71,8 @@ for i in range(len(srcs)):
 onedict=sorted(onedict.items(),key=lambda x: -x[1])
 twodict=sorted(twodict.items(),key=lambda x: -x[1])
 
-for key,value in onedict[0:10]:
+for key,value in onedict[0:30]:
     print(key,value)
 print()
-for key,value in twodict[0:10]:
+for key,value in twodict[0:30]:
     print(key,value)
