@@ -64,8 +64,8 @@ if 1:
     new_srcs=[]
     np.random.seed(0)
     random_list=np.random.permutation(np.arange(len(srcs_set)))
-    for i in random_list:
-        for interro in interro_list[0:300]:
+    for i in random_list[0:300]:
+        for interro in interro_list:
             new_srcs.append(" ".join([srcs_set[i],"<SEP>",interro]))
     print("len:{}".format(len(new_srcs)))
     print("len interrolist:{}".format(len(interro_list)))
