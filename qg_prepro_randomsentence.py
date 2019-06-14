@@ -67,10 +67,12 @@ if 1:
     srcs_set=list(set(srcs))
     np.random.seed(0)
     random_list=np.random.permutation(np.arange(len(srcs_set)))
+    id=0
     for i in random_list[0:10]:
         print(srcs_set[i])
         for j,interro in enumerate(interro_list):
-            print(predicts[i*len(interro_list)+j])
+            print(predicts[id])
+            id+=1
         print()
 
 if 0:
