@@ -59,7 +59,7 @@ with open(args.interro,"r")as f:
         interros.append(line.strip())
 
 
-interro_list=["what","who","when","where","how","why","which", \
+interro_list=["what","who","when","where","how","why", \
         "in what year","how many","how much","how long","how many times", \
         "what year","how old"]
 
