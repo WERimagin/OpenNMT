@@ -65,7 +65,7 @@ if 1:
     np.random.seed(0)
     random_list=np.random.permutation(np.arange(len(srcs_set)))
     for i in random_list:
-        for interro in interro_list:
+        for interro in interro_list[0:300]:
             new_srcs.append(" ".join([srcs_set[i],"<SEP>",interro]))
     print("len:{}".format(len(new_srcs)))
     with open("data/squad-src-test-appendinterro.txt","w")as f:
