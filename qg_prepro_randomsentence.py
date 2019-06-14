@@ -60,7 +60,7 @@ interro_list=["what","who","when","where","how","why","which", \
         "what year","how lod"]
 
 if 1:
-    srcs_set=set(srcs)
+    srcs_set=list(set(srcs))
     new_srcs=[]
     np.random.seed(0)
     random_list=np.random.permutation(np.arange(len(srcs_set)))
