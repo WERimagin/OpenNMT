@@ -66,7 +66,7 @@ interro_list=["what","who","when","where","how","why","which", \
 if 1:
     id=0
     for i in range(10):
-        print(srcs)
+        print(srcs[i])
         for j,interro in enumerate(interro_list):
             print(predicts[id])
             id+=1
