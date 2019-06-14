@@ -68,7 +68,7 @@ if 1:
         for interro in interro_list:
             new_srcs.append(" ".join([srcs_set[i],"<SEP>",interro]))
     print("len:{}".format(len(new_srcs)))
-    with open("data/squad-src-test-appendinterro.txt")as f:
+    with open("data/squad-src-test-appendinterro.txt","w")as f:
         for s in new_srcs:
             f.write(s+"\n")
 
