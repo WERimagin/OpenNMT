@@ -55,30 +55,47 @@ with open(args.interro,"r")as f:
         interros.append(line.strip())
 
 
-randon_src=[]
-interro_list=["what","what name"]
+interro_list=["what","who","when","where","how","why","which", \
+        "in what year","how many","how much","how long","how many times", \
+        "what year","how lod"]
 
-onedict=defaultdict(int)
-twodict=defaultdict(int)
-alldict=defaultdict(int)
+if 1:
+    srcs_set=set(srcs)
+    new_srcs=[]
+    np.random.seed(0)
+    random_list=np.random.permutation(np.arange(len(srcs_set)))
+    for i in random_list:
+        for interro in interro_list:
+            new_srcs.append(" ".join([srcs_set[i],"<SEP>",interro]))
+    print("len:{}".format(len(new_srcs)))
+    with open("data/squad-src-test-appendinterro.txt")as f:
+        for s in new_srcs:
+            f.write(s+"\n")
 
-for i in range(len(interros)):
-    interro=interros[i].split()
-    if len(interro)>=1:
-        onedict[interro[0]]+=1
-    if len(interro)>=2:
-        twodict[" ".join([interro[0],interro[1]])]+=1
-    alldict[" ".join(interro)]+=1
 
-onedict=sorted(onedict.items(),key=lambda x: -x[1])
-twodict=sorted(twodict.items(),key=lambda x: -x[1])
-alldict=sorted(alldict.items(),key=lambda x: -x[1])
 
-for key,value in onedict[0:30]:
-    print(key,value)
-print()
-for key,value in twodict[0:30]:
-    print(key,value)
-print()
-for key,value in alldict[0:30]:
-    print(key,value)
+if 0:
+    onedict=defaultdict(int)
+    twodict=defaultdict(int)
+    alldict=defaultdict(int)
+
+    for i in range(len(interros)):
+        interro=interros[i].split()
+        if len(interro)>=1:
+            onedict[interro[0]]+=1
+        if len(interro)>=2:
+            twodict[" ".join([interro[0],interro[1]])]+=1
+        alldict[" ".join(interro)]+=1
+
+    onedict=sorted(onedict.items(),key=lambda x: -x[1])
+    twodict=sorted(twodict.items(),key=lambda x: -x[1])
+    alldict=sorted(alldict.items(),key=lambda x: -x[1])
+
+    for key,value in onedict[0:30]:
+        print(key,value)
+    print()
+    for key,value in twodict[0:30]:
+        print(key,value)
+    print()
+    for key,value in alldict[0:30]:
+        print(key,value)
