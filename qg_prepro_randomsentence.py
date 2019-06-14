@@ -57,7 +57,7 @@ with open(args.interro,"r")as f:
 
 interro_list=["what","who","when","where","how","why","which", \
         "in what year","how many","how much","how long","how many times", \
-        "what year","how lod"]
+        "what year","how old"]
 
 if 1:
     srcs_set=list(set(srcs))
@@ -68,6 +68,7 @@ if 1:
         for interro in interro_list[0:300]:
             new_srcs.append(" ".join([srcs_set[i],"<SEP>",interro]))
     print("len:{}".format(len(new_srcs)))
+    print("len interrolist:{}".format(len(interro_list)))
     with open("data/squad-src-test-appendinterro.txt","w")as f:
         for s in new_srcs:
             f.write(s+"\n")
