@@ -62,7 +62,7 @@ onedict=defaultdict(int)
 twodict=defaultdict(int)
 
 for i in range(len(srcs)):
-    interro=interros[i].split()]
+    interro=interros[i].split()
     if len(interro)>=1:
         onedict[interro[0]]+=1
     if len(interro)>=2:
