@@ -68,7 +68,7 @@ for i in range(len(srcs)):
         onedict[interro[0]]+=1
     if len(interro)>=2:
         twodict[" ".join([interro[0],interro[1]])]+=1
-    alldict[interro]+=1
+    alldict[" ".join(interro)]+=1
 
 onedict=sorted(onedict.items(),key=lambda x: -x[1])
 twodict=sorted(twodict.items(),key=lambda x: -x[1])
