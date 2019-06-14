@@ -56,7 +56,7 @@ with open(args.interro,"r")as f:
 
 
 randon_src=[]
-interro_list["what","what name"]
+interro_list=["what","what name"]
 
 onedict=defaultdict(int)
 twodict=defaultdict(int)
