@@ -65,7 +65,7 @@ interro_list=["what","who","when","where","how","why","which", \
 
 if 1:
     id=0
-    for i in range(10):
+    for i in range(0,len(interro_list)*10,len(interro_list)):
         print(srcs[i])
         for j,interro in enumerate(interro_list):
             print(predicts[id])
