@@ -60,6 +60,7 @@ interro_list=["what","what name"]
 
 onedict=defaultdict(int)
 twodict=defaultdict(int)
+alldict=defualtdict(int)
 
 for i in range(len(srcs)):
     interro=interros[i].split()
@@ -67,12 +68,17 @@ for i in range(len(srcs)):
         onedict[interro[0]]+=1
     if len(interro)>=2:
         twodict[" ".join([interro[0],interro[1]])]+=1
+    alldict[interro]+=1
 
 onedict=sorted(onedict.items(),key=lambda x: -x[1])
 twodict=sorted(twodict.items(),key=lambda x: -x[1])
+alldict=sorted(alldict.items(),key=lambda x: -x[1])
 
 for key,value in onedict[0:30]:
     print(key,value)
 print()
 for key,value in twodict[0:30]:
+    print(key,value)
+print()
+for key,value in alldict[0:30]:
     print(key,value)
