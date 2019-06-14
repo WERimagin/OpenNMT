@@ -60,7 +60,7 @@ interro_list=["what","what name"]
 
 onedict=defaultdict(int)
 twodict=defaultdict(int)
-alldict=defualtdict(int)
+alldict=defaultdict(int)
 
 for i in range(len(srcs)):
     interro=interros[i].split()
