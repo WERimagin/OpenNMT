@@ -84,7 +84,7 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=True
-    use_pre_interro=True
+    use_pre_interro=False
 
     questions=[]
     answers=[]
@@ -170,6 +170,12 @@ def data_process(input_path,interro_path,train=False):
         with open("data/squad-ans-train{}.txt".format(setting),"w")as f:
             for i in random_list:
                 f.write(answers[i]+"\n")
+        with open("data/squad-interro-train{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(interros[i]+"\n")
+        with open("data/squad-noninterro-train{}.txt".format(setting),"w")as f:
+            for i in random_list:
+                f.write(non_interros[i]+"\n")
 
     if train==False:
         random_list=list(range(len(questions)))
