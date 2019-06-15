@@ -23,7 +23,7 @@ import numpy as np
 parser = argparse.ArgumentParser()
 parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
 parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
-parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
+parser.add_argument("--pred", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
 parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 parser.add_argument("--noninterro", type=str, default="data/squad-noninterro-val-interro.txt", help="input model epoch")
 parser.add_argument("--p_noninterro", type=str, default="data/squad-pred_noninterro-val-interro.txt", help="input model epoch")
