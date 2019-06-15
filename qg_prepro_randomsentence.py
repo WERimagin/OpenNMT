@@ -63,7 +63,7 @@ interro_list=["what","who","when","where","how","why","which", \
         "in what year","how many","how much","how long","how many times", \
         "what year","how old"]
 
-if 1:
+if 0:
     id=0
     for i in range(0,len(interro_list)*args.print,len(interro_list)):
         print(srcs[i])
@@ -88,7 +88,7 @@ if 0:
 
 
 
-if 0:
+if 1:
     onedict=defaultdict(int)
     twodict=defaultdict(int)
     alldict=defaultdict(int)
