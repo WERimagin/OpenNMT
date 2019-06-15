@@ -35,6 +35,7 @@ parser.add_argument("--each_interro", action="store_true")
 
 parser.add_argument("--ratio", type=float, default=1.0, help="input model epoch")
 parser.add_argument("--print", type=int ,default=10)
+parser.add_argument("--type", type=int ,default=0)
 args = parser.parse_args()
 
 random.seed(0)
@@ -63,7 +64,7 @@ interro_list=["what","who","when","where","how","why","which", \
         "in what year","how many","how much","how long","how many times", \
         "what year","how old"]
 
-if 0:
+if args.type==0:
     id=0
     for i in range(0,len(interro_list)*args.print,len(interro_list)):
         print(srcs[i])
@@ -72,7 +73,7 @@ if 0:
             id+=1
         print()
 
-if 0:
+if args.type==1:
     srcs_set=list(set(srcs))
     new_srcs=[]
     np.random.seed(0)
@@ -88,7 +89,7 @@ if 0:
 
 
 
-if 1:
+if args.type==2:
     onedict=defaultdict(int)
     twodict=defaultdict(int)
     alldict=defaultdict(int)
