@@ -84,6 +84,7 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=True
+    use_answer=True
     use_pre_interro=False
 
     questions=[]
@@ -136,11 +137,12 @@ def data_process(input_path,interro_path,train=False):
                 interro_text=" ".join(tokenize(interro_text))
                 non_interro_text=" ".join(tokenize(non_interro_text))
 
-                if use_interro:
-                    if use_pre_interro:
-                        sentence_text=" ".join([interro_text,"<SEP>",sentence_text])
-                    else:
-                        sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
+                if use_interro and not use_answer:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
+                elif not use_interro and use_answer:
+                    sentence_text=" ".join([sentence_text,"<SEP>",answer_text])
+                elif use_interro and use_answer:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro_text,"<SEP2>",answer_text])
 
                 sentences.append(sentence_text)
                 questions.append(question_text)
@@ -151,12 +153,17 @@ def data_process(input_path,interro_path,train=False):
 
     print(all_count)
 
-    if use_interro==True and use_pre_interro==False:
+    if use_interro and not use_answer:
         setting="-interro"
+    elif not use_interro and use_answer:
+        setting="-answer"
+    elif use_interro and use_answer:
+        setting="-interro-answer"
+    elif not use_interro and not use_answer:
+        setting="-normal"
     elif use_interro==True and use_pre_interro==True:
         setting="-preinterro"
-    elif use_interro==False:
-        setting="-normal"
+
 
     if train==True:
         random_list=list(range(len(questions)))
