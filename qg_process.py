@@ -83,9 +83,10 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=False
+    use_interro=True
     use_answer=True
     use_pre_interro=False
+    replace_answer=True
 
     questions=[]
     answers=[]
@@ -131,6 +132,14 @@ def data_process(input_path,interro_path,train=False):
                     interro_text=interro_text[:-2]
                     print(interro_text)
 
+                if replace_answer:
+                    rep_sentence_text_1=sentence_text.replace(answer_text,"answer_hidden_token",1)
+                    rep_sentence_text_2=sentence_text.replace(answer_text,"answer_hidden_token",2)
+                    if rep_sentence_text_1!=rep_sentence_text_2:
+                        print(sentence_text)
+                        print(answer_text)
+                        print()
+
                 sentence_text=" ".join(tokenize(sentence_text))
                 question_text=" ".join(tokenize(question_text))
                 answer_text=" ".join(tokenize(answer_text))
@@ -153,16 +162,22 @@ def data_process(input_path,interro_path,train=False):
 
     print(all_count)
 
-    if use_interro and not use_answer:
-        setting="-interro"
-    elif not use_interro and use_answer:
-        setting="-answer"
-    elif use_interro and use_answer:
-        setting="-interro-answer"
-    elif not use_interro and not use_answer:
-        setting="-normal"
-    elif use_interro==True and use_pre_interro==True:
-        setting="-preinterro"
+    if replace_answer:
+        if use_interro and use_answer:
+            setting="-interro-repanswer"
+        elif not use_interro and use_anser:
+            setting="-repanswer"    
+    else:
+        if use_interro and not use_answer:
+            setting="-interro"
+        elif not use_interro and use_answer:
+            setting="-answer"
+        elif use_interro and use_answer:
+            setting="-interro-answer"
+        elif not use_interro and not use_answer:
+            setting="-normal"
+        elif use_interro==True and use_pre_interro==True:
+            setting="-preinterro"
 
 
     if train==True:
