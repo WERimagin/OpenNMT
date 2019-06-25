@@ -168,7 +168,7 @@ def data_process(input_path,interro_path,train=False):
     if replace_answer:
         if use_interro and use_answer:
             setting="-interro-repanswer"
-        elif not use_interro and use_anser:
+        elif not use_interro and use_answer:
             setting="-repanswer"
     else:
         if use_interro and not use_answer:
