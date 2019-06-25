@@ -139,7 +139,7 @@ def data_process(input_path,interro_path,train=False):
                     sentence_start=context_text.find(sentence_text)
                     answer_start_insent=answer_start-sentence_start
                     answer_end_insent=answer_start_insent+len(answer_text)
-                    rep_sentence_text=sentence_text[:answer_start_insent] \
+                    sentence_text=sentence_text[:answer_start_insent] \
                                     +"answer_hidden_token" \
                                     +sentence_text[answer_end_insent:]
                     if 0:
