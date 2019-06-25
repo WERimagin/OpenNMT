@@ -139,9 +139,10 @@ def data_process(input_path,interro_path,train=False):
                     sentence_start=context_text.find(sentence_text)
                     answer_start_insent=answer_start-sentence_start
                     answer_end_insent=answer_start_insent+len(answer_text)
+                    print(answer_start_insent,answer_end_insent,sentence_start)
                     rep_sentence_text=sentence_text[:answer_start_insent] \
                                     +"answer_hidden_token" \
-                                    +sentence_text[answer_end_insent]
+                                    +sentence_text[answer_end_insent:]
                     if 0:
                         rep_sentence_text_1=sentence_text.replace(answer_text,"answer_hidden_token",1)
                         rep_sentence_text_2=sentence_text.replace(answer_text,"answer_hidden_token",2)
