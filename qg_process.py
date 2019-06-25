@@ -111,6 +111,9 @@ def data_process(input_path,interro_path,train=False):
                 answer_text=interro_data[all_count]["answer_text"]
                 interro_text=interro_data[all_count]["interro"]
                 non_interro_text=interro_data[all_count]["non_interro"]
+
+                answer_start=qas["answers"][0]["answer_start"]
+
                 all_count+=1
 
                 if len(sentence_text)<=5 or len(question_text)<=5:
@@ -133,12 +136,19 @@ def data_process(input_path,interro_path,train=False):
                     print(interro_text)
 
                 if replace_answer:
-                    rep_sentence_text_1=sentence_text.replace(answer_text,"answer_hidden_token",1)
-                    rep_sentence_text_2=sentence_text.replace(answer_text,"answer_hidden_token",2)
-                    if rep_sentence_text_1!=rep_sentence_text_2:
-                        print(sentence_text)
-                        print(answer_text)
-                        print()
+                    sentence_start=context_text.find(sentence_text)
+                    answer_start_insent=answer_start-sentence_start
+                    answer_end_insent=answer_start_insent+len(answer_text)
+                    rep_sentence_text=sentence_text[:answer_start_insent] \
+                                    +"answer_hidden_token" \
+                                    +sentence_text[answer_end_insent]
+                    if 0:
+                        rep_sentence_text_1=sentence_text.replace(answer_text,"answer_hidden_token",1)
+                        rep_sentence_text_2=sentence_text.replace(answer_text,"answer_hidden_token",2)
+                        if rep_sentence_text_1!=rep_sentence_text_2:
+                            print(sentence_text)
+                            print(answer_text)
+                            print()
 
                 sentence_text=" ".join(tokenize(sentence_text))
                 question_text=" ".join(tokenize(question_text))
@@ -166,7 +176,7 @@ def data_process(input_path,interro_path,train=False):
         if use_interro and use_answer:
             setting="-interro-repanswer"
         elif not use_interro and use_anser:
-            setting="-repanswer"    
+            setting="-repanswer"
     else:
         if use_interro and not use_answer:
             setting="-interro"
