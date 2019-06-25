@@ -83,7 +83,7 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=True
+    use_interro=False
     use_answer=True
     use_pre_interro=False
     replace_answer=True
@@ -142,13 +142,6 @@ def data_process(input_path,interro_path,train=False):
                     sentence_text=sentence_text[:answer_start_insent] \
                                     +"answer_hidden_token" \
                                     +sentence_text[answer_end_insent:]
-                    if 0:
-                        rep_sentence_text_1=sentence_text.replace(answer_text,"answer_hidden_token",1)
-                        rep_sentence_text_2=sentence_text.replace(answer_text,"answer_hidden_token",2)
-                        if rep_sentence_text_1!=rep_sentence_text_2:
-                            print(sentence_text)
-                            print(answer_text)
-                            print()
 
                 sentence_text=" ".join(tokenize(sentence_text))
                 question_text=" ".join(tokenize(question_text))
