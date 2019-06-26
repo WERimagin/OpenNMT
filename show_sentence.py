@@ -60,7 +60,7 @@ for name in pred_name:
     preds.append(mylist)
 
 np.random.seed(0)
-id_list=np.random.permuratation(list(range(len(srcs))))
+id_list=np.random.permutation(list(range(len(srcs))))
 for id in id_list[0:100]:
     print(srcs[id])
     print(tgts[id])
