@@ -63,7 +63,7 @@ np.random.seed(0)
 id_list=np.random.permutation(list(range(len(srcs))))
 for id in id_list[0:100]:
     print("SRC:{}".format(srcs[id]))
-    print("TGT:{}"".format(tgts[id]))
+    print("TGT:{}".format(tgts[id]))
     for p in preds:
         print(p[id])
     print()
