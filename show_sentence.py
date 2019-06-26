@@ -39,15 +39,15 @@ srcs=[]
 tgts=[]
 preds=[]
 
-with open(args.src,"r")as f:
+with open("data/squad-src-test-interro-answer.txt","r")as f:
     for line in f:
         srcs.append(line.strip())
 
-with open(args.tgt,"r")as f:
+with open("data/squad-tgt-test-interro.txt","r")as f:
     for line in f:
         tgts.append(line.strip())
 
-pred_name=["data/squad-pred-test-interro-answer.txt",
+pred_name=["data/squad-pred-test-interro.txt",
             "data/squad-pred-test-nqg.txt",
             "data/squad-pred-test-repanswer.txt",
             "data/squad-pred-test-interro-repanswer.txt"]
