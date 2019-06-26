@@ -47,7 +47,7 @@ with open(args.tgt,"r")as f:
         tgts.append(line.strip())
 
 pred_name=["data/squad-pred-test-interro.txt",
-            "data/squad-pred-test-neq.txt",
+            "data/squad-pred-test-nqg.txt",
             "data/squad-pred-test-repanswer.txt",
             "data/squad-pred-test-interro-repanswer.txt"]
 
