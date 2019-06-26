@@ -47,7 +47,7 @@ with open(args.tgt,"r")as f:
     for line in f:
         tgts.append(line.strip())
 
-pred_name=["data/squad-pred-test-interro.txt",
+pred_name=["data/squad-pred-test-interro-answer.txt",
             "data/squad-pred-test-nqg.txt",
             "data/squad-pred-test-repanswer.txt",
             "data/squad-pred-test-interro-repanswer.txt"]
@@ -62,8 +62,8 @@ for name in pred_name:
 np.random.seed(0)
 id_list=np.random.permutation(list(range(len(srcs))))
 for id in id_list[0:100]:
-    print(srcs[id])
-    print(tgts[id])
+    print("SRC:{}".format(srcs[id]))
+    print("TGT:{}"".format(tgts[id]))
     for p in preds:
         print(p[id])
     print()
