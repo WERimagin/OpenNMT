@@ -11,6 +11,7 @@ from statistics import mean, median,variance,stdev
 import random
 import json
 import argparse
+import numpy as np
 
 
 
