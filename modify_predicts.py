@@ -20,6 +20,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
 parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
 parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
+parser.add_argument("--out", type=str, default="pred.txt", help="input model epoch")
 parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
 
 parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
@@ -43,6 +44,6 @@ for i,p in enumerate(preds):
     if preds[i][-1]!="?":
         preds[i]=" ".join(preds[i],"?")
 
-with open(args.pred,"r")as f:
+with open(args.out+,"r")as f:
     for line in preds:
         f.write(line+"\n")
