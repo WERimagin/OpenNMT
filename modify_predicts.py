@@ -44,6 +44,6 @@ for i,p in enumerate(preds):
     if preds[i][-1]!="?":
         preds[i]=" ".join([preds[i],"?"])
 
-with open(args.out,"r")as f:
+with open(args.out,"w")as f:
     for line in preds:
         f.write(line+"\n")
