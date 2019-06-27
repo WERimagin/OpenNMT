@@ -72,4 +72,4 @@ for i,id in enumerate(id_list[0:100]):
     print()
 
 for j in range(4):
-    print(sum([1 if preds[0][j][-1]=="?" else 0 for i in range(len(srcs))]))
+    print(sum([1 if preds[j][i][-1]=="?" else 0 for i in range(len(srcs))]))
