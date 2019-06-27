@@ -42,7 +42,7 @@ with open(args.pred,"r")as f:
 
 for i,p in enumerate(preds):
     if preds[i][-1]!="?":
-        preds[i]=" ".join(preds[i],"?")
+        preds[i]=" ".join([preds[i],"?"])
 
 with open(args.out,"r")as f:
     for line in preds:
