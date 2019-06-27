@@ -59,6 +59,8 @@ for name in pred_name:
             mylist.append(line.strip())
     preds.append(mylist)
 
+
+
 np.random.seed(0)
 id_list=np.random.permutation(list(range(len(srcs))))
 for i,id in enumerate(id_list[0:100]):
@@ -68,3 +70,6 @@ for i,id in enumerate(id_list[0:100]):
     for p in preds:
         print(p[id])
     print()
+
+for j in range(4):
+    print(sum([1 if preds[0][j][-1]=="?" else 0 for i in range(len(srcs))]))
