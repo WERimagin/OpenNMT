@@ -164,7 +164,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
     print(all_count)
     print(modify_count+1)
 
-    print(json.dumps(new_data["data"][0]["paragraphs"][0]))
+    print(json.dumps(new_data["data"][0]))
 
     if original and not modify:
         setting="original"
