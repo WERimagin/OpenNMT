@@ -157,7 +157,9 @@ def data_process(input_path,interro_path,modify_path,train,args):
             new_topic["paragraphs"].append(new_paragraph)
             #print(json.dumps(new_paragraph,indent=4))
         new_data["data"].append(new_topic)
-        print(json.dumps(new_topic,indent=4))
+        #print(json.dumps(new_topic,indent=4))
+
+    #print(json.dumps(new_topic,indent=4))
 
     print(all_count)
     print(modify_count+1)
