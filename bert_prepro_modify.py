@@ -153,8 +153,9 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     qas["question"]=question_text
                     new_paragraph["qas"].append(qas)
 
-                if modify or not train:
-                    print(3)
+                if modify:
+                    if train:
+                        print(3)
                     new_qas=qas.copy()
                     new_qas["modify_question"]=True
                     new_qas["id"]=new_qas["id"]+"-modify_question"
