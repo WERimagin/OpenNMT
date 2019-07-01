@@ -154,6 +154,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     new_paragraph["qas"].append(qas)
 
                 if modify or not train:
+                    print(3)
                     new_qas=qas.copy()
                     new_qas["modify_question"]=True
                     new_qas["id"]=new_qas["id"]+"-modify_question"
@@ -164,7 +165,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
         new_data["data"].append(new_topic)
 
     print(all_count)
-    print(modify_count)
+    print(modify_count+1)
 
     if original and not modify:
         setting="original"
