@@ -173,7 +173,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
     if not original and modify:
         setting="modify"
 
-    print(json.dumps(new_data[0][0],indent=4))
+    print(json.dumps(new_data["data"][0]["paragraphs"],indent=4))
 
     if train:
         with open("data/squad-train-{}-{}.json".format(args.output_name,setting),"w")as f:
