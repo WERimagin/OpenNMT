@@ -101,6 +101,8 @@ def data_process(input_path,interro_path,modify_path,train,args):
     original=False
     modify=True
 
+    start_test_num=4658
+
     new_data={"data":[],
                 "version":"1.1"}
     for topic in tqdm(data["data"]):
@@ -137,10 +139,10 @@ def data_process(input_path,interro_path,modify_path,train,args):
 
                 modify_count+=1
                 if not train:
-                    if modify_count<4658:
+                    if modify_count<start_test_num:
                         continue
                     #print(modify_count)
-                    modify_question=modify_data[modify_count-4658]#生成した質問文
+                    modify_question=modify_data[modify_count-start_test_num]#生成した質問文
                 else:
                     modify_question=modify_data[modify_count]
                 question_text=" ".join(tokenize(question_text))
@@ -154,12 +156,10 @@ def data_process(input_path,interro_path,modify_path,train,args):
 
                 #print(json.dumps(new_parapr,indent=4))
 
-            new_topic["paragraphs"].append(new_paragraph)
-            #print(json.dumps(new_paragraph,indent=4))
-        new_data["data"].append(new_topic)
-        #print(json.dumps(new_topic,indent=4))
-
-    #print(json.dumps(new_topic,indent=4))
+            if modify_count>=start_test_num:
+                new_topic["paragraphs"].append(new_paragraph)
+        if modify_count>=start_test_num:
+            new_data["data"].append(new_topic)
 
     print(all_count)
     print(modify_count+1)
