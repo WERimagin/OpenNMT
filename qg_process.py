@@ -83,8 +83,8 @@ def data_process(input_path,interro_path,train=False):
     with open(interro_path,"r") as f:
         interro_data=json.load(f)
 
-    use_interro=False
-    use_answer=True
+    use_interro=True
+    use_answer=False
     use_pre_interro=False
     replace_answer=True
 
@@ -170,6 +170,10 @@ def data_process(input_path,interro_path,train=False):
             setting="-interro-repanswer"
         elif not use_interro and use_answer:
             setting="-repanswer"
+        elif use_interro and not use_answer:
+            setting="-interro-nonanswer-repanswer"
+        elif not use_interro and not use_answer:
+            setting="-nonanswer-repanswer"
     else:
         if use_interro and not use_answer:
             setting="-interro"

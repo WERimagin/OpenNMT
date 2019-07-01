@@ -36,42 +36,23 @@ args = parser.parse_args()
 
 random.seed(0)
 
-srcs=[]
-tgts=[]
-preds=[]
+data=[]
 
-with open("data/squad-src-test-interro-answer.txt","r")as f:
+with open("human_eval.txt","r")as f:
     for line in f:
-        srcs.append(line.strip())
+        data.append(line.strip())
 
-with open("data/squad-tgt-test-interro.txt","r")as f:
-    for line in f:
-        tgts.append(line.strip())
+score=[]
+for line in data:
+    if line in ["1","2","3","4","5"]:
+        score.append(int(line))
+    elif len(line)==3 and line[1]=="-":
+        score.append(int(line[0])-int(line[2]))
+        #score.append(int(line[0]))
 
-
-pred_name=["data/squad-pred-test-interro.txt",
-            "data/squad-pred-test-nqg.txt",
-            "data/squad-pred-test-repanswer.txt",
-            "data/squad-pred-test-interro-repanswer.txt"]
-
-for name in pred_name:
-    mylist=[]
-    with open(name,"r")as f:
-        for line in f:
-            mylist.append(line.strip())
-    preds.append(mylist)
-
-
-
-np.random.seed(0)
-id_list=np.random.permutation(list(range(len(srcs))))
-for i,id in enumerate(id_list[0:110]):
-    print(i)
-    print("SRC:{}".format(srcs[id]))
-    print("TGT:{}".format(tgts[id]))
-    for p in preds:
-        print(p[id])
-    print()
-
-for j in range(4):
-    print(sum([1 if preds[j][i][-1]=="?" else 0 for i in range(len(srcs))]))
+print(len(score))
+print(score[0:20])
+print(np.average(score[0::4]))
+print(np.average(score[1::4]))
+print(np.average(score[2::4]))
+print(np.average(score[3::4]))
