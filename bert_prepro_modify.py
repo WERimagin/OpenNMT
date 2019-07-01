@@ -158,6 +158,8 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     new_qas["modify_question"]=True
                     new_qas["id"]=new_qas["id"]+"-modify_question"
                     new_qas["question"]=modify_question
+                    if train:
+                        print(json.dumps(new_qas,indent=4))
                     new_paragraph["qas"].append(new_qas)
 
             new_topic["paragraphs"].append(new_paragraph)
