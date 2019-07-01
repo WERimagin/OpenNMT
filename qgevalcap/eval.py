@@ -103,7 +103,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
             target_dict[s].append(t)
             predict_dict[(p,s)]=s
         gts={i:target_dict[predict_dict[(p["prediction"],p["tokenized_sentence"])]] for i,p in enumerate(pairs)}
-        res={i:[p["prediction"]] for i,p in enumerate(pairs)}
+        res={i:p["prediction"] for i,p in enumerate(pairs)}
 
     if 0:
         res = defaultdict(lambda: [])
