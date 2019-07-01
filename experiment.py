@@ -51,6 +51,11 @@ if 1:
 
     count=sum([1 if interros[i] in preds[i] else 0 for i in range(len(preds))])
     print(count,len(preds),count/len(preds))
+    for i in range(len(preds)):
+        if interros[i] not in preds[i]:
+            print(interros[i])
+            print(preds[i])
+            print()
 
 if 0:
     srcs=[]
