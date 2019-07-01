@@ -98,8 +98,8 @@ def data_process(input_path,interro_path,modify_path,train,args):
     all_count=0
     modify_count=0
 
-    original=args.original
-    modify=args.modify
+    original=False
+    modify=True
 
     new_data={"data":[],
                 "version":"1.1"}
@@ -135,8 +135,16 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     interro_text=interro_text[:-2]
                     print(interro_text)
 
-                modify_question=modify_data[modify_count]#生成した質問文
+
+
                 modify_count+=1
+                if not train:
+                    modify_count<=4658:
+                        continue
+                    print(modify_count)
+                    modify_question=modify_data[modify_count-4659]#生成した質問文
+                else:
+                    modify_question=modify_data[modify_count]
 
                 question_text=" ".join(tokenize(question_text))
 
