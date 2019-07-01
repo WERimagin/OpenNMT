@@ -148,11 +148,6 @@ def data_process(input_path,interro_path,modify_path,train,args):
 
                 question_text=" ".join(tokenize(question_text))
 
-                if original and train:
-                    qas["modify_question"]=False
-                    qas["question"]=question_text
-                    new_paragraph["qas"].append(qas)
-
                 if modify:
                     new_qas=qas.copy()
                     new_qas["modify_question"]=True
