@@ -96,7 +96,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
     non_interros=[]
     stop_words = stopwords.words('english')
     all_count=0
-    modify_count=0
+    modify_count=-1
 
     original=False
     modify=True
@@ -139,10 +139,10 @@ def data_process(input_path,interro_path,modify_path,train,args):
 
                 modify_count+=1
                 if not train:
-                    if modify_count<=4658:
+                    if modify_count<4658:
                         continue
                     #print(modify_count)
-                    modify_question=modify_data[modify_count-4659]#生成した質問文
+                    modify_question=modify_data[modify_count-4658]#生成した質問文
                 else:
                     modify_question=modify_data[modify_count]
 
