@@ -152,13 +152,15 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     new_qas["question"]=modify_question
                     new_paragraph["qas"].append(new_qas)
 
-                print(json.dumps(new_qas,indent=4))
+                #print(json.dumps(new_qas,indent=4))
 
             new_topic["paragraphs"].append(new_paragraph)
         new_data["data"].append(new_topic)
 
     print(all_count)
     print(modify_count+1)
+
+    print(json.dumps(new_data["data"][0]["paragraphs"][0]))
 
     if original and not modify:
         setting="original"
