@@ -83,7 +83,7 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=True
-    use_answer=True
+    use_answer=False
     replace_answer=True
 
     questions=[]
@@ -92,7 +92,12 @@ def data_process(input_path,interro_path,train=False):
     interros=[]
     non_interros=[]
     stop_words = stopwords.words('english')
+
+
     all_count=0
+    overlap_count=0
+    noise_count=0
+    non_interro_count=0
 
     for topic in tqdm(data["data"]):
         topic=topic["paragraphs"]
@@ -104,16 +109,23 @@ def data_process(input_path,interro_path,train=False):
                 answer_text=interro_data[all_count]["answer_text"]
                 interro_text=interro_data[all_count]["interro"]
                 non_interro_text=interro_data[all_count]["non_interro"]
+
+                answer_start=qas["answers"][0]["answer_start"]
+
                 all_count+=1
 
                 if len(sentence_text)<=5 or len(question_text)<=5:
+                    noise_count+=1
                     continue
 
                 #疑問詞がないものは削除
                 if interro_text=="":
+                    non_interro_count+=1
                     continue
 
+                #テキストとノンストップワードが一つも重複してないものは除去
                 if check_overlap(sentence_text,question_text,stop_words)==False:
+                    overlap_count+=1
                     continue
 
                 if interro_text[-1]=="?":
@@ -128,7 +140,6 @@ def data_process(input_path,interro_path,train=False):
                     sentence_text=sentence_text[:answer_start_insent] \
                                     +"answer_hidden_token" \
                                     +sentence_text[answer_end_insent:]
-
 
                 sentence_text=" ".join(tokenize(sentence_text))
                 question_text=" ".join(tokenize(question_text))
@@ -148,6 +159,7 @@ def data_process(input_path,interro_path,train=False):
                 answers.append(answer_text)
                 interros.append(interro_text)
                 non_interros.append(non_interro_text)
+
 
     if replace_answer:
         if use_interro and use_answer:
