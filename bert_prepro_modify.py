@@ -135,8 +135,6 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     interro_text=interro_text[:-2]
                     print(interro_text)
 
-
-
                 modify_count+=1
                 if not train:
                     if modify_count<4658:
@@ -145,7 +143,6 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     modify_question=modify_data[modify_count-4658]#生成した質問文
                 else:
                     modify_question=modify_data[modify_count]
-
                 question_text=" ".join(tokenize(question_text))
 
                 if modify:
@@ -154,6 +151,8 @@ def data_process(input_path,interro_path,modify_path,train,args):
                     new_qas["id"]=new_qas["id"]+"-modify_question"
                     new_qas["question"]=modify_question
                     new_paragraph["qas"].append(new_qas)
+
+                print(json.dumps(new_qas,indent=4))
 
             new_topic["paragraphs"].append(new_paragraph)
         new_data["data"].append(new_topic)
@@ -168,7 +167,7 @@ def data_process(input_path,interro_path,modify_path,train,args):
     if not original and modify:
         setting="modify"
 
-    print(json.dumps(new_data["data"][0]["paragraphs"],indent=4))
+    #print(json.dumps(new_data["data"][0]["paragraphs"],indent=4))
 
     if train:
         with open("data/squad-train-{}-{}.json".format(args.output_name,setting),"w")as f:
