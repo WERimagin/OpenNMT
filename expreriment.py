@@ -11,47 +11,82 @@ from statistics import mean, median,variance,stdev
 import random
 import json
 import argparse
+import numpy as np
 
 
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-src", type=str, default="src.txt", help="input model epoch")
-parser.add_argument("-tgt", type=str, default="target.txt", help="input model epoch")
-parser.add_argument("-pred1", type=str, default="pred.txt", help="input model epoch")
-parser.add_argument("-pred2", type=str, default="pred.txt", help="input model epoch")
-parser.add_argument("-data_rate",type=float, default=1.0)
-parser.add_argument("-notsplit", action="store_true")
+parser.add_argument("--src", type=str, default="data/squad-src-val-interro.txt", help="input model epoch")
+parser.add_argument("--tgt", type=str, default="data/squad-tgt-val-interro.txt", help="input model epoch")
+parser.add_argument("--pred", type=str, default="pred.txt", help="input model epoch")
+parser.add_argument("--interro", type=str, default="data/squad-interro-val-interro.txt", help="input model epoch")
+
+parser.add_argument("--tgt_interro", type=str, default="", help="input model epoch")
+parser.add_argument("--not_interro", action="store_true")
+parser.add_argument("--all_interro", action="store_true")
+parser.add_argument("--interro_each", action="store_true")
+
+parser.add_argument("--notsplit", action="store_true")
+parser.add_argument("--print", action="store_true")
+parser.add_argument("--result", action="store_true")
+
+
 args = parser.parse_args()
 
 random.seed(0)
 
-srcs=[]
-targets=[]
-predicts1=[]
-predicts2=[]
+if 1:
+    preds=[]
+    interros=[]
+    with open(args.pred,"r")as f:
+        for line in f:
+            preds.append(line.strip())
 
-with open(args.src,"r")as f:
-    for line in f:
-        srcs.append(line.strip())
+    with open(args.interro,"r")as f:
+        for line in f:
+            interros.append(line.strip())
 
-with open(args.tgt,"r")as f:
-    for line in f:
-        targets.append(line.strip())
+    count=sum([1 if interros[i] in preds[i] else 0 for i in range(len(preds))])
+    print(count,len(preds),count/len(preds))
 
-with open(args.pred1,"r")as f:
-    for line in f:
-        predicts1.append(line.strip())
+if 0:
+    srcs=[]
+    tgts=[]
+    preds=[]
 
-with open(args.pred2,"r")as f:
-    for line in f:
-        predicts2.append(line.strip())
+    with open("data/squad-src-test-interro-answer.txt","r")as f:
+        for line in f:
+            srcs.append(line.strip())
 
-data_size=int(len(srcs)*args.data_rate)
-for i in range(data_size):
-    if predicts1[i]!=predicts2[i]:
-        print(srcs[i])
-        print(targets[i])
-        print(predicts1[i])
-        print(predicts2[i])
+    with open("data/squad-tgt-test-interro.txt","r")as f:
+        for line in f:
+            tgts.append(line.strip())
+
+
+    pred_name=["data/squad-pred-test-interro.txt",
+                "data/squad-pred-test-nqg.txt",
+                "data/squad-pred-test-repanswer.txt",
+                "data/squad-pred-test-interro-repanswer.txt"]
+
+    for name in pred_name:
+        mylist=[]
+        with open(name,"r")as f:
+            for line in f:
+                mylist.append(line.strip())
+        preds.append(mylist)
+
+
+
+    np.random.seed(0)
+    id_list=np.random.permutation(list(range(len(srcs))))
+    for i,id in enumerate(id_list[0:110]):
+        print(i)
+        print("SRC:{}".format(srcs[id]))
+        print("TGT:{}".format(tgts[id]))
+        for p in preds:
+            print(p[id])
         print()
+
+    for j in range(4):
+        print(sum([1 if preds[j][i][-1]=="?" else 0 for i in range(len(srcs))]))
