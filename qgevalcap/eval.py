@@ -91,7 +91,9 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
     #また、一つの文につき一つのpredictしか評価していない。->10000文の内4000文は評価していない。
 
     #全ての文を評価する。(同じsrcでも答えが違っている場合はanswerを使うものは違っている可能性があるから)
-    if 1:
+
+    #文と疑問詞句が一致しているものをtargetとする
+    if 0:
         target_dict=defaultdict(lambda:[])
         predict_dict=defaultdict(str)
         for i,pair in enumerate(pairs):
@@ -113,6 +115,19 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
         print(list(res.items())[0:5])
         print(list(gts.items())[0:5])
 
+
+    #正しいもののみをペアにする
+    if 1:
+        target_dict=defaultdict(lambda:[])
+        predict_dict=defaultdict(str)
+        for i,pair in enumerate(pairs):
+            s=pair["tokenized_sentence"]
+            t=pair['tokenized_question'].encode('utf-8')
+            p=pair['prediction'].encode('utf-8')
+            target_dict[s].append(t)
+            predict_dict[(p,s)]=s
+        gts={i:p["tokenized_question"] for i,p in enumerate(pairs)}
+        res={i:[p["prediction"]] for i,p in enumerate(pairs)}
 
 
 
