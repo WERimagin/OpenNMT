@@ -83,6 +83,8 @@ def data_process(input_path,interro_path,train=False):
         interro_data=json.load(f)
 
     use_interro=True
+    use_answer=True
+    replace_answer=True
 
     questions=[]
     answers=[]
@@ -119,14 +121,27 @@ def data_process(input_path,interro_path,train=False):
                     interro_text=interro_text[:-2]
                     print(interro_text)
 
+                if replace_answer:
+                    sentence_start=context_text.find(sentence_text)
+                    answer_start_insent=answer_start-sentence_start
+                    answer_end_insent=answer_start_insent+len(answer_text)
+                    sentence_text=sentence_text[:answer_start_insent] \
+                                    +"answer_hidden_token" \
+                                    +sentence_text[answer_end_insent:]
+
+
                 sentence_text=" ".join(tokenize(sentence_text))
                 question_text=" ".join(tokenize(question_text))
                 answer_text=" ".join(tokenize(answer_text))
                 interro_text=" ".join(tokenize(interro_text))
                 non_interro_text=" ".join(tokenize(non_interro_text))
 
-                if use_interro:
+                if use_interro and not use_answer:
                     sentence_text=" ".join([sentence_text,"<SEP>",interro_text])
+                elif not use_interro and use_answer:
+                    sentence_text=" ".join([sentence_text,"<SEP>",answer_text])
+                elif use_interro and use_answer:
+                    sentence_text=" ".join([sentence_text,"<SEP>",interro_text,"<SEP2>",answer_text])
 
                 sentences.append(sentence_text)
                 questions.append(question_text)
@@ -134,23 +149,41 @@ def data_process(input_path,interro_path,train=False):
                 interros.append(interro_text)
                 non_interros.append(non_interro_text)
 
-    print(all_count)
-    print(len(sentences))
+    if replace_answer:
+        if use_interro and use_answer:
+            setting="-interro-repanswer"
+        elif not use_interro and use_answer:
+            setting="-repanswer"
+        elif use_interro and not use_answer:
+            setting="-interro-nonanswer-repanswer"
+        elif not use_interro and not use_answer:
+            setting="-nonanswer-repanswer"
+    else:
+        if use_interro and not use_answer:
+            setting="-interro"
+        elif not use_interro and use_answer:
+            setting="-answer"
+        elif use_interro and use_answer:
+            setting="-interro-answer"
+        elif not use_interro and not use_answer:
+            setting="-normal"
+        elif use_interro==True and use_pre_interro==True:
+            setting="-preinterro"
 
-    setting="interro" if use_interro else "normal"
+
     datatype="train" if train else "dev"
 
     random_list=list(range(len(questions)))
-    with open("data/squad-src-{}-full-{}.txt".format(datatype,setting),"w")as f:
+    with open("data/squad-src-{}-bert-{}.txt".format(datatype,setting),"w")as f:
         for i in random_list:
             f.write(sentences[i]+"\n")
-    with open("data/squad-tgt-{}-full-{}.txt".format(datatype,setting),"w")as f:
+    with open("data/squad-tgt-{}-bert-{}.txt".format(datatype,setting),"w")as f:
         for i in random_list:
             f.write(questions[i]+"\n")
-    with open("data/squad-ans-{}-full-{}.txt".format(datatype,setting),"w")as f:
+    with open("data/squad-ans-{}-bert-{}.txt".format(datatype,setting),"w")as f:
         for i in random_list:
             f.write(answers[i]+"\n")
-    with open("data/squad-interro-{}-full-{}.txt".format(datatype,setting),"w")as f:
+    with open("data/squad-interro-{}-bert-{}.txt".format(datatype,setting),"w")as f:
         for i in random_list:
             f.write(interros[i]+"\n")
 
