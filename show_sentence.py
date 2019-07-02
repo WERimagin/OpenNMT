@@ -30,7 +30,7 @@ parser.add_argument("--interro_each", action="store_true")
 parser.add_argument("--notsplit", action="store_true")
 parser.add_argument("--print", action="store_true")
 parser.add_argument("--result", action="store_true")
-
+parser.add_argument("--show", action="store_true")
 
 args = parser.parse_args()
 
@@ -50,11 +50,14 @@ with open("data/squad-tgt-test-interro.txt","r")as f:
     for line in f:
         tgts.append(line.strip())
 
-
-pred_name=["data/squad-pred-test-interro.txt",
-            "data/squad-pred-test-nqg.txt",
-            "data/squad-pred-test-repanswer.txt",
-            "data/squad-pred-test-interro-repanswer.txt"]
+if 0:
+    pred_name=["data/squad-pred-test-interro.txt",
+                "data/squad-pred-test-nqg.txt",
+                "data/squad-pred-test-repanswer.txt",
+                "data/squad-pred-test-interro-repanswer.txt"]
+if 1:
+    pred_name=["data/squad-pred-test-repanswer.txt",
+                "data/squad-pred-test-interro-repanswer.txt"]
 
 for name in pred_name:
     mylist=[]
@@ -63,17 +66,35 @@ for name in pred_name:
             mylist.append(line.strip())
     preds.append(mylist)
 
-
-
 np.random.seed(0)
 id_list=np.random.permutation(list(range(len(srcs))))
-for i,id in enumerate(id_list[0:110]):
-    print(i)
-    print("SRC:{}".format(srcs[id]))
-    print("TGT:{}".format(tgts[id]))
-    for p in preds:
-        print(p[id])
-    print()
+id_shuffle_list=[np.random.permutation(list(range(2))) for i in range(110)]
 
-for j in range(4):
-    print(sum([1 if preds[j][i][-1]=="?" else 0 for i in range(len(srcs))]))
+
+if args.show:
+    for i,id in enumerate(id_list[0:110]):
+        print("problem:{}".format(i)))
+        print("SRC:{}".format(srcs[id]))
+        print("TGT:{}".format(tgts[id]))
+
+        for j in id_shuffle_list[i]:
+            print(preds[i][j])
+        print()
+
+
+else:
+    with open("human_eval_2.txt","r")as f:
+        for line in f:
+            data.append(line.strip())
+
+    score=np.zeros(100,2)
+    for i,line in enumerate(data):
+        if line in ["1","2","3","4","5"]:
+            #score.append(int(line))
+            score[i/2][id_shuffle_list[i/2][i%2]]=int(line)
+        elif len(line)==3 and line[1]=="-" and False:
+            pass
+            #score.append(int(line[0])-int(line[2]))
+            #score.append(int(line[0]))
+    print("result of repanswer:{}".format(np.average(score[:,0])))
+    print("result of interro-repanswer:{}".format(np.average(score[:,1])))
