@@ -1,0 +1,874 @@
+problem:0
+SRC:the movie of the week broadcast feature-length dramatic films directed by such talented filmmakers as aaron spelling , david wolper and steven spielberg ( the latter of whom gained early success through the showcase for his 1971 film duel ) that were produced on an average budget of $ 400,000– $ 450,000 . <SEP> for which abc movie of the week film <SEP2> duel
+TGT:for which abc movie of the week film did steven spielberg first gain success ?
+for which abc movie of the week film was the movie produced ?
+what film did spielberg begin to showcase for ?
+2 0
+1 0
+
+problem:1
+SRC:in the egyptian parliamentary election , 2011–2012 , the political parties identified as " islamist " ( the brotherhood 's freedom and justice party , salafi al-nour party and liberal islamist al-wasat party ) won 75 % of the total seats . <SEP> what percentage of seats <SEP2> 75 % of the total seats
+TGT:what percentage of seats did political parties identifying as islamist win in the egyptian parliamentary election of 2011-2012 ?
+what percentage of seats did the brotherhood 's freedom and justice party win ?
+how much of the total seats did 2011–2012 win ?
+2 0
+1 0
+
+
+
+problem:2
+SRC:on april 2 , 2009 , citadel communications announced that it would rebrand abc radio as citadel media ; however , abc news continued to provide news content for citadel . <SEP> what <SEP2> citadel media
+TGT:in 2009 , what did citadel communications rebrand it 's abc radio brand as ?
+what was the name of the citadel communications announce ?
+what did citadel communications announce on april 2 , 2009 ?
+2 0
+2 1
+
+problem:3
+SRC:current faculty include the anthropologist marshall sahlins , historian dipesh chakrabarty , paleontologists neil shubin and paul sereno , evolutionary biologist jerry coyne , nobel prize winning physicist yoichiro nambu , nobel prize winning physicist james cronin , nobel prize winning economists eugene fama , james heckman , lars peter hansen , roger myerson and robert lucas , jr. , freakonomics author and noted economist steven levitt , current governor of india 's central bank raghuram rajan , the 74th united states secretary of the treasury and former goldman sachs chairman and ceo hank paulson , former chairman of president barack obama 's council of economic advisors austan goolsbee , shakespeare scholar david bevington , and renowned political scientists john mearsheimer and robert pape . <SEP> what <SEP2> neil shubin and paul sereno
+TGT:what paleontologists are currently on the university 's faculty ?
+who are the current faculty of india 's central bank ?
+what are some of the current faculty of india 's central bank ?
+1 2
+2 2
+
+
+problem:4
+SRC:a simple case of dynamic equilibrium occurs in constant velocity motion across a surface with kinetic friction . <SEP> what <SEP2> dynamic equilibrium
+TGT:what occurs when traveling across a surface at a constant velocity with regard to friction ?
+what is a simple case of ?
+what occurs in constant velocity motion across a surface with kinetic friction ?
+2 2
+2 2
+
+
+
+problem:5
+SRC:now at a strong second place , the network entered the 1990s with additional family-friendly hits including america 's funniest home videos ( which has gone on to become the longest-running prime time entertainment program in the network 's history ) , step by step , hangin ' with mr. cooper , boy meets world and perfect strangers spinoff family matters , as well as series such as doogie howser , m.d. , life goes on , cult favorite twin peaks and the commish . <SEP> what <SEP2> america 's funniest home videos
+TGT:in 1990 , what was the longest running primetime entertainment program in abc 's history ?
+what is the longest-running prime time entertainment program in the network 's history ?
+what is the longest-running prime time entertainment program in the network 's history called ?
+2 2
+2 2
+
+problem:6
+SRC:notable faculty in physics have included the speed of light calculator a. a. michelson , elementary charge calculator robert a. millikan , discoverer of the compton effect arthur h. compton , the creator of the first nuclear reactor enrico fermi , " the father of the hydrogen bomb " edward teller , " one of the most brilliant and productive experimental physicists of the twentieth century " luis walter alvarez , murray gell-mann who introduced the quark , second female nobel laureate maria goeppert-mayer , the youngest american winner of the nobel prize tsung-dao lee , and astrophysicist subrahmanyan chandrasekhar . <SEP> who <SEP2> edward teller
+TGT:who is also known at the father of the hydrogen bomb ?
+who was the father of the hydrogen bomb ?
+who was the father of the hydrogen bomb enrico fermi ?
+2 2
+2 0
+
+problem:7
+SRC:the income gap in other countries ranges from 53 % in botswana to -40 % in bahrain . <SEP> what <SEP2> -40 %
+TGT:what is the gender income inequality in bahrain ?
+what is the income gap in bahrain in bahrain ?
+what is the income gap in bahrain ?
+2 2
+2 2
+
+problem:8
+SRC:with the death of captain francis fowke , royal engineers the next architect to work at the museum was colonel ( later major general ) henry young darracott scott , also of the royal engineers . <SEP> who <SEP2> henry young darracott scott
+TGT:who was brought it to work on the museum after the death of captain francis fowke ?
+who was the next architect to work at the museum ?
+who was the death of captain francis fowke ?
+2 2
+2 0
+
+problem:9
+SRC:normally , the reenergized electrons are taken by nadp+ , though sometimes they can flow back down more h+-pumping electron transport chains to transport more hydrogen ions into the thylakoid space to generate more atp . <SEP> what <SEP2> nadp+
+TGT:what usually takes reenergized electrons ?
+how are the reenergized electrons taken by ?
+what are the reenergized electrons taken by ?
+0 0
+2 2
+
+problem:10
+SRC:two thirds of the water flow volume of the rhine flows farther west , through the waal and then , via the merwede and nieuwe merwede ( de biesbosch ) , merging with the meuse , through the hollands diep and haringvliet estuaries , into the north sea . <SEP> where <SEP2> waal
+TGT:where does two thirds of the rhine flow outside of germany ?
+where do two thirds of the water flow volume of the rhine flows through ?
+what is the name of the waal of the rhine flows ?
+2 2
+1 0
+
+problem:11
+SRC:some of the most relevant supreme court case law on this is as follows : runyon v. mccrary , 427 u.s. 160 ( 1976 ) ; wisconsin v. yoder , 406 u.s. 205 ( 1972 ) ; pierce v. society of sisters , 268 u.s. 510 ( 1925 ) ; meyer v. nebraska , 262 u.s. 390 ( 1923 ) . <SEP> who <SEP2> mccrary
+TGT:who was the opposing party in the runyon case ?
+what is the name of the most relevant supreme court case law ?
+who is the pierce v. society of sisters ?
+1 0
+2 0
+
+
+problem:12
+SRC:his most concrete effort to patronize chinese learning was founding the academy of the pavilion of the star of literature ( chinese : 奎章閣學士院 ) , first established in the spring of 1329 and designed to undertake " a number of tasks relating to the transmission of confucian high culture to the mongolian imperial establishment " . <SEP> when <SEP2> spring of 1329
+TGT:when did tugh temur found his academy ?
+when was the academy of literature first established ?
+where was the star of the star of literature established ?
+2 2
+0 0
+
+problem:13
+SRC:diseases of poverty directly correlate with a country 's economic performance and wealth distribution : half of kenyans live below the poverty level . <SEP> what <SEP2> diseases of poverty
+TGT:what directly correlates with the country 's economic performance and wealth distribution ?
+what is the poverty level ?
+what is a major cause of kenyans live below the poverty level ?
+2 0
+2 2
+
+problem:14
+SRC:the owner selects the ideas he or she likes best and hires the appropriate contractor . <SEP> who <SEP2> the owner
+TGT:who selects and hires the best ideas and appropriate contractors ?
+who selects the ideas he likes best and hires ?
+who selects the ideas or she likes best ?
+2 2
+2 2
+
+
+problem:15
+SRC:the first result in that direction is the prime number theorem , proven at the end of the 19th century , which says that the probability that a given , randomly chosen number n is prime is inversely proportional to its number of digits , or to the logarithm of n . <SEP> what theorem <SEP2> the prime number theorem
+TGT:what theorem states that the probability that a number n is prime is inversely proportional to its logarithm ?
+what theorem says that a given number n is inversely proportional to its number of digits ?
+what is the first result in that direction is prime ?
+2 0
+1 0
+
+problem:16
+SRC:systemic acquired resistance ( sar ) is a type of defensive response used by plants that renders the entire plant resistant to a particular infectious agent . <SEP> what <SEP2> systemic acquired resistance ( sar )
+TGT:what is a kind of defense response that makes the entire plant resistant to a particular agent ?
+what is a type of defensive response used by plants ?
+what is a type of defensive response used by plants that renders the entire plant resistant to a particular infectious agent ?
+2 2
+2 2
+
+problem:17
+SRC:harvard 's faculty includes scholars such as biologist e. o. wilson , cognitive scientist steven pinker , physicists lisa randall and roy glauber , chemists elias corey , dudley r. herschbach and george m. whitesides , computer scientists michael o. rabin and leslie valiant , shakespeare scholar stephen greenblatt , writer louis menand , critic helen vendler , historians henry louis gates , jr. and niall ferguson , economists amartya sen , n. gregory mankiw , robert barro , stephen a. marglin , don m. wilson iii and martin feldstein , political philosophers harvey mansfield , baroness shirley williams and michael sandel , fields medalist mathematician shing-tung yau , political scientists robert putnam , joseph nye , and stanley hoffmann , scholar/composers robert levin and bernard rands , astrophysicist alyssa a. goodman , and legal scholars alan dershowitz and lawrence lessig . <SEP> what prestigious legal scholars <SEP2> alan dershowitz and lawrence lessig
+TGT:what prestigious legal scholars are faculty members at harvard ?
+who are the legal scholars of harvard ?
+what prestigious legal scholars are in harvard ?
+1 2
+2 2
+
+problem:18
+SRC:interethnic marriage between han and jurchen became common at this time . <SEP> what kind of interethnic marriage <SEP2> between han and jurchen
+TGT:what kind of interethnic marriage became common in the jin dynasty ?
+what kind of interethnic marriage was common in interethnic marriage ?
+what was the name of the interethnic marriage that became common in marriage ?
+2 2
+1 0
+
+problem:19
+SRC:in 1950 , noble appointed robert kintner to be abc 's president while he himself served as its ceo , a position he would hold until his death in 1958 . <SEP> who <SEP2> robert kintner
+TGT:who was appointed to be abc 's president by noble in 1950 ?
+who was the president of abc in 1950 ?
+who was the noble minister of abc in 1950 ?
+2 2
+2 0
+
+problem:20
+SRC:in 1974 , abc premiered the detective series s.w.a.t . that same year , the network made the decision to compete with nbc 's morning news-talk program today . <SEP> in 1974 , what detective series <SEP2> s.w.a.t
+TGT:in 1974 , what detective series debuted on abc ?
+what was the name of abc 's detective series ?
+in 1974 , what detective series did abc star in 1974 ?
+1 2
+2 2
+
+problem:21
+SRC:the war of the austrian succession ( whose north american theater is known as king george 's war ) formally ended in 1748 with the signing of the treaty of aix-la-chapelle . <SEP> what <SEP2> 1748 with the signing of the treaty of aix-la-chapelle
+TGT:what was the end of the war of the austrian succession ?
+what happened to king george 's war ?
+what did the war of the austrian succession end ?
+2 2
+2 0
+
+
+problem:22
+SRC:a bbc audience research survey conducted in 1972 found that , by their own definition of violence ( " any act [ s ] which may cause physical and/or psychological injury , hurt or death to persons , animals or property , whether intentional or accidental " ) doctor who was the most violent of the drama programmes the corporation produced at the time . <SEP> which show <SEP2> doctor who
+TGT:which show was voted most violent of the bbc shows in a 1972 survey ?
+which show was the most violent of the drama programmes ?
+who was the bbc audience research survey in 1972 ?
+2 2
+0 0
+
+
+problem:23
+SRC:the 2005 series reveals that the ninth doctor thought he was the last surviving time lord , and that his home planet had been destroyed ; in " the empty child " ( 2005 ) , dr. constantine states that , " before the war even began , i was a father and a grandfather . <SEP> in what year <SEP2> 2005
+TGT:in what year did doctor who state that he was the last time lord ?
+in what year did the series of the series show that the ninth doctor was destroyed ?
+in what year did dr. constantine die ?
+2 0
+2 0
+
+
+problem:24
+SRC:the situation in new france was further exacerbated by a poor harvest in 1757 , a difficult winter , and the allegedly corrupt machinations of françois bigot , the intendant of the territory . <SEP> what other reason <SEP2> poor harvest
+TGT:what other reason caused poor supply of new france from a difficult winter ?
+what other reason was the situation in new france exacerbated by in 1757 ?
+what exacerbated the situation in new france in 1757 ?
+2 2
+1 2
+
+problem:25 NG
+SRC:civil disobedients ' refraining from violence is also said to help preserve society 's tolerance of civil disobedience . <SEP> that <SEP2> tolerance
+TGT:people behaving with civil disobedience that is not-violent is said to make society have more of what ?
+what is refraining from violence ?
+civil disobedients is said to help preserve society 's what ?
+
+
+problem:26
+SRC:in the 16th century , the beginning of the historical era , the region was inhabited by the mocama , a coastal subgroup of the timucua people . <SEP> what <SEP2> the historical era
+TGT:what is the 16th century known as the start of ?
+what was the beginning of the 16th century ?
+what era was inhabited by the mocama ?
+2 0
+1 0
+
+problem:27
+SRC:the land was occupied by brompton park house , which was extended , most notably by the " brompton boilers " , which were starkly utilitarian iron galleries with a temporary look and were later dismantled and used to build the v & a museum of childhood . <SEP> what <SEP2> brompton park house
+TGT:what was the building that formerly occupied the v & a 's present site called ?
+what was the name of the house occupied by the brompton boilers ?
+what was the name of the house that occupied the land ?
+2 0
+2 2
+
+problem:28
+SRC:at the battle of kalka river in 1223 , subutai 's forces defeated the larger kievan force . <SEP> where <SEP2> kalka river
+TGT:where was the kievian force that confronted subutai 's army defeated in 1223 ?
+where did the battle of answer_hidden_token take place ?
+at what battle did the battle of answer_hidden_token take place ?
+2 0
+1 0
+
+problem:29
+SRC:with international criminal court trial dates in 2013 for both president kenyatta and deputy president william ruto related to the 2007 election aftermath , us president barack obama chose not to visit the country during his mid-2013 african trip . <SEP> who <SEP2> us president barack obama
+TGT:who decided not to come visit the country in 2013 ?
+who chose not to visit the country in 2007 ?
+who chose not to visit the country in 2007 ?
+2 0
+2 0
+
+problem:30
+SRC:in reviewing the voluminous literature on the subject , the student of civil disobedience rapidly finds himself surrounded by a maze of semantical problems and grammatical niceties . <SEP> what issue <SEP2> semantical problems and grammatical niceties
+TGT:what issue plagues the literature about civil disobedience ?
+what did the student of civil disobedience cause himself surrounded by ?
+what issue does the student of civil disobedience cause ?
+1 2
+2 2
+
+problem:31
+SRC:tanaghrisson , a chief of the mingo , who were remnants of iroquois and other tribes who had been driven west by colonial expansion . <SEP> what native chief <SEP2> tanaghrisson
+TGT:what native chief travelled to french fort and threatened marin ?
+what native chief was driven by colonial expansion ?
+who was a chief of the mingo ?
+2 2
+1 2
+
+problem:32
+SRC:although ( as series co-star sophie aldred reported in the documentary doctor who : more than 30 years in the tardis ) it was effectively , if not formally , cancelled with the decision not to commission a planned 27th series of the show for transmission in 1990 , the bbc repeatedly affirmed that the series would return . <SEP> what <SEP2> the series would return
+TGT:after cancelling the show , what did the bbc tell the public ?
+what did the bbc claim that the 27th series would be ?
+what did the bbc claim that the bbc was affirmed ?
+2 2
+2 2
+
+problem:33
+SRC:western musical instruments were introduced to enrich chinese performing arts . <SEP> what type of musical instruments <SEP2> western
+TGT:what type of musical instruments did the yuan bring to china ?
+what genre of music was introduced to enrich chinese arts ?
+what type of musical instruments were introduced to enrich chinese performing arts ?
+1 2
+2 2
+
+problem:34
+SRC:abc purchased sports programs , inc. in exchange for shares in the company , leading it to become the future core of abc sports , with arledge as the executive producer of that division 's shows . <SEP> which <SEP2> sports programs , inc .
+TGT:abc purchased which of edgar scherick 's company ?
+what company did abc sell in exchange for shares in the company ?
+which programs did abc buy for shares in the company ?
+0 0
+2 2
+
+problem:35
+SRC:the ipcc produces reports that support the united nations framework convention on climate change ( unfccc ) , which is the main international treaty on climate change . <SEP> what <SEP2> united nations framework convention on climate change
+TGT:what is the un 's climate change treaty ?
+what does unfccc stand for ?
+what does unfccc stand for ?
+2 2
+2 2
+
+problem:36
+SRC:within labor income distribution is due to differences in value added by different classifications of workers . <SEP> what <SEP2> value added by different classifications of workers
+TGT:what is distribution of income from labor due to the differences of ?
+what is within labor income distribution ?
+what is labor income distribution due to ?
+2 2
+2 2
+
+problem:37 NG
+SRC:endosymbiotic gene transfer is how we know about the lost chloroplasts in many chromalveolate lineages . <SEP> what shows us <SEP2> endosymbiotic gene transfer
+TGT:what shows us lost chloroplasts ?
+what is the name of the endosymbiotic gene transfer ?
+what shows us is how we know about the lost chloroplasts in many chromalveolate lineages ?
+
+problem:38
+SRC:euglenophyte chloroplasts have three membranes—it is thought that the membrane of the primary endosymbiont was lost , leaving the cyanobacterial membranes , and the secondary host 's phagosomal membrane . <SEP> which membrane <SEP2> the membrane of the primary endosymbiont
+TGT:which membrane was lost in euglenophyte chloroplasts ?
+which membrane was lost ?
+what is lost ?
+2 2
+1 2
+
+problem:39
+SRC:americans live no longer on average ( about 77 years in 2004 ) than greeks ( 78 years ) or new zealanders ( 78 ) , though the usa has a higher gdp per capita . <SEP> who <SEP2> americans
+TGT:who lives no longer on average than greeks and new zealanders ?
+who live no longer on average ?
+who live no longer on average ?
+2 2
+2 2
+
+problem:40
+SRC:most of the water flows via the constance hopper into the rheinrinne ( " rhine gutter " ) and seerhein . <SEP> what <SEP2> rhine gutter
+TGT:what does the word rheinrinne translate to ?
+what is the rheinrinne called ?
+what does rheinrinne mean ?
+2 2
+2 2
+
+problem:41
+SRC:following guidelines set in the national cycling strategy , newcastle first developed its cycling strategy in 1998 . <SEP> what year <SEP2> 1998
+TGT:what year did newcastle first develop its cycling strategy ?
+when did newcastle 's cycling strategy begin ?
+what year did newcastle first develop its cycling strategy ?
+1 2
+2 2
+
+problem:42
+SRC:two thirds of the water flow volume of the rhine flows farther west , through the waal and then , via the merwede and nieuwe merwede ( de biesbosch ) , merging with the meuse , through the hollands diep and haringvliet estuaries , into the north sea . <SEP> which direction <SEP2> west
+TGT:which direction does two thirds of the rhine flow outside of germany ?
+what direction do the rhine flows from ?
+which direction does the rhine flows farther to ?
+1 0
+2 2
+
+problem:43
+SRC:the path of violence and military struggle was then taken up by the egyptian islamic jihad organization responsible for the assassination of anwar sadat in 1981 . <SEP> when <SEP2> 1981
+TGT:when did the egyptian islamic jihad assassinate anwar sadat ?
+when did anwar sadat die ?
+when was anwar sadat assassination ?
+1 0
+1 0
+
+problem:44
+SRC:legislative changes are recorded in the book of discipline which is revised after each general conference . <SEP> what book <SEP2> the book of discipline
+TGT:what book is revised after every general conference ?
+in what book are legislative changes recorded ?
+what book is revised after each general conference ?
+1 2
+2 2
+
+problem:45
+SRC:also on loan to the museum , from her majesty the queen elizabeth ii , are the raphael cartoons : the seven surviving ( there were ten ) full scale designs for tapestries in the sistine chapel , of the lives of peter and paul from the gospels and the acts of the apostles . <SEP> who <SEP2> queen elizabeth ii
+TGT:who has loaned the raphael cartoons to the museum ?
+who is the raphael cartoons ?
+who is the raphael cartoons ?
+2 0
+2 0
+
+problem:46
+SRC:there have been debates as to whether civil disobedience must necessarily be non-violent . <SEP> what type of civil disobedience <SEP2> non-violent
+TGT:what type of civil disobedience is commonly accepted ?
+what is the term for civil disobedience ?
+what type of civil disobedience are civil disobedience necessarily be ?
+1 0
+2 2
+
+problem:47
+SRC:a b cell identifies pathogens when antibodies on its surface bind to a specific foreign antigen . <SEP> what kind of cell <SEP2> b cell
+TGT:what kind of cell identifies pathogens when the antibodies on its surface complex with a specific foreign antigen ?
+what kind of cell identifies pathogens ?
+what identifies pathogens when antibodies on its surface bind to a specific foreign antigen ?
+2 2
+1 2
+
+problem:48
+SRC:a regulation of the rhine was called for , with an upper canal near diepoldsau and a lower canal at fußach , in order to counteract the constant flooding and strong sedimentation in the western rhine delta . <SEP> why <SEP2> constant flooding
+TGT:why was the rhine regulated ?
+what was the regulation of the rhine called for ?
+why was a regulation of the rhine called ?
+1 1
+2 2
+
+problem:49
+SRC:cameron congratulated the snp on their victory but vowed to campaign for the union in the independence referendum . <SEP> who <SEP2> cameron
+TGT:who congratulated the snp while vowing to campaign against their referendum ?
+who vowed to campaign for the union in referendum ?
+who congratulated the snp on their victory ?
+2 2
+2 2
+
+problem:50
+SRC:in this arrangement , the architect or engineer acts as the project coordinator . <SEP> in the most common construction procurement , who <SEP2> the architect or engineer
+TGT:in the most common construction procurement , who acts as the project coordinator ?
+who acts as the project coordinator ?
+in the most common construction procurement , who is the project coordinator ?
+2 2
+1 2
+
+problem:51
+SRC:plastoglobuli ( singular plastoglobulus , sometimes spelled plastoglobule ( s ) ) , are spherical bubbles of lipids and proteins about 45–60 nanometers across . <SEP> what <SEP2> plastoglobulus , sometimes spelled plastoglobule ( s )
+TGT:what is a single plastoglobuli called ?
+what does plastoglobuli mean ?
+what does plastoglobuli mean ?
+2 2
+2 2
+
+problem:52
+SRC:the rhine emerges from lake constance , flows generally westward , as the hochrhein , passes the rhine falls , and is joined by its major tributary , the river aare . <SEP> what <SEP2> aare
+TGT:what is the major tributary for the rhine ?
+what is the name of the major tributary in the rhine ?
+what is the name of the major river in the rhine ?
+2 2
+1 2
+
+problem:53
+SRC:colonialism 's core meaning is the exploitation of the valuable assets and supplies of the nation that was conquered and the conquering nation then gaining the benefits from the spoils of the war . <SEP> what <SEP2> exploitation
+TGT:what is colonialism 's core meaning ?
+what is colonialism 's core meaning ?
+what is colonialism 's core meaning ?
+2 2
+2 2
+
+
+problem:54
+SRC:these include the miller–rabin primality test , which is fast but has a small probability of error , and the aks primality test , which always produces the correct answer in polynomial time but is too slow to be practical . <SEP> what <SEP2> the miller–rabin primality test
+TGT:what is the name of one algorithm useful for conveniently testing the primality of large numbers ?
+what is fast but has a small probability of error ?
+what is the name of the test that has a small probability of error ?
+2 2
+2 2
+
+problem:55
+SRC:during the southern song dynasty the descendant of confucius at qufu , the duke yansheng kong duanyou fled south with the song emperor to quzhou , while the newly established jin dynasty ( 1115–1234 ) in the north appointed kong duanyou 's brother kong duancao who remained in qufu as duke yansheng . <SEP> who <SEP2> the song emperor
+TGT:who did duke yansheng kong duanyou flee with ?
+who did the duke yansheng kong duanyou flee with ?
+who did the duke yansheng kong with ?
+2 2
+2 2
+
+problem:56
+SRC:the episode " the time of the doctor " depicted the doctor acquiring a new cycle of regenerations , starting from the twelfth doctor , due to the eleventh doctor being the product of the doctor 's twelfth regeneration from his original set . <SEP> in what <SEP2> the time of the doctor
+TGT:in what episode did doctor who get a new cycle of regenerations ?
+in what did the doctor 's cycle begin ?
+what was the name of the episode that depicted the doctor acquiring a new cycle of regenerations ?
+2 1
+1 2
+
+problem:57
+SRC:in 1226 , immediately after returning from the west , genghis khan began a retaliatory attack on the tanguts . <SEP> in which year <SEP2> 1226
+TGT:in which year did genghis khan strike against the tanguts ?
+in what year did genghis khan begin a retaliatory attack on the tanguts ?
+in which year did genghis khan returning a attack on the tanguts ?
+2 2
+2 2
+
+problem:58
+SRC:one key figure in the plans for what would come to be known as american empire , was a geographer named isiah bowman . <SEP> who <SEP2> isiah bowman
+TGT:who was the director of the american geographical society in 1914 ?
+what was the name of american empire ?
+who was the american empire a geographer named ?
+1 2
+2 2
+
+problem:59
+SRC:french irregular forces ( canadian scouts and indians ) harassed fort william henry throughout the first half of 1757 . <SEP> what troops <SEP2> french irregular forces ( canadian scouts and indians )
+TGT:what troops attacked fort william henry in early 1757 ?
+what troops harassed fort william henry ?
+who was fort william henry ?
+2 2
+0 0
+
+problem:60
+SRC:tvontario picked up the show in 1976 beginning with the three doctors and aired each series ( several years late ) through to series 24 in 1991 . <SEP> what year <SEP2> 1976
+TGT:what year did tvontario start showing doctor who episodes ?
+when did tvontario first appear up the show ?
+what year did tvontario first appear ?
+1 2
+2 2
+
+problem:61
+SRC:such exemplary saints include martyrs , confessors of the faith , evangelists , or important biblical figures such as saint matthew , lutheran theologian and martyr to the nazis dietrich bonhoeffer , salvation army founder william booth , african missionary david livingstone and methodism 's revered founder john wesley are among many cited as protestant saints . <SEP> who <SEP2> william booth
+TGT:who is the founder of the salvation army ?
+who was founder john wesley ?
+who was the founder of john wesley ?
+2 0
+2 0
+
+problem:62
+SRC:such qualifications were introduced under the house of commons disqualification act 1975 and the british nationality act 1981 . <SEP> when <SEP2> 1981
+TGT:when was the british nationality act passed ?
+when was the british nationality act passed ?
+when was the british nationality act passed ?
+2 2
+2 2
+
+problem:63
+SRC:most british colonies mustered local militia companies , generally ill trained and available only for short periods , to deal with native threats , but did not have any standing forces . <SEP> what <SEP2> mustered local militia companies , generally ill trained and available only for short periods , to deal with native threats , but did not have any standing forces .
+TGT:what was normal british defense ?
+what did most british colonies do to deal with native threats ?
+what did most british colonies do ?
+2 2
+2 2
+
+problem:64
+SRC:by this definition , civil disobedience could be traced back to the book of exodus , where shiphrah and puah refused a direct order of pharaoh but misrepresented how they did it . <SEP> what book of the bible <SEP2> book of exodus
+TGT:what book of the bible discusses civil disobedience ?
+what book of the bible did shiphrah and puah support ?
+what could civil disobedience be traced back to ?
+2 0
+2 2
+
+problem:65
+SRC:the length of the rhine is conventionally measured in " rhine-kilometers " ( rheinkilometer ) , a scale introduced in 1939 which runs from the old rhine bridge at constance ( 0 km ) to hoek van holland ( 1036.20 km ) . <SEP> where <SEP2> old rhine bridge at constance
+TGT:where does the rhine river 's measurement begin ?
+what does rhine-kilometers stand for ?
+where does the length of the rhine originate ?
+1 0
+2 2
+
+problem:66
+SRC:larger drugs ( > 500 da ) can provoke a neutralizing immune response , particularly if the drugs are administered repeatedly , or in larger doses . <SEP> what <SEP2> > 500 da
+TGT:at what size and larger can drugs elicit a neutralizing immune response ?
+what is another term for larger drugs ?
+what is another term for larger drugs ?
+2 2
+2 2
+
+problem:67
+SRC:illuminated manuscripts in the library dating from the 12th to 16th centuries include : the eadwine psalter [ citation needed ] , canterbury ; pocket book of hours , reims ; missal from the royal abbey of saint denis , paris ; the simon marmion book of hours , bruges ; 1524 charter illuminated by lucas horenbout , london ; the armagnac manuscript of the trial and rehabilitation of joan of arc , rouen . <SEP> to which centuries <SEP2> from the 12th to 16th
+TGT:the v & a library 's collection of illuminated manuscripts are dated to which centuries ?
+to which centuries were the illuminated manuscripts in the library dating ?
+when did illuminated manuscripts appear in the library dating ?
+2 2
+1 2
+
+
+problem:68
+SRC:there have been over fifty studies showing tendencies for violence to be more common in societies where income differences are larger . <SEP> how many <SEP2> fifty
+TGT:over how many studies have shown that violence is more common in societies with income differences ?
+how many studies are there for violence in societies ?
+how many studies showing tendencies for violence ?
+2 2
+2 2
+
+problem:69
+SRC:the scottish parliament is unable to legislate on such issues that are reserved to , and dealt with at , westminster ( and where ministerial functions usually lie with uk government ministers ) . <SEP> where <SEP2> westminster
+TGT:where are issues like abortion and drug policy legislated on ?
+where is the scottish parliament dealt ?
+what city did the scottish parliament dealt with at ?
+2 0
+2 0
+
+problem:70
+SRC:noble subsequently acquired the rights to the " american broadcasting company " name from george b. storer in 1944 ; its parent company adopted the corporate name american broadcasting companies , inc. woods retained his position as president and ceo of abc until december 1949 , and was subsequently promoted to vice-chairman of the board before leaving abc altogether on june 30 , 1951 . <SEP> what position <SEP2> president and ceo
+TGT:what position did mark woods take on at the new american broadcasting company ?
+what position did inc. woods become ?
+what was the name of inc. woods 's parent company ?
+2 2
+1 0
+
+
+problem:71
+SRC:in 1979 , the soviet union deployed its 40th army into afghanistan , attempting to suppress an islamic rebellion against an allied marxist regime in the afghan civil war . <SEP> who <SEP2> the soviet union
+TGT:who deployed its army into afghanistan in 1979 ?
+who deployed its 40th army into afghanistan ?
+who deployed its 40th army into afghanistan ?
+2 2
+2 2
+
+problem:72
+SRC:in economics , notable nobel memorial prize in economic sciences winners milton friedman , a major advisor to republican u.s. president ronald reagan and conservative british prime minister margaret thatcher , george stigler , nobel laureate and proponent of regulatory capture theory , gary becker , an important contributor to the family economics branch of economics , herbert a. simon , responsible for the modern interpretation of the concept of organizational decision-making , paul samuelson , the first american to win the nobel memorial prize in economic sciences , and eugene fama , known for his work on portfolio theory , asset pricing and stock market behaviour , are all graduates . <SEP> what university alumni member <SEP2> eugene fama
+TGT:what university alumni member was known for his work on portfolio theory ?
+what university alumni member is known for his work on portfolio theory ?
+who is the first american to win the nobel memorial prize in economic sciences ?
+2 2
+1 1
+
+problem:73
+SRC:the immune system is a system of many biological structures and processes within an organism that protects against disease . <SEP> what <SEP2> biological structures and processes within an organism
+TGT:what is the immune system ?
+what is the immune system ?
+what is the immune system a system of ?
+2 2
+2 2
+
+problem:74
+SRC:although the mongols had ruled territories including today 's north china for decades , it was not until 1271 that kublai khan officially proclaimed the dynasty in the traditional chinese style . <SEP> when <SEP2> 1271
+TGT:when did khan formally declare the yuan dynasty ?
+when did the mongols declare the dynasty of the chinese style ?
+when did kublai khan rule to the chinese style ?
+2 2
+2 2
+
+problem:75
+SRC:rem sleep was discovered at the university in 1953 by nathaniel kleitman and eugene aserinsky . <SEP> when <SEP2> 1953
+TGT:when was rem sleep discovered ?
+when was rem sleep discovered ?
+when was rem sleep discovered ?
+2 2
+2 2
+
+problem:76
+SRC:davies ' successor , steven moffat , has continued the trend by reviving the silurians in series 5 , cybermats in series 6 , the great intelligence and the ice warriors in series 7 , and zygons in the 50th anniversary special . <SEP> who <SEP2> zygons
+TGT:who was reintroduced for the 50th anniversary special ?
+what was the name of the great intelligence in the 50th anniversary special ?
+who was the 50th anniversary of steven moffat ?
+1 0
+2 2
+
+problem:77
+SRC:in this perspective , wages and profits are determined by the marginal value added of each economic actor ( worker , capitalist/business owner , landlord ) . <SEP> what <SEP2> worker , capitalist/business owner , landlord
+TGT:what are examples of economic actors ?
+who are the marginal value of each economic actor ?
+what is the economic actor of each economic actor ?
+1 0
+2 2
+
+problem:78
+SRC:one episode of doctor who ( the infinite quest ) was released on vcd . <SEP> what <SEP2> the infinite quest
+TGT:what is the only episode released on vcd ?
+what was the title of the episode of doctor ?
+what is the name of the episode of doctor ?
+2 2
+2 2
+
+problem:79
+SRC:he found that inequality is associated with higher levels of redistributive taxation , which is associated with lower levels of growth from reductions in private savings and investment . <SEP> what <SEP2> redistributive taxation
+TGT:what is inequality associated with higher levels of ?
+what is associated with lower levels of growth from reductions in private savings and investment ?
+what is associated with lower levels of growth in private savings and investment ?
+2 2
+2 2
+
+problem:80
+SRC:notable companions from the earlier series included romana ( mary tamm and lalla ward ) , a time lady ; sarah jane smith ( elisabeth sladen ) ; and jo grant ( katy manning ) . <SEP> what <SEP2> romana
+TGT:what was the name of the character known as the time lady ?
+what was the name of the time lady in the earlier series ?
+what was the name of the notable companions from the mary tamm and lalla ward ?
+2 1
+2 0
+
+problem:81
+SRC:as a result of the american revolution , john wesley was compelled in 1784 to break with standard practice and ordain two of his lay preachers as presbyters , thomas vasey and richard whatcoat . <SEP> why <SEP2> result of the american revolution
+TGT:why was wesley compelled to break with standard practice and ordain two of his lay preachers as presbyters ?
+why was john wesley compelled in 1784 ?
+why was john wesley compelled to break with standard practice ?
+2 2
+2 2
+
+problem:82
+SRC:with the 2011 cancellation of supernanny , extreme makeover : home edition became the only remaining program on the network 's schedule that was broadcast in 4:3 standard definition . <SEP> in what year <SEP2> 2011
+TGT:in what year was supernanny canceled ?
+in what year did the cancellation of supernanny occur ?
+what year was supernanny released ?
+2 2
+1 0
+
+problem:83
+SRC:the answer , from bryan davies was that the museum intended to preserve and care for the collection and keep it available to the public , with items being redistributed to the british galleries , the medieval & renaissance galleries , and the planned new galleries for furniture and europe 1600–1800 , and that the horniman museum and other institutions were possible candidates for loans of material to ensure that the instruments remained publicly viewable . <SEP> which museum <SEP2> horniman museum
+TGT:which museum would receive items on loans from the musical instruments gallery ?
+which museum was publicly viewable ?
+what museum was the answer to preserve and care for the collection ?
+2 0
+1 0
+
+problem:84
+SRC:advances in polynomial algebra were made by mathematicians during the yuan era . <SEP> what type of math <SEP2> polynomial algebra
+TGT:what type of math was advanced during the yuan ?
+what type of math was made by mathematicians during the yuan era ?
+what type of advances were made by mathematicians during the yuan era ?
+2 2
+1 2
+
+problem:85 NG
+SRC:2002 saw the debut of the network 's first hit reality series , the bachelor ( the elimination-style dating show 's success led to a spinoff , the bachelorette , which premiered the following year , as well as two additional spinoffs that later debuted in the early 2010s ) . <SEP> what hit reality series <SEP2> the bachelor
+TGT:what hit reality series debuted for abc in 2002 ?
+what hit reality series did the bachelorette begin ?
+what was the name of the first hit reality series ?
+
+problem:86
+SRC:these societies also served as a space for travellers to share these stories.political geographers such as friedrich ratzel of germany and halford mackinder of britain also supported imperialism . <SEP> where <SEP2> germany
+TGT:where was friedrich ratzel born ?
+what country did friedrich ratzel belong to ?
+where was friedrich ratzel from ?
+1 2
+2 2
+
+problem:87
+SRC:an example would be wbai 's broadcasting the track " filthy words " from a george carlin comedy album , which eventually led to the 1978 supreme court case of fcc v. pacifica foundation . <SEP> what year <SEP2> 1978
+TGT:what year did the the case go before the supreme court ?
+when was fcc v. pacifica foundation established ?
+what year was the supreme court case of fcc v. pacifica foundation formed ?
+1 0
+2 2
+
+problem:88
+SRC:[ note 6 ] in 1978 a disco version of the theme was released in the uk , denmark and australia by the group mankind , which reached number 24 in the uk charts . <SEP> how high on the charts <SEP2> number 24
+TGT:how high on the charts did the mankind version of the theme go ?
+how high on the charts did the group mankind reach ?
+how many number of the uk charts did the group mankind reach in the uk charts ?
+2 2
+1 2
+
+problem:89
+SRC:often , it is not just one contractor , but a consortium of several contractors working together . <SEP> who <SEP2> a consortium of several contractors
+TGT:who is usually working together ?
+how many contractors are in the contractors ?
+who working together with a consortium ?
+0 0
+2 0
+
+problem:90
+SRC:the poor and the middle class matter the most for growth via a number of interrelated economic , social , and political channels . " <SEP> who <SEP2> the poor and the middle class
+TGT:who matters the most for economic growth ?
+who matter the most for growth via a number of interrelated economic , social , and political channels ?
+what matter matter the most for growth via a number of interrelated economic , social , and political channels ?
+2 2
+1 2
+
+problem:91
+SRC:he encourages a distinction between lawful protest demonstration , nonviolent civil disobedience , and violent civil disobedience . <SEP> what type of protest <SEP2> nonviolent civil disobedience
+TGT:what type of protest falls under civil disobedience without aggression ?
+what is the term for lawful protest demonstration ?
+what type of protest does whitehead believe protest demonstration ?
+1 0
+2 0
+
+problem:92
+SRC:until the early 1980s , industry was a major source of water pollution . <SEP> what <SEP2> pollution
+TGT:what did industry do to the rhine until the 1980s ?
+what was industry a major source of water in the early 1980s ?
+what was industry a major source of until the 1980s ?
+2 0
+2 2
+
+problem:93
+SRC:economist thomas piketty challenges this notion , claiming that from 1914 to 1945 wars and " violent economic and political shocks " reduced inequality . <SEP> who <SEP2> thomas piketty
+TGT:who challenges the notion of the kuznets curve hypothesis ?
+who was the economist of the notion of 1914 to 1945 ?
+who was the economist who claiming that reduced inequality from 1914 to 1945 to 1945 ?
+2 0
+2 0
+
+problem:94
+SRC:the origin of the name kenya is not clear , but perhaps linked to the kikuyu , embu and kamba words kirinyaga , kirenyaa and kiinyaa which mean " god 's resting place " in all three languages . <SEP> what <SEP2> god 's resting place
+TGT:what do the words kirinyaga , kirenyaa , and kiinyaa mean ?
+what does the name kenya mean in all three languages ?
+what does the name kenya mean in all three languages ?
+2 2
+2 2
+
+problem:95
+SRC:in addition , it voted to seek observer status in the national association of evangelicals and in the world evangelical fellowship . <SEP> what type of status <SEP2> observer status
+TGT:what type of status did the umc vote to seek in the national association of evangelicals ?
+what type of status did the national association of evangelicals vote to seek in the national association of evangelicals ?
+what is the status of the national association of evangelicals and the world evangelical fellowship ?
+2 2
+1 2
+
+problem:96
+SRC:chloroplastidan chloroplasts have lost the peptidoglycan wall between their double membrane , and have replaced it with an intermembrane space . <SEP> what <SEP2> the peptidoglycan wall
+TGT:what do n't chloroplastidan chloroplasts have ?
+what do chloroplastidan chloroplasts lost ?
+what do chloroplastidan chloroplasts lost between their double membrane ?
+2 2
+2 2
+
+problem:97
+SRC:brownlee notes that " although civil disobedients are constrained in their use of coercion by their conscientious aim to engage in moral dialogue , nevertheless they may find it necessary to employ limited coercion in order to get their issue onto the table . " <SEP> what <SEP2> limited coercion
+TGT:brownlee argues that sometimes people behave in what way to have their issue heard ?
+what do civil disobedients necessary to employ in order to get their issue onto the table ?
+what do brownlee notes employ in order to get their issue onto the table ?
+2 2
+2 2
+
+
+problem:98
+SRC:the style adopted for this part of the museum was italian renaissance , much use was made of terracotta , brick and mosaic , this north façade was intended as the main entrance to the museum with its bronze doors designed by james gamble & reuben townroe having six panels depicting : humphry davy ( chemistry ) ; isaac newton ( astronomy ) ; james watt ( mechanics ) ; bramante ( architecture ) ; michelangelo ( sculpture ) ; titian ( painting ) ; thus representing the range of the museums collections , godfrey sykes also designed the terracotta embellishments and the mosaic in the pediment of the north façade commemorating the great exhibition the profits from which helped to fund the museum , this is flanked by terracotta statue groups by percival ball . <SEP> who <SEP2> james gamble & reuben townroe
+TGT:who designed the bronze doors used as the main entrance to the museum ?
+who designed the bronze doors ?
+who designed the bronze doors ?
+2 2
+2 2
+
+problem:99
+SRC:the length of the rhine is conventionally measured in " rhine-kilometers " ( rheinkilometer ) , a scale introduced in 1939 which runs from the old rhine bridge at constance ( 0 km ) to hoek van holland ( 1036.20 km ) . <SEP> where <SEP2> hoek van holland
+TGT:where does the rhine end ?
+where is the old rhine bridge located ?
+what is the length of the rhine ?
+2 0
+0 0
+
+problem:100
+SRC:a prime number ( or a prime ) is a natural number greater than 1 that has no positive divisors other than 1 and itself . <SEP> what <SEP2> itself
+TGT:what is the only divisor besides 1 that a prime number can have ?
+what is a natural number of greater than 1 ?
+what is a natural number greater than 1 ?
+2 0
+2 0
+
+problem:101
+SRC:immune systems appear even in the structurally most simple forms of life , with bacteria using a unique defense mechanism , called the restriction modification system to protect themselves from viral pathogens , called bacteriophages . <SEP> what <SEP2> the restriction modification system
+TGT:what is the main defense mechanism of bacteria known as ?
+what is a unique defense mechanism called ?
+what is the name of the unique defense mechanism ?
+2 2
+2 2
+
+problem:102
+SRC:falls are one of the most common causes of fatal and non-fatal injuries among construction workers . <SEP> what <SEP2> falls
+TGT:what is the most common cause of injury on site ?
+what is one of the most common causes of fatal injuries ?
+what is one of the most common causes of fatal and non-fatal injuries ?
+2 2
+2 2
+
+problem:103
+SRC:government regulations have given private education more flexibility and autonomy in recent years , notably by lifting the moratorium on applications for new courses , new schools and conversions , by liberalizing tuition fee policy for private schools , by replacing values education for third and fourth years with english , mathematics and natural science at the option of the school , and by issuing the revised manual of regulations for private schools in august 1992 . <SEP> in what month and year <SEP2> august 1992
+TGT:in what month and year was the revised manual of regulations for private schools released ?
+when was the revised manual of regulations for private schools published ?
+in what month and year was the revised manual of regulations for private schools ?
+
+problem:104
+SRC:the success of this exhibition led to the planning of the festival of britain ( 1951 ) . <SEP> who <SEP2> festival of britain ( 1951 )
+TGT:who organized the britain can make it exhibition ?
+what was the name of the festival of britain ?
+who did the exhibition lead to ?
+
+problem:105
+SRC:the french population numbered about 75,000 and was heavily concentrated along the st. lawrence river valley , with some also in acadia ( present-day new brunswick and parts of nova scotia , including île royale ( present-day cape breton island ) ) . <SEP> where <SEP2> heavily concentrated along the st. lawrence river valley , with some also in acadia
+TGT:where were french north americans settled ?
+what did the french population consist of
+where was the french population ?
+
+problem:106
+SRC:engineering news-record ( enr ) is a trade magazine for the construction industry . <SEP> what <SEP2> a trade magazine for the construction industry
+TGT:what is engineering news-record ?
+what is engineering news-record ?
+what is engineering news-record ?
+
+problem:107
+SRC:necessity-based entrepreneurship is motivated by survival needs such as income for food and shelter ( " push " motivations ) , whereas opportunity-based entrepreneurship is driven by achievement-oriented motivations ( " pull " ) such as vocation and more likely to involve the pursue of new products , services , or underserved market needs . <SEP> what motivation <SEP2> achievement-oriented
+TGT:what motivation is opportunity-based entrepreneurship driven by ?
+what motivation does opportunity-based entrepreneurship use ?
+what type of motivations is motivated by survival ?
+
+problem:108
+SRC:under this system , once the design is completed by the design team , a number of construction companies or construction management companies may then be asked to make a bid for the work , either based directly on the design , or on the basis of drawings and a bill of quantities provided by a quantity surveyor . <SEP> who <SEP2> a quantity surveyor
+TGT:who provides the bill of quantities ?
+what is the bill of quantities provided by ?
+who provided the bill of quantities ?
+
+problem:109
+SRC:one example is an enzyme called tyrosinase that , when expressed at high levels , transforms certain skin cells ( e.g . melanocytes ) into tumors called melanomas . <SEP> what <SEP2> tyrosinase
+TGT:what is an example of an enzyme that can transform skin cells into tumors when expressed at high levels ?
+what is the name of the enzyme that expressed at high levels ?
+what is a enzyme called that is not called when expressed at high levels ?
