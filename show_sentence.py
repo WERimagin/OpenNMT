@@ -60,9 +60,11 @@ if 1:
                 "data/squad-pred-test-interro-repanswer.txt"]
 
 for name in pred_name:
+    mylist=[]
     with open(name,"r")as f:
         for line in f:
-            preds.append(line.strip())
+            mylist.append(line.strip())
+    preds.append(mylist)
 
 np.random.seed(0)
 id_list=np.random.permutation(list(range(len(srcs))))
@@ -76,7 +78,7 @@ if args.show:
         print("TGT:{}".format(tgts[id]))
 
         for j in id_shuffle_list[i]:
-            print(preds[id*2+j])
+            print(preds[j][i])
         print()
 
 
