@@ -76,7 +76,7 @@ if args.show:
         print("TGT:{}".format(tgts[id]))
 
         for j in id_shuffle_list[i]:
-            print(preds[i*2+j])
+            print(preds[id*2+j])
         print()
 
 
