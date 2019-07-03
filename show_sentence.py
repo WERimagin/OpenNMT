@@ -83,6 +83,7 @@ if args.show:
 
 
 else:
+    data=[]
     with open("human_eval_2.txt","r")as f:
         for line in f:
             data.append(line.rstrip().split())
