@@ -88,7 +88,7 @@ else:
         for line in f:
             data.append(line.rstrip().split())
 
-    score=np.zeros((100,2)) #->100,2,2
+    score=np.zeros((100,2,2)) #->100,2,2
     for i,line in enumerate(data):
         if line in ["1","2","3","4","5"]:
             #score.append(int(line))
