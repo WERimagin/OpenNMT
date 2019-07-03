@@ -85,16 +85,32 @@ if args.show:
 else:
     with open("human_eval_2.txt","r")as f:
         for line in f:
-            data.append(line.strip())
+            data.append(line.rstrip().split())
 
-    score=np.zeros(100,2)
+    score=np.zeros(100,2) #->100,2,2
     for i,line in enumerate(data):
         if line in ["1","2","3","4","5"]:
             #score.append(int(line))
-            score[i/2][id_shuffle_list[i/2][i%2]]=int(line)
+            score[i/2][id_shuffle_list[i/2][i%2]]=[int(l) for l in line]
         elif len(line)==3 and line[1]=="-" and False:
             pass
             #score.append(int(line[0])-int(line[2]))
             #score.append(int(line[0]))
     print("result of repanswer:{}".format(np.average(score[:,0])))
     print("result of interro-repanswer:{}".format(np.average(score[:,1])))
+
+    print(":{}".format(sum([1 if s in [2] else 0 for s in score[:,0,0]])))
+    print(":{}".format(sum([1 if s in [1] else 0 for s in score[:,0,0]])))
+    print(":{}".format(sum([1 if s in [0] else 0 for s in score[:,0,0]])))
+
+    print(":{}".format(sum([1 if s in [2] else 0 for s in score[:,1,0]])))
+    print(":{}".format(sum([1 if s in [1] else 0 for s in score[:,1,0]])))
+    print(":{}".format(sum([1 if s in [0] else 0 for s in score[:,1,0]])))
+
+    print(":{}".format(sum([1 if s in [2] else 0 for s in score[:,0,1]])))
+    print(":{}".format(sum([1 if s in [1] else 0 for s in score[:,0,1]])))
+    print(":{}".format(sum([1 if s in [0] else 0 for s in score[:,0,1]])))
+
+    print(":{}".format(sum([1 if s in [2] else 0 for s in score[:,1,1]])))
+    print(":{}".format(sum([1 if s in [1] else 0 for s in score[:,1,1]])))
+    print(":{}".format(sum([1 if s in [0] else 0 for s in score[:,1,1]])))
