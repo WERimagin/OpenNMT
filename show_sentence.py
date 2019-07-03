@@ -71,6 +71,9 @@ id_list=np.random.permutation(list(range(len(srcs))))
 id_shuffle_list=[np.random.permutation(list(range(2))) for i in range(110)]
 
 
+print(preds[0:10])
+
+
 if args.show:
     for i,id in enumerate(id_list[0:110]):
         print("problem:{}".format(i))
