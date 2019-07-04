@@ -36,6 +36,8 @@ parser.add_argument("--result", action="store_true")
 
 args = parser.parse_args()
 
+interros=[]
+
 
 with open(args.interro,"r")as f:
     for line in f:
