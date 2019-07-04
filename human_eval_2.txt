@@ -354,8 +354,8 @@ SRC:the path of violence and military struggle was then taken up by the egyptian
 TGT:when did the egyptian islamic jihad assassinate anwar sadat ?
 when did anwar sadat die ?
 when was anwar sadat assassination ?
-1 0
-1 0
+2 0
+2 0
 
 problem:44
 SRC:legislative changes are recorded in the book of discipline which is revised after each general conference . <SEP> what book <SEP2> the book of discipline
@@ -410,8 +410,8 @@ SRC:in this arrangement , the architect or engineer acts as the project coordina
 TGT:in the most common construction procurement , who acts as the project coordinator ?
 who acts as the project coordinator ?
 in the most common construction procurement , who is the project coordinator ?
-2 2
 1 2
+2 2
 
 problem:51
 SRC:plastoglobuli ( singular plastoglobulus , sometimes spelled plastoglobule ( s ) ) , are spherical bubbles of lipids and proteins about 45–60 nanometers across . <SEP> what <SEP2> plastoglobulus , sometimes spelled plastoglobule ( s )
@@ -872,3 +872,28 @@ SRC:one example is an enzyme called tyrosinase that , when expressed at high lev
 TGT:what is an example of an enzyme that can transform skin cells into tumors when expressed at high levels ?
 what is the name of the enzyme that expressed at high levels ?
 what is a enzyme called that is not called when expressed at high levels ?
+
+
+
+結果
+answer
+疑問詞
+2 51
+1 42
+0 7
+
+答え
+60
+3
+37
+
+interro-answer
+疑問詞
+100
+0
+0
+
+答え
+74
+2
+24

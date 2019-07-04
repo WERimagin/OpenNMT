@@ -4,7 +4,7 @@ import nltk
 from nltk.tokenize import word_tokenize,sent_tokenize
 from nltk.translate.bleu_score import corpus_bleu,sentence_bleu
 from tqdm import tqdm
-from collections import defaultdict
+from collections import defaultdict,Counter
 import collections
 import math
 from statistics import mean, median,variance,stdev
@@ -36,64 +36,11 @@ parser.add_argument("--result", action="store_true")
 
 args = parser.parse_args()
 
-random.seed(0)
 
-if 1:
-    preds=[]
-    interros=[]
-    with open(args.pred,"r")as f:
-        for line in f:
-            preds.append(line.strip())
+with open(args.interro,"r")as f:
+    for line in f:
+        interros.append(line.rstrip())
 
-    with open(args.interro,"r")as f:
-        for line in f:
-            interros.append(line.strip())
-
-    count=sum([1 if interros[i] in preds[i] else 0 for i in range(len(preds))])
-    print(count,len(preds),count/len(preds))
-    for i in range(len(preds)):
-        if interros[i] not in preds[i]:
-            print(interros[i])
-            print(preds[i])
-            print()
-
-if 0:
-    srcs=[]
-    tgts=[]
-    preds=[]
-
-    with open("data/squad-src-test-interro-answer.txt","r")as f:
-        for line in f:
-            srcs.append(line.strip())
-
-    with open("data/squad-tgt-test-interro.txt","r")as f:
-        for line in f:
-            tgts.append(line.strip())
-
-
-    pred_name=["data/squad-pred-test-interro.txt",
-                "data/squad-pred-test-nqg.txt",
-                "data/squad-pred-test-repanswer.txt",
-                "data/squad-pred-test-interro-repanswer.txt"]
-
-    for name in pred_name:
-        mylist=[]
-        with open(name,"r")as f:
-            for line in f:
-                mylist.append(line.strip())
-        preds.append(mylist)
-
-
-
-    np.random.seed(0)
-    id_list=np.random.permutation(list(range(len(srcs))))
-    for i,id in enumerate(id_list[0:110]):
-        print(i)
-        print("SRC:{}".format(srcs[id]))
-        print("TGT:{}".format(tgts[id]))
-        for p in preds:
-            print(p[id])
-        print()
-
-    for j in range(4):
-        print(sum([1 if preds[j][i][-1]=="?" else 0 for i in range(len(srcs))]))
+interros_num=[len(i.split()) for i in interros]
+c_dict=Counter(interros_num)
+print(c_dict)
