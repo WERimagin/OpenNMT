@@ -45,4 +45,5 @@ with open(args.interro,"r")as f:
 
 interros_num=[len(i.split()) for i in interros]
 c_dict=Counter(interros_num)
-print(c_dict)
+for k,v in c_dict.items():
+    print(k,v/len(interros_num))
