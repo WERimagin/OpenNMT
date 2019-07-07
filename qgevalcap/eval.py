@@ -126,6 +126,7 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
             p=pair['prediction'].encode('utf-8')
             target_dict[s].append(t)
             predict_dict[(p,s)]=s
+        pairs=[p for p in pairs if "<UNK>" not in p["predictions"]]
         gts={i:[p["tokenized_question"]] for i,p in enumerate(pairs)}
         res={i:[p["prediction"]] for i,p in enumerate(pairs)}
 
