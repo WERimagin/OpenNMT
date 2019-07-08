@@ -47,7 +47,7 @@ preds=[]
 
 np.random.seed(0)
 id_list=np.random.permutation(list(range(4658)))
-id_shuffle_list=[np.random.permutation(list(range(2))) for i in range(110)]
+id_shuffle_list=[np.random.permutation(list(range(2))) for i in range(args.size)]
 
 
 if args.show:
@@ -75,7 +75,7 @@ if args.show:
                 mylist.append(line.strip())
         preds.append(mylist)
 
-    for i,id in enumerate(id_list[0:110]):
+    for i,id in enumerate(id_list[0:args.size]):
         print("problem:{}".format(i))
         print("SRC:{}".format(srcs[id]))
         print("TGT:{}".format(tgts[id]))
