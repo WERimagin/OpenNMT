@@ -31,6 +31,7 @@ parser.add_argument("--notsplit", action="store_true")
 parser.add_argument("--print", action="store_true")
 parser.add_argument("--result", action="store_true")
 parser.add_argument("--show", action="store_true")
+parser.add_argument("--size", type=int,default="110")
 
 args = parser.parse_args()
 
@@ -102,8 +103,8 @@ else:
             count+=1
             #score.append(int(line[0])-int(line[2]))
             #score.append(int(line[0]))
-    print("result of repanswer:{}".format(np.average(score[:,0])))
-    print("result of interro-repanswer:{}".format(np.average(score[:,1])))
+    #print("result of repanswer:{}".format(np.average(score[:,0])))
+    #print("result of interro-repanswer:{}".format(np.average(score[:,1])))
 
 
     #print(score)

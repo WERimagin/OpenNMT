@@ -279,13 +279,13 @@ what type of musical instruments were introduced to enrich chinese performing ar
 1 2
 2 2
 
-problem:34
+problem:34 whichが微妙だから除外 NG
 SRC:abc purchased sports programs , inc. in exchange for shares in the company , leading it to become the future core of abc sports , with arledge as the executive producer of that division 's shows . <SEP> which <SEP2> sports programs , inc .
 TGT:abc purchased which of edgar scherick 's company ?
 what company did abc sell in exchange for shares in the company ?
 which programs did abc buy for shares in the company ?
-0 0
-2 2
+NG0 0
+NG2 2
 
 problem:35
 SRC:the ipcc produces reports that support the united nations framework convention on climate change ( unfccc ) , which is the main international treaty on climate change . <SEP> what <SEP2> united nations framework convention on climate change
@@ -836,6 +836,9 @@ SRC:government regulations have given private education more flexibility and aut
 TGT:in what month and year was the revised manual of regulations for private schools released ?
 when was the revised manual of regulations for private schools published ?
 in what month and year was the revised manual of regulations for private schools ?
+1 2
+2 2
+
 
 problem:104
 SRC:the success of this exhibition led to the planning of the festival of britain ( 1951 ) . <SEP> who <SEP2> festival of britain ( 1951 )
@@ -879,13 +882,13 @@ what is a enzyme called that is not called when expressed at high levels ?
 answer
 疑問詞
 2 51
-1 42
-0 7
+1 43
+0 6
 
 答え
-60
+61
 3
-37
+36
 
 interro-answer
 疑問詞
